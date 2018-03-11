@@ -3,5 +3,10 @@
 </template>
 
 <script>
-    export default {};
+    import home from '../page/home.vue';
+    export default {
+        created:function () {
+            console.log(123123);
+        }
+    };
 </script>
