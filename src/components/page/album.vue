@@ -1,7 +1,8 @@
 <template>
     <div class="page page-album">
-        相册内容
-        <router-view></router-view>
+        <div class="content">
+            相册内容
+        </div>
         <footer-nav></footer-nav>
     </div>
 </template>

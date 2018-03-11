@@ -1,7 +1,8 @@
 <template>
     <div class="page page-home">
-        首页
-        <router-view></router-view>
+        <div class="content">
+            首页
+        </div>
         <footer-nav></footer-nav>
     </div>
 </template>

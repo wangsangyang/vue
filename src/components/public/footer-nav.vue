@@ -9,8 +9,6 @@
 </template>
 
 <script>
-    import home from '../page/home.vue';
-    import album from '../page/album.vue';
     export default {
         name: 'footerNav',
     }
