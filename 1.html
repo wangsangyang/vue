@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>首页</title>
+    <style type="text/css">
+        li{ font-size: 20px; }
+    </style>
+</head>
+
+<body>
+<div id="app">
+
+    <ul>
+        <li v-link="{path: '/home'}">首页</li>
+        <li v-link="{path: '/about'}">关于</li>
+    </ul>
+
+    <router-view></router-view>
+
+</div>
+
+<script type="text/javascript" src="js/vue2.5.13.js"></script>
+<script type="text/javascript" src="js/vue-router3.0.1.js"></script>
+<script type="text/javascript">
+    let Home = Vue.extend({
+        template: '<div><h1>Home</h1><p>首页内容，{{msg}}</p></div>',
+        data: function(){
+            return {
+                msg: 'vue路由'
+            }
+        }
+    });
+    let About = Vue.extend({
+        template: '<div><h1>About</h1><p>about内容</p></div>'
+    });
+    let router = new VueRouter();
+    router.map({
+        '/home': {component: Home},
+        '/about': {componet: About}
+    });
+
+    let App = Vue.extend({});
+    router.start(App,'#app');
+</script>
+</body>
+</html>
