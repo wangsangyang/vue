@@ -1,3 +1,4 @@
+import reset from '../static/css/reset.css';
 import htmlfontsize from '../static/js/htmlfontsize.js';
 import Vue from 'vue';
 import router from '../src/router/router.js';
