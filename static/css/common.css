@@ -1,12 +1,21 @@
 #loading{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(../images/loading.gif) no-repeat center; }
 
 
-.page-album{ padding: 0 0 1.2rem; }
+/*.page-album{ padding: 0 0 1.2rem; }
 .page-album  .p-title{ background-color: #fff3e3; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; }
 .page-album .content .box{ display: flex; flex-wrap: wrap; }
 .page-album .content .list{ width: 50%; padding: 0.15rem 0.1rem; }
 .page-album .content .list:nth-child(2n){ padding-right: 0.2rem; }
 .page-album .content .list:nth-child(2n+1){ padding-left: 0.2rem; }
+.page-album .content .list dt{ height: 2rem; overflow: hidden; }
+.page-album .content .list dd{ height: 0.4rem; padding-top: 0.08rem; }
+.page-album .content .list img{ width: 100%; min-height: 100%; }*/
+
+
+.page-album{ padding: 0 0 1.2rem; }
+.page-album  .p-title{ background-color: #ffe9e9; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; font-size: 0.24rem; }
+.page-album .content .box{  }
+.page-album .content .list{ padding: 0.15rem 0.1rem; }
 .page-album .content .list dt{ height: 2rem; overflow: hidden; }
 .page-album .content .list dd{ height: 0.4rem; padding-top: 0.08rem; }
 .page-album .content .list img{ width: 100%; min-height: 100%; }

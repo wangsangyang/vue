@@ -33,22 +33,8 @@
         created: function () {
             console.log('页面初始化');
             const that = this;
-/*            $.ajax({
-                type: 'post',
-                url: '../static/interface/album.json',
-                dataType: 'json',
-                success: function (data) {
-                    that.imgArray = data;
-                },
-                error: function (a,b) {
-                    console.log('错误');
-                    console.log(a);
-                    console.log(b);
-                }
-            });*/
             var param = {};
             param.page = 1;
-            param.pagesize = 10;
             var str = $.param(param);
             console.log(str);
             var url =  'https://www.apiopen.top/meituApi?'+str;
