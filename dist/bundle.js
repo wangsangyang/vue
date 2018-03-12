@@ -11480,7 +11480,11 @@ if (false) {(function () {
 //
 //
 
-/* harmony default export */ __webpack_exports__["a"] = ({});
+/* harmony default export */ __webpack_exports__["a"] = ({
+    created: function () {
+        console.log(123123);
+    }
+});
 
 /***/ }),
 /* 9 */
@@ -11499,7 +11503,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-let page = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
+new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
     el: '#app',
     router: __WEBPACK_IMPORTED_MODULE_2__src_router_router_js__["a" /* default */],
     render: h => h(__WEBPACK_IMPORTED_MODULE_3__src_components_page_app_vue__["a" /* default */])
