@@ -5,8 +5,8 @@
             <ul class="box">
                 <li class="list" v-for="img in imgArray">
                     <dl>
-                        <dt><img v-bind:src="img.url"></dt>
-                        <dd>{{img.type}}</dd>
+                        <dt><img v-bind:src="img.imgurl"></dt>
+                        <dd>{{img.title}}</dd>
                     </dl>
                 </li>
             </ul>
@@ -33,24 +33,25 @@
         created: function () {
             console.log('页面初始化');
             const that = this;
-            var param = {};
-            param.page = 1;
-            var str = $.param(param);
-            console.log(str);
-            var url =  'https://www.apiopen.top/meituApi?'+str;
+            const url = 'http://route.showapi.com/1208-2';
+            const paramObj = {};
+            paramObj.showapi_timestamp = formatterDateTime();
+            paramObj.showapi_appid = '58966';
+            paramObj.showapi_sign = 'f2c87a1f55c345ccbd46923e10ab344f';
+            paramObj.type = '1';
+            paramObj.page = '1';
+            paramObj.rows = '20';
             $.ajax({
-                type: 'get',
+                type: 'post',
                 url: url,
-                //data: param,
+                data: paramObj,
                 dataType: 'json',
                 success: function (result) {
                     console.log(result);
-                    if(result.code===200){
-                        that.imgArray = result.data;
+                    if(!result.showapi_res_error){
+                        that.imgArray = result.showapi_res_body.data;
                     }
-                    setTimeout(function () {
-                        loading.close();
-                    },1000);
+                    loading.close();
                 },
                 error: function (a,b) {
                     console.log('错误');

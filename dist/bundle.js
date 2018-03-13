@@ -11559,25 +11559,29 @@ if (false) {(function () {
     components: {
         footerNav: __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__["a" /* default */]
     },
-    beforeCreate: function () {},
-    created: function () {
+    beforeCreate: function () {
         loading.open();
+    },
+    created: function () {
         console.log('页面初始化');
         const that = this;
-        var param = {};
-        param.page = 1;
-        var str = $.param(param);
-        console.log(str);
-        var url = 'https://www.apiopen.top/meituApi?' + str;
+        const url = 'http://route.showapi.com/1208-2';
+        const paramObj = {};
+        paramObj.showapi_timestamp = formatterDateTime();
+        paramObj.showapi_appid = '58966';
+        paramObj.showapi_sign = 'f2c87a1f55c345ccbd46923e10ab344f';
+        paramObj.type = '1';
+        paramObj.page = '1';
+        paramObj.rows = '20';
         $.ajax({
-            type: 'get',
+            type: 'post',
             url: url,
-            //data: param,
+            data: paramObj,
             dataType: 'json',
             success: function (result) {
                 console.log(result);
-                if (result.code === 200) {
-                    that.imgArray = result.data;
+                if (!result.showapi_res_error) {
+                    that.imgArray = result.showapi_res_body.data;
                 }
                 setTimeout(function () {
                     loading.close();
@@ -15641,9 +15645,9 @@ var render = function() {
           _vm._l(_vm.imgArray, function(img) {
             return _c("li", { staticClass: "list" }, [
               _c("dl", [
-                _c("dt", [_c("img", { attrs: { src: img.url } })]),
+                _c("dt", [_c("img", { attrs: { src: img.imgurl } })]),
                 _vm._v(" "),
-                _c("dd", [_vm._v(_vm._s(img.type))])
+                _c("dd", [_vm._v(_vm._s(img.title))])
               ])
             ])
           })

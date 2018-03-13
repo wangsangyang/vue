@@ -1,0 +1,9 @@
+1、解析import css文件时，webpack中的css-loader和style-loader书写顺序很重要，需要style-loader在前，css-loader在后，如果顺序不对就会报错
+2、npm安装vue的版本必须和vue-template-compiler的版本一致
+3、webpack版本最好是@3，即3.几的版本
+4、使用vue的template需要配置
+resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
+    }

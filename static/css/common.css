@@ -16,6 +16,6 @@
 .page-album  .p-title{ background-color: #ffe9e9; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; font-size: 0.24rem; }
 .page-album .content .box{  }
 .page-album .content .list{ padding: 0.15rem 0.1rem; }
-.page-album .content .list dt{ height: 2rem; overflow: hidden; }
-.page-album .content .list dd{ height: 0.4rem; padding-top: 0.08rem; }
-.page-album .content .list img{ width: 100%; min-height: 100%; }
+.page-album .content .list dt{ overflow: hidden; }
+.page-album .content .list dd{ padding-top: 0.08rem; }
+.page-album .content .list img{ width: 100%; }
