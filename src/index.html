@@ -14,28 +14,50 @@
 
 <div id="app"></div>
 
+<<<<<<< HEAD
 
 <div id="pic"></div>
+=======
+<!--<div id="imgBox">
+    <ul>
+        <li v-for="img in imgArray"><img v-bind:src="img.url" width="100%"></li>
+    </ul>
+</div>-->
+>>>>>>> 94f3e192ca7875b32127d63dfa3c5432ec1b798b
 
 <link type="text/css" rel="stylesheet" href="../static/css/common.css">
-<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script src="../static/js/jquery-1.9.1.min.js"></script>
 <script src="../static/js/common.js"></script>
 <script src="../dist/bundle.js"></script>
+
+    <!--<script src="../static/js/vue2.5.13.js"></script>-->
 <script>
-/*    var a = '<script src="http://image.baidu.com/channel/listjson?pn=0&rn=10&tag1=明星&tag2=全部&ftags=女明星&ie=utf8"><\/script>';
-function ab() {
-    alert();
-}
+
+
+/*    var imgs = new Vue({
+        el: '#imgBox',
+        data: {
+            imgArray:[]
+        }
+    });
+
     $.ajax({
-        type: 'get',
-        url: 'http://image.baidu.com/channel/listjson?pn=0&rn=1&tag1=明星&tag2=全部&ftags=女明星&ie=utf8',
-        //data: param,
+        type: 'post',
+        url: 'http://route.showapi.com/1208-2',
+        data: param,
+        data: {
+            "showapi_timestamp": formatterDateTime(),
+            "showapi_appid": '58966',
+            "showapi_sign": 'f2c87a1f55c345ccbd46923e10ab344f',
+            "type":"2",
+            "page":"1",
+            "rows":"20"
+        },
+
         dataType: 'json',
         success: function (result) {
             console.log(result);
-            if(result.code===200){
-                that.imgArray = result.data;
-            }
+                imgs.imgArray = result.results;
             setTimeout(function () {
                 loading.close();
             },1000);

@@ -1,5 +1,12 @@
+html{ font-size: 100px; color: #333; }
+body{ font-size: 0; }
+a{ color: #333; }
+.clearfix{ *zoom: 1; }
+.clearfix:after{ content: ""; display: block; clear: both; height: 0; visibility: hidden; }
+#entry{ width: 100%; height: 100%; }
+.page{ width: 100%; min-height: 100%; font-size: 0.28rem; }
+.bgcolor{ background-color: #e9e9e9; }
 #loading{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(../images/loading.gif) no-repeat center; }
-
 
 /*.page-album{ padding: 0 0 1.2rem; }
 .page-album  .p-title{ background-color: #fff3e3; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; }
@@ -11,11 +18,37 @@
 .page-album .content .list dd{ height: 0.4rem; padding-top: 0.08rem; }
 .page-album .content .list img{ width: 100%; min-height: 100%; }*/
 
+/* 首页 */
+.page-home{ padding: 0.01rem 0 1.2rem; }
+.page-home  .p-title{  }
+.page-home .content .box{  }
+.page-home .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.2rem; font-size: 0.32rem;  }
+.page-home .content .list dt{ overflow: hidden; }
+.page-home .content .list .dl-title{ padding: 0 0 0.1rem; color: #ff9400; }
+.page-home .content .list .dl-time{ padding-top: 0.1rem; font-size: 0.24rem; color: #999; }
 
-.page-album{ padding: 0 0 1.2rem; }
-.page-album  .p-title{ background-color: #ffe9e9; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; font-size: 0.24rem; }
+/* 相册 */
+.page-album{ padding: 0.01rem 0 1.2rem; }
+.page-album  .p-title{  }
 .page-album .content .box{  }
-.page-album .content .list{ padding: 0.15rem 0.1rem; }
-.page-album .content .list dt{ height: 2rem; overflow: hidden; }
-.page-album .content .list dd{ height: 0.4rem; padding-top: 0.08rem; }
-.page-album .content .list img{ width: 100%; min-height: 100%; }
+.page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.2rem;}
+.page-album .content .list dt{ overflow: hidden; }
+.page-album .content .list dd{ padding-top: 0.1rem; }
+.page-album .content .list img{ width: 100%; }
+
+/* 个人中心 */
+.ui-view-cell{ margin-bottom: 0.2rem; font-size: 0.28rem; background-color: #fff; }
+.ui-view-cell ul{ padding: 0 0 0 0.3rem; }
+.ui-view-cell span{ display: block; }
+.ui-view-cell .section-title{ font-size: 0.28rem; color:#666; position: relative; padding: 0.25rem 0.6rem 0.25rem 0.3rem; border-bottom: solid 0.02rem #e4e4e4; }
+.ui-view-cell .section-title:after{ content: ""; clear: both; display: block; width: 0.08rem; height: 0.28rem; position: absolute; top: 50%; left: 0; margin-top: -0.14rem; background-color: #ef8c31; }
+.ui-view-cell .section-title .sub{ display: inline-block; }
+.ui-view-cell .color{ color: #f08b2f; }
+.ui-view-cell .r-left{ float: left; }
+.ui-view-cell .r-right{ float: right; color: #666; }
+.ui-view-cell .view-cell{ padding: 0.24rem 0.3rem 0.24rem 0; border-bottom: solid 0.02rem #e4e4e4; position: relative; margin-top: 0.2rem; }
+.ui-view-cell .view-cell:nth-last-child(1){ border-bottom: 0; }
+.ui-view-cell .view-cell.arrow{ background: url(../images/icon-arrow.png) no-repeat 96% center; background-size: 0.18rem auto; padding-right: 0.26rem; }
+.ui-view-cell .view-cell .row-left{ font-size: 0.32rem; }
+.ui-view-cell .view-cell .row-right{ }
+.ui-view-cell .view-cell .cell{ overflow: hidden; }
