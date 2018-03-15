@@ -1,0 +1,15 @@
+/* 页面跳转过渡 */
+.linkpage-enter{
+    transform: translate(100%,0);
+}
+.linkpage-enter-to{
+    transform: translate(0,0);
+    transition: all 0.3s ease;
+}
+.linkpage-leave{
+    transform: translate(0,0);
+}
+.linkpage-leave-to{
+    transform: translate(100%,0);
+    transition: all 0.3s ease;
+}

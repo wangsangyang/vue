@@ -1,8 +1,15 @@
 <template>
-    <div class="page page-home bgcolor">
+    <div class="page page-personal bgcolor">
         <div class="content">
 
-            <section></section>
+            <section class="section-personal">
+                <dl>
+                    <dt class="portrait"><span class="icon"><img src="../../../static/images/icon-portrait.png" alt="头像"/></span></dt>
+                    <dd class="link-login">
+                        <router-link to="/login">点击登录</router-link>
+                    </dd>
+                </dl>
+            </section>
 
             <section class="ui-view-cell">
                 <ul>
@@ -25,11 +32,9 @@
     import footerNav from '../public/footer-nav.vue';
 
     export default {
-        name: 'home',
+        name: 'personal',
         data: function () {
-            return {
-                textArray: []
-            }
+            return {};
         },
         components: {
             footerNav
