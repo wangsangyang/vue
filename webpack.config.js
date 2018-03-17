@@ -24,6 +24,10 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(eot|svg|ttf|woff|woff2)\w*/,
+                loader: 'url-loader?limit=1000000'
+            },
+            {
                 test: /\.js$/,
                 use: ['babel-loader'],
                 exclude: /node_modules/
@@ -31,12 +35,40 @@ module.exports = {
             {
                 test: /\.vue$/,
                 use: ['vue-loader']
-            }
+            },
+            {
+                test: require.resolve('jquery'),
+                /*loader: 'expose-loader?$!expose-loader?jquery!expose-loader?jQuery', //第二种引用jQuery插件的方法*/
+                use: [
+                    {
+                        loader: 'expose-loader',
+                        options: '$'
+                    },
+                    {
+                        loader: 'expose-loader',
+                        options: 'jquery'
+                    },
+                    {
+                        loader: 'expose-loader',
+                        options: 'jQuery'
+                    }
+                ]
+            },
         ]
     },
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js',
-        }
-    }
+            //mui: '../static/mui/js/mui.min.js',
+            wui: '../static/js/wui.js',
+        },
+    },
+/*    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.$': 'jquery',
+            'window.jQuery': 'jquery'
+        }),
+    ]*/
 }

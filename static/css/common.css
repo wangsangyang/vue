@@ -5,8 +5,7 @@ a{ color: #333; }
 .clearfix:after{ content: ""; display: block; clear: both; height: 0; visibility: hidden; }
 #entry{ width: 100%; height: 100%; }
 .page{ width: 100%; min-height: 100%; font-size: 0.28rem; }
-.bgcolor{ background-color: #e9e9e9; }
-#loading{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(../images/loading.gif) no-repeat center; }
+.bgcolor{ background-color: #efeff4; }
 
 /*.page-album{ padding: 0 0 1.2rem; }
 .page-album  .p-title{ background-color: #fff3e3; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; }
@@ -39,6 +38,7 @@ a{ color: #333; }
 /* 首页 */
 .page-home{ padding: 0.01rem 0 1.2rem; }
 .page-home  .p-title{  }
+.page-home .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
 .page-home .content .box{  }
 .page-home .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.2rem; font-size: 0.32rem;  }
 .page-home .content .list dt{ overflow: hidden; }
@@ -76,8 +76,8 @@ a{ color: #333; }
 .btns-group .btn{ width:0; font-size: 0.28rem; flex-grow: 1; text-align: center; height: 0.88rem; line-height: 0.88rem; font-size: 0.36rem; color:#fff; background-color: #f08b2f; border-radius: 0.02rem; }
 .btns-group .btn.cancel{ background-color: #ccc; }
 .btns-group .btn.btn1{ background: -webkit-gradient(linear, left top, right top, from(#f4b72f), to(#f1982f)); }
-.input{ height: 0.8rem; width: 100%; padding: 0 0.1rem; border: solid 0.02rem #ddd; border-radius: 0.02rem; }
-input::-webkit-input-placeholder{ color: #ccc; }
+html .input{ height: 0.8rem; width: 100%; padding: 0 0.1rem; border: solid 0.02rem #ddd; border-radius: 0.02rem; }
+html input::-webkit-input-placeholder{ color: #ccc; }
 
 /* 个人中心 */
 .section-personal{ background-color: #fff; }
@@ -90,9 +90,20 @@ input::-webkit-input-placeholder{ color: #ccc; }
 .section-personal .link-login a{ display: inline-block; color: #f08b2f; }
 
 /* 登录 */
+.page-login{  }
 .page-login .section-head{ font-size: 0.36rem; text-align: center; padding: 1rem 0; }
 .page-login .section-input{ padding: 0 1rem; }
-.page-login .section-input li{ padding: 0.2rem 0; }
-.page-login .section-input .input{  }
-.page-login .btns-group{ margin-top: 2rem; }
+.page-login .section-input li{ display: flex; padding: 0.55rem 0.15rem 0.15rem 0 ; border-bottom: solid 0.021rem #ddd; }
+.page-login .section-input .input{ flex: 1; margin: 0; height: 0.45rem; margin-left: 0.15rem; padding: 0; border: 0; vertical-align: top; }
+.page-login .section-input .input::-webkit-input-placeholder{ color: #ccc; font-size: 0.26rem; }
+.page-login .section-input .icon{ width: 0.4rem; height: 0.4rem; margin-top: 0.04rem; background-position: center; background-repeat: no-repeat; background-size: 100% 100%; }
+.page-login .section-input .username .icon{ background-image: url(../images/icon-username.png); }
+.page-login .section-input .password .icon{ background-image: url(../images/icon-password.png); }
+.page-login .section-input .password .input{ font-size: 0.4rem; }
+.page-login .btns-group{ margin-top: 1.5rem; }
+
+
+.wui-loading{ position: fixed; z-index: 9; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(../images/loading.gif) no-repeat center; }
+.wui-ajaxerror{ position: absolute; top: 40%; width: 100%; text-align: center; z-index: 9; font-size: 0.24rem; }
+.wui-ajaxerror .reset{ display: inline-block; padding: 0.2rem 0.4rem; }
 

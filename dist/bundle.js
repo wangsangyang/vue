@@ -174,60 +174,29 @@ function normalizeComponent (
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_footer_nav_vue__ = __webpack_require__(8);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_8be3f4f8_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_footer_nav_vue__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
-var disposed = false
-function injectStyle (context) {
-  if (disposed) return
-  __webpack_require__(26)
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
 }
-/* script */
 
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
 
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-
-var Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__["a" /* default */])(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_footer_nav_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_8be3f4f8_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_footer_nav_vue__["a" /* render */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_8be3f4f8_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_footer_nav_vue__["b" /* staticRenderFns */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src\\components\\public\\footer-nav.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8be3f4f8", Component.options)
-  } else {
-    hotAPI.reload("data-v-8be3f4f8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+module.exports = g;
 
 
 /***/ }),
@@ -314,29 +283,60 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_footer_nav_vue__ = __webpack_require__(8);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_8be3f4f8_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_footer_nav_vue__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
+var disposed = false
+function injectStyle (context) {
+  if (disposed) return
+  __webpack_require__(35)
 }
+/* script */
 
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
 
-module.exports = g;
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+
+var Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__["a" /* default */])(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_footer_nav_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_8be3f4f8_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_footer_nav_vue__["a" /* render */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_8be3f4f8_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_footer_nav_vue__["b" /* staticRenderFns */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src\\components\\public\\footer-nav.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-8be3f4f8", Component.options)
+  } else {
+    hotAPI.reload("data-v-8be3f4f8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
 
 
 /***/ }),
@@ -11666,7 +11666,7 @@ return Vue;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(21).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(26).setImmediate))
 
 /***/ }),
 /* 6 */
@@ -11863,7 +11863,11 @@ process.umask = function() { return 0; };
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__static_mui_css_mui_min_css__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__static_mui_css_mui_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__static_mui_css_mui_min_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_footer_nav_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js__);
 //
 //
 //
@@ -11882,6 +11886,12 @@ process.umask = function() { return 0; };
 //
 //
 //
+//
+//
+//
+//
+
+
 
 
 
@@ -11893,39 +11903,63 @@ process.umask = function() { return 0; };
         };
     },
     components: {
-        footerNav: __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__["a" /* default */]
-    }, beforeCreate: function () {
-        loading.open();
+        footerNav: __WEBPACK_IMPORTED_MODULE_1__public_footer_nav_vue__["a" /* default */]
+    },
+    beforeCreate: function () {
+        wui.loading();
     },
     created: function () {
         console.log('首页');
         const that = this;
         const url = 'http://route.showapi.com/341-1';
         const paramObj = {};
-        paramObj.showapi_timestamp = formatterDateTime();
+        paramObj.showapi_timestamp = wui.formatDateTime();
         paramObj.showapi_appid = '58966';
         paramObj.showapi_sign = 'f2c87a1f55c345ccbd46923e10ab344f';
-        paramObj.page = '1';
-        paramObj.maxResult = '20';
-        $.ajax({
-            type: 'post',
-            url: url,
-            data: paramObj,
-            dataType: 'json',
-            success: function (result) {
-                console.log(result);
-                console.log(result.showapi_res_body);
-                if (result.showapi_res_error == '') {
-                    that.textArray = result.showapi_res_body.contentlist;
+        paramObj.page = 0;
+        paramObj.maxResult = 20;
+
+        pullupRefresh();
+
+        //上拉加载
+        __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default.a.init({
+            pullRefresh: {
+                container: '#refreshContainer', //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+                up: {
+                    height: 50, //可选.默认50.触发上拉加载拖动距离
+                    contentrefresh: "正在加载中...", //可选，正在加载状态时，上拉加载控件上显示的标题内容
+                    contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+                    callback: pullupRefresh //刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
                 }
-                loading.close();
-            },
-            error: function (XmlHttpRequest, textStatus) {
-                console.log('错误');
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
             }
         });
+
+        function pullupRefresh() {
+            paramObj.page += 1;
+            console.log(paramObj);
+            $.ajax({
+                type: 'post',
+                url: url,
+                data: paramObj,
+                dataType: 'json',
+                success: function (result) {
+                    console.log(result);
+                    //console.log(result.showapi_res_body);
+                    if (result.showapi_res_error == '') {
+                        that.textArray = that.textArray.concat(result.showapi_res_body.contentlist);
+                    }
+                    __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default()('#refreshContainer').pullRefresh().endPullupToRefresh(false);
+                    wui.loading('close');
+                },
+                error: function (XmlHttpRequest, textStatus) {
+                    console.log('错误');
+                    console.log(XmlHttpRequest);
+                    console.log(textStatus);
+                    wui.loading('close');
+                    wui.ajaxerror();
+                }
+            });
+        }
     }
 });
 
@@ -11975,7 +12009,7 @@ process.umask = function() { return 0; };
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(3);
 //
 //
 //
@@ -12006,14 +12040,14 @@ process.umask = function() { return 0; };
         footerNav: __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__["a" /* default */]
     },
     beforeCreate: function () {
-        loading.open();
+        wui.loading();
     },
     created: function () {
         console.log('相册页');
         const that = this;
         const url = 'http://route.showapi.com/819-1';
         const paramObj = {};
-        paramObj.showapi_timestamp = formatterDateTime();
+        paramObj.showapi_timestamp = wui.formatDateTime();
         paramObj.showapi_appid = '58966';
         paramObj.showapi_sign = 'f2c87a1f55c345ccbd46923e10ab344f';
         paramObj.type = '35';
@@ -12030,7 +12064,7 @@ process.umask = function() { return 0; };
                 if (result.showapi_res_error == '') {
                     that.imgArray = result.showapi_res_body;
                 }
-                loading.close();
+                wui.loading('close');
             },
             error: function (XmlHttpRequest, textStatus) {
                 console.log('错误');
@@ -12046,7 +12080,7 @@ process.umask = function() { return 0; };
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(3);
 //
 //
 //
@@ -12076,7 +12110,7 @@ process.umask = function() { return 0; };
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__ = __webpack_require__(3);
 //
 //
 //
@@ -12200,21 +12234,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_css_transform_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__static_css_transform_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_js_htmlfontsize_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_js_htmlfontsize_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_js_htmlfontsize_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_router_router_js__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_components_page_app_vue__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_wui__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_router_router_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_app_vue__ = __webpack_require__(52);
+
+
+
+
+
+/*import mui from '../static/mui/js/mui.min.js';*/
+/*import '../static/js/wui.js';*/
+/*import wui from '../static/js/wui.js';*/
+ //引用config里面的wui名称
 
 
 
 
 
 
-
-new __WEBPACK_IMPORTED_MODULE_3_vue___default.a({
+new __WEBPACK_IMPORTED_MODULE_5_vue___default.a({
     el: '#app',
-    router: __WEBPACK_IMPORTED_MODULE_4__src_router_router_js__["a" /* default */],
-    render: h => h(__WEBPACK_IMPORTED_MODULE_5__src_components_page_app_vue__["a" /* default */])
+    router: __WEBPACK_IMPORTED_MODULE_6__src_router_router_js__["a" /* default */],
+    render: h => h(__WEBPACK_IMPORTED_MODULE_7__src_components_page_app_vue__["a" /* default */])
 });
 
 /***/ }),
@@ -12465,6 +12510,10433 @@ exports.push([module.i, "/* 页面跳转过渡 */\r\n.linkpage-enter{\r\n    tra
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(22);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jquery"] = __webpack_require__(23);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(24);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * jQuery JavaScript Library v3.3.1
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2018-01-20T17:24Z
+ */
+( function( global, factory ) {
+
+	"use strict";
+
+	if ( typeof module === "object" && typeof module.exports === "object" ) {
+
+		// For CommonJS and CommonJS-like environments where a proper `window`
+		// is present, execute the factory and get jQuery.
+		// For environments that do not have a `window` with a `document`
+		// (such as Node.js), expose a factory as module.exports.
+		// This accentuates the need for the creation of a real `window`.
+		// e.g. var jQuery = require("jquery")(window);
+		// See ticket #14549 for more info.
+		module.exports = global.document ?
+			factory( global, true ) :
+			function( w ) {
+				if ( !w.document ) {
+					throw new Error( "jQuery requires a window with a document" );
+				}
+				return factory( w );
+			};
+	} else {
+		factory( global );
+	}
+
+// Pass this if window is not defined yet
+} )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
+
+// Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1
+// throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode
+// arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common
+// enough that all such attempts are guarded in a try block.
+"use strict";
+
+var arr = [];
+
+var document = window.document;
+
+var getProto = Object.getPrototypeOf;
+
+var slice = arr.slice;
+
+var concat = arr.concat;
+
+var push = arr.push;
+
+var indexOf = arr.indexOf;
+
+var class2type = {};
+
+var toString = class2type.toString;
+
+var hasOwn = class2type.hasOwnProperty;
+
+var fnToString = hasOwn.toString;
+
+var ObjectFunctionString = fnToString.call( Object );
+
+var support = {};
+
+var isFunction = function isFunction( obj ) {
+
+      // Support: Chrome <=57, Firefox <=52
+      // In some browsers, typeof returns "function" for HTML <object> elements
+      // (i.e., `typeof document.createElement( "object" ) === "function"`).
+      // We don't want to classify *any* DOM node as a function.
+      return typeof obj === "function" && typeof obj.nodeType !== "number";
+  };
+
+
+var isWindow = function isWindow( obj ) {
+		return obj != null && obj === obj.window;
+	};
+
+
+
+
+	var preservedScriptAttributes = {
+		type: true,
+		src: true,
+		noModule: true
+	};
+
+	function DOMEval( code, doc, node ) {
+		doc = doc || document;
+
+		var i,
+			script = doc.createElement( "script" );
+
+		script.text = code;
+		if ( node ) {
+			for ( i in preservedScriptAttributes ) {
+				if ( node[ i ] ) {
+					script[ i ] = node[ i ];
+				}
+			}
+		}
+		doc.head.appendChild( script ).parentNode.removeChild( script );
+	}
+
+
+function toType( obj ) {
+	if ( obj == null ) {
+		return obj + "";
+	}
+
+	// Support: Android <=2.3 only (functionish RegExp)
+	return typeof obj === "object" || typeof obj === "function" ?
+		class2type[ toString.call( obj ) ] || "object" :
+		typeof obj;
+}
+/* global Symbol */
+// Defining this global in .eslintrc.json would create a danger of using the global
+// unguarded in another place, it seems safer to define global only for this module
+
+
+
+var
+	version = "3.3.1",
+
+	// Define a local copy of jQuery
+	jQuery = function( selector, context ) {
+
+		// The jQuery object is actually just the init constructor 'enhanced'
+		// Need init if jQuery is called (just allow error to be thrown if not included)
+		return new jQuery.fn.init( selector, context );
+	},
+
+	// Support: Android <=4.0 only
+	// Make sure we trim BOM and NBSP
+	rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+
+jQuery.fn = jQuery.prototype = {
+
+	// The current version of jQuery being used
+	jquery: version,
+
+	constructor: jQuery,
+
+	// The default length of a jQuery object is 0
+	length: 0,
+
+	toArray: function() {
+		return slice.call( this );
+	},
+
+	// Get the Nth element in the matched element set OR
+	// Get the whole matched element set as a clean array
+	get: function( num ) {
+
+		// Return all the elements in a clean array
+		if ( num == null ) {
+			return slice.call( this );
+		}
+
+		// Return just the one element from the set
+		return num < 0 ? this[ num + this.length ] : this[ num ];
+	},
+
+	// Take an array of elements and push it onto the stack
+	// (returning the new matched element set)
+	pushStack: function( elems ) {
+
+		// Build a new jQuery matched element set
+		var ret = jQuery.merge( this.constructor(), elems );
+
+		// Add the old object onto the stack (as a reference)
+		ret.prevObject = this;
+
+		// Return the newly-formed element set
+		return ret;
+	},
+
+	// Execute a callback for every element in the matched set.
+	each: function( callback ) {
+		return jQuery.each( this, callback );
+	},
+
+	map: function( callback ) {
+		return this.pushStack( jQuery.map( this, function( elem, i ) {
+			return callback.call( elem, i, elem );
+		} ) );
+	},
+
+	slice: function() {
+		return this.pushStack( slice.apply( this, arguments ) );
+	},
+
+	first: function() {
+		return this.eq( 0 );
+	},
+
+	last: function() {
+		return this.eq( -1 );
+	},
+
+	eq: function( i ) {
+		var len = this.length,
+			j = +i + ( i < 0 ? len : 0 );
+		return this.pushStack( j >= 0 && j < len ? [ this[ j ] ] : [] );
+	},
+
+	end: function() {
+		return this.prevObject || this.constructor();
+	},
+
+	// For internal use only.
+	// Behaves like an Array's method, not like a jQuery method.
+	push: push,
+	sort: arr.sort,
+	splice: arr.splice
+};
+
+jQuery.extend = jQuery.fn.extend = function() {
+	var options, name, src, copy, copyIsArray, clone,
+		target = arguments[ 0 ] || {},
+		i = 1,
+		length = arguments.length,
+		deep = false;
+
+	// Handle a deep copy situation
+	if ( typeof target === "boolean" ) {
+		deep = target;
+
+		// Skip the boolean and the target
+		target = arguments[ i ] || {};
+		i++;
+	}
+
+	// Handle case when target is a string or something (possible in deep copy)
+	if ( typeof target !== "object" && !isFunction( target ) ) {
+		target = {};
+	}
+
+	// Extend jQuery itself if only one argument is passed
+	if ( i === length ) {
+		target = this;
+		i--;
+	}
+
+	for ( ; i < length; i++ ) {
+
+		// Only deal with non-null/undefined values
+		if ( ( options = arguments[ i ] ) != null ) {
+
+			// Extend the base object
+			for ( name in options ) {
+				src = target[ name ];
+				copy = options[ name ];
+
+				// Prevent never-ending loop
+				if ( target === copy ) {
+					continue;
+				}
+
+				// Recurse if we're merging plain objects or arrays
+				if ( deep && copy && ( jQuery.isPlainObject( copy ) ||
+					( copyIsArray = Array.isArray( copy ) ) ) ) {
+
+					if ( copyIsArray ) {
+						copyIsArray = false;
+						clone = src && Array.isArray( src ) ? src : [];
+
+					} else {
+						clone = src && jQuery.isPlainObject( src ) ? src : {};
+					}
+
+					// Never move original objects, clone them
+					target[ name ] = jQuery.extend( deep, clone, copy );
+
+				// Don't bring in undefined values
+				} else if ( copy !== undefined ) {
+					target[ name ] = copy;
+				}
+			}
+		}
+	}
+
+	// Return the modified object
+	return target;
+};
+
+jQuery.extend( {
+
+	// Unique for each copy of jQuery on the page
+	expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
+
+	// Assume jQuery is ready without the ready module
+	isReady: true,
+
+	error: function( msg ) {
+		throw new Error( msg );
+	},
+
+	noop: function() {},
+
+	isPlainObject: function( obj ) {
+		var proto, Ctor;
+
+		// Detect obvious negatives
+		// Use toString instead of jQuery.type to catch host objects
+		if ( !obj || toString.call( obj ) !== "[object Object]" ) {
+			return false;
+		}
+
+		proto = getProto( obj );
+
+		// Objects with no prototype (e.g., `Object.create( null )`) are plain
+		if ( !proto ) {
+			return true;
+		}
+
+		// Objects with prototype are plain iff they were constructed by a global Object function
+		Ctor = hasOwn.call( proto, "constructor" ) && proto.constructor;
+		return typeof Ctor === "function" && fnToString.call( Ctor ) === ObjectFunctionString;
+	},
+
+	isEmptyObject: function( obj ) {
+
+		/* eslint-disable no-unused-vars */
+		// See https://github.com/eslint/eslint/issues/6125
+		var name;
+
+		for ( name in obj ) {
+			return false;
+		}
+		return true;
+	},
+
+	// Evaluates a script in a global context
+	globalEval: function( code ) {
+		DOMEval( code );
+	},
+
+	each: function( obj, callback ) {
+		var length, i = 0;
+
+		if ( isArrayLike( obj ) ) {
+			length = obj.length;
+			for ( ; i < length; i++ ) {
+				if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+					break;
+				}
+			}
+		} else {
+			for ( i in obj ) {
+				if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+					break;
+				}
+			}
+		}
+
+		return obj;
+	},
+
+	// Support: Android <=4.0 only
+	trim: function( text ) {
+		return text == null ?
+			"" :
+			( text + "" ).replace( rtrim, "" );
+	},
+
+	// results is for internal usage only
+	makeArray: function( arr, results ) {
+		var ret = results || [];
+
+		if ( arr != null ) {
+			if ( isArrayLike( Object( arr ) ) ) {
+				jQuery.merge( ret,
+					typeof arr === "string" ?
+					[ arr ] : arr
+				);
+			} else {
+				push.call( ret, arr );
+			}
+		}
+
+		return ret;
+	},
+
+	inArray: function( elem, arr, i ) {
+		return arr == null ? -1 : indexOf.call( arr, elem, i );
+	},
+
+	// Support: Android <=4.0 only, PhantomJS 1 only
+	// push.apply(_, arraylike) throws on ancient WebKit
+	merge: function( first, second ) {
+		var len = +second.length,
+			j = 0,
+			i = first.length;
+
+		for ( ; j < len; j++ ) {
+			first[ i++ ] = second[ j ];
+		}
+
+		first.length = i;
+
+		return first;
+	},
+
+	grep: function( elems, callback, invert ) {
+		var callbackInverse,
+			matches = [],
+			i = 0,
+			length = elems.length,
+			callbackExpect = !invert;
+
+		// Go through the array, only saving the items
+		// that pass the validator function
+		for ( ; i < length; i++ ) {
+			callbackInverse = !callback( elems[ i ], i );
+			if ( callbackInverse !== callbackExpect ) {
+				matches.push( elems[ i ] );
+			}
+		}
+
+		return matches;
+	},
+
+	// arg is for internal usage only
+	map: function( elems, callback, arg ) {
+		var length, value,
+			i = 0,
+			ret = [];
+
+		// Go through the array, translating each of the items to their new values
+		if ( isArrayLike( elems ) ) {
+			length = elems.length;
+			for ( ; i < length; i++ ) {
+				value = callback( elems[ i ], i, arg );
+
+				if ( value != null ) {
+					ret.push( value );
+				}
+			}
+
+		// Go through every key on the object,
+		} else {
+			for ( i in elems ) {
+				value = callback( elems[ i ], i, arg );
+
+				if ( value != null ) {
+					ret.push( value );
+				}
+			}
+		}
+
+		// Flatten any nested arrays
+		return concat.apply( [], ret );
+	},
+
+	// A global GUID counter for objects
+	guid: 1,
+
+	// jQuery.support is not used in Core but other projects attach their
+	// properties to it so it needs to exist.
+	support: support
+} );
+
+if ( typeof Symbol === "function" ) {
+	jQuery.fn[ Symbol.iterator ] = arr[ Symbol.iterator ];
+}
+
+// Populate the class2type map
+jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
+function( i, name ) {
+	class2type[ "[object " + name + "]" ] = name.toLowerCase();
+} );
+
+function isArrayLike( obj ) {
+
+	// Support: real iOS 8.2 only (not reproducible in simulator)
+	// `in` check used to prevent JIT error (gh-2145)
+	// hasOwn isn't used here due to false negatives
+	// regarding Nodelist length in IE
+	var length = !!obj && "length" in obj && obj.length,
+		type = toType( obj );
+
+	if ( isFunction( obj ) || isWindow( obj ) ) {
+		return false;
+	}
+
+	return type === "array" || length === 0 ||
+		typeof length === "number" && length > 0 && ( length - 1 ) in obj;
+}
+var Sizzle =
+/*!
+ * Sizzle CSS Selector Engine v2.3.3
+ * https://sizzlejs.com/
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license
+ * http://jquery.org/license
+ *
+ * Date: 2016-08-08
+ */
+(function( window ) {
+
+var i,
+	support,
+	Expr,
+	getText,
+	isXML,
+	tokenize,
+	compile,
+	select,
+	outermostContext,
+	sortInput,
+	hasDuplicate,
+
+	// Local document vars
+	setDocument,
+	document,
+	docElem,
+	documentIsHTML,
+	rbuggyQSA,
+	rbuggyMatches,
+	matches,
+	contains,
+
+	// Instance-specific data
+	expando = "sizzle" + 1 * new Date(),
+	preferredDoc = window.document,
+	dirruns = 0,
+	done = 0,
+	classCache = createCache(),
+	tokenCache = createCache(),
+	compilerCache = createCache(),
+	sortOrder = function( a, b ) {
+		if ( a === b ) {
+			hasDuplicate = true;
+		}
+		return 0;
+	},
+
+	// Instance methods
+	hasOwn = ({}).hasOwnProperty,
+	arr = [],
+	pop = arr.pop,
+	push_native = arr.push,
+	push = arr.push,
+	slice = arr.slice,
+	// Use a stripped-down indexOf as it's faster than native
+	// https://jsperf.com/thor-indexof-vs-for/5
+	indexOf = function( list, elem ) {
+		var i = 0,
+			len = list.length;
+		for ( ; i < len; i++ ) {
+			if ( list[i] === elem ) {
+				return i;
+			}
+		}
+		return -1;
+	},
+
+	booleans = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",
+
+	// Regular expressions
+
+	// http://www.w3.org/TR/css3-selectors/#whitespace
+	whitespace = "[\\x20\\t\\r\\n\\f]",
+
+	// http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
+	identifier = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+",
+
+	// Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
+	attributes = "\\[" + whitespace + "*(" + identifier + ")(?:" + whitespace +
+		// Operator (capture 2)
+		"*([*^$|!~]?=)" + whitespace +
+		// "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
+		"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + whitespace +
+		"*\\]",
+
+	pseudos = ":(" + identifier + ")(?:\\((" +
+		// To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
+		// 1. quoted (capture 3; capture 4 or capture 5)
+		"('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
+		// 2. simple (capture 6)
+		"((?:\\\\.|[^\\\\()[\\]]|" + attributes + ")*)|" +
+		// 3. anything else (capture 2)
+		".*" +
+		")\\)|)",
+
+	// Leading and non-escaped trailing whitespace, capturing some non-whitespace characters preceding the latter
+	rwhitespace = new RegExp( whitespace + "+", "g" ),
+	rtrim = new RegExp( "^" + whitespace + "+|((?:^|[^\\\\])(?:\\\\.)*)" + whitespace + "+$", "g" ),
+
+	rcomma = new RegExp( "^" + whitespace + "*," + whitespace + "*" ),
+	rcombinators = new RegExp( "^" + whitespace + "*([>+~]|" + whitespace + ")" + whitespace + "*" ),
+
+	rattributeQuotes = new RegExp( "=" + whitespace + "*([^\\]'\"]*?)" + whitespace + "*\\]", "g" ),
+
+	rpseudo = new RegExp( pseudos ),
+	ridentifier = new RegExp( "^" + identifier + "$" ),
+
+	matchExpr = {
+		"ID": new RegExp( "^#(" + identifier + ")" ),
+		"CLASS": new RegExp( "^\\.(" + identifier + ")" ),
+		"TAG": new RegExp( "^(" + identifier + "|[*])" ),
+		"ATTR": new RegExp( "^" + attributes ),
+		"PSEUDO": new RegExp( "^" + pseudos ),
+		"CHILD": new RegExp( "^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(" + whitespace +
+			"*(even|odd|(([+-]|)(\\d*)n|)" + whitespace + "*(?:([+-]|)" + whitespace +
+			"*(\\d+)|))" + whitespace + "*\\)|)", "i" ),
+		"bool": new RegExp( "^(?:" + booleans + ")$", "i" ),
+		// For use in libraries implementing .is()
+		// We use this for POS matching in `select`
+		"needsContext": new RegExp( "^" + whitespace + "*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(" +
+			whitespace + "*((?:-\\d)?\\d*)" + whitespace + "*\\)|)(?=[^-]|$)", "i" )
+	},
+
+	rinputs = /^(?:input|select|textarea|button)$/i,
+	rheader = /^h\d$/i,
+
+	rnative = /^[^{]+\{\s*\[native \w/,
+
+	// Easily-parseable/retrievable ID or TAG or CLASS selectors
+	rquickExpr = /^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,
+
+	rsibling = /[+~]/,
+
+	// CSS escapes
+	// http://www.w3.org/TR/CSS21/syndata.html#escaped-characters
+	runescape = new RegExp( "\\\\([\\da-f]{1,6}" + whitespace + "?|(" + whitespace + ")|.)", "ig" ),
+	funescape = function( _, escaped, escapedWhitespace ) {
+		var high = "0x" + escaped - 0x10000;
+		// NaN means non-codepoint
+		// Support: Firefox<24
+		// Workaround erroneous numeric interpretation of +"0x"
+		return high !== high || escapedWhitespace ?
+			escaped :
+			high < 0 ?
+				// BMP codepoint
+				String.fromCharCode( high + 0x10000 ) :
+				// Supplemental Plane codepoint (surrogate pair)
+				String.fromCharCode( high >> 10 | 0xD800, high & 0x3FF | 0xDC00 );
+	},
+
+	// CSS string/identifier serialization
+	// https://drafts.csswg.org/cssom/#common-serializing-idioms
+	rcssescape = /([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,
+	fcssescape = function( ch, asCodePoint ) {
+		if ( asCodePoint ) {
+
+			// U+0000 NULL becomes U+FFFD REPLACEMENT CHARACTER
+			if ( ch === "\0" ) {
+				return "\uFFFD";
+			}
+
+			// Control characters and (dependent upon position) numbers get escaped as code points
+			return ch.slice( 0, -1 ) + "\\" + ch.charCodeAt( ch.length - 1 ).toString( 16 ) + " ";
+		}
+
+		// Other potentially-special ASCII characters get backslash-escaped
+		return "\\" + ch;
+	},
+
+	// Used for iframes
+	// See setDocument()
+	// Removing the function wrapper causes a "Permission Denied"
+	// error in IE
+	unloadHandler = function() {
+		setDocument();
+	},
+
+	disabledAncestor = addCombinator(
+		function( elem ) {
+			return elem.disabled === true && ("form" in elem || "label" in elem);
+		},
+		{ dir: "parentNode", next: "legend" }
+	);
+
+// Optimize for push.apply( _, NodeList )
+try {
+	push.apply(
+		(arr = slice.call( preferredDoc.childNodes )),
+		preferredDoc.childNodes
+	);
+	// Support: Android<4.0
+	// Detect silently failing push.apply
+	arr[ preferredDoc.childNodes.length ].nodeType;
+} catch ( e ) {
+	push = { apply: arr.length ?
+
+		// Leverage slice if possible
+		function( target, els ) {
+			push_native.apply( target, slice.call(els) );
+		} :
+
+		// Support: IE<9
+		// Otherwise append directly
+		function( target, els ) {
+			var j = target.length,
+				i = 0;
+			// Can't trust NodeList.length
+			while ( (target[j++] = els[i++]) ) {}
+			target.length = j - 1;
+		}
+	};
+}
+
+function Sizzle( selector, context, results, seed ) {
+	var m, i, elem, nid, match, groups, newSelector,
+		newContext = context && context.ownerDocument,
+
+		// nodeType defaults to 9, since context defaults to document
+		nodeType = context ? context.nodeType : 9;
+
+	results = results || [];
+
+	// Return early from calls with invalid selector or context
+	if ( typeof selector !== "string" || !selector ||
+		nodeType !== 1 && nodeType !== 9 && nodeType !== 11 ) {
+
+		return results;
+	}
+
+	// Try to shortcut find operations (as opposed to filters) in HTML documents
+	if ( !seed ) {
+
+		if ( ( context ? context.ownerDocument || context : preferredDoc ) !== document ) {
+			setDocument( context );
+		}
+		context = context || document;
+
+		if ( documentIsHTML ) {
+
+			// If the selector is sufficiently simple, try using a "get*By*" DOM method
+			// (excepting DocumentFragment context, where the methods don't exist)
+			if ( nodeType !== 11 && (match = rquickExpr.exec( selector )) ) {
+
+				// ID selector
+				if ( (m = match[1]) ) {
+
+					// Document context
+					if ( nodeType === 9 ) {
+						if ( (elem = context.getElementById( m )) ) {
+
+							// Support: IE, Opera, Webkit
+							// TODO: identify versions
+							// getElementById can match elements by name instead of ID
+							if ( elem.id === m ) {
+								results.push( elem );
+								return results;
+							}
+						} else {
+							return results;
+						}
+
+					// Element context
+					} else {
+
+						// Support: IE, Opera, Webkit
+						// TODO: identify versions
+						// getElementById can match elements by name instead of ID
+						if ( newContext && (elem = newContext.getElementById( m )) &&
+							contains( context, elem ) &&
+							elem.id === m ) {
+
+							results.push( elem );
+							return results;
+						}
+					}
+
+				// Type selector
+				} else if ( match[2] ) {
+					push.apply( results, context.getElementsByTagName( selector ) );
+					return results;
+
+				// Class selector
+				} else if ( (m = match[3]) && support.getElementsByClassName &&
+					context.getElementsByClassName ) {
+
+					push.apply( results, context.getElementsByClassName( m ) );
+					return results;
+				}
+			}
+
+			// Take advantage of querySelectorAll
+			if ( support.qsa &&
+				!compilerCache[ selector + " " ] &&
+				(!rbuggyQSA || !rbuggyQSA.test( selector )) ) {
+
+				if ( nodeType !== 1 ) {
+					newContext = context;
+					newSelector = selector;
+
+				// qSA looks outside Element context, which is not what we want
+				// Thanks to Andrew Dupont for this workaround technique
+				// Support: IE <=8
+				// Exclude object elements
+				} else if ( context.nodeName.toLowerCase() !== "object" ) {
+
+					// Capture the context ID, setting it first if necessary
+					if ( (nid = context.getAttribute( "id" )) ) {
+						nid = nid.replace( rcssescape, fcssescape );
+					} else {
+						context.setAttribute( "id", (nid = expando) );
+					}
+
+					// Prefix every selector in the list
+					groups = tokenize( selector );
+					i = groups.length;
+					while ( i-- ) {
+						groups[i] = "#" + nid + " " + toSelector( groups[i] );
+					}
+					newSelector = groups.join( "," );
+
+					// Expand context for sibling selectors
+					newContext = rsibling.test( selector ) && testContext( context.parentNode ) ||
+						context;
+				}
+
+				if ( newSelector ) {
+					try {
+						push.apply( results,
+							newContext.querySelectorAll( newSelector )
+						);
+						return results;
+					} catch ( qsaError ) {
+					} finally {
+						if ( nid === expando ) {
+							context.removeAttribute( "id" );
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// All others
+	return select( selector.replace( rtrim, "$1" ), context, results, seed );
+}
+
+/**
+ * Create key-value caches of limited size
+ * @returns {function(string, object)} Returns the Object data after storing it on itself with
+ *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
+ *	deleting the oldest entry
+ */
+function createCache() {
+	var keys = [];
+
+	function cache( key, value ) {
+		// Use (key + " ") to avoid collision with native prototype properties (see Issue #157)
+		if ( keys.push( key + " " ) > Expr.cacheLength ) {
+			// Only keep the most recent entries
+			delete cache[ keys.shift() ];
+		}
+		return (cache[ key + " " ] = value);
+	}
+	return cache;
+}
+
+/**
+ * Mark a function for special use by Sizzle
+ * @param {Function} fn The function to mark
+ */
+function markFunction( fn ) {
+	fn[ expando ] = true;
+	return fn;
+}
+
+/**
+ * Support testing using an element
+ * @param {Function} fn Passed the created element and returns a boolean result
+ */
+function assert( fn ) {
+	var el = document.createElement("fieldset");
+
+	try {
+		return !!fn( el );
+	} catch (e) {
+		return false;
+	} finally {
+		// Remove from its parent by default
+		if ( el.parentNode ) {
+			el.parentNode.removeChild( el );
+		}
+		// release memory in IE
+		el = null;
+	}
+}
+
+/**
+ * Adds the same handler for all of the specified attrs
+ * @param {String} attrs Pipe-separated list of attributes
+ * @param {Function} handler The method that will be applied
+ */
+function addHandle( attrs, handler ) {
+	var arr = attrs.split("|"),
+		i = arr.length;
+
+	while ( i-- ) {
+		Expr.attrHandle[ arr[i] ] = handler;
+	}
+}
+
+/**
+ * Checks document order of two siblings
+ * @param {Element} a
+ * @param {Element} b
+ * @returns {Number} Returns less than 0 if a precedes b, greater than 0 if a follows b
+ */
+function siblingCheck( a, b ) {
+	var cur = b && a,
+		diff = cur && a.nodeType === 1 && b.nodeType === 1 &&
+			a.sourceIndex - b.sourceIndex;
+
+	// Use IE sourceIndex if available on both nodes
+	if ( diff ) {
+		return diff;
+	}
+
+	// Check if b follows a
+	if ( cur ) {
+		while ( (cur = cur.nextSibling) ) {
+			if ( cur === b ) {
+				return -1;
+			}
+		}
+	}
+
+	return a ? 1 : -1;
+}
+
+/**
+ * Returns a function to use in pseudos for input types
+ * @param {String} type
+ */
+function createInputPseudo( type ) {
+	return function( elem ) {
+		var name = elem.nodeName.toLowerCase();
+		return name === "input" && elem.type === type;
+	};
+}
+
+/**
+ * Returns a function to use in pseudos for buttons
+ * @param {String} type
+ */
+function createButtonPseudo( type ) {
+	return function( elem ) {
+		var name = elem.nodeName.toLowerCase();
+		return (name === "input" || name === "button") && elem.type === type;
+	};
+}
+
+/**
+ * Returns a function to use in pseudos for :enabled/:disabled
+ * @param {Boolean} disabled true for :disabled; false for :enabled
+ */
+function createDisabledPseudo( disabled ) {
+
+	// Known :disabled false positives: fieldset[disabled] > legend:nth-of-type(n+2) :can-disable
+	return function( elem ) {
+
+		// Only certain elements can match :enabled or :disabled
+		// https://html.spec.whatwg.org/multipage/scripting.html#selector-enabled
+		// https://html.spec.whatwg.org/multipage/scripting.html#selector-disabled
+		if ( "form" in elem ) {
+
+			// Check for inherited disabledness on relevant non-disabled elements:
+			// * listed form-associated elements in a disabled fieldset
+			//   https://html.spec.whatwg.org/multipage/forms.html#category-listed
+			//   https://html.spec.whatwg.org/multipage/forms.html#concept-fe-disabled
+			// * option elements in a disabled optgroup
+			//   https://html.spec.whatwg.org/multipage/forms.html#concept-option-disabled
+			// All such elements have a "form" property.
+			if ( elem.parentNode && elem.disabled === false ) {
+
+				// Option elements defer to a parent optgroup if present
+				if ( "label" in elem ) {
+					if ( "label" in elem.parentNode ) {
+						return elem.parentNode.disabled === disabled;
+					} else {
+						return elem.disabled === disabled;
+					}
+				}
+
+				// Support: IE 6 - 11
+				// Use the isDisabled shortcut property to check for disabled fieldset ancestors
+				return elem.isDisabled === disabled ||
+
+					// Where there is no isDisabled, check manually
+					/* jshint -W018 */
+					elem.isDisabled !== !disabled &&
+						disabledAncestor( elem ) === disabled;
+			}
+
+			return elem.disabled === disabled;
+
+		// Try to winnow out elements that can't be disabled before trusting the disabled property.
+		// Some victims get caught in our net (label, legend, menu, track), but it shouldn't
+		// even exist on them, let alone have a boolean value.
+		} else if ( "label" in elem ) {
+			return elem.disabled === disabled;
+		}
+
+		// Remaining elements are neither :enabled nor :disabled
+		return false;
+	};
+}
+
+/**
+ * Returns a function to use in pseudos for positionals
+ * @param {Function} fn
+ */
+function createPositionalPseudo( fn ) {
+	return markFunction(function( argument ) {
+		argument = +argument;
+		return markFunction(function( seed, matches ) {
+			var j,
+				matchIndexes = fn( [], seed.length, argument ),
+				i = matchIndexes.length;
+
+			// Match elements found at the specified indexes
+			while ( i-- ) {
+				if ( seed[ (j = matchIndexes[i]) ] ) {
+					seed[j] = !(matches[j] = seed[j]);
+				}
+			}
+		});
+	});
+}
+
+/**
+ * Checks a node for validity as a Sizzle context
+ * @param {Element|Object=} context
+ * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a falsy value
+ */
+function testContext( context ) {
+	return context && typeof context.getElementsByTagName !== "undefined" && context;
+}
+
+// Expose support vars for convenience
+support = Sizzle.support = {};
+
+/**
+ * Detects XML nodes
+ * @param {Element|Object} elem An element or a document
+ * @returns {Boolean} True iff elem is a non-HTML XML node
+ */
+isXML = Sizzle.isXML = function( elem ) {
+	// documentElement is verified for cases where it doesn't yet exist
+	// (such as loading iframes in IE - #4833)
+	var documentElement = elem && (elem.ownerDocument || elem).documentElement;
+	return documentElement ? documentElement.nodeName !== "HTML" : false;
+};
+
+/**
+ * Sets document-related variables once based on the current document
+ * @param {Element|Object} [doc] An element or document object to use to set the document
+ * @returns {Object} Returns the current document
+ */
+setDocument = Sizzle.setDocument = function( node ) {
+	var hasCompare, subWindow,
+		doc = node ? node.ownerDocument || node : preferredDoc;
+
+	// Return early if doc is invalid or already selected
+	if ( doc === document || doc.nodeType !== 9 || !doc.documentElement ) {
+		return document;
+	}
+
+	// Update global variables
+	document = doc;
+	docElem = document.documentElement;
+	documentIsHTML = !isXML( document );
+
+	// Support: IE 9-11, Edge
+	// Accessing iframe documents after unload throws "permission denied" errors (jQuery #13936)
+	if ( preferredDoc !== document &&
+		(subWindow = document.defaultView) && subWindow.top !== subWindow ) {
+
+		// Support: IE 11, Edge
+		if ( subWindow.addEventListener ) {
+			subWindow.addEventListener( "unload", unloadHandler, false );
+
+		// Support: IE 9 - 10 only
+		} else if ( subWindow.attachEvent ) {
+			subWindow.attachEvent( "onunload", unloadHandler );
+		}
+	}
+
+	/* Attributes
+	---------------------------------------------------------------------- */
+
+	// Support: IE<8
+	// Verify that getAttribute really returns attributes and not properties
+	// (excepting IE8 booleans)
+	support.attributes = assert(function( el ) {
+		el.className = "i";
+		return !el.getAttribute("className");
+	});
+
+	/* getElement(s)By*
+	---------------------------------------------------------------------- */
+
+	// Check if getElementsByTagName("*") returns only elements
+	support.getElementsByTagName = assert(function( el ) {
+		el.appendChild( document.createComment("") );
+		return !el.getElementsByTagName("*").length;
+	});
+
+	// Support: IE<9
+	support.getElementsByClassName = rnative.test( document.getElementsByClassName );
+
+	// Support: IE<10
+	// Check if getElementById returns elements by name
+	// The broken getElementById methods don't pick up programmatically-set names,
+	// so use a roundabout getElementsByName test
+	support.getById = assert(function( el ) {
+		docElem.appendChild( el ).id = expando;
+		return !document.getElementsByName || !document.getElementsByName( expando ).length;
+	});
+
+	// ID filter and find
+	if ( support.getById ) {
+		Expr.filter["ID"] = function( id ) {
+			var attrId = id.replace( runescape, funescape );
+			return function( elem ) {
+				return elem.getAttribute("id") === attrId;
+			};
+		};
+		Expr.find["ID"] = function( id, context ) {
+			if ( typeof context.getElementById !== "undefined" && documentIsHTML ) {
+				var elem = context.getElementById( id );
+				return elem ? [ elem ] : [];
+			}
+		};
+	} else {
+		Expr.filter["ID"] =  function( id ) {
+			var attrId = id.replace( runescape, funescape );
+			return function( elem ) {
+				var node = typeof elem.getAttributeNode !== "undefined" &&
+					elem.getAttributeNode("id");
+				return node && node.value === attrId;
+			};
+		};
+
+		// Support: IE 6 - 7 only
+		// getElementById is not reliable as a find shortcut
+		Expr.find["ID"] = function( id, context ) {
+			if ( typeof context.getElementById !== "undefined" && documentIsHTML ) {
+				var node, i, elems,
+					elem = context.getElementById( id );
+
+				if ( elem ) {
+
+					// Verify the id attribute
+					node = elem.getAttributeNode("id");
+					if ( node && node.value === id ) {
+						return [ elem ];
+					}
+
+					// Fall back on getElementsByName
+					elems = context.getElementsByName( id );
+					i = 0;
+					while ( (elem = elems[i++]) ) {
+						node = elem.getAttributeNode("id");
+						if ( node && node.value === id ) {
+							return [ elem ];
+						}
+					}
+				}
+
+				return [];
+			}
+		};
+	}
+
+	// Tag
+	Expr.find["TAG"] = support.getElementsByTagName ?
+		function( tag, context ) {
+			if ( typeof context.getElementsByTagName !== "undefined" ) {
+				return context.getElementsByTagName( tag );
+
+			// DocumentFragment nodes don't have gEBTN
+			} else if ( support.qsa ) {
+				return context.querySelectorAll( tag );
+			}
+		} :
+
+		function( tag, context ) {
+			var elem,
+				tmp = [],
+				i = 0,
+				// By happy coincidence, a (broken) gEBTN appears on DocumentFragment nodes too
+				results = context.getElementsByTagName( tag );
+
+			// Filter out possible comments
+			if ( tag === "*" ) {
+				while ( (elem = results[i++]) ) {
+					if ( elem.nodeType === 1 ) {
+						tmp.push( elem );
+					}
+				}
+
+				return tmp;
+			}
+			return results;
+		};
+
+	// Class
+	Expr.find["CLASS"] = support.getElementsByClassName && function( className, context ) {
+		if ( typeof context.getElementsByClassName !== "undefined" && documentIsHTML ) {
+			return context.getElementsByClassName( className );
+		}
+	};
+
+	/* QSA/matchesSelector
+	---------------------------------------------------------------------- */
+
+	// QSA and matchesSelector support
+
+	// matchesSelector(:active) reports false when true (IE9/Opera 11.5)
+	rbuggyMatches = [];
+
+	// qSa(:focus) reports false when true (Chrome 21)
+	// We allow this because of a bug in IE8/9 that throws an error
+	// whenever `document.activeElement` is accessed on an iframe
+	// So, we allow :focus to pass through QSA all the time to avoid the IE error
+	// See https://bugs.jquery.com/ticket/13378
+	rbuggyQSA = [];
+
+	if ( (support.qsa = rnative.test( document.querySelectorAll )) ) {
+		// Build QSA regex
+		// Regex strategy adopted from Diego Perini
+		assert(function( el ) {
+			// Select is set to empty string on purpose
+			// This is to test IE's treatment of not explicitly
+			// setting a boolean content attribute,
+			// since its presence should be enough
+			// https://bugs.jquery.com/ticket/12359
+			docElem.appendChild( el ).innerHTML = "<a id='" + expando + "'></a>" +
+				"<select id='" + expando + "-\r\\' msallowcapture=''>" +
+				"<option selected=''></option></select>";
+
+			// Support: IE8, Opera 11-12.16
+			// Nothing should be selected when empty strings follow ^= or $= or *=
+			// The test attribute must be unknown in Opera but "safe" for WinRT
+			// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
+			if ( el.querySelectorAll("[msallowcapture^='']").length ) {
+				rbuggyQSA.push( "[*^$]=" + whitespace + "*(?:''|\"\")" );
+			}
+
+			// Support: IE8
+			// Boolean attributes and "value" are not treated correctly
+			if ( !el.querySelectorAll("[selected]").length ) {
+				rbuggyQSA.push( "\\[" + whitespace + "*(?:value|" + booleans + ")" );
+			}
+
+			// Support: Chrome<29, Android<4.4, Safari<7.0+, iOS<7.0+, PhantomJS<1.9.8+
+			if ( !el.querySelectorAll( "[id~=" + expando + "-]" ).length ) {
+				rbuggyQSA.push("~=");
+			}
+
+			// Webkit/Opera - :checked should return selected option elements
+			// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+			// IE8 throws error here and will not see later tests
+			if ( !el.querySelectorAll(":checked").length ) {
+				rbuggyQSA.push(":checked");
+			}
+
+			// Support: Safari 8+, iOS 8+
+			// https://bugs.webkit.org/show_bug.cgi?id=136851
+			// In-page `selector#id sibling-combinator selector` fails
+			if ( !el.querySelectorAll( "a#" + expando + "+*" ).length ) {
+				rbuggyQSA.push(".#.+[+~]");
+			}
+		});
+
+		assert(function( el ) {
+			el.innerHTML = "<a href='' disabled='disabled'></a>" +
+				"<select disabled='disabled'><option/></select>";
+
+			// Support: Windows 8 Native Apps
+			// The type and name attributes are restricted during .innerHTML assignment
+			var input = document.createElement("input");
+			input.setAttribute( "type", "hidden" );
+			el.appendChild( input ).setAttribute( "name", "D" );
+
+			// Support: IE8
+			// Enforce case-sensitivity of name attribute
+			if ( el.querySelectorAll("[name=d]").length ) {
+				rbuggyQSA.push( "name" + whitespace + "*[*^$|!~]?=" );
+			}
+
+			// FF 3.5 - :enabled/:disabled and hidden elements (hidden elements are still enabled)
+			// IE8 throws error here and will not see later tests
+			if ( el.querySelectorAll(":enabled").length !== 2 ) {
+				rbuggyQSA.push( ":enabled", ":disabled" );
+			}
+
+			// Support: IE9-11+
+			// IE's :disabled selector does not pick up the children of disabled fieldsets
+			docElem.appendChild( el ).disabled = true;
+			if ( el.querySelectorAll(":disabled").length !== 2 ) {
+				rbuggyQSA.push( ":enabled", ":disabled" );
+			}
+
+			// Opera 10-11 does not throw on post-comma invalid pseudos
+			el.querySelectorAll("*,:x");
+			rbuggyQSA.push(",.*:");
+		});
+	}
+
+	if ( (support.matchesSelector = rnative.test( (matches = docElem.matches ||
+		docElem.webkitMatchesSelector ||
+		docElem.mozMatchesSelector ||
+		docElem.oMatchesSelector ||
+		docElem.msMatchesSelector) )) ) {
+
+		assert(function( el ) {
+			// Check to see if it's possible to do matchesSelector
+			// on a disconnected node (IE 9)
+			support.disconnectedMatch = matches.call( el, "*" );
+
+			// This should fail with an exception
+			// Gecko does not error, returns false instead
+			matches.call( el, "[s!='']:x" );
+			rbuggyMatches.push( "!=", pseudos );
+		});
+	}
+
+	rbuggyQSA = rbuggyQSA.length && new RegExp( rbuggyQSA.join("|") );
+	rbuggyMatches = rbuggyMatches.length && new RegExp( rbuggyMatches.join("|") );
+
+	/* Contains
+	---------------------------------------------------------------------- */
+	hasCompare = rnative.test( docElem.compareDocumentPosition );
+
+	// Element contains another
+	// Purposefully self-exclusive
+	// As in, an element does not contain itself
+	contains = hasCompare || rnative.test( docElem.contains ) ?
+		function( a, b ) {
+			var adown = a.nodeType === 9 ? a.documentElement : a,
+				bup = b && b.parentNode;
+			return a === bup || !!( bup && bup.nodeType === 1 && (
+				adown.contains ?
+					adown.contains( bup ) :
+					a.compareDocumentPosition && a.compareDocumentPosition( bup ) & 16
+			));
+		} :
+		function( a, b ) {
+			if ( b ) {
+				while ( (b = b.parentNode) ) {
+					if ( b === a ) {
+						return true;
+					}
+				}
+			}
+			return false;
+		};
+
+	/* Sorting
+	---------------------------------------------------------------------- */
+
+	// Document order sorting
+	sortOrder = hasCompare ?
+	function( a, b ) {
+
+		// Flag for duplicate removal
+		if ( a === b ) {
+			hasDuplicate = true;
+			return 0;
+		}
+
+		// Sort on method existence if only one input has compareDocumentPosition
+		var compare = !a.compareDocumentPosition - !b.compareDocumentPosition;
+		if ( compare ) {
+			return compare;
+		}
+
+		// Calculate position if both inputs belong to the same document
+		compare = ( a.ownerDocument || a ) === ( b.ownerDocument || b ) ?
+			a.compareDocumentPosition( b ) :
+
+			// Otherwise we know they are disconnected
+			1;
+
+		// Disconnected nodes
+		if ( compare & 1 ||
+			(!support.sortDetached && b.compareDocumentPosition( a ) === compare) ) {
+
+			// Choose the first element that is related to our preferred document
+			if ( a === document || a.ownerDocument === preferredDoc && contains(preferredDoc, a) ) {
+				return -1;
+			}
+			if ( b === document || b.ownerDocument === preferredDoc && contains(preferredDoc, b) ) {
+				return 1;
+			}
+
+			// Maintain original order
+			return sortInput ?
+				( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
+				0;
+		}
+
+		return compare & 4 ? -1 : 1;
+	} :
+	function( a, b ) {
+		// Exit early if the nodes are identical
+		if ( a === b ) {
+			hasDuplicate = true;
+			return 0;
+		}
+
+		var cur,
+			i = 0,
+			aup = a.parentNode,
+			bup = b.parentNode,
+			ap = [ a ],
+			bp = [ b ];
+
+		// Parentless nodes are either documents or disconnected
+		if ( !aup || !bup ) {
+			return a === document ? -1 :
+				b === document ? 1 :
+				aup ? -1 :
+				bup ? 1 :
+				sortInput ?
+				( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
+				0;
+
+		// If the nodes are siblings, we can do a quick check
+		} else if ( aup === bup ) {
+			return siblingCheck( a, b );
+		}
+
+		// Otherwise we need full lists of their ancestors for comparison
+		cur = a;
+		while ( (cur = cur.parentNode) ) {
+			ap.unshift( cur );
+		}
+		cur = b;
+		while ( (cur = cur.parentNode) ) {
+			bp.unshift( cur );
+		}
+
+		// Walk down the tree looking for a discrepancy
+		while ( ap[i] === bp[i] ) {
+			i++;
+		}
+
+		return i ?
+			// Do a sibling check if the nodes have a common ancestor
+			siblingCheck( ap[i], bp[i] ) :
+
+			// Otherwise nodes in our document sort first
+			ap[i] === preferredDoc ? -1 :
+			bp[i] === preferredDoc ? 1 :
+			0;
+	};
+
+	return document;
+};
+
+Sizzle.matches = function( expr, elements ) {
+	return Sizzle( expr, null, null, elements );
+};
+
+Sizzle.matchesSelector = function( elem, expr ) {
+	// Set document vars if needed
+	if ( ( elem.ownerDocument || elem ) !== document ) {
+		setDocument( elem );
+	}
+
+	// Make sure that attribute selectors are quoted
+	expr = expr.replace( rattributeQuotes, "='$1']" );
+
+	if ( support.matchesSelector && documentIsHTML &&
+		!compilerCache[ expr + " " ] &&
+		( !rbuggyMatches || !rbuggyMatches.test( expr ) ) &&
+		( !rbuggyQSA     || !rbuggyQSA.test( expr ) ) ) {
+
+		try {
+			var ret = matches.call( elem, expr );
+
+			// IE 9's matchesSelector returns false on disconnected nodes
+			if ( ret || support.disconnectedMatch ||
+					// As well, disconnected nodes are said to be in a document
+					// fragment in IE 9
+					elem.document && elem.document.nodeType !== 11 ) {
+				return ret;
+			}
+		} catch (e) {}
+	}
+
+	return Sizzle( expr, document, null, [ elem ] ).length > 0;
+};
+
+Sizzle.contains = function( context, elem ) {
+	// Set document vars if needed
+	if ( ( context.ownerDocument || context ) !== document ) {
+		setDocument( context );
+	}
+	return contains( context, elem );
+};
+
+Sizzle.attr = function( elem, name ) {
+	// Set document vars if needed
+	if ( ( elem.ownerDocument || elem ) !== document ) {
+		setDocument( elem );
+	}
+
+	var fn = Expr.attrHandle[ name.toLowerCase() ],
+		// Don't get fooled by Object.prototype properties (jQuery #13807)
+		val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
+			fn( elem, name, !documentIsHTML ) :
+			undefined;
+
+	return val !== undefined ?
+		val :
+		support.attributes || !documentIsHTML ?
+			elem.getAttribute( name ) :
+			(val = elem.getAttributeNode(name)) && val.specified ?
+				val.value :
+				null;
+};
+
+Sizzle.escape = function( sel ) {
+	return (sel + "").replace( rcssescape, fcssescape );
+};
+
+Sizzle.error = function( msg ) {
+	throw new Error( "Syntax error, unrecognized expression: " + msg );
+};
+
+/**
+ * Document sorting and removing duplicates
+ * @param {ArrayLike} results
+ */
+Sizzle.uniqueSort = function( results ) {
+	var elem,
+		duplicates = [],
+		j = 0,
+		i = 0;
+
+	// Unless we *know* we can detect duplicates, assume their presence
+	hasDuplicate = !support.detectDuplicates;
+	sortInput = !support.sortStable && results.slice( 0 );
+	results.sort( sortOrder );
+
+	if ( hasDuplicate ) {
+		while ( (elem = results[i++]) ) {
+			if ( elem === results[ i ] ) {
+				j = duplicates.push( i );
+			}
+		}
+		while ( j-- ) {
+			results.splice( duplicates[ j ], 1 );
+		}
+	}
+
+	// Clear input after sorting to release objects
+	// See https://github.com/jquery/sizzle/pull/225
+	sortInput = null;
+
+	return results;
+};
+
+/**
+ * Utility function for retrieving the text value of an array of DOM nodes
+ * @param {Array|Element} elem
+ */
+getText = Sizzle.getText = function( elem ) {
+	var node,
+		ret = "",
+		i = 0,
+		nodeType = elem.nodeType;
+
+	if ( !nodeType ) {
+		// If no nodeType, this is expected to be an array
+		while ( (node = elem[i++]) ) {
+			// Do not traverse comment nodes
+			ret += getText( node );
+		}
+	} else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
+		// Use textContent for elements
+		// innerText usage removed for consistency of new lines (jQuery #11153)
+		if ( typeof elem.textContent === "string" ) {
+			return elem.textContent;
+		} else {
+			// Traverse its children
+			for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
+				ret += getText( elem );
+			}
+		}
+	} else if ( nodeType === 3 || nodeType === 4 ) {
+		return elem.nodeValue;
+	}
+	// Do not include comment or processing instruction nodes
+
+	return ret;
+};
+
+Expr = Sizzle.selectors = {
+
+	// Can be adjusted by the user
+	cacheLength: 50,
+
+	createPseudo: markFunction,
+
+	match: matchExpr,
+
+	attrHandle: {},
+
+	find: {},
+
+	relative: {
+		">": { dir: "parentNode", first: true },
+		" ": { dir: "parentNode" },
+		"+": { dir: "previousSibling", first: true },
+		"~": { dir: "previousSibling" }
+	},
+
+	preFilter: {
+		"ATTR": function( match ) {
+			match[1] = match[1].replace( runescape, funescape );
+
+			// Move the given value to match[3] whether quoted or unquoted
+			match[3] = ( match[3] || match[4] || match[5] || "" ).replace( runescape, funescape );
+
+			if ( match[2] === "~=" ) {
+				match[3] = " " + match[3] + " ";
+			}
+
+			return match.slice( 0, 4 );
+		},
+
+		"CHILD": function( match ) {
+			/* matches from matchExpr["CHILD"]
+				1 type (only|nth|...)
+				2 what (child|of-type)
+				3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+				4 xn-component of xn+y argument ([+-]?\d*n|)
+				5 sign of xn-component
+				6 x of xn-component
+				7 sign of y-component
+				8 y of y-component
+			*/
+			match[1] = match[1].toLowerCase();
+
+			if ( match[1].slice( 0, 3 ) === "nth" ) {
+				// nth-* requires argument
+				if ( !match[3] ) {
+					Sizzle.error( match[0] );
+				}
+
+				// numeric x and y parameters for Expr.filter.CHILD
+				// remember that false/true cast respectively to 0/1
+				match[4] = +( match[4] ? match[5] + (match[6] || 1) : 2 * ( match[3] === "even" || match[3] === "odd" ) );
+				match[5] = +( ( match[7] + match[8] ) || match[3] === "odd" );
+
+			// other types prohibit arguments
+			} else if ( match[3] ) {
+				Sizzle.error( match[0] );
+			}
+
+			return match;
+		},
+
+		"PSEUDO": function( match ) {
+			var excess,
+				unquoted = !match[6] && match[2];
+
+			if ( matchExpr["CHILD"].test( match[0] ) ) {
+				return null;
+			}
+
+			// Accept quoted arguments as-is
+			if ( match[3] ) {
+				match[2] = match[4] || match[5] || "";
+
+			// Strip excess characters from unquoted arguments
+			} else if ( unquoted && rpseudo.test( unquoted ) &&
+				// Get excess from tokenize (recursively)
+				(excess = tokenize( unquoted, true )) &&
+				// advance to the next closing parenthesis
+				(excess = unquoted.indexOf( ")", unquoted.length - excess ) - unquoted.length) ) {
+
+				// excess is a negative index
+				match[0] = match[0].slice( 0, excess );
+				match[2] = unquoted.slice( 0, excess );
+			}
+
+			// Return only captures needed by the pseudo filter method (type and argument)
+			return match.slice( 0, 3 );
+		}
+	},
+
+	filter: {
+
+		"TAG": function( nodeNameSelector ) {
+			var nodeName = nodeNameSelector.replace( runescape, funescape ).toLowerCase();
+			return nodeNameSelector === "*" ?
+				function() { return true; } :
+				function( elem ) {
+					return elem.nodeName && elem.nodeName.toLowerCase() === nodeName;
+				};
+		},
+
+		"CLASS": function( className ) {
+			var pattern = classCache[ className + " " ];
+
+			return pattern ||
+				(pattern = new RegExp( "(^|" + whitespace + ")" + className + "(" + whitespace + "|$)" )) &&
+				classCache( className, function( elem ) {
+					return pattern.test( typeof elem.className === "string" && elem.className || typeof elem.getAttribute !== "undefined" && elem.getAttribute("class") || "" );
+				});
+		},
+
+		"ATTR": function( name, operator, check ) {
+			return function( elem ) {
+				var result = Sizzle.attr( elem, name );
+
+				if ( result == null ) {
+					return operator === "!=";
+				}
+				if ( !operator ) {
+					return true;
+				}
+
+				result += "";
+
+				return operator === "=" ? result === check :
+					operator === "!=" ? result !== check :
+					operator === "^=" ? check && result.indexOf( check ) === 0 :
+					operator === "*=" ? check && result.indexOf( check ) > -1 :
+					operator === "$=" ? check && result.slice( -check.length ) === check :
+					operator === "~=" ? ( " " + result.replace( rwhitespace, " " ) + " " ).indexOf( check ) > -1 :
+					operator === "|=" ? result === check || result.slice( 0, check.length + 1 ) === check + "-" :
+					false;
+			};
+		},
+
+		"CHILD": function( type, what, argument, first, last ) {
+			var simple = type.slice( 0, 3 ) !== "nth",
+				forward = type.slice( -4 ) !== "last",
+				ofType = what === "of-type";
+
+			return first === 1 && last === 0 ?
+
+				// Shortcut for :nth-*(n)
+				function( elem ) {
+					return !!elem.parentNode;
+				} :
+
+				function( elem, context, xml ) {
+					var cache, uniqueCache, outerCache, node, nodeIndex, start,
+						dir = simple !== forward ? "nextSibling" : "previousSibling",
+						parent = elem.parentNode,
+						name = ofType && elem.nodeName.toLowerCase(),
+						useCache = !xml && !ofType,
+						diff = false;
+
+					if ( parent ) {
+
+						// :(first|last|only)-(child|of-type)
+						if ( simple ) {
+							while ( dir ) {
+								node = elem;
+								while ( (node = node[ dir ]) ) {
+									if ( ofType ?
+										node.nodeName.toLowerCase() === name :
+										node.nodeType === 1 ) {
+
+										return false;
+									}
+								}
+								// Reverse direction for :only-* (if we haven't yet done so)
+								start = dir = type === "only" && !start && "nextSibling";
+							}
+							return true;
+						}
+
+						start = [ forward ? parent.firstChild : parent.lastChild ];
+
+						// non-xml :nth-child(...) stores cache data on `parent`
+						if ( forward && useCache ) {
+
+							// Seek `elem` from a previously-cached index
+
+							// ...in a gzip-friendly way
+							node = parent;
+							outerCache = node[ expando ] || (node[ expando ] = {});
+
+							// Support: IE <9 only
+							// Defend against cloned attroperties (jQuery gh-1709)
+							uniqueCache = outerCache[ node.uniqueID ] ||
+								(outerCache[ node.uniqueID ] = {});
+
+							cache = uniqueCache[ type ] || [];
+							nodeIndex = cache[ 0 ] === dirruns && cache[ 1 ];
+							diff = nodeIndex && cache[ 2 ];
+							node = nodeIndex && parent.childNodes[ nodeIndex ];
+
+							while ( (node = ++nodeIndex && node && node[ dir ] ||
+
+								// Fallback to seeking `elem` from the start
+								(diff = nodeIndex = 0) || start.pop()) ) {
+
+								// When found, cache indexes on `parent` and break
+								if ( node.nodeType === 1 && ++diff && node === elem ) {
+									uniqueCache[ type ] = [ dirruns, nodeIndex, diff ];
+									break;
+								}
+							}
+
+						} else {
+							// Use previously-cached element index if available
+							if ( useCache ) {
+								// ...in a gzip-friendly way
+								node = elem;
+								outerCache = node[ expando ] || (node[ expando ] = {});
+
+								// Support: IE <9 only
+								// Defend against cloned attroperties (jQuery gh-1709)
+								uniqueCache = outerCache[ node.uniqueID ] ||
+									(outerCache[ node.uniqueID ] = {});
+
+								cache = uniqueCache[ type ] || [];
+								nodeIndex = cache[ 0 ] === dirruns && cache[ 1 ];
+								diff = nodeIndex;
+							}
+
+							// xml :nth-child(...)
+							// or :nth-last-child(...) or :nth(-last)?-of-type(...)
+							if ( diff === false ) {
+								// Use the same loop as above to seek `elem` from the start
+								while ( (node = ++nodeIndex && node && node[ dir ] ||
+									(diff = nodeIndex = 0) || start.pop()) ) {
+
+									if ( ( ofType ?
+										node.nodeName.toLowerCase() === name :
+										node.nodeType === 1 ) &&
+										++diff ) {
+
+										// Cache the index of each encountered element
+										if ( useCache ) {
+											outerCache = node[ expando ] || (node[ expando ] = {});
+
+											// Support: IE <9 only
+											// Defend against cloned attroperties (jQuery gh-1709)
+											uniqueCache = outerCache[ node.uniqueID ] ||
+												(outerCache[ node.uniqueID ] = {});
+
+											uniqueCache[ type ] = [ dirruns, diff ];
+										}
+
+										if ( node === elem ) {
+											break;
+										}
+									}
+								}
+							}
+						}
+
+						// Incorporate the offset, then check against cycle size
+						diff -= last;
+						return diff === first || ( diff % first === 0 && diff / first >= 0 );
+					}
+				};
+		},
+
+		"PSEUDO": function( pseudo, argument ) {
+			// pseudo-class names are case-insensitive
+			// http://www.w3.org/TR/selectors/#pseudo-classes
+			// Prioritize by case sensitivity in case custom pseudos are added with uppercase letters
+			// Remember that setFilters inherits from pseudos
+			var args,
+				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
+					Sizzle.error( "unsupported pseudo: " + pseudo );
+
+			// The user may use createPseudo to indicate that
+			// arguments are needed to create the filter function
+			// just as Sizzle does
+			if ( fn[ expando ] ) {
+				return fn( argument );
+			}
+
+			// But maintain support for old signatures
+			if ( fn.length > 1 ) {
+				args = [ pseudo, pseudo, "", argument ];
+				return Expr.setFilters.hasOwnProperty( pseudo.toLowerCase() ) ?
+					markFunction(function( seed, matches ) {
+						var idx,
+							matched = fn( seed, argument ),
+							i = matched.length;
+						while ( i-- ) {
+							idx = indexOf( seed, matched[i] );
+							seed[ idx ] = !( matches[ idx ] = matched[i] );
+						}
+					}) :
+					function( elem ) {
+						return fn( elem, 0, args );
+					};
+			}
+
+			return fn;
+		}
+	},
+
+	pseudos: {
+		// Potentially complex pseudos
+		"not": markFunction(function( selector ) {
+			// Trim the selector passed to compile
+			// to avoid treating leading and trailing
+			// spaces as combinators
+			var input = [],
+				results = [],
+				matcher = compile( selector.replace( rtrim, "$1" ) );
+
+			return matcher[ expando ] ?
+				markFunction(function( seed, matches, context, xml ) {
+					var elem,
+						unmatched = matcher( seed, null, xml, [] ),
+						i = seed.length;
+
+					// Match elements unmatched by `matcher`
+					while ( i-- ) {
+						if ( (elem = unmatched[i]) ) {
+							seed[i] = !(matches[i] = elem);
+						}
+					}
+				}) :
+				function( elem, context, xml ) {
+					input[0] = elem;
+					matcher( input, null, xml, results );
+					// Don't keep the element (issue #299)
+					input[0] = null;
+					return !results.pop();
+				};
+		}),
+
+		"has": markFunction(function( selector ) {
+			return function( elem ) {
+				return Sizzle( selector, elem ).length > 0;
+			};
+		}),
+
+		"contains": markFunction(function( text ) {
+			text = text.replace( runescape, funescape );
+			return function( elem ) {
+				return ( elem.textContent || elem.innerText || getText( elem ) ).indexOf( text ) > -1;
+			};
+		}),
+
+		// "Whether an element is represented by a :lang() selector
+		// is based solely on the element's language value
+		// being equal to the identifier C,
+		// or beginning with the identifier C immediately followed by "-".
+		// The matching of C against the element's language value is performed case-insensitively.
+		// The identifier C does not have to be a valid language name."
+		// http://www.w3.org/TR/selectors/#lang-pseudo
+		"lang": markFunction( function( lang ) {
+			// lang value must be a valid identifier
+			if ( !ridentifier.test(lang || "") ) {
+				Sizzle.error( "unsupported lang: " + lang );
+			}
+			lang = lang.replace( runescape, funescape ).toLowerCase();
+			return function( elem ) {
+				var elemLang;
+				do {
+					if ( (elemLang = documentIsHTML ?
+						elem.lang :
+						elem.getAttribute("xml:lang") || elem.getAttribute("lang")) ) {
+
+						elemLang = elemLang.toLowerCase();
+						return elemLang === lang || elemLang.indexOf( lang + "-" ) === 0;
+					}
+				} while ( (elem = elem.parentNode) && elem.nodeType === 1 );
+				return false;
+			};
+		}),
+
+		// Miscellaneous
+		"target": function( elem ) {
+			var hash = window.location && window.location.hash;
+			return hash && hash.slice( 1 ) === elem.id;
+		},
+
+		"root": function( elem ) {
+			return elem === docElem;
+		},
+
+		"focus": function( elem ) {
+			return elem === document.activeElement && (!document.hasFocus || document.hasFocus()) && !!(elem.type || elem.href || ~elem.tabIndex);
+		},
+
+		// Boolean properties
+		"enabled": createDisabledPseudo( false ),
+		"disabled": createDisabledPseudo( true ),
+
+		"checked": function( elem ) {
+			// In CSS3, :checked should return both checked and selected elements
+			// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+			var nodeName = elem.nodeName.toLowerCase();
+			return (nodeName === "input" && !!elem.checked) || (nodeName === "option" && !!elem.selected);
+		},
+
+		"selected": function( elem ) {
+			// Accessing this property makes selected-by-default
+			// options in Safari work properly
+			if ( elem.parentNode ) {
+				elem.parentNode.selectedIndex;
+			}
+
+			return elem.selected === true;
+		},
+
+		// Contents
+		"empty": function( elem ) {
+			// http://www.w3.org/TR/selectors/#empty-pseudo
+			// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
+			//   but not by others (comment: 8; processing instruction: 7; etc.)
+			// nodeType < 6 works because attributes (2) do not appear as children
+			for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
+				if ( elem.nodeType < 6 ) {
+					return false;
+				}
+			}
+			return true;
+		},
+
+		"parent": function( elem ) {
+			return !Expr.pseudos["empty"]( elem );
+		},
+
+		// Element/input types
+		"header": function( elem ) {
+			return rheader.test( elem.nodeName );
+		},
+
+		"input": function( elem ) {
+			return rinputs.test( elem.nodeName );
+		},
+
+		"button": function( elem ) {
+			var name = elem.nodeName.toLowerCase();
+			return name === "input" && elem.type === "button" || name === "button";
+		},
+
+		"text": function( elem ) {
+			var attr;
+			return elem.nodeName.toLowerCase() === "input" &&
+				elem.type === "text" &&
+
+				// Support: IE<8
+				// New HTML5 attribute values (e.g., "search") appear with elem.type === "text"
+				( (attr = elem.getAttribute("type")) == null || attr.toLowerCase() === "text" );
+		},
+
+		// Position-in-collection
+		"first": createPositionalPseudo(function() {
+			return [ 0 ];
+		}),
+
+		"last": createPositionalPseudo(function( matchIndexes, length ) {
+			return [ length - 1 ];
+		}),
+
+		"eq": createPositionalPseudo(function( matchIndexes, length, argument ) {
+			return [ argument < 0 ? argument + length : argument ];
+		}),
+
+		"even": createPositionalPseudo(function( matchIndexes, length ) {
+			var i = 0;
+			for ( ; i < length; i += 2 ) {
+				matchIndexes.push( i );
+			}
+			return matchIndexes;
+		}),
+
+		"odd": createPositionalPseudo(function( matchIndexes, length ) {
+			var i = 1;
+			for ( ; i < length; i += 2 ) {
+				matchIndexes.push( i );
+			}
+			return matchIndexes;
+		}),
+
+		"lt": createPositionalPseudo(function( matchIndexes, length, argument ) {
+			var i = argument < 0 ? argument + length : argument;
+			for ( ; --i >= 0; ) {
+				matchIndexes.push( i );
+			}
+			return matchIndexes;
+		}),
+
+		"gt": createPositionalPseudo(function( matchIndexes, length, argument ) {
+			var i = argument < 0 ? argument + length : argument;
+			for ( ; ++i < length; ) {
+				matchIndexes.push( i );
+			}
+			return matchIndexes;
+		})
+	}
+};
+
+Expr.pseudos["nth"] = Expr.pseudos["eq"];
+
+// Add button/input type pseudos
+for ( i in { radio: true, checkbox: true, file: true, password: true, image: true } ) {
+	Expr.pseudos[ i ] = createInputPseudo( i );
+}
+for ( i in { submit: true, reset: true } ) {
+	Expr.pseudos[ i ] = createButtonPseudo( i );
+}
+
+// Easy API for creating new setFilters
+function setFilters() {}
+setFilters.prototype = Expr.filters = Expr.pseudos;
+Expr.setFilters = new setFilters();
+
+tokenize = Sizzle.tokenize = function( selector, parseOnly ) {
+	var matched, match, tokens, type,
+		soFar, groups, preFilters,
+		cached = tokenCache[ selector + " " ];
+
+	if ( cached ) {
+		return parseOnly ? 0 : cached.slice( 0 );
+	}
+
+	soFar = selector;
+	groups = [];
+	preFilters = Expr.preFilter;
+
+	while ( soFar ) {
+
+		// Comma and first run
+		if ( !matched || (match = rcomma.exec( soFar )) ) {
+			if ( match ) {
+				// Don't consume trailing commas as valid
+				soFar = soFar.slice( match[0].length ) || soFar;
+			}
+			groups.push( (tokens = []) );
+		}
+
+		matched = false;
+
+		// Combinators
+		if ( (match = rcombinators.exec( soFar )) ) {
+			matched = match.shift();
+			tokens.push({
+				value: matched,
+				// Cast descendant combinators to space
+				type: match[0].replace( rtrim, " " )
+			});
+			soFar = soFar.slice( matched.length );
+		}
+
+		// Filters
+		for ( type in Expr.filter ) {
+			if ( (match = matchExpr[ type ].exec( soFar )) && (!preFilters[ type ] ||
+				(match = preFilters[ type ]( match ))) ) {
+				matched = match.shift();
+				tokens.push({
+					value: matched,
+					type: type,
+					matches: match
+				});
+				soFar = soFar.slice( matched.length );
+			}
+		}
+
+		if ( !matched ) {
+			break;
+		}
+	}
+
+	// Return the length of the invalid excess
+	// if we're just parsing
+	// Otherwise, throw an error or return tokens
+	return parseOnly ?
+		soFar.length :
+		soFar ?
+			Sizzle.error( selector ) :
+			// Cache the tokens
+			tokenCache( selector, groups ).slice( 0 );
+};
+
+function toSelector( tokens ) {
+	var i = 0,
+		len = tokens.length,
+		selector = "";
+	for ( ; i < len; i++ ) {
+		selector += tokens[i].value;
+	}
+	return selector;
+}
+
+function addCombinator( matcher, combinator, base ) {
+	var dir = combinator.dir,
+		skip = combinator.next,
+		key = skip || dir,
+		checkNonElements = base && key === "parentNode",
+		doneName = done++;
+
+	return combinator.first ?
+		// Check against closest ancestor/preceding element
+		function( elem, context, xml ) {
+			while ( (elem = elem[ dir ]) ) {
+				if ( elem.nodeType === 1 || checkNonElements ) {
+					return matcher( elem, context, xml );
+				}
+			}
+			return false;
+		} :
+
+		// Check against all ancestor/preceding elements
+		function( elem, context, xml ) {
+			var oldCache, uniqueCache, outerCache,
+				newCache = [ dirruns, doneName ];
+
+			// We can't set arbitrary data on XML nodes, so they don't benefit from combinator caching
+			if ( xml ) {
+				while ( (elem = elem[ dir ]) ) {
+					if ( elem.nodeType === 1 || checkNonElements ) {
+						if ( matcher( elem, context, xml ) ) {
+							return true;
+						}
+					}
+				}
+			} else {
+				while ( (elem = elem[ dir ]) ) {
+					if ( elem.nodeType === 1 || checkNonElements ) {
+						outerCache = elem[ expando ] || (elem[ expando ] = {});
+
+						// Support: IE <9 only
+						// Defend against cloned attroperties (jQuery gh-1709)
+						uniqueCache = outerCache[ elem.uniqueID ] || (outerCache[ elem.uniqueID ] = {});
+
+						if ( skip && skip === elem.nodeName.toLowerCase() ) {
+							elem = elem[ dir ] || elem;
+						} else if ( (oldCache = uniqueCache[ key ]) &&
+							oldCache[ 0 ] === dirruns && oldCache[ 1 ] === doneName ) {
+
+							// Assign to newCache so results back-propagate to previous elements
+							return (newCache[ 2 ] = oldCache[ 2 ]);
+						} else {
+							// Reuse newcache so results back-propagate to previous elements
+							uniqueCache[ key ] = newCache;
+
+							// A match means we're done; a fail means we have to keep checking
+							if ( (newCache[ 2 ] = matcher( elem, context, xml )) ) {
+								return true;
+							}
+						}
+					}
+				}
+			}
+			return false;
+		};
+}
+
+function elementMatcher( matchers ) {
+	return matchers.length > 1 ?
+		function( elem, context, xml ) {
+			var i = matchers.length;
+			while ( i-- ) {
+				if ( !matchers[i]( elem, context, xml ) ) {
+					return false;
+				}
+			}
+			return true;
+		} :
+		matchers[0];
+}
+
+function multipleContexts( selector, contexts, results ) {
+	var i = 0,
+		len = contexts.length;
+	for ( ; i < len; i++ ) {
+		Sizzle( selector, contexts[i], results );
+	}
+	return results;
+}
+
+function condense( unmatched, map, filter, context, xml ) {
+	var elem,
+		newUnmatched = [],
+		i = 0,
+		len = unmatched.length,
+		mapped = map != null;
+
+	for ( ; i < len; i++ ) {
+		if ( (elem = unmatched[i]) ) {
+			if ( !filter || filter( elem, context, xml ) ) {
+				newUnmatched.push( elem );
+				if ( mapped ) {
+					map.push( i );
+				}
+			}
+		}
+	}
+
+	return newUnmatched;
+}
+
+function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {
+	if ( postFilter && !postFilter[ expando ] ) {
+		postFilter = setMatcher( postFilter );
+	}
+	if ( postFinder && !postFinder[ expando ] ) {
+		postFinder = setMatcher( postFinder, postSelector );
+	}
+	return markFunction(function( seed, results, context, xml ) {
+		var temp, i, elem,
+			preMap = [],
+			postMap = [],
+			preexisting = results.length,
+
+			// Get initial elements from seed or context
+			elems = seed || multipleContexts( selector || "*", context.nodeType ? [ context ] : context, [] ),
+
+			// Prefilter to get matcher input, preserving a map for seed-results synchronization
+			matcherIn = preFilter && ( seed || !selector ) ?
+				condense( elems, preMap, preFilter, context, xml ) :
+				elems,
+
+			matcherOut = matcher ?
+				// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,
+				postFinder || ( seed ? preFilter : preexisting || postFilter ) ?
+
+					// ...intermediate processing is necessary
+					[] :
+
+					// ...otherwise use results directly
+					results :
+				matcherIn;
+
+		// Find primary matches
+		if ( matcher ) {
+			matcher( matcherIn, matcherOut, context, xml );
+		}
+
+		// Apply postFilter
+		if ( postFilter ) {
+			temp = condense( matcherOut, postMap );
+			postFilter( temp, [], context, xml );
+
+			// Un-match failing elements by moving them back to matcherIn
+			i = temp.length;
+			while ( i-- ) {
+				if ( (elem = temp[i]) ) {
+					matcherOut[ postMap[i] ] = !(matcherIn[ postMap[i] ] = elem);
+				}
+			}
+		}
+
+		if ( seed ) {
+			if ( postFinder || preFilter ) {
+				if ( postFinder ) {
+					// Get the final matcherOut by condensing this intermediate into postFinder contexts
+					temp = [];
+					i = matcherOut.length;
+					while ( i-- ) {
+						if ( (elem = matcherOut[i]) ) {
+							// Restore matcherIn since elem is not yet a final match
+							temp.push( (matcherIn[i] = elem) );
+						}
+					}
+					postFinder( null, (matcherOut = []), temp, xml );
+				}
+
+				// Move matched elements from seed to results to keep them synchronized
+				i = matcherOut.length;
+				while ( i-- ) {
+					if ( (elem = matcherOut[i]) &&
+						(temp = postFinder ? indexOf( seed, elem ) : preMap[i]) > -1 ) {
+
+						seed[temp] = !(results[temp] = elem);
+					}
+				}
+			}
+
+		// Add elements to results, through postFinder if defined
+		} else {
+			matcherOut = condense(
+				matcherOut === results ?
+					matcherOut.splice( preexisting, matcherOut.length ) :
+					matcherOut
+			);
+			if ( postFinder ) {
+				postFinder( null, results, matcherOut, xml );
+			} else {
+				push.apply( results, matcherOut );
+			}
+		}
+	});
+}
+
+function matcherFromTokens( tokens ) {
+	var checkContext, matcher, j,
+		len = tokens.length,
+		leadingRelative = Expr.relative[ tokens[0].type ],
+		implicitRelative = leadingRelative || Expr.relative[" "],
+		i = leadingRelative ? 1 : 0,
+
+		// The foundational matcher ensures that elements are reachable from top-level context(s)
+		matchContext = addCombinator( function( elem ) {
+			return elem === checkContext;
+		}, implicitRelative, true ),
+		matchAnyContext = addCombinator( function( elem ) {
+			return indexOf( checkContext, elem ) > -1;
+		}, implicitRelative, true ),
+		matchers = [ function( elem, context, xml ) {
+			var ret = ( !leadingRelative && ( xml || context !== outermostContext ) ) || (
+				(checkContext = context).nodeType ?
+					matchContext( elem, context, xml ) :
+					matchAnyContext( elem, context, xml ) );
+			// Avoid hanging onto element (issue #299)
+			checkContext = null;
+			return ret;
+		} ];
+
+	for ( ; i < len; i++ ) {
+		if ( (matcher = Expr.relative[ tokens[i].type ]) ) {
+			matchers = [ addCombinator(elementMatcher( matchers ), matcher) ];
+		} else {
+			matcher = Expr.filter[ tokens[i].type ].apply( null, tokens[i].matches );
+
+			// Return special upon seeing a positional matcher
+			if ( matcher[ expando ] ) {
+				// Find the next relative operator (if any) for proper handling
+				j = ++i;
+				for ( ; j < len; j++ ) {
+					if ( Expr.relative[ tokens[j].type ] ) {
+						break;
+					}
+				}
+				return setMatcher(
+					i > 1 && elementMatcher( matchers ),
+					i > 1 && toSelector(
+						// If the preceding token was a descendant combinator, insert an implicit any-element `*`
+						tokens.slice( 0, i - 1 ).concat({ value: tokens[ i - 2 ].type === " " ? "*" : "" })
+					).replace( rtrim, "$1" ),
+					matcher,
+					i < j && matcherFromTokens( tokens.slice( i, j ) ),
+					j < len && matcherFromTokens( (tokens = tokens.slice( j )) ),
+					j < len && toSelector( tokens )
+				);
+			}
+			matchers.push( matcher );
+		}
+	}
+
+	return elementMatcher( matchers );
+}
+
+function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
+	var bySet = setMatchers.length > 0,
+		byElement = elementMatchers.length > 0,
+		superMatcher = function( seed, context, xml, results, outermost ) {
+			var elem, j, matcher,
+				matchedCount = 0,
+				i = "0",
+				unmatched = seed && [],
+				setMatched = [],
+				contextBackup = outermostContext,
+				// We must always have either seed elements or outermost context
+				elems = seed || byElement && Expr.find["TAG"]( "*", outermost ),
+				// Use integer dirruns iff this is the outermost matcher
+				dirrunsUnique = (dirruns += contextBackup == null ? 1 : Math.random() || 0.1),
+				len = elems.length;
+
+			if ( outermost ) {
+				outermostContext = context === document || context || outermost;
+			}
+
+			// Add elements passing elementMatchers directly to results
+			// Support: IE<9, Safari
+			// Tolerate NodeList properties (IE: "length"; Safari: <number>) matching elements by id
+			for ( ; i !== len && (elem = elems[i]) != null; i++ ) {
+				if ( byElement && elem ) {
+					j = 0;
+					if ( !context && elem.ownerDocument !== document ) {
+						setDocument( elem );
+						xml = !documentIsHTML;
+					}
+					while ( (matcher = elementMatchers[j++]) ) {
+						if ( matcher( elem, context || document, xml) ) {
+							results.push( elem );
+							break;
+						}
+					}
+					if ( outermost ) {
+						dirruns = dirrunsUnique;
+					}
+				}
+
+				// Track unmatched elements for set filters
+				if ( bySet ) {
+					// They will have gone through all possible matchers
+					if ( (elem = !matcher && elem) ) {
+						matchedCount--;
+					}
+
+					// Lengthen the array for every element, matched or not
+					if ( seed ) {
+						unmatched.push( elem );
+					}
+				}
+			}
+
+			// `i` is now the count of elements visited above, and adding it to `matchedCount`
+			// makes the latter nonnegative.
+			matchedCount += i;
+
+			// Apply set filters to unmatched elements
+			// NOTE: This can be skipped if there are no unmatched elements (i.e., `matchedCount`
+			// equals `i`), unless we didn't visit _any_ elements in the above loop because we have
+			// no element matchers and no seed.
+			// Incrementing an initially-string "0" `i` allows `i` to remain a string only in that
+			// case, which will result in a "00" `matchedCount` that differs from `i` but is also
+			// numerically zero.
+			if ( bySet && i !== matchedCount ) {
+				j = 0;
+				while ( (matcher = setMatchers[j++]) ) {
+					matcher( unmatched, setMatched, context, xml );
+				}
+
+				if ( seed ) {
+					// Reintegrate element matches to eliminate the need for sorting
+					if ( matchedCount > 0 ) {
+						while ( i-- ) {
+							if ( !(unmatched[i] || setMatched[i]) ) {
+								setMatched[i] = pop.call( results );
+							}
+						}
+					}
+
+					// Discard index placeholder values to get only actual matches
+					setMatched = condense( setMatched );
+				}
+
+				// Add matches to results
+				push.apply( results, setMatched );
+
+				// Seedless set matches succeeding multiple successful matchers stipulate sorting
+				if ( outermost && !seed && setMatched.length > 0 &&
+					( matchedCount + setMatchers.length ) > 1 ) {
+
+					Sizzle.uniqueSort( results );
+				}
+			}
+
+			// Override manipulation of globals by nested matchers
+			if ( outermost ) {
+				dirruns = dirrunsUnique;
+				outermostContext = contextBackup;
+			}
+
+			return unmatched;
+		};
+
+	return bySet ?
+		markFunction( superMatcher ) :
+		superMatcher;
+}
+
+compile = Sizzle.compile = function( selector, match /* Internal Use Only */ ) {
+	var i,
+		setMatchers = [],
+		elementMatchers = [],
+		cached = compilerCache[ selector + " " ];
+
+	if ( !cached ) {
+		// Generate a function of recursive functions that can be used to check each element
+		if ( !match ) {
+			match = tokenize( selector );
+		}
+		i = match.length;
+		while ( i-- ) {
+			cached = matcherFromTokens( match[i] );
+			if ( cached[ expando ] ) {
+				setMatchers.push( cached );
+			} else {
+				elementMatchers.push( cached );
+			}
+		}
+
+		// Cache the compiled function
+		cached = compilerCache( selector, matcherFromGroupMatchers( elementMatchers, setMatchers ) );
+
+		// Save selector and tokenization
+		cached.selector = selector;
+	}
+	return cached;
+};
+
+/**
+ * A low-level selection function that works with Sizzle's compiled
+ *  selector functions
+ * @param {String|Function} selector A selector or a pre-compiled
+ *  selector function built with Sizzle.compile
+ * @param {Element} context
+ * @param {Array} [results]
+ * @param {Array} [seed] A set of elements to match against
+ */
+select = Sizzle.select = function( selector, context, results, seed ) {
+	var i, tokens, token, type, find,
+		compiled = typeof selector === "function" && selector,
+		match = !seed && tokenize( (selector = compiled.selector || selector) );
+
+	results = results || [];
+
+	// Try to minimize operations if there is only one selector in the list and no seed
+	// (the latter of which guarantees us context)
+	if ( match.length === 1 ) {
+
+		// Reduce context if the leading compound selector is an ID
+		tokens = match[0] = match[0].slice( 0 );
+		if ( tokens.length > 2 && (token = tokens[0]).type === "ID" &&
+				context.nodeType === 9 && documentIsHTML && Expr.relative[ tokens[1].type ] ) {
+
+			context = ( Expr.find["ID"]( token.matches[0].replace(runescape, funescape), context ) || [] )[0];
+			if ( !context ) {
+				return results;
+
+			// Precompiled matchers will still verify ancestry, so step up a level
+			} else if ( compiled ) {
+				context = context.parentNode;
+			}
+
+			selector = selector.slice( tokens.shift().value.length );
+		}
+
+		// Fetch a seed set for right-to-left matching
+		i = matchExpr["needsContext"].test( selector ) ? 0 : tokens.length;
+		while ( i-- ) {
+			token = tokens[i];
+
+			// Abort if we hit a combinator
+			if ( Expr.relative[ (type = token.type) ] ) {
+				break;
+			}
+			if ( (find = Expr.find[ type ]) ) {
+				// Search, expanding context for leading sibling combinators
+				if ( (seed = find(
+					token.matches[0].replace( runescape, funescape ),
+					rsibling.test( tokens[0].type ) && testContext( context.parentNode ) || context
+				)) ) {
+
+					// If seed is empty or no tokens remain, we can return early
+					tokens.splice( i, 1 );
+					selector = seed.length && toSelector( tokens );
+					if ( !selector ) {
+						push.apply( results, seed );
+						return results;
+					}
+
+					break;
+				}
+			}
+		}
+	}
+
+	// Compile and execute a filtering function if one is not provided
+	// Provide `match` to avoid retokenization if we modified the selector above
+	( compiled || compile( selector, match ) )(
+		seed,
+		context,
+		!documentIsHTML,
+		results,
+		!context || rsibling.test( selector ) && testContext( context.parentNode ) || context
+	);
+	return results;
+};
+
+// One-time assignments
+
+// Sort stability
+support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
+
+// Support: Chrome 14-35+
+// Always assume duplicates if they aren't passed to the comparison function
+support.detectDuplicates = !!hasDuplicate;
+
+// Initialize against the default document
+setDocument();
+
+// Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)
+// Detached nodes confoundingly follow *each other*
+support.sortDetached = assert(function( el ) {
+	// Should return 1, but returns 4 (following)
+	return el.compareDocumentPosition( document.createElement("fieldset") ) & 1;
+});
+
+// Support: IE<8
+// Prevent attribute/property "interpolation"
+// https://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
+if ( !assert(function( el ) {
+	el.innerHTML = "<a href='#'></a>";
+	return el.firstChild.getAttribute("href") === "#" ;
+}) ) {
+	addHandle( "type|href|height|width", function( elem, name, isXML ) {
+		if ( !isXML ) {
+			return elem.getAttribute( name, name.toLowerCase() === "type" ? 1 : 2 );
+		}
+	});
+}
+
+// Support: IE<9
+// Use defaultValue in place of getAttribute("value")
+if ( !support.attributes || !assert(function( el ) {
+	el.innerHTML = "<input/>";
+	el.firstChild.setAttribute( "value", "" );
+	return el.firstChild.getAttribute( "value" ) === "";
+}) ) {
+	addHandle( "value", function( elem, name, isXML ) {
+		if ( !isXML && elem.nodeName.toLowerCase() === "input" ) {
+			return elem.defaultValue;
+		}
+	});
+}
+
+// Support: IE<9
+// Use getAttributeNode to fetch booleans when getAttribute lies
+if ( !assert(function( el ) {
+	return el.getAttribute("disabled") == null;
+}) ) {
+	addHandle( booleans, function( elem, name, isXML ) {
+		var val;
+		if ( !isXML ) {
+			return elem[ name ] === true ? name.toLowerCase() :
+					(val = elem.getAttributeNode( name )) && val.specified ?
+					val.value :
+				null;
+		}
+	});
+}
+
+return Sizzle;
+
+})( window );
+
+
+
+jQuery.find = Sizzle;
+jQuery.expr = Sizzle.selectors;
+
+// Deprecated
+jQuery.expr[ ":" ] = jQuery.expr.pseudos;
+jQuery.uniqueSort = jQuery.unique = Sizzle.uniqueSort;
+jQuery.text = Sizzle.getText;
+jQuery.isXMLDoc = Sizzle.isXML;
+jQuery.contains = Sizzle.contains;
+jQuery.escapeSelector = Sizzle.escape;
+
+
+
+
+var dir = function( elem, dir, until ) {
+	var matched = [],
+		truncate = until !== undefined;
+
+	while ( ( elem = elem[ dir ] ) && elem.nodeType !== 9 ) {
+		if ( elem.nodeType === 1 ) {
+			if ( truncate && jQuery( elem ).is( until ) ) {
+				break;
+			}
+			matched.push( elem );
+		}
+	}
+	return matched;
+};
+
+
+var siblings = function( n, elem ) {
+	var matched = [];
+
+	for ( ; n; n = n.nextSibling ) {
+		if ( n.nodeType === 1 && n !== elem ) {
+			matched.push( n );
+		}
+	}
+
+	return matched;
+};
+
+
+var rneedsContext = jQuery.expr.match.needsContext;
+
+
+
+function nodeName( elem, name ) {
+
+  return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
+
+};
+var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
+
+
+
+// Implement the identical functionality for filter and not
+function winnow( elements, qualifier, not ) {
+	if ( isFunction( qualifier ) ) {
+		return jQuery.grep( elements, function( elem, i ) {
+			return !!qualifier.call( elem, i, elem ) !== not;
+		} );
+	}
+
+	// Single element
+	if ( qualifier.nodeType ) {
+		return jQuery.grep( elements, function( elem ) {
+			return ( elem === qualifier ) !== not;
+		} );
+	}
+
+	// Arraylike of elements (jQuery, arguments, Array)
+	if ( typeof qualifier !== "string" ) {
+		return jQuery.grep( elements, function( elem ) {
+			return ( indexOf.call( qualifier, elem ) > -1 ) !== not;
+		} );
+	}
+
+	// Filtered directly for both simple and complex selectors
+	return jQuery.filter( qualifier, elements, not );
+}
+
+jQuery.filter = function( expr, elems, not ) {
+	var elem = elems[ 0 ];
+
+	if ( not ) {
+		expr = ":not(" + expr + ")";
+	}
+
+	if ( elems.length === 1 && elem.nodeType === 1 ) {
+		return jQuery.find.matchesSelector( elem, expr ) ? [ elem ] : [];
+	}
+
+	return jQuery.find.matches( expr, jQuery.grep( elems, function( elem ) {
+		return elem.nodeType === 1;
+	} ) );
+};
+
+jQuery.fn.extend( {
+	find: function( selector ) {
+		var i, ret,
+			len = this.length,
+			self = this;
+
+		if ( typeof selector !== "string" ) {
+			return this.pushStack( jQuery( selector ).filter( function() {
+				for ( i = 0; i < len; i++ ) {
+					if ( jQuery.contains( self[ i ], this ) ) {
+						return true;
+					}
+				}
+			} ) );
+		}
+
+		ret = this.pushStack( [] );
+
+		for ( i = 0; i < len; i++ ) {
+			jQuery.find( selector, self[ i ], ret );
+		}
+
+		return len > 1 ? jQuery.uniqueSort( ret ) : ret;
+	},
+	filter: function( selector ) {
+		return this.pushStack( winnow( this, selector || [], false ) );
+	},
+	not: function( selector ) {
+		return this.pushStack( winnow( this, selector || [], true ) );
+	},
+	is: function( selector ) {
+		return !!winnow(
+			this,
+
+			// If this is a positional/relative selector, check membership in the returned set
+			// so $("p:first").is("p:last") won't return true for a doc with two "p".
+			typeof selector === "string" && rneedsContext.test( selector ) ?
+				jQuery( selector ) :
+				selector || [],
+			false
+		).length;
+	}
+} );
+
+
+// Initialize a jQuery object
+
+
+// A central reference to the root jQuery(document)
+var rootjQuery,
+
+	// A simple way to check for HTML strings
+	// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
+	// Strict HTML recognition (#11290: must start with <)
+	// Shortcut simple #id case for speed
+	rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,
+
+	init = jQuery.fn.init = function( selector, context, root ) {
+		var match, elem;
+
+		// HANDLE: $(""), $(null), $(undefined), $(false)
+		if ( !selector ) {
+			return this;
+		}
+
+		// Method init() accepts an alternate rootjQuery
+		// so migrate can support jQuery.sub (gh-2101)
+		root = root || rootjQuery;
+
+		// Handle HTML strings
+		if ( typeof selector === "string" ) {
+			if ( selector[ 0 ] === "<" &&
+				selector[ selector.length - 1 ] === ">" &&
+				selector.length >= 3 ) {
+
+				// Assume that strings that start and end with <> are HTML and skip the regex check
+				match = [ null, selector, null ];
+
+			} else {
+				match = rquickExpr.exec( selector );
+			}
+
+			// Match html or make sure no context is specified for #id
+			if ( match && ( match[ 1 ] || !context ) ) {
+
+				// HANDLE: $(html) -> $(array)
+				if ( match[ 1 ] ) {
+					context = context instanceof jQuery ? context[ 0 ] : context;
+
+					// Option to run scripts is true for back-compat
+					// Intentionally let the error be thrown if parseHTML is not present
+					jQuery.merge( this, jQuery.parseHTML(
+						match[ 1 ],
+						context && context.nodeType ? context.ownerDocument || context : document,
+						true
+					) );
+
+					// HANDLE: $(html, props)
+					if ( rsingleTag.test( match[ 1 ] ) && jQuery.isPlainObject( context ) ) {
+						for ( match in context ) {
+
+							// Properties of context are called as methods if possible
+							if ( isFunction( this[ match ] ) ) {
+								this[ match ]( context[ match ] );
+
+							// ...and otherwise set as attributes
+							} else {
+								this.attr( match, context[ match ] );
+							}
+						}
+					}
+
+					return this;
+
+				// HANDLE: $(#id)
+				} else {
+					elem = document.getElementById( match[ 2 ] );
+
+					if ( elem ) {
+
+						// Inject the element directly into the jQuery object
+						this[ 0 ] = elem;
+						this.length = 1;
+					}
+					return this;
+				}
+
+			// HANDLE: $(expr, $(...))
+			} else if ( !context || context.jquery ) {
+				return ( context || root ).find( selector );
+
+			// HANDLE: $(expr, context)
+			// (which is just equivalent to: $(context).find(expr)
+			} else {
+				return this.constructor( context ).find( selector );
+			}
+
+		// HANDLE: $(DOMElement)
+		} else if ( selector.nodeType ) {
+			this[ 0 ] = selector;
+			this.length = 1;
+			return this;
+
+		// HANDLE: $(function)
+		// Shortcut for document ready
+		} else if ( isFunction( selector ) ) {
+			return root.ready !== undefined ?
+				root.ready( selector ) :
+
+				// Execute immediately if ready is not present
+				selector( jQuery );
+		}
+
+		return jQuery.makeArray( selector, this );
+	};
+
+// Give the init function the jQuery prototype for later instantiation
+init.prototype = jQuery.fn;
+
+// Initialize central reference
+rootjQuery = jQuery( document );
+
+
+var rparentsprev = /^(?:parents|prev(?:Until|All))/,
+
+	// Methods guaranteed to produce a unique set when starting from a unique set
+	guaranteedUnique = {
+		children: true,
+		contents: true,
+		next: true,
+		prev: true
+	};
+
+jQuery.fn.extend( {
+	has: function( target ) {
+		var targets = jQuery( target, this ),
+			l = targets.length;
+
+		return this.filter( function() {
+			var i = 0;
+			for ( ; i < l; i++ ) {
+				if ( jQuery.contains( this, targets[ i ] ) ) {
+					return true;
+				}
+			}
+		} );
+	},
+
+	closest: function( selectors, context ) {
+		var cur,
+			i = 0,
+			l = this.length,
+			matched = [],
+			targets = typeof selectors !== "string" && jQuery( selectors );
+
+		// Positional selectors never match, since there's no _selection_ context
+		if ( !rneedsContext.test( selectors ) ) {
+			for ( ; i < l; i++ ) {
+				for ( cur = this[ i ]; cur && cur !== context; cur = cur.parentNode ) {
+
+					// Always skip document fragments
+					if ( cur.nodeType < 11 && ( targets ?
+						targets.index( cur ) > -1 :
+
+						// Don't pass non-elements to Sizzle
+						cur.nodeType === 1 &&
+							jQuery.find.matchesSelector( cur, selectors ) ) ) {
+
+						matched.push( cur );
+						break;
+					}
+				}
+			}
+		}
+
+		return this.pushStack( matched.length > 1 ? jQuery.uniqueSort( matched ) : matched );
+	},
+
+	// Determine the position of an element within the set
+	index: function( elem ) {
+
+		// No argument, return index in parent
+		if ( !elem ) {
+			return ( this[ 0 ] && this[ 0 ].parentNode ) ? this.first().prevAll().length : -1;
+		}
+
+		// Index in selector
+		if ( typeof elem === "string" ) {
+			return indexOf.call( jQuery( elem ), this[ 0 ] );
+		}
+
+		// Locate the position of the desired element
+		return indexOf.call( this,
+
+			// If it receives a jQuery object, the first element is used
+			elem.jquery ? elem[ 0 ] : elem
+		);
+	},
+
+	add: function( selector, context ) {
+		return this.pushStack(
+			jQuery.uniqueSort(
+				jQuery.merge( this.get(), jQuery( selector, context ) )
+			)
+		);
+	},
+
+	addBack: function( selector ) {
+		return this.add( selector == null ?
+			this.prevObject : this.prevObject.filter( selector )
+		);
+	}
+} );
+
+function sibling( cur, dir ) {
+	while ( ( cur = cur[ dir ] ) && cur.nodeType !== 1 ) {}
+	return cur;
+}
+
+jQuery.each( {
+	parent: function( elem ) {
+		var parent = elem.parentNode;
+		return parent && parent.nodeType !== 11 ? parent : null;
+	},
+	parents: function( elem ) {
+		return dir( elem, "parentNode" );
+	},
+	parentsUntil: function( elem, i, until ) {
+		return dir( elem, "parentNode", until );
+	},
+	next: function( elem ) {
+		return sibling( elem, "nextSibling" );
+	},
+	prev: function( elem ) {
+		return sibling( elem, "previousSibling" );
+	},
+	nextAll: function( elem ) {
+		return dir( elem, "nextSibling" );
+	},
+	prevAll: function( elem ) {
+		return dir( elem, "previousSibling" );
+	},
+	nextUntil: function( elem, i, until ) {
+		return dir( elem, "nextSibling", until );
+	},
+	prevUntil: function( elem, i, until ) {
+		return dir( elem, "previousSibling", until );
+	},
+	siblings: function( elem ) {
+		return siblings( ( elem.parentNode || {} ).firstChild, elem );
+	},
+	children: function( elem ) {
+		return siblings( elem.firstChild );
+	},
+	contents: function( elem ) {
+        if ( nodeName( elem, "iframe" ) ) {
+            return elem.contentDocument;
+        }
+
+        // Support: IE 9 - 11 only, iOS 7 only, Android Browser <=4.3 only
+        // Treat the template element as a regular one in browsers that
+        // don't support it.
+        if ( nodeName( elem, "template" ) ) {
+            elem = elem.content || elem;
+        }
+
+        return jQuery.merge( [], elem.childNodes );
+	}
+}, function( name, fn ) {
+	jQuery.fn[ name ] = function( until, selector ) {
+		var matched = jQuery.map( this, fn, until );
+
+		if ( name.slice( -5 ) !== "Until" ) {
+			selector = until;
+		}
+
+		if ( selector && typeof selector === "string" ) {
+			matched = jQuery.filter( selector, matched );
+		}
+
+		if ( this.length > 1 ) {
+
+			// Remove duplicates
+			if ( !guaranteedUnique[ name ] ) {
+				jQuery.uniqueSort( matched );
+			}
+
+			// Reverse order for parents* and prev-derivatives
+			if ( rparentsprev.test( name ) ) {
+				matched.reverse();
+			}
+		}
+
+		return this.pushStack( matched );
+	};
+} );
+var rnothtmlwhite = ( /[^\x20\t\r\n\f]+/g );
+
+
+
+// Convert String-formatted options into Object-formatted ones
+function createOptions( options ) {
+	var object = {};
+	jQuery.each( options.match( rnothtmlwhite ) || [], function( _, flag ) {
+		object[ flag ] = true;
+	} );
+	return object;
+}
+
+/*
+ * Create a callback list using the following parameters:
+ *
+ *	options: an optional list of space-separated options that will change how
+ *			the callback list behaves or a more traditional option object
+ *
+ * By default a callback list will act like an event callback list and can be
+ * "fired" multiple times.
+ *
+ * Possible options:
+ *
+ *	once:			will ensure the callback list can only be fired once (like a Deferred)
+ *
+ *	memory:			will keep track of previous values and will call any callback added
+ *					after the list has been fired right away with the latest "memorized"
+ *					values (like a Deferred)
+ *
+ *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+ *
+ *	stopOnFalse:	interrupt callings when a callback returns false
+ *
+ */
+jQuery.Callbacks = function( options ) {
+
+	// Convert options from String-formatted to Object-formatted if needed
+	// (we check in cache first)
+	options = typeof options === "string" ?
+		createOptions( options ) :
+		jQuery.extend( {}, options );
+
+	var // Flag to know if list is currently firing
+		firing,
+
+		// Last fire value for non-forgettable lists
+		memory,
+
+		// Flag to know if list was already fired
+		fired,
+
+		// Flag to prevent firing
+		locked,
+
+		// Actual callback list
+		list = [],
+
+		// Queue of execution data for repeatable lists
+		queue = [],
+
+		// Index of currently firing callback (modified by add/remove as needed)
+		firingIndex = -1,
+
+		// Fire callbacks
+		fire = function() {
+
+			// Enforce single-firing
+			locked = locked || options.once;
+
+			// Execute callbacks for all pending executions,
+			// respecting firingIndex overrides and runtime changes
+			fired = firing = true;
+			for ( ; queue.length; firingIndex = -1 ) {
+				memory = queue.shift();
+				while ( ++firingIndex < list.length ) {
+
+					// Run callback and check for early termination
+					if ( list[ firingIndex ].apply( memory[ 0 ], memory[ 1 ] ) === false &&
+						options.stopOnFalse ) {
+
+						// Jump to end and forget the data so .add doesn't re-fire
+						firingIndex = list.length;
+						memory = false;
+					}
+				}
+			}
+
+			// Forget the data if we're done with it
+			if ( !options.memory ) {
+				memory = false;
+			}
+
+			firing = false;
+
+			// Clean up if we're done firing for good
+			if ( locked ) {
+
+				// Keep an empty list if we have data for future add calls
+				if ( memory ) {
+					list = [];
+
+				// Otherwise, this object is spent
+				} else {
+					list = "";
+				}
+			}
+		},
+
+		// Actual Callbacks object
+		self = {
+
+			// Add a callback or a collection of callbacks to the list
+			add: function() {
+				if ( list ) {
+
+					// If we have memory from a past run, we should fire after adding
+					if ( memory && !firing ) {
+						firingIndex = list.length - 1;
+						queue.push( memory );
+					}
+
+					( function add( args ) {
+						jQuery.each( args, function( _, arg ) {
+							if ( isFunction( arg ) ) {
+								if ( !options.unique || !self.has( arg ) ) {
+									list.push( arg );
+								}
+							} else if ( arg && arg.length && toType( arg ) !== "string" ) {
+
+								// Inspect recursively
+								add( arg );
+							}
+						} );
+					} )( arguments );
+
+					if ( memory && !firing ) {
+						fire();
+					}
+				}
+				return this;
+			},
+
+			// Remove a callback from the list
+			remove: function() {
+				jQuery.each( arguments, function( _, arg ) {
+					var index;
+					while ( ( index = jQuery.inArray( arg, list, index ) ) > -1 ) {
+						list.splice( index, 1 );
+
+						// Handle firing indexes
+						if ( index <= firingIndex ) {
+							firingIndex--;
+						}
+					}
+				} );
+				return this;
+			},
+
+			// Check if a given callback is in the list.
+			// If no argument is given, return whether or not list has callbacks attached.
+			has: function( fn ) {
+				return fn ?
+					jQuery.inArray( fn, list ) > -1 :
+					list.length > 0;
+			},
+
+			// Remove all callbacks from the list
+			empty: function() {
+				if ( list ) {
+					list = [];
+				}
+				return this;
+			},
+
+			// Disable .fire and .add
+			// Abort any current/pending executions
+			// Clear all callbacks and values
+			disable: function() {
+				locked = queue = [];
+				list = memory = "";
+				return this;
+			},
+			disabled: function() {
+				return !list;
+			},
+
+			// Disable .fire
+			// Also disable .add unless we have memory (since it would have no effect)
+			// Abort any pending executions
+			lock: function() {
+				locked = queue = [];
+				if ( !memory && !firing ) {
+					list = memory = "";
+				}
+				return this;
+			},
+			locked: function() {
+				return !!locked;
+			},
+
+			// Call all callbacks with the given context and arguments
+			fireWith: function( context, args ) {
+				if ( !locked ) {
+					args = args || [];
+					args = [ context, args.slice ? args.slice() : args ];
+					queue.push( args );
+					if ( !firing ) {
+						fire();
+					}
+				}
+				return this;
+			},
+
+			// Call all the callbacks with the given arguments
+			fire: function() {
+				self.fireWith( this, arguments );
+				return this;
+			},
+
+			// To know if the callbacks have already been called at least once
+			fired: function() {
+				return !!fired;
+			}
+		};
+
+	return self;
+};
+
+
+function Identity( v ) {
+	return v;
+}
+function Thrower( ex ) {
+	throw ex;
+}
+
+function adoptValue( value, resolve, reject, noValue ) {
+	var method;
+
+	try {
+
+		// Check for promise aspect first to privilege synchronous behavior
+		if ( value && isFunction( ( method = value.promise ) ) ) {
+			method.call( value ).done( resolve ).fail( reject );
+
+		// Other thenables
+		} else if ( value && isFunction( ( method = value.then ) ) ) {
+			method.call( value, resolve, reject );
+
+		// Other non-thenables
+		} else {
+
+			// Control `resolve` arguments by letting Array#slice cast boolean `noValue` to integer:
+			// * false: [ value ].slice( 0 ) => resolve( value )
+			// * true: [ value ].slice( 1 ) => resolve()
+			resolve.apply( undefined, [ value ].slice( noValue ) );
+		}
+
+	// For Promises/A+, convert exceptions into rejections
+	// Since jQuery.when doesn't unwrap thenables, we can skip the extra checks appearing in
+	// Deferred#then to conditionally suppress rejection.
+	} catch ( value ) {
+
+		// Support: Android 4.0 only
+		// Strict mode functions invoked without .call/.apply get global-object context
+		reject.apply( undefined, [ value ] );
+	}
+}
+
+jQuery.extend( {
+
+	Deferred: function( func ) {
+		var tuples = [
+
+				// action, add listener, callbacks,
+				// ... .then handlers, argument index, [final state]
+				[ "notify", "progress", jQuery.Callbacks( "memory" ),
+					jQuery.Callbacks( "memory" ), 2 ],
+				[ "resolve", "done", jQuery.Callbacks( "once memory" ),
+					jQuery.Callbacks( "once memory" ), 0, "resolved" ],
+				[ "reject", "fail", jQuery.Callbacks( "once memory" ),
+					jQuery.Callbacks( "once memory" ), 1, "rejected" ]
+			],
+			state = "pending",
+			promise = {
+				state: function() {
+					return state;
+				},
+				always: function() {
+					deferred.done( arguments ).fail( arguments );
+					return this;
+				},
+				"catch": function( fn ) {
+					return promise.then( null, fn );
+				},
+
+				// Keep pipe for back-compat
+				pipe: function( /* fnDone, fnFail, fnProgress */ ) {
+					var fns = arguments;
+
+					return jQuery.Deferred( function( newDefer ) {
+						jQuery.each( tuples, function( i, tuple ) {
+
+							// Map tuples (progress, done, fail) to arguments (done, fail, progress)
+							var fn = isFunction( fns[ tuple[ 4 ] ] ) && fns[ tuple[ 4 ] ];
+
+							// deferred.progress(function() { bind to newDefer or newDefer.notify })
+							// deferred.done(function() { bind to newDefer or newDefer.resolve })
+							// deferred.fail(function() { bind to newDefer or newDefer.reject })
+							deferred[ tuple[ 1 ] ]( function() {
+								var returned = fn && fn.apply( this, arguments );
+								if ( returned && isFunction( returned.promise ) ) {
+									returned.promise()
+										.progress( newDefer.notify )
+										.done( newDefer.resolve )
+										.fail( newDefer.reject );
+								} else {
+									newDefer[ tuple[ 0 ] + "With" ](
+										this,
+										fn ? [ returned ] : arguments
+									);
+								}
+							} );
+						} );
+						fns = null;
+					} ).promise();
+				},
+				then: function( onFulfilled, onRejected, onProgress ) {
+					var maxDepth = 0;
+					function resolve( depth, deferred, handler, special ) {
+						return function() {
+							var that = this,
+								args = arguments,
+								mightThrow = function() {
+									var returned, then;
+
+									// Support: Promises/A+ section 2.3.3.3.3
+									// https://promisesaplus.com/#point-59
+									// Ignore double-resolution attempts
+									if ( depth < maxDepth ) {
+										return;
+									}
+
+									returned = handler.apply( that, args );
+
+									// Support: Promises/A+ section 2.3.1
+									// https://promisesaplus.com/#point-48
+									if ( returned === deferred.promise() ) {
+										throw new TypeError( "Thenable self-resolution" );
+									}
+
+									// Support: Promises/A+ sections 2.3.3.1, 3.5
+									// https://promisesaplus.com/#point-54
+									// https://promisesaplus.com/#point-75
+									// Retrieve `then` only once
+									then = returned &&
+
+										// Support: Promises/A+ section 2.3.4
+										// https://promisesaplus.com/#point-64
+										// Only check objects and functions for thenability
+										( typeof returned === "object" ||
+											typeof returned === "function" ) &&
+										returned.then;
+
+									// Handle a returned thenable
+									if ( isFunction( then ) ) {
+
+										// Special processors (notify) just wait for resolution
+										if ( special ) {
+											then.call(
+												returned,
+												resolve( maxDepth, deferred, Identity, special ),
+												resolve( maxDepth, deferred, Thrower, special )
+											);
+
+										// Normal processors (resolve) also hook into progress
+										} else {
+
+											// ...and disregard older resolution values
+											maxDepth++;
+
+											then.call(
+												returned,
+												resolve( maxDepth, deferred, Identity, special ),
+												resolve( maxDepth, deferred, Thrower, special ),
+												resolve( maxDepth, deferred, Identity,
+													deferred.notifyWith )
+											);
+										}
+
+									// Handle all other returned values
+									} else {
+
+										// Only substitute handlers pass on context
+										// and multiple values (non-spec behavior)
+										if ( handler !== Identity ) {
+											that = undefined;
+											args = [ returned ];
+										}
+
+										// Process the value(s)
+										// Default process is resolve
+										( special || deferred.resolveWith )( that, args );
+									}
+								},
+
+								// Only normal processors (resolve) catch and reject exceptions
+								process = special ?
+									mightThrow :
+									function() {
+										try {
+											mightThrow();
+										} catch ( e ) {
+
+											if ( jQuery.Deferred.exceptionHook ) {
+												jQuery.Deferred.exceptionHook( e,
+													process.stackTrace );
+											}
+
+											// Support: Promises/A+ section 2.3.3.3.4.1
+											// https://promisesaplus.com/#point-61
+											// Ignore post-resolution exceptions
+											if ( depth + 1 >= maxDepth ) {
+
+												// Only substitute handlers pass on context
+												// and multiple values (non-spec behavior)
+												if ( handler !== Thrower ) {
+													that = undefined;
+													args = [ e ];
+												}
+
+												deferred.rejectWith( that, args );
+											}
+										}
+									};
+
+							// Support: Promises/A+ section 2.3.3.3.1
+							// https://promisesaplus.com/#point-57
+							// Re-resolve promises immediately to dodge false rejection from
+							// subsequent errors
+							if ( depth ) {
+								process();
+							} else {
+
+								// Call an optional hook to record the stack, in case of exception
+								// since it's otherwise lost when execution goes async
+								if ( jQuery.Deferred.getStackHook ) {
+									process.stackTrace = jQuery.Deferred.getStackHook();
+								}
+								window.setTimeout( process );
+							}
+						};
+					}
+
+					return jQuery.Deferred( function( newDefer ) {
+
+						// progress_handlers.add( ... )
+						tuples[ 0 ][ 3 ].add(
+							resolve(
+								0,
+								newDefer,
+								isFunction( onProgress ) ?
+									onProgress :
+									Identity,
+								newDefer.notifyWith
+							)
+						);
+
+						// fulfilled_handlers.add( ... )
+						tuples[ 1 ][ 3 ].add(
+							resolve(
+								0,
+								newDefer,
+								isFunction( onFulfilled ) ?
+									onFulfilled :
+									Identity
+							)
+						);
+
+						// rejected_handlers.add( ... )
+						tuples[ 2 ][ 3 ].add(
+							resolve(
+								0,
+								newDefer,
+								isFunction( onRejected ) ?
+									onRejected :
+									Thrower
+							)
+						);
+					} ).promise();
+				},
+
+				// Get a promise for this deferred
+				// If obj is provided, the promise aspect is added to the object
+				promise: function( obj ) {
+					return obj != null ? jQuery.extend( obj, promise ) : promise;
+				}
+			},
+			deferred = {};
+
+		// Add list-specific methods
+		jQuery.each( tuples, function( i, tuple ) {
+			var list = tuple[ 2 ],
+				stateString = tuple[ 5 ];
+
+			// promise.progress = list.add
+			// promise.done = list.add
+			// promise.fail = list.add
+			promise[ tuple[ 1 ] ] = list.add;
+
+			// Handle state
+			if ( stateString ) {
+				list.add(
+					function() {
+
+						// state = "resolved" (i.e., fulfilled)
+						// state = "rejected"
+						state = stateString;
+					},
+
+					// rejected_callbacks.disable
+					// fulfilled_callbacks.disable
+					tuples[ 3 - i ][ 2 ].disable,
+
+					// rejected_handlers.disable
+					// fulfilled_handlers.disable
+					tuples[ 3 - i ][ 3 ].disable,
+
+					// progress_callbacks.lock
+					tuples[ 0 ][ 2 ].lock,
+
+					// progress_handlers.lock
+					tuples[ 0 ][ 3 ].lock
+				);
+			}
+
+			// progress_handlers.fire
+			// fulfilled_handlers.fire
+			// rejected_handlers.fire
+			list.add( tuple[ 3 ].fire );
+
+			// deferred.notify = function() { deferred.notifyWith(...) }
+			// deferred.resolve = function() { deferred.resolveWith(...) }
+			// deferred.reject = function() { deferred.rejectWith(...) }
+			deferred[ tuple[ 0 ] ] = function() {
+				deferred[ tuple[ 0 ] + "With" ]( this === deferred ? undefined : this, arguments );
+				return this;
+			};
+
+			// deferred.notifyWith = list.fireWith
+			// deferred.resolveWith = list.fireWith
+			// deferred.rejectWith = list.fireWith
+			deferred[ tuple[ 0 ] + "With" ] = list.fireWith;
+		} );
+
+		// Make the deferred a promise
+		promise.promise( deferred );
+
+		// Call given func if any
+		if ( func ) {
+			func.call( deferred, deferred );
+		}
+
+		// All done!
+		return deferred;
+	},
+
+	// Deferred helper
+	when: function( singleValue ) {
+		var
+
+			// count of uncompleted subordinates
+			remaining = arguments.length,
+
+			// count of unprocessed arguments
+			i = remaining,
+
+			// subordinate fulfillment data
+			resolveContexts = Array( i ),
+			resolveValues = slice.call( arguments ),
+
+			// the master Deferred
+			master = jQuery.Deferred(),
+
+			// subordinate callback factory
+			updateFunc = function( i ) {
+				return function( value ) {
+					resolveContexts[ i ] = this;
+					resolveValues[ i ] = arguments.length > 1 ? slice.call( arguments ) : value;
+					if ( !( --remaining ) ) {
+						master.resolveWith( resolveContexts, resolveValues );
+					}
+				};
+			};
+
+		// Single- and empty arguments are adopted like Promise.resolve
+		if ( remaining <= 1 ) {
+			adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject,
+				!remaining );
+
+			// Use .then() to unwrap secondary thenables (cf. gh-3000)
+			if ( master.state() === "pending" ||
+				isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
+
+				return master.then();
+			}
+		}
+
+		// Multiple arguments are aggregated like Promise.all array elements
+		while ( i-- ) {
+			adoptValue( resolveValues[ i ], updateFunc( i ), master.reject );
+		}
+
+		return master.promise();
+	}
+} );
+
+
+// These usually indicate a programmer mistake during development,
+// warn about them ASAP rather than swallowing them by default.
+var rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;
+
+jQuery.Deferred.exceptionHook = function( error, stack ) {
+
+	// Support: IE 8 - 9 only
+	// Console exists when dev tools are open, which can happen at any time
+	if ( window.console && window.console.warn && error && rerrorNames.test( error.name ) ) {
+		window.console.warn( "jQuery.Deferred exception: " + error.message, error.stack, stack );
+	}
+};
+
+
+
+
+jQuery.readyException = function( error ) {
+	window.setTimeout( function() {
+		throw error;
+	} );
+};
+
+
+
+
+// The deferred used on DOM ready
+var readyList = jQuery.Deferred();
+
+jQuery.fn.ready = function( fn ) {
+
+	readyList
+		.then( fn )
+
+		// Wrap jQuery.readyException in a function so that the lookup
+		// happens at the time of error handling instead of callback
+		// registration.
+		.catch( function( error ) {
+			jQuery.readyException( error );
+		} );
+
+	return this;
+};
+
+jQuery.extend( {
+
+	// Is the DOM ready to be used? Set to true once it occurs.
+	isReady: false,
+
+	// A counter to track how many items to wait for before
+	// the ready event fires. See #6781
+	readyWait: 1,
+
+	// Handle when the DOM is ready
+	ready: function( wait ) {
+
+		// Abort if there are pending holds or we're already ready
+		if ( wait === true ? --jQuery.readyWait : jQuery.isReady ) {
+			return;
+		}
+
+		// Remember that the DOM is ready
+		jQuery.isReady = true;
+
+		// If a normal DOM Ready event fired, decrement, and wait if need be
+		if ( wait !== true && --jQuery.readyWait > 0 ) {
+			return;
+		}
+
+		// If there are functions bound, to execute
+		readyList.resolveWith( document, [ jQuery ] );
+	}
+} );
+
+jQuery.ready.then = readyList.then;
+
+// The ready event handler and self cleanup method
+function completed() {
+	document.removeEventListener( "DOMContentLoaded", completed );
+	window.removeEventListener( "load", completed );
+	jQuery.ready();
+}
+
+// Catch cases where $(document).ready() is called
+// after the browser event has already occurred.
+// Support: IE <=9 - 10 only
+// Older IE sometimes signals "interactive" too soon
+if ( document.readyState === "complete" ||
+	( document.readyState !== "loading" && !document.documentElement.doScroll ) ) {
+
+	// Handle it asynchronously to allow scripts the opportunity to delay ready
+	window.setTimeout( jQuery.ready );
+
+} else {
+
+	// Use the handy event callback
+	document.addEventListener( "DOMContentLoaded", completed );
+
+	// A fallback to window.onload, that will always work
+	window.addEventListener( "load", completed );
+}
+
+
+
+
+// Multifunctional method to get and set values of a collection
+// The value/s can optionally be executed if it's a function
+var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {
+	var i = 0,
+		len = elems.length,
+		bulk = key == null;
+
+	// Sets many values
+	if ( toType( key ) === "object" ) {
+		chainable = true;
+		for ( i in key ) {
+			access( elems, fn, i, key[ i ], true, emptyGet, raw );
+		}
+
+	// Sets one value
+	} else if ( value !== undefined ) {
+		chainable = true;
+
+		if ( !isFunction( value ) ) {
+			raw = true;
+		}
+
+		if ( bulk ) {
+
+			// Bulk operations run against the entire set
+			if ( raw ) {
+				fn.call( elems, value );
+				fn = null;
+
+			// ...except when executing function values
+			} else {
+				bulk = fn;
+				fn = function( elem, key, value ) {
+					return bulk.call( jQuery( elem ), value );
+				};
+			}
+		}
+
+		if ( fn ) {
+			for ( ; i < len; i++ ) {
+				fn(
+					elems[ i ], key, raw ?
+					value :
+					value.call( elems[ i ], i, fn( elems[ i ], key ) )
+				);
+			}
+		}
+	}
+
+	if ( chainable ) {
+		return elems;
+	}
+
+	// Gets
+	if ( bulk ) {
+		return fn.call( elems );
+	}
+
+	return len ? fn( elems[ 0 ], key ) : emptyGet;
+};
+
+
+// Matches dashed string for camelizing
+var rmsPrefix = /^-ms-/,
+	rdashAlpha = /-([a-z])/g;
+
+// Used by camelCase as callback to replace()
+function fcamelCase( all, letter ) {
+	return letter.toUpperCase();
+}
+
+// Convert dashed to camelCase; used by the css and data modules
+// Support: IE <=9 - 11, Edge 12 - 15
+// Microsoft forgot to hump their vendor prefix (#9572)
+function camelCase( string ) {
+	return string.replace( rmsPrefix, "ms-" ).replace( rdashAlpha, fcamelCase );
+}
+var acceptData = function( owner ) {
+
+	// Accepts only:
+	//  - Node
+	//    - Node.ELEMENT_NODE
+	//    - Node.DOCUMENT_NODE
+	//  - Object
+	//    - Any
+	return owner.nodeType === 1 || owner.nodeType === 9 || !( +owner.nodeType );
+};
+
+
+
+
+function Data() {
+	this.expando = jQuery.expando + Data.uid++;
+}
+
+Data.uid = 1;
+
+Data.prototype = {
+
+	cache: function( owner ) {
+
+		// Check if the owner object already has a cache
+		var value = owner[ this.expando ];
+
+		// If not, create one
+		if ( !value ) {
+			value = {};
+
+			// We can accept data for non-element nodes in modern browsers,
+			// but we should not, see #8335.
+			// Always return an empty object.
+			if ( acceptData( owner ) ) {
+
+				// If it is a node unlikely to be stringify-ed or looped over
+				// use plain assignment
+				if ( owner.nodeType ) {
+					owner[ this.expando ] = value;
+
+				// Otherwise secure it in a non-enumerable property
+				// configurable must be true to allow the property to be
+				// deleted when data is removed
+				} else {
+					Object.defineProperty( owner, this.expando, {
+						value: value,
+						configurable: true
+					} );
+				}
+			}
+		}
+
+		return value;
+	},
+	set: function( owner, data, value ) {
+		var prop,
+			cache = this.cache( owner );
+
+		// Handle: [ owner, key, value ] args
+		// Always use camelCase key (gh-2257)
+		if ( typeof data === "string" ) {
+			cache[ camelCase( data ) ] = value;
+
+		// Handle: [ owner, { properties } ] args
+		} else {
+
+			// Copy the properties one-by-one to the cache object
+			for ( prop in data ) {
+				cache[ camelCase( prop ) ] = data[ prop ];
+			}
+		}
+		return cache;
+	},
+	get: function( owner, key ) {
+		return key === undefined ?
+			this.cache( owner ) :
+
+			// Always use camelCase key (gh-2257)
+			owner[ this.expando ] && owner[ this.expando ][ camelCase( key ) ];
+	},
+	access: function( owner, key, value ) {
+
+		// In cases where either:
+		//
+		//   1. No key was specified
+		//   2. A string key was specified, but no value provided
+		//
+		// Take the "read" path and allow the get method to determine
+		// which value to return, respectively either:
+		//
+		//   1. The entire cache object
+		//   2. The data stored at the key
+		//
+		if ( key === undefined ||
+				( ( key && typeof key === "string" ) && value === undefined ) ) {
+
+			return this.get( owner, key );
+		}
+
+		// When the key is not a string, or both a key and value
+		// are specified, set or extend (existing objects) with either:
+		//
+		//   1. An object of properties
+		//   2. A key and value
+		//
+		this.set( owner, key, value );
+
+		// Since the "set" path can have two possible entry points
+		// return the expected data based on which path was taken[*]
+		return value !== undefined ? value : key;
+	},
+	remove: function( owner, key ) {
+		var i,
+			cache = owner[ this.expando ];
+
+		if ( cache === undefined ) {
+			return;
+		}
+
+		if ( key !== undefined ) {
+
+			// Support array or space separated string of keys
+			if ( Array.isArray( key ) ) {
+
+				// If key is an array of keys...
+				// We always set camelCase keys, so remove that.
+				key = key.map( camelCase );
+			} else {
+				key = camelCase( key );
+
+				// If a key with the spaces exists, use it.
+				// Otherwise, create an array by matching non-whitespace
+				key = key in cache ?
+					[ key ] :
+					( key.match( rnothtmlwhite ) || [] );
+			}
+
+			i = key.length;
+
+			while ( i-- ) {
+				delete cache[ key[ i ] ];
+			}
+		}
+
+		// Remove the expando if there's no more data
+		if ( key === undefined || jQuery.isEmptyObject( cache ) ) {
+
+			// Support: Chrome <=35 - 45
+			// Webkit & Blink performance suffers when deleting properties
+			// from DOM nodes, so set to undefined instead
+			// https://bugs.chromium.org/p/chromium/issues/detail?id=378607 (bug restricted)
+			if ( owner.nodeType ) {
+				owner[ this.expando ] = undefined;
+			} else {
+				delete owner[ this.expando ];
+			}
+		}
+	},
+	hasData: function( owner ) {
+		var cache = owner[ this.expando ];
+		return cache !== undefined && !jQuery.isEmptyObject( cache );
+	}
+};
+var dataPriv = new Data();
+
+var dataUser = new Data();
+
+
+
+//	Implementation Summary
+//
+//	1. Enforce API surface and semantic compatibility with 1.9.x branch
+//	2. Improve the module's maintainability by reducing the storage
+//		paths to a single mechanism.
+//	3. Use the same single mechanism to support "private" and "user" data.
+//	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
+//	5. Avoid exposing implementation details on user objects (eg. expando properties)
+//	6. Provide a clear path for implementation upgrade to WeakMap in 2014
+
+var rbrace = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
+	rmultiDash = /[A-Z]/g;
+
+function getData( data ) {
+	if ( data === "true" ) {
+		return true;
+	}
+
+	if ( data === "false" ) {
+		return false;
+	}
+
+	if ( data === "null" ) {
+		return null;
+	}
+
+	// Only convert to a number if it doesn't change the string
+	if ( data === +data + "" ) {
+		return +data;
+	}
+
+	if ( rbrace.test( data ) ) {
+		return JSON.parse( data );
+	}
+
+	return data;
+}
+
+function dataAttr( elem, key, data ) {
+	var name;
+
+	// If nothing was found internally, try to fetch any
+	// data from the HTML5 data-* attribute
+	if ( data === undefined && elem.nodeType === 1 ) {
+		name = "data-" + key.replace( rmultiDash, "-$&" ).toLowerCase();
+		data = elem.getAttribute( name );
+
+		if ( typeof data === "string" ) {
+			try {
+				data = getData( data );
+			} catch ( e ) {}
+
+			// Make sure we set the data so it isn't changed later
+			dataUser.set( elem, key, data );
+		} else {
+			data = undefined;
+		}
+	}
+	return data;
+}
+
+jQuery.extend( {
+	hasData: function( elem ) {
+		return dataUser.hasData( elem ) || dataPriv.hasData( elem );
+	},
+
+	data: function( elem, name, data ) {
+		return dataUser.access( elem, name, data );
+	},
+
+	removeData: function( elem, name ) {
+		dataUser.remove( elem, name );
+	},
+
+	// TODO: Now that all calls to _data and _removeData have been replaced
+	// with direct calls to dataPriv methods, these can be deprecated.
+	_data: function( elem, name, data ) {
+		return dataPriv.access( elem, name, data );
+	},
+
+	_removeData: function( elem, name ) {
+		dataPriv.remove( elem, name );
+	}
+} );
+
+jQuery.fn.extend( {
+	data: function( key, value ) {
+		var i, name, data,
+			elem = this[ 0 ],
+			attrs = elem && elem.attributes;
+
+		// Gets all values
+		if ( key === undefined ) {
+			if ( this.length ) {
+				data = dataUser.get( elem );
+
+				if ( elem.nodeType === 1 && !dataPriv.get( elem, "hasDataAttrs" ) ) {
+					i = attrs.length;
+					while ( i-- ) {
+
+						// Support: IE 11 only
+						// The attrs elements can be null (#14894)
+						if ( attrs[ i ] ) {
+							name = attrs[ i ].name;
+							if ( name.indexOf( "data-" ) === 0 ) {
+								name = camelCase( name.slice( 5 ) );
+								dataAttr( elem, name, data[ name ] );
+							}
+						}
+					}
+					dataPriv.set( elem, "hasDataAttrs", true );
+				}
+			}
+
+			return data;
+		}
+
+		// Sets multiple values
+		if ( typeof key === "object" ) {
+			return this.each( function() {
+				dataUser.set( this, key );
+			} );
+		}
+
+		return access( this, function( value ) {
+			var data;
+
+			// The calling jQuery object (element matches) is not empty
+			// (and therefore has an element appears at this[ 0 ]) and the
+			// `value` parameter was not undefined. An empty jQuery object
+			// will result in `undefined` for elem = this[ 0 ] which will
+			// throw an exception if an attempt to read a data cache is made.
+			if ( elem && value === undefined ) {
+
+				// Attempt to get data from the cache
+				// The key will always be camelCased in Data
+				data = dataUser.get( elem, key );
+				if ( data !== undefined ) {
+					return data;
+				}
+
+				// Attempt to "discover" the data in
+				// HTML5 custom data-* attrs
+				data = dataAttr( elem, key );
+				if ( data !== undefined ) {
+					return data;
+				}
+
+				// We tried really hard, but the data doesn't exist.
+				return;
+			}
+
+			// Set the data...
+			this.each( function() {
+
+				// We always store the camelCased key
+				dataUser.set( this, key, value );
+			} );
+		}, null, value, arguments.length > 1, null, true );
+	},
+
+	removeData: function( key ) {
+		return this.each( function() {
+			dataUser.remove( this, key );
+		} );
+	}
+} );
+
+
+jQuery.extend( {
+	queue: function( elem, type, data ) {
+		var queue;
+
+		if ( elem ) {
+			type = ( type || "fx" ) + "queue";
+			queue = dataPriv.get( elem, type );
+
+			// Speed up dequeue by getting out quickly if this is just a lookup
+			if ( data ) {
+				if ( !queue || Array.isArray( data ) ) {
+					queue = dataPriv.access( elem, type, jQuery.makeArray( data ) );
+				} else {
+					queue.push( data );
+				}
+			}
+			return queue || [];
+		}
+	},
+
+	dequeue: function( elem, type ) {
+		type = type || "fx";
+
+		var queue = jQuery.queue( elem, type ),
+			startLength = queue.length,
+			fn = queue.shift(),
+			hooks = jQuery._queueHooks( elem, type ),
+			next = function() {
+				jQuery.dequeue( elem, type );
+			};
+
+		// If the fx queue is dequeued, always remove the progress sentinel
+		if ( fn === "inprogress" ) {
+			fn = queue.shift();
+			startLength--;
+		}
+
+		if ( fn ) {
+
+			// Add a progress sentinel to prevent the fx queue from being
+			// automatically dequeued
+			if ( type === "fx" ) {
+				queue.unshift( "inprogress" );
+			}
+
+			// Clear up the last queue stop function
+			delete hooks.stop;
+			fn.call( elem, next, hooks );
+		}
+
+		if ( !startLength && hooks ) {
+			hooks.empty.fire();
+		}
+	},
+
+	// Not public - generate a queueHooks object, or return the current one
+	_queueHooks: function( elem, type ) {
+		var key = type + "queueHooks";
+		return dataPriv.get( elem, key ) || dataPriv.access( elem, key, {
+			empty: jQuery.Callbacks( "once memory" ).add( function() {
+				dataPriv.remove( elem, [ type + "queue", key ] );
+			} )
+		} );
+	}
+} );
+
+jQuery.fn.extend( {
+	queue: function( type, data ) {
+		var setter = 2;
+
+		if ( typeof type !== "string" ) {
+			data = type;
+			type = "fx";
+			setter--;
+		}
+
+		if ( arguments.length < setter ) {
+			return jQuery.queue( this[ 0 ], type );
+		}
+
+		return data === undefined ?
+			this :
+			this.each( function() {
+				var queue = jQuery.queue( this, type, data );
+
+				// Ensure a hooks for this queue
+				jQuery._queueHooks( this, type );
+
+				if ( type === "fx" && queue[ 0 ] !== "inprogress" ) {
+					jQuery.dequeue( this, type );
+				}
+			} );
+	},
+	dequeue: function( type ) {
+		return this.each( function() {
+			jQuery.dequeue( this, type );
+		} );
+	},
+	clearQueue: function( type ) {
+		return this.queue( type || "fx", [] );
+	},
+
+	// Get a promise resolved when queues of a certain type
+	// are emptied (fx is the type by default)
+	promise: function( type, obj ) {
+		var tmp,
+			count = 1,
+			defer = jQuery.Deferred(),
+			elements = this,
+			i = this.length,
+			resolve = function() {
+				if ( !( --count ) ) {
+					defer.resolveWith( elements, [ elements ] );
+				}
+			};
+
+		if ( typeof type !== "string" ) {
+			obj = type;
+			type = undefined;
+		}
+		type = type || "fx";
+
+		while ( i-- ) {
+			tmp = dataPriv.get( elements[ i ], type + "queueHooks" );
+			if ( tmp && tmp.empty ) {
+				count++;
+				tmp.empty.add( resolve );
+			}
+		}
+		resolve();
+		return defer.promise( obj );
+	}
+} );
+var pnum = ( /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/ ).source;
+
+var rcssNum = new RegExp( "^(?:([+-])=|)(" + pnum + ")([a-z%]*)$", "i" );
+
+
+var cssExpand = [ "Top", "Right", "Bottom", "Left" ];
+
+var isHiddenWithinTree = function( elem, el ) {
+
+		// isHiddenWithinTree might be called from jQuery#filter function;
+		// in that case, element will be second argument
+		elem = el || elem;
+
+		// Inline style trumps all
+		return elem.style.display === "none" ||
+			elem.style.display === "" &&
+
+			// Otherwise, check computed style
+			// Support: Firefox <=43 - 45
+			// Disconnected elements can have computed display: none, so first confirm that elem is
+			// in the document.
+			jQuery.contains( elem.ownerDocument, elem ) &&
+
+			jQuery.css( elem, "display" ) === "none";
+	};
+
+var swap = function( elem, options, callback, args ) {
+	var ret, name,
+		old = {};
+
+	// Remember the old values, and insert the new ones
+	for ( name in options ) {
+		old[ name ] = elem.style[ name ];
+		elem.style[ name ] = options[ name ];
+	}
+
+	ret = callback.apply( elem, args || [] );
+
+	// Revert the old values
+	for ( name in options ) {
+		elem.style[ name ] = old[ name ];
+	}
+
+	return ret;
+};
+
+
+
+
+function adjustCSS( elem, prop, valueParts, tween ) {
+	var adjusted, scale,
+		maxIterations = 20,
+		currentValue = tween ?
+			function() {
+				return tween.cur();
+			} :
+			function() {
+				return jQuery.css( elem, prop, "" );
+			},
+		initial = currentValue(),
+		unit = valueParts && valueParts[ 3 ] || ( jQuery.cssNumber[ prop ] ? "" : "px" ),
+
+		// Starting value computation is required for potential unit mismatches
+		initialInUnit = ( jQuery.cssNumber[ prop ] || unit !== "px" && +initial ) &&
+			rcssNum.exec( jQuery.css( elem, prop ) );
+
+	if ( initialInUnit && initialInUnit[ 3 ] !== unit ) {
+
+		// Support: Firefox <=54
+		// Halve the iteration target value to prevent interference from CSS upper bounds (gh-2144)
+		initial = initial / 2;
+
+		// Trust units reported by jQuery.css
+		unit = unit || initialInUnit[ 3 ];
+
+		// Iteratively approximate from a nonzero starting point
+		initialInUnit = +initial || 1;
+
+		while ( maxIterations-- ) {
+
+			// Evaluate and update our best guess (doubling guesses that zero out).
+			// Finish if the scale equals or crosses 1 (making the old*new product non-positive).
+			jQuery.style( elem, prop, initialInUnit + unit );
+			if ( ( 1 - scale ) * ( 1 - ( scale = currentValue() / initial || 0.5 ) ) <= 0 ) {
+				maxIterations = 0;
+			}
+			initialInUnit = initialInUnit / scale;
+
+		}
+
+		initialInUnit = initialInUnit * 2;
+		jQuery.style( elem, prop, initialInUnit + unit );
+
+		// Make sure we update the tween properties later on
+		valueParts = valueParts || [];
+	}
+
+	if ( valueParts ) {
+		initialInUnit = +initialInUnit || +initial || 0;
+
+		// Apply relative offset (+=/-=) if specified
+		adjusted = valueParts[ 1 ] ?
+			initialInUnit + ( valueParts[ 1 ] + 1 ) * valueParts[ 2 ] :
+			+valueParts[ 2 ];
+		if ( tween ) {
+			tween.unit = unit;
+			tween.start = initialInUnit;
+			tween.end = adjusted;
+		}
+	}
+	return adjusted;
+}
+
+
+var defaultDisplayMap = {};
+
+function getDefaultDisplay( elem ) {
+	var temp,
+		doc = elem.ownerDocument,
+		nodeName = elem.nodeName,
+		display = defaultDisplayMap[ nodeName ];
+
+	if ( display ) {
+		return display;
+	}
+
+	temp = doc.body.appendChild( doc.createElement( nodeName ) );
+	display = jQuery.css( temp, "display" );
+
+	temp.parentNode.removeChild( temp );
+
+	if ( display === "none" ) {
+		display = "block";
+	}
+	defaultDisplayMap[ nodeName ] = display;
+
+	return display;
+}
+
+function showHide( elements, show ) {
+	var display, elem,
+		values = [],
+		index = 0,
+		length = elements.length;
+
+	// Determine new display value for elements that need to change
+	for ( ; index < length; index++ ) {
+		elem = elements[ index ];
+		if ( !elem.style ) {
+			continue;
+		}
+
+		display = elem.style.display;
+		if ( show ) {
+
+			// Since we force visibility upon cascade-hidden elements, an immediate (and slow)
+			// check is required in this first loop unless we have a nonempty display value (either
+			// inline or about-to-be-restored)
+			if ( display === "none" ) {
+				values[ index ] = dataPriv.get( elem, "display" ) || null;
+				if ( !values[ index ] ) {
+					elem.style.display = "";
+				}
+			}
+			if ( elem.style.display === "" && isHiddenWithinTree( elem ) ) {
+				values[ index ] = getDefaultDisplay( elem );
+			}
+		} else {
+			if ( display !== "none" ) {
+				values[ index ] = "none";
+
+				// Remember what we're overwriting
+				dataPriv.set( elem, "display", display );
+			}
+		}
+	}
+
+	// Set the display of the elements in a second loop to avoid constant reflow
+	for ( index = 0; index < length; index++ ) {
+		if ( values[ index ] != null ) {
+			elements[ index ].style.display = values[ index ];
+		}
+	}
+
+	return elements;
+}
+
+jQuery.fn.extend( {
+	show: function() {
+		return showHide( this, true );
+	},
+	hide: function() {
+		return showHide( this );
+	},
+	toggle: function( state ) {
+		if ( typeof state === "boolean" ) {
+			return state ? this.show() : this.hide();
+		}
+
+		return this.each( function() {
+			if ( isHiddenWithinTree( this ) ) {
+				jQuery( this ).show();
+			} else {
+				jQuery( this ).hide();
+			}
+		} );
+	}
+} );
+var rcheckableType = ( /^(?:checkbox|radio)$/i );
+
+var rtagName = ( /<([a-z][^\/\0>\x20\t\r\n\f]+)/i );
+
+var rscriptType = ( /^$|^module$|\/(?:java|ecma)script/i );
+
+
+
+// We have to close these tags to support XHTML (#13200)
+var wrapMap = {
+
+	// Support: IE <=9 only
+	option: [ 1, "<select multiple='multiple'>", "</select>" ],
+
+	// XHTML parsers do not magically insert elements in the
+	// same way that tag soup parsers do. So we cannot shorten
+	// this by omitting <tbody> or other required elements.
+	thead: [ 1, "<table>", "</table>" ],
+	col: [ 2, "<table><colgroup>", "</colgroup></table>" ],
+	tr: [ 2, "<table><tbody>", "</tbody></table>" ],
+	td: [ 3, "<table><tbody><tr>", "</tr></tbody></table>" ],
+
+	_default: [ 0, "", "" ]
+};
+
+// Support: IE <=9 only
+wrapMap.optgroup = wrapMap.option;
+
+wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.thead;
+wrapMap.th = wrapMap.td;
+
+
+function getAll( context, tag ) {
+
+	// Support: IE <=9 - 11 only
+	// Use typeof to avoid zero-argument method invocation on host objects (#15151)
+	var ret;
+
+	if ( typeof context.getElementsByTagName !== "undefined" ) {
+		ret = context.getElementsByTagName( tag || "*" );
+
+	} else if ( typeof context.querySelectorAll !== "undefined" ) {
+		ret = context.querySelectorAll( tag || "*" );
+
+	} else {
+		ret = [];
+	}
+
+	if ( tag === undefined || tag && nodeName( context, tag ) ) {
+		return jQuery.merge( [ context ], ret );
+	}
+
+	return ret;
+}
+
+
+// Mark scripts as having already been evaluated
+function setGlobalEval( elems, refElements ) {
+	var i = 0,
+		l = elems.length;
+
+	for ( ; i < l; i++ ) {
+		dataPriv.set(
+			elems[ i ],
+			"globalEval",
+			!refElements || dataPriv.get( refElements[ i ], "globalEval" )
+		);
+	}
+}
+
+
+var rhtml = /<|&#?\w+;/;
+
+function buildFragment( elems, context, scripts, selection, ignored ) {
+	var elem, tmp, tag, wrap, contains, j,
+		fragment = context.createDocumentFragment(),
+		nodes = [],
+		i = 0,
+		l = elems.length;
+
+	for ( ; i < l; i++ ) {
+		elem = elems[ i ];
+
+		if ( elem || elem === 0 ) {
+
+			// Add nodes directly
+			if ( toType( elem ) === "object" ) {
+
+				// Support: Android <=4.0 only, PhantomJS 1 only
+				// push.apply(_, arraylike) throws on ancient WebKit
+				jQuery.merge( nodes, elem.nodeType ? [ elem ] : elem );
+
+			// Convert non-html into a text node
+			} else if ( !rhtml.test( elem ) ) {
+				nodes.push( context.createTextNode( elem ) );
+
+			// Convert html into DOM nodes
+			} else {
+				tmp = tmp || fragment.appendChild( context.createElement( "div" ) );
+
+				// Deserialize a standard representation
+				tag = ( rtagName.exec( elem ) || [ "", "" ] )[ 1 ].toLowerCase();
+				wrap = wrapMap[ tag ] || wrapMap._default;
+				tmp.innerHTML = wrap[ 1 ] + jQuery.htmlPrefilter( elem ) + wrap[ 2 ];
+
+				// Descend through wrappers to the right content
+				j = wrap[ 0 ];
+				while ( j-- ) {
+					tmp = tmp.lastChild;
+				}
+
+				// Support: Android <=4.0 only, PhantomJS 1 only
+				// push.apply(_, arraylike) throws on ancient WebKit
+				jQuery.merge( nodes, tmp.childNodes );
+
+				// Remember the top-level container
+				tmp = fragment.firstChild;
+
+				// Ensure the created nodes are orphaned (#12392)
+				tmp.textContent = "";
+			}
+		}
+	}
+
+	// Remove wrapper from fragment
+	fragment.textContent = "";
+
+	i = 0;
+	while ( ( elem = nodes[ i++ ] ) ) {
+
+		// Skip elements already in the context collection (trac-4087)
+		if ( selection && jQuery.inArray( elem, selection ) > -1 ) {
+			if ( ignored ) {
+				ignored.push( elem );
+			}
+			continue;
+		}
+
+		contains = jQuery.contains( elem.ownerDocument, elem );
+
+		// Append to fragment
+		tmp = getAll( fragment.appendChild( elem ), "script" );
+
+		// Preserve script evaluation history
+		if ( contains ) {
+			setGlobalEval( tmp );
+		}
+
+		// Capture executables
+		if ( scripts ) {
+			j = 0;
+			while ( ( elem = tmp[ j++ ] ) ) {
+				if ( rscriptType.test( elem.type || "" ) ) {
+					scripts.push( elem );
+				}
+			}
+		}
+	}
+
+	return fragment;
+}
+
+
+( function() {
+	var fragment = document.createDocumentFragment(),
+		div = fragment.appendChild( document.createElement( "div" ) ),
+		input = document.createElement( "input" );
+
+	// Support: Android 4.0 - 4.3 only
+	// Check state lost if the name is set (#11217)
+	// Support: Windows Web Apps (WWA)
+	// `name` and `type` must use .setAttribute for WWA (#14901)
+	input.setAttribute( "type", "radio" );
+	input.setAttribute( "checked", "checked" );
+	input.setAttribute( "name", "t" );
+
+	div.appendChild( input );
+
+	// Support: Android <=4.1 only
+	// Older WebKit doesn't clone checked state correctly in fragments
+	support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
+
+	// Support: IE <=11 only
+	// Make sure textarea (and checkbox) defaultValue is properly cloned
+	div.innerHTML = "<textarea>x</textarea>";
+	support.noCloneChecked = !!div.cloneNode( true ).lastChild.defaultValue;
+} )();
+var documentElement = document.documentElement;
+
+
+
+var
+	rkeyEvent = /^key/,
+	rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
+	rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
+
+function returnTrue() {
+	return true;
+}
+
+function returnFalse() {
+	return false;
+}
+
+// Support: IE <=9 only
+// See #13393 for more info
+function safeActiveElement() {
+	try {
+		return document.activeElement;
+	} catch ( err ) { }
+}
+
+function on( elem, types, selector, data, fn, one ) {
+	var origFn, type;
+
+	// Types can be a map of types/handlers
+	if ( typeof types === "object" ) {
+
+		// ( types-Object, selector, data )
+		if ( typeof selector !== "string" ) {
+
+			// ( types-Object, data )
+			data = data || selector;
+			selector = undefined;
+		}
+		for ( type in types ) {
+			on( elem, type, selector, data, types[ type ], one );
+		}
+		return elem;
+	}
+
+	if ( data == null && fn == null ) {
+
+		// ( types, fn )
+		fn = selector;
+		data = selector = undefined;
+	} else if ( fn == null ) {
+		if ( typeof selector === "string" ) {
+
+			// ( types, selector, fn )
+			fn = data;
+			data = undefined;
+		} else {
+
+			// ( types, data, fn )
+			fn = data;
+			data = selector;
+			selector = undefined;
+		}
+	}
+	if ( fn === false ) {
+		fn = returnFalse;
+	} else if ( !fn ) {
+		return elem;
+	}
+
+	if ( one === 1 ) {
+		origFn = fn;
+		fn = function( event ) {
+
+			// Can use an empty set, since event contains the info
+			jQuery().off( event );
+			return origFn.apply( this, arguments );
+		};
+
+		// Use same guid so caller can remove using origFn
+		fn.guid = origFn.guid || ( origFn.guid = jQuery.guid++ );
+	}
+	return elem.each( function() {
+		jQuery.event.add( this, types, fn, data, selector );
+	} );
+}
+
+/*
+ * Helper functions for managing events -- not part of the public interface.
+ * Props to Dean Edwards' addEvent library for many of the ideas.
+ */
+jQuery.event = {
+
+	global: {},
+
+	add: function( elem, types, handler, data, selector ) {
+
+		var handleObjIn, eventHandle, tmp,
+			events, t, handleObj,
+			special, handlers, type, namespaces, origType,
+			elemData = dataPriv.get( elem );
+
+		// Don't attach events to noData or text/comment nodes (but allow plain objects)
+		if ( !elemData ) {
+			return;
+		}
+
+		// Caller can pass in an object of custom data in lieu of the handler
+		if ( handler.handler ) {
+			handleObjIn = handler;
+			handler = handleObjIn.handler;
+			selector = handleObjIn.selector;
+		}
+
+		// Ensure that invalid selectors throw exceptions at attach time
+		// Evaluate against documentElement in case elem is a non-element node (e.g., document)
+		if ( selector ) {
+			jQuery.find.matchesSelector( documentElement, selector );
+		}
+
+		// Make sure that the handler has a unique ID, used to find/remove it later
+		if ( !handler.guid ) {
+			handler.guid = jQuery.guid++;
+		}
+
+		// Init the element's event structure and main handler, if this is the first
+		if ( !( events = elemData.events ) ) {
+			events = elemData.events = {};
+		}
+		if ( !( eventHandle = elemData.handle ) ) {
+			eventHandle = elemData.handle = function( e ) {
+
+				// Discard the second event of a jQuery.event.trigger() and
+				// when an event is called after a page has unloaded
+				return typeof jQuery !== "undefined" && jQuery.event.triggered !== e.type ?
+					jQuery.event.dispatch.apply( elem, arguments ) : undefined;
+			};
+		}
+
+		// Handle multiple events separated by a space
+		types = ( types || "" ).match( rnothtmlwhite ) || [ "" ];
+		t = types.length;
+		while ( t-- ) {
+			tmp = rtypenamespace.exec( types[ t ] ) || [];
+			type = origType = tmp[ 1 ];
+			namespaces = ( tmp[ 2 ] || "" ).split( "." ).sort();
+
+			// There *must* be a type, no attaching namespace-only handlers
+			if ( !type ) {
+				continue;
+			}
+
+			// If event changes its type, use the special event handlers for the changed type
+			special = jQuery.event.special[ type ] || {};
+
+			// If selector defined, determine special event api type, otherwise given type
+			type = ( selector ? special.delegateType : special.bindType ) || type;
+
+			// Update special based on newly reset type
+			special = jQuery.event.special[ type ] || {};
+
+			// handleObj is passed to all event handlers
+			handleObj = jQuery.extend( {
+				type: type,
+				origType: origType,
+				data: data,
+				handler: handler,
+				guid: handler.guid,
+				selector: selector,
+				needsContext: selector && jQuery.expr.match.needsContext.test( selector ),
+				namespace: namespaces.join( "." )
+			}, handleObjIn );
+
+			// Init the event handler queue if we're the first
+			if ( !( handlers = events[ type ] ) ) {
+				handlers = events[ type ] = [];
+				handlers.delegateCount = 0;
+
+				// Only use addEventListener if the special events handler returns false
+				if ( !special.setup ||
+					special.setup.call( elem, data, namespaces, eventHandle ) === false ) {
+
+					if ( elem.addEventListener ) {
+						elem.addEventListener( type, eventHandle );
+					}
+				}
+			}
+
+			if ( special.add ) {
+				special.add.call( elem, handleObj );
+
+				if ( !handleObj.handler.guid ) {
+					handleObj.handler.guid = handler.guid;
+				}
+			}
+
+			// Add to the element's handler list, delegates in front
+			if ( selector ) {
+				handlers.splice( handlers.delegateCount++, 0, handleObj );
+			} else {
+				handlers.push( handleObj );
+			}
+
+			// Keep track of which events have ever been used, for event optimization
+			jQuery.event.global[ type ] = true;
+		}
+
+	},
+
+	// Detach an event or set of events from an element
+	remove: function( elem, types, handler, selector, mappedTypes ) {
+
+		var j, origCount, tmp,
+			events, t, handleObj,
+			special, handlers, type, namespaces, origType,
+			elemData = dataPriv.hasData( elem ) && dataPriv.get( elem );
+
+		if ( !elemData || !( events = elemData.events ) ) {
+			return;
+		}
+
+		// Once for each type.namespace in types; type may be omitted
+		types = ( types || "" ).match( rnothtmlwhite ) || [ "" ];
+		t = types.length;
+		while ( t-- ) {
+			tmp = rtypenamespace.exec( types[ t ] ) || [];
+			type = origType = tmp[ 1 ];
+			namespaces = ( tmp[ 2 ] || "" ).split( "." ).sort();
+
+			// Unbind all events (on this namespace, if provided) for the element
+			if ( !type ) {
+				for ( type in events ) {
+					jQuery.event.remove( elem, type + types[ t ], handler, selector, true );
+				}
+				continue;
+			}
+
+			special = jQuery.event.special[ type ] || {};
+			type = ( selector ? special.delegateType : special.bindType ) || type;
+			handlers = events[ type ] || [];
+			tmp = tmp[ 2 ] &&
+				new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" );
+
+			// Remove matching events
+			origCount = j = handlers.length;
+			while ( j-- ) {
+				handleObj = handlers[ j ];
+
+				if ( ( mappedTypes || origType === handleObj.origType ) &&
+					( !handler || handler.guid === handleObj.guid ) &&
+					( !tmp || tmp.test( handleObj.namespace ) ) &&
+					( !selector || selector === handleObj.selector ||
+						selector === "**" && handleObj.selector ) ) {
+					handlers.splice( j, 1 );
+
+					if ( handleObj.selector ) {
+						handlers.delegateCount--;
+					}
+					if ( special.remove ) {
+						special.remove.call( elem, handleObj );
+					}
+				}
+			}
+
+			// Remove generic event handler if we removed something and no more handlers exist
+			// (avoids potential for endless recursion during removal of special event handlers)
+			if ( origCount && !handlers.length ) {
+				if ( !special.teardown ||
+					special.teardown.call( elem, namespaces, elemData.handle ) === false ) {
+
+					jQuery.removeEvent( elem, type, elemData.handle );
+				}
+
+				delete events[ type ];
+			}
+		}
+
+		// Remove data and the expando if it's no longer used
+		if ( jQuery.isEmptyObject( events ) ) {
+			dataPriv.remove( elem, "handle events" );
+		}
+	},
+
+	dispatch: function( nativeEvent ) {
+
+		// Make a writable jQuery.Event from the native event object
+		var event = jQuery.event.fix( nativeEvent );
+
+		var i, j, ret, matched, handleObj, handlerQueue,
+			args = new Array( arguments.length ),
+			handlers = ( dataPriv.get( this, "events" ) || {} )[ event.type ] || [],
+			special = jQuery.event.special[ event.type ] || {};
+
+		// Use the fix-ed jQuery.Event rather than the (read-only) native event
+		args[ 0 ] = event;
+
+		for ( i = 1; i < arguments.length; i++ ) {
+			args[ i ] = arguments[ i ];
+		}
+
+		event.delegateTarget = this;
+
+		// Call the preDispatch hook for the mapped type, and let it bail if desired
+		if ( special.preDispatch && special.preDispatch.call( this, event ) === false ) {
+			return;
+		}
+
+		// Determine handlers
+		handlerQueue = jQuery.event.handlers.call( this, event, handlers );
+
+		// Run delegates first; they may want to stop propagation beneath us
+		i = 0;
+		while ( ( matched = handlerQueue[ i++ ] ) && !event.isPropagationStopped() ) {
+			event.currentTarget = matched.elem;
+
+			j = 0;
+			while ( ( handleObj = matched.handlers[ j++ ] ) &&
+				!event.isImmediatePropagationStopped() ) {
+
+				// Triggered event must either 1) have no namespace, or 2) have namespace(s)
+				// a subset or equal to those in the bound event (both can have no namespace).
+				if ( !event.rnamespace || event.rnamespace.test( handleObj.namespace ) ) {
+
+					event.handleObj = handleObj;
+					event.data = handleObj.data;
+
+					ret = ( ( jQuery.event.special[ handleObj.origType ] || {} ).handle ||
+						handleObj.handler ).apply( matched.elem, args );
+
+					if ( ret !== undefined ) {
+						if ( ( event.result = ret ) === false ) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+					}
+				}
+			}
+		}
+
+		// Call the postDispatch hook for the mapped type
+		if ( special.postDispatch ) {
+			special.postDispatch.call( this, event );
+		}
+
+		return event.result;
+	},
+
+	handlers: function( event, handlers ) {
+		var i, handleObj, sel, matchedHandlers, matchedSelectors,
+			handlerQueue = [],
+			delegateCount = handlers.delegateCount,
+			cur = event.target;
+
+		// Find delegate handlers
+		if ( delegateCount &&
+
+			// Support: IE <=9
+			// Black-hole SVG <use> instance trees (trac-13180)
+			cur.nodeType &&
+
+			// Support: Firefox <=42
+			// Suppress spec-violating clicks indicating a non-primary pointer button (trac-3861)
+			// https://www.w3.org/TR/DOM-Level-3-Events/#event-type-click
+			// Support: IE 11 only
+			// ...but not arrow key "clicks" of radio inputs, which can have `button` -1 (gh-2343)
+			!( event.type === "click" && event.button >= 1 ) ) {
+
+			for ( ; cur !== this; cur = cur.parentNode || this ) {
+
+				// Don't check non-elements (#13208)
+				// Don't process clicks on disabled elements (#6911, #8165, #11382, #11764)
+				if ( cur.nodeType === 1 && !( event.type === "click" && cur.disabled === true ) ) {
+					matchedHandlers = [];
+					matchedSelectors = {};
+					for ( i = 0; i < delegateCount; i++ ) {
+						handleObj = handlers[ i ];
+
+						// Don't conflict with Object.prototype properties (#13203)
+						sel = handleObj.selector + " ";
+
+						if ( matchedSelectors[ sel ] === undefined ) {
+							matchedSelectors[ sel ] = handleObj.needsContext ?
+								jQuery( sel, this ).index( cur ) > -1 :
+								jQuery.find( sel, this, null, [ cur ] ).length;
+						}
+						if ( matchedSelectors[ sel ] ) {
+							matchedHandlers.push( handleObj );
+						}
+					}
+					if ( matchedHandlers.length ) {
+						handlerQueue.push( { elem: cur, handlers: matchedHandlers } );
+					}
+				}
+			}
+		}
+
+		// Add the remaining (directly-bound) handlers
+		cur = this;
+		if ( delegateCount < handlers.length ) {
+			handlerQueue.push( { elem: cur, handlers: handlers.slice( delegateCount ) } );
+		}
+
+		return handlerQueue;
+	},
+
+	addProp: function( name, hook ) {
+		Object.defineProperty( jQuery.Event.prototype, name, {
+			enumerable: true,
+			configurable: true,
+
+			get: isFunction( hook ) ?
+				function() {
+					if ( this.originalEvent ) {
+							return hook( this.originalEvent );
+					}
+				} :
+				function() {
+					if ( this.originalEvent ) {
+							return this.originalEvent[ name ];
+					}
+				},
+
+			set: function( value ) {
+				Object.defineProperty( this, name, {
+					enumerable: true,
+					configurable: true,
+					writable: true,
+					value: value
+				} );
+			}
+		} );
+	},
+
+	fix: function( originalEvent ) {
+		return originalEvent[ jQuery.expando ] ?
+			originalEvent :
+			new jQuery.Event( originalEvent );
+	},
+
+	special: {
+		load: {
+
+			// Prevent triggered image.load events from bubbling to window.load
+			noBubble: true
+		},
+		focus: {
+
+			// Fire native event if possible so blur/focus sequence is correct
+			trigger: function() {
+				if ( this !== safeActiveElement() && this.focus ) {
+					this.focus();
+					return false;
+				}
+			},
+			delegateType: "focusin"
+		},
+		blur: {
+			trigger: function() {
+				if ( this === safeActiveElement() && this.blur ) {
+					this.blur();
+					return false;
+				}
+			},
+			delegateType: "focusout"
+		},
+		click: {
+
+			// For checkbox, fire native event so checked state will be right
+			trigger: function() {
+				if ( this.type === "checkbox" && this.click && nodeName( this, "input" ) ) {
+					this.click();
+					return false;
+				}
+			},
+
+			// For cross-browser consistency, don't fire native .click() on links
+			_default: function( event ) {
+				return nodeName( event.target, "a" );
+			}
+		},
+
+		beforeunload: {
+			postDispatch: function( event ) {
+
+				// Support: Firefox 20+
+				// Firefox doesn't alert if the returnValue field is not set.
+				if ( event.result !== undefined && event.originalEvent ) {
+					event.originalEvent.returnValue = event.result;
+				}
+			}
+		}
+	}
+};
+
+jQuery.removeEvent = function( elem, type, handle ) {
+
+	// This "if" is needed for plain objects
+	if ( elem.removeEventListener ) {
+		elem.removeEventListener( type, handle );
+	}
+};
+
+jQuery.Event = function( src, props ) {
+
+	// Allow instantiation without the 'new' keyword
+	if ( !( this instanceof jQuery.Event ) ) {
+		return new jQuery.Event( src, props );
+	}
+
+	// Event object
+	if ( src && src.type ) {
+		this.originalEvent = src;
+		this.type = src.type;
+
+		// Events bubbling up the document may have been marked as prevented
+		// by a handler lower down the tree; reflect the correct value.
+		this.isDefaultPrevented = src.defaultPrevented ||
+				src.defaultPrevented === undefined &&
+
+				// Support: Android <=2.3 only
+				src.returnValue === false ?
+			returnTrue :
+			returnFalse;
+
+		// Create target properties
+		// Support: Safari <=6 - 7 only
+		// Target should not be a text node (#504, #13143)
+		this.target = ( src.target && src.target.nodeType === 3 ) ?
+			src.target.parentNode :
+			src.target;
+
+		this.currentTarget = src.currentTarget;
+		this.relatedTarget = src.relatedTarget;
+
+	// Event type
+	} else {
+		this.type = src;
+	}
+
+	// Put explicitly provided properties onto the event object
+	if ( props ) {
+		jQuery.extend( this, props );
+	}
+
+	// Create a timestamp if incoming event doesn't have one
+	this.timeStamp = src && src.timeStamp || Date.now();
+
+	// Mark it as fixed
+	this[ jQuery.expando ] = true;
+};
+
+// jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding
+// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+jQuery.Event.prototype = {
+	constructor: jQuery.Event,
+	isDefaultPrevented: returnFalse,
+	isPropagationStopped: returnFalse,
+	isImmediatePropagationStopped: returnFalse,
+	isSimulated: false,
+
+	preventDefault: function() {
+		var e = this.originalEvent;
+
+		this.isDefaultPrevented = returnTrue;
+
+		if ( e && !this.isSimulated ) {
+			e.preventDefault();
+		}
+	},
+	stopPropagation: function() {
+		var e = this.originalEvent;
+
+		this.isPropagationStopped = returnTrue;
+
+		if ( e && !this.isSimulated ) {
+			e.stopPropagation();
+		}
+	},
+	stopImmediatePropagation: function() {
+		var e = this.originalEvent;
+
+		this.isImmediatePropagationStopped = returnTrue;
+
+		if ( e && !this.isSimulated ) {
+			e.stopImmediatePropagation();
+		}
+
+		this.stopPropagation();
+	}
+};
+
+// Includes all common event props including KeyEvent and MouseEvent specific props
+jQuery.each( {
+	altKey: true,
+	bubbles: true,
+	cancelable: true,
+	changedTouches: true,
+	ctrlKey: true,
+	detail: true,
+	eventPhase: true,
+	metaKey: true,
+	pageX: true,
+	pageY: true,
+	shiftKey: true,
+	view: true,
+	"char": true,
+	charCode: true,
+	key: true,
+	keyCode: true,
+	button: true,
+	buttons: true,
+	clientX: true,
+	clientY: true,
+	offsetX: true,
+	offsetY: true,
+	pointerId: true,
+	pointerType: true,
+	screenX: true,
+	screenY: true,
+	targetTouches: true,
+	toElement: true,
+	touches: true,
+
+	which: function( event ) {
+		var button = event.button;
+
+		// Add which for key events
+		if ( event.which == null && rkeyEvent.test( event.type ) ) {
+			return event.charCode != null ? event.charCode : event.keyCode;
+		}
+
+		// Add which for click: 1 === left; 2 === middle; 3 === right
+		if ( !event.which && button !== undefined && rmouseEvent.test( event.type ) ) {
+			if ( button & 1 ) {
+				return 1;
+			}
+
+			if ( button & 2 ) {
+				return 3;
+			}
+
+			if ( button & 4 ) {
+				return 2;
+			}
+
+			return 0;
+		}
+
+		return event.which;
+	}
+}, jQuery.event.addProp );
+
+// Create mouseenter/leave events using mouseover/out and event-time checks
+// so that event delegation works in jQuery.
+// Do the same for pointerenter/pointerleave and pointerover/pointerout
+//
+// Support: Safari 7 only
+// Safari sends mouseenter too often; see:
+// https://bugs.chromium.org/p/chromium/issues/detail?id=470258
+// for the description of the bug (it existed in older Chrome versions as well).
+jQuery.each( {
+	mouseenter: "mouseover",
+	mouseleave: "mouseout",
+	pointerenter: "pointerover",
+	pointerleave: "pointerout"
+}, function( orig, fix ) {
+	jQuery.event.special[ orig ] = {
+		delegateType: fix,
+		bindType: fix,
+
+		handle: function( event ) {
+			var ret,
+				target = this,
+				related = event.relatedTarget,
+				handleObj = event.handleObj;
+
+			// For mouseenter/leave call the handler if related is outside the target.
+			// NB: No relatedTarget if the mouse left/entered the browser window
+			if ( !related || ( related !== target && !jQuery.contains( target, related ) ) ) {
+				event.type = handleObj.origType;
+				ret = handleObj.handler.apply( this, arguments );
+				event.type = fix;
+			}
+			return ret;
+		}
+	};
+} );
+
+jQuery.fn.extend( {
+
+	on: function( types, selector, data, fn ) {
+		return on( this, types, selector, data, fn );
+	},
+	one: function( types, selector, data, fn ) {
+		return on( this, types, selector, data, fn, 1 );
+	},
+	off: function( types, selector, fn ) {
+		var handleObj, type;
+		if ( types && types.preventDefault && types.handleObj ) {
+
+			// ( event )  dispatched jQuery.Event
+			handleObj = types.handleObj;
+			jQuery( types.delegateTarget ).off(
+				handleObj.namespace ?
+					handleObj.origType + "." + handleObj.namespace :
+					handleObj.origType,
+				handleObj.selector,
+				handleObj.handler
+			);
+			return this;
+		}
+		if ( typeof types === "object" ) {
+
+			// ( types-object [, selector] )
+			for ( type in types ) {
+				this.off( type, selector, types[ type ] );
+			}
+			return this;
+		}
+		if ( selector === false || typeof selector === "function" ) {
+
+			// ( types [, fn] )
+			fn = selector;
+			selector = undefined;
+		}
+		if ( fn === false ) {
+			fn = returnFalse;
+		}
+		return this.each( function() {
+			jQuery.event.remove( this, types, fn, selector );
+		} );
+	}
+} );
+
+
+var
+
+	/* eslint-disable max-len */
+
+	// See https://github.com/eslint/eslint/issues/3229
+	rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,
+
+	/* eslint-enable */
+
+	// Support: IE <=10 - 11, Edge 12 - 13 only
+	// In IE/Edge using regex groups here causes severe slowdowns.
+	// See https://connect.microsoft.com/IE/feedback/details/1736512/
+	rnoInnerhtml = /<script|<style|<link/i,
+
+	// checked="checked" or checked
+	rchecked = /checked\s*(?:[^=]|=\s*.checked.)/i,
+	rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
+
+// Prefer a tbody over its parent table for containing new rows
+function manipulationTarget( elem, content ) {
+	if ( nodeName( elem, "table" ) &&
+		nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
+
+		return jQuery( elem ).children( "tbody" )[ 0 ] || elem;
+	}
+
+	return elem;
+}
+
+// Replace/restore the type attribute of script elements for safe DOM manipulation
+function disableScript( elem ) {
+	elem.type = ( elem.getAttribute( "type" ) !== null ) + "/" + elem.type;
+	return elem;
+}
+function restoreScript( elem ) {
+	if ( ( elem.type || "" ).slice( 0, 5 ) === "true/" ) {
+		elem.type = elem.type.slice( 5 );
+	} else {
+		elem.removeAttribute( "type" );
+	}
+
+	return elem;
+}
+
+function cloneCopyEvent( src, dest ) {
+	var i, l, type, pdataOld, pdataCur, udataOld, udataCur, events;
+
+	if ( dest.nodeType !== 1 ) {
+		return;
+	}
+
+	// 1. Copy private data: events, handlers, etc.
+	if ( dataPriv.hasData( src ) ) {
+		pdataOld = dataPriv.access( src );
+		pdataCur = dataPriv.set( dest, pdataOld );
+		events = pdataOld.events;
+
+		if ( events ) {
+			delete pdataCur.handle;
+			pdataCur.events = {};
+
+			for ( type in events ) {
+				for ( i = 0, l = events[ type ].length; i < l; i++ ) {
+					jQuery.event.add( dest, type, events[ type ][ i ] );
+				}
+			}
+		}
+	}
+
+	// 2. Copy user data
+	if ( dataUser.hasData( src ) ) {
+		udataOld = dataUser.access( src );
+		udataCur = jQuery.extend( {}, udataOld );
+
+		dataUser.set( dest, udataCur );
+	}
+}
+
+// Fix IE bugs, see support tests
+function fixInput( src, dest ) {
+	var nodeName = dest.nodeName.toLowerCase();
+
+	// Fails to persist the checked state of a cloned checkbox or radio button.
+	if ( nodeName === "input" && rcheckableType.test( src.type ) ) {
+		dest.checked = src.checked;
+
+	// Fails to return the selected option to the default selected state when cloning options
+	} else if ( nodeName === "input" || nodeName === "textarea" ) {
+		dest.defaultValue = src.defaultValue;
+	}
+}
+
+function domManip( collection, args, callback, ignored ) {
+
+	// Flatten any nested arrays
+	args = concat.apply( [], args );
+
+	var fragment, first, scripts, hasScripts, node, doc,
+		i = 0,
+		l = collection.length,
+		iNoClone = l - 1,
+		value = args[ 0 ],
+		valueIsFunction = isFunction( value );
+
+	// We can't cloneNode fragments that contain checked, in WebKit
+	if ( valueIsFunction ||
+			( l > 1 && typeof value === "string" &&
+				!support.checkClone && rchecked.test( value ) ) ) {
+		return collection.each( function( index ) {
+			var self = collection.eq( index );
+			if ( valueIsFunction ) {
+				args[ 0 ] = value.call( this, index, self.html() );
+			}
+			domManip( self, args, callback, ignored );
+		} );
+	}
+
+	if ( l ) {
+		fragment = buildFragment( args, collection[ 0 ].ownerDocument, false, collection, ignored );
+		first = fragment.firstChild;
+
+		if ( fragment.childNodes.length === 1 ) {
+			fragment = first;
+		}
+
+		// Require either new content or an interest in ignored elements to invoke the callback
+		if ( first || ignored ) {
+			scripts = jQuery.map( getAll( fragment, "script" ), disableScript );
+			hasScripts = scripts.length;
+
+			// Use the original fragment for the last item
+			// instead of the first because it can end up
+			// being emptied incorrectly in certain situations (#8070).
+			for ( ; i < l; i++ ) {
+				node = fragment;
+
+				if ( i !== iNoClone ) {
+					node = jQuery.clone( node, true, true );
+
+					// Keep references to cloned scripts for later restoration
+					if ( hasScripts ) {
+
+						// Support: Android <=4.0 only, PhantomJS 1 only
+						// push.apply(_, arraylike) throws on ancient WebKit
+						jQuery.merge( scripts, getAll( node, "script" ) );
+					}
+				}
+
+				callback.call( collection[ i ], node, i );
+			}
+
+			if ( hasScripts ) {
+				doc = scripts[ scripts.length - 1 ].ownerDocument;
+
+				// Reenable scripts
+				jQuery.map( scripts, restoreScript );
+
+				// Evaluate executable scripts on first document insertion
+				for ( i = 0; i < hasScripts; i++ ) {
+					node = scripts[ i ];
+					if ( rscriptType.test( node.type || "" ) &&
+						!dataPriv.access( node, "globalEval" ) &&
+						jQuery.contains( doc, node ) ) {
+
+						if ( node.src && ( node.type || "" ).toLowerCase()  !== "module" ) {
+
+							// Optional AJAX dependency, but won't run scripts if not present
+							if ( jQuery._evalUrl ) {
+								jQuery._evalUrl( node.src );
+							}
+						} else {
+							DOMEval( node.textContent.replace( rcleanScript, "" ), doc, node );
+						}
+					}
+				}
+			}
+		}
+	}
+
+	return collection;
+}
+
+function remove( elem, selector, keepData ) {
+	var node,
+		nodes = selector ? jQuery.filter( selector, elem ) : elem,
+		i = 0;
+
+	for ( ; ( node = nodes[ i ] ) != null; i++ ) {
+		if ( !keepData && node.nodeType === 1 ) {
+			jQuery.cleanData( getAll( node ) );
+		}
+
+		if ( node.parentNode ) {
+			if ( keepData && jQuery.contains( node.ownerDocument, node ) ) {
+				setGlobalEval( getAll( node, "script" ) );
+			}
+			node.parentNode.removeChild( node );
+		}
+	}
+
+	return elem;
+}
+
+jQuery.extend( {
+	htmlPrefilter: function( html ) {
+		return html.replace( rxhtmlTag, "<$1></$2>" );
+	},
+
+	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
+		var i, l, srcElements, destElements,
+			clone = elem.cloneNode( true ),
+			inPage = jQuery.contains( elem.ownerDocument, elem );
+
+		// Fix IE cloning issues
+		if ( !support.noCloneChecked && ( elem.nodeType === 1 || elem.nodeType === 11 ) &&
+				!jQuery.isXMLDoc( elem ) ) {
+
+			// We eschew Sizzle here for performance reasons: https://jsperf.com/getall-vs-sizzle/2
+			destElements = getAll( clone );
+			srcElements = getAll( elem );
+
+			for ( i = 0, l = srcElements.length; i < l; i++ ) {
+				fixInput( srcElements[ i ], destElements[ i ] );
+			}
+		}
+
+		// Copy the events from the original to the clone
+		if ( dataAndEvents ) {
+			if ( deepDataAndEvents ) {
+				srcElements = srcElements || getAll( elem );
+				destElements = destElements || getAll( clone );
+
+				for ( i = 0, l = srcElements.length; i < l; i++ ) {
+					cloneCopyEvent( srcElements[ i ], destElements[ i ] );
+				}
+			} else {
+				cloneCopyEvent( elem, clone );
+			}
+		}
+
+		// Preserve script evaluation history
+		destElements = getAll( clone, "script" );
+		if ( destElements.length > 0 ) {
+			setGlobalEval( destElements, !inPage && getAll( elem, "script" ) );
+		}
+
+		// Return the cloned set
+		return clone;
+	},
+
+	cleanData: function( elems ) {
+		var data, elem, type,
+			special = jQuery.event.special,
+			i = 0;
+
+		for ( ; ( elem = elems[ i ] ) !== undefined; i++ ) {
+			if ( acceptData( elem ) ) {
+				if ( ( data = elem[ dataPriv.expando ] ) ) {
+					if ( data.events ) {
+						for ( type in data.events ) {
+							if ( special[ type ] ) {
+								jQuery.event.remove( elem, type );
+
+							// This is a shortcut to avoid jQuery.event.remove's overhead
+							} else {
+								jQuery.removeEvent( elem, type, data.handle );
+							}
+						}
+					}
+
+					// Support: Chrome <=35 - 45+
+					// Assign undefined instead of using delete, see Data#remove
+					elem[ dataPriv.expando ] = undefined;
+				}
+				if ( elem[ dataUser.expando ] ) {
+
+					// Support: Chrome <=35 - 45+
+					// Assign undefined instead of using delete, see Data#remove
+					elem[ dataUser.expando ] = undefined;
+				}
+			}
+		}
+	}
+} );
+
+jQuery.fn.extend( {
+	detach: function( selector ) {
+		return remove( this, selector, true );
+	},
+
+	remove: function( selector ) {
+		return remove( this, selector );
+	},
+
+	text: function( value ) {
+		return access( this, function( value ) {
+			return value === undefined ?
+				jQuery.text( this ) :
+				this.empty().each( function() {
+					if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+						this.textContent = value;
+					}
+				} );
+		}, null, value, arguments.length );
+	},
+
+	append: function() {
+		return domManip( this, arguments, function( elem ) {
+			if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+				var target = manipulationTarget( this, elem );
+				target.appendChild( elem );
+			}
+		} );
+	},
+
+	prepend: function() {
+		return domManip( this, arguments, function( elem ) {
+			if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+				var target = manipulationTarget( this, elem );
+				target.insertBefore( elem, target.firstChild );
+			}
+		} );
+	},
+
+	before: function() {
+		return domManip( this, arguments, function( elem ) {
+			if ( this.parentNode ) {
+				this.parentNode.insertBefore( elem, this );
+			}
+		} );
+	},
+
+	after: function() {
+		return domManip( this, arguments, function( elem ) {
+			if ( this.parentNode ) {
+				this.parentNode.insertBefore( elem, this.nextSibling );
+			}
+		} );
+	},
+
+	empty: function() {
+		var elem,
+			i = 0;
+
+		for ( ; ( elem = this[ i ] ) != null; i++ ) {
+			if ( elem.nodeType === 1 ) {
+
+				// Prevent memory leaks
+				jQuery.cleanData( getAll( elem, false ) );
+
+				// Remove any remaining nodes
+				elem.textContent = "";
+			}
+		}
+
+		return this;
+	},
+
+	clone: function( dataAndEvents, deepDataAndEvents ) {
+		dataAndEvents = dataAndEvents == null ? false : dataAndEvents;
+		deepDataAndEvents = deepDataAndEvents == null ? dataAndEvents : deepDataAndEvents;
+
+		return this.map( function() {
+			return jQuery.clone( this, dataAndEvents, deepDataAndEvents );
+		} );
+	},
+
+	html: function( value ) {
+		return access( this, function( value ) {
+			var elem = this[ 0 ] || {},
+				i = 0,
+				l = this.length;
+
+			if ( value === undefined && elem.nodeType === 1 ) {
+				return elem.innerHTML;
+			}
+
+			// See if we can take a shortcut and just use innerHTML
+			if ( typeof value === "string" && !rnoInnerhtml.test( value ) &&
+				!wrapMap[ ( rtagName.exec( value ) || [ "", "" ] )[ 1 ].toLowerCase() ] ) {
+
+				value = jQuery.htmlPrefilter( value );
+
+				try {
+					for ( ; i < l; i++ ) {
+						elem = this[ i ] || {};
+
+						// Remove element nodes and prevent memory leaks
+						if ( elem.nodeType === 1 ) {
+							jQuery.cleanData( getAll( elem, false ) );
+							elem.innerHTML = value;
+						}
+					}
+
+					elem = 0;
+
+				// If using innerHTML throws an exception, use the fallback method
+				} catch ( e ) {}
+			}
+
+			if ( elem ) {
+				this.empty().append( value );
+			}
+		}, null, value, arguments.length );
+	},
+
+	replaceWith: function() {
+		var ignored = [];
+
+		// Make the changes, replacing each non-ignored context element with the new content
+		return domManip( this, arguments, function( elem ) {
+			var parent = this.parentNode;
+
+			if ( jQuery.inArray( this, ignored ) < 0 ) {
+				jQuery.cleanData( getAll( this ) );
+				if ( parent ) {
+					parent.replaceChild( elem, this );
+				}
+			}
+
+		// Force callback invocation
+		}, ignored );
+	}
+} );
+
+jQuery.each( {
+	appendTo: "append",
+	prependTo: "prepend",
+	insertBefore: "before",
+	insertAfter: "after",
+	replaceAll: "replaceWith"
+}, function( name, original ) {
+	jQuery.fn[ name ] = function( selector ) {
+		var elems,
+			ret = [],
+			insert = jQuery( selector ),
+			last = insert.length - 1,
+			i = 0;
+
+		for ( ; i <= last; i++ ) {
+			elems = i === last ? this : this.clone( true );
+			jQuery( insert[ i ] )[ original ]( elems );
+
+			// Support: Android <=4.0 only, PhantomJS 1 only
+			// .get() because push.apply(_, arraylike) throws on ancient WebKit
+			push.apply( ret, elems.get() );
+		}
+
+		return this.pushStack( ret );
+	};
+} );
+var rnumnonpx = new RegExp( "^(" + pnum + ")(?!px)[a-z%]+$", "i" );
+
+var getStyles = function( elem ) {
+
+		// Support: IE <=11 only, Firefox <=30 (#15098, #14150)
+		// IE throws on elements created in popups
+		// FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
+		var view = elem.ownerDocument.defaultView;
+
+		if ( !view || !view.opener ) {
+			view = window;
+		}
+
+		return view.getComputedStyle( elem );
+	};
+
+var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
+
+
+
+( function() {
+
+	// Executing both pixelPosition & boxSizingReliable tests require only one layout
+	// so they're executed at the same time to save the second computation.
+	function computeStyleTests() {
+
+		// This is a singleton, we need to execute it only once
+		if ( !div ) {
+			return;
+		}
+
+		container.style.cssText = "position:absolute;left:-11111px;width:60px;" +
+			"margin-top:1px;padding:0;border:0";
+		div.style.cssText =
+			"position:relative;display:block;box-sizing:border-box;overflow:scroll;" +
+			"margin:auto;border:1px;padding:1px;" +
+			"width:60%;top:1%";
+		documentElement.appendChild( container ).appendChild( div );
+
+		var divStyle = window.getComputedStyle( div );
+		pixelPositionVal = divStyle.top !== "1%";
+
+		// Support: Android 4.0 - 4.3 only, Firefox <=3 - 44
+		reliableMarginLeftVal = roundPixelMeasures( divStyle.marginLeft ) === 12;
+
+		// Support: Android 4.0 - 4.3 only, Safari <=9.1 - 10.1, iOS <=7.0 - 9.3
+		// Some styles come back with percentage values, even though they shouldn't
+		div.style.right = "60%";
+		pixelBoxStylesVal = roundPixelMeasures( divStyle.right ) === 36;
+
+		// Support: IE 9 - 11 only
+		// Detect misreporting of content dimensions for box-sizing:border-box elements
+		boxSizingReliableVal = roundPixelMeasures( divStyle.width ) === 36;
+
+		// Support: IE 9 only
+		// Detect overflow:scroll screwiness (gh-3699)
+		div.style.position = "absolute";
+		scrollboxSizeVal = div.offsetWidth === 36 || "absolute";
+
+		documentElement.removeChild( container );
+
+		// Nullify the div so it wouldn't be stored in the memory and
+		// it will also be a sign that checks already performed
+		div = null;
+	}
+
+	function roundPixelMeasures( measure ) {
+		return Math.round( parseFloat( measure ) );
+	}
+
+	var pixelPositionVal, boxSizingReliableVal, scrollboxSizeVal, pixelBoxStylesVal,
+		reliableMarginLeftVal,
+		container = document.createElement( "div" ),
+		div = document.createElement( "div" );
+
+	// Finish early in limited (non-browser) environments
+	if ( !div.style ) {
+		return;
+	}
+
+	// Support: IE <=9 - 11 only
+	// Style of cloned element affects source element cloned (#8908)
+	div.style.backgroundClip = "content-box";
+	div.cloneNode( true ).style.backgroundClip = "";
+	support.clearCloneStyle = div.style.backgroundClip === "content-box";
+
+	jQuery.extend( support, {
+		boxSizingReliable: function() {
+			computeStyleTests();
+			return boxSizingReliableVal;
+		},
+		pixelBoxStyles: function() {
+			computeStyleTests();
+			return pixelBoxStylesVal;
+		},
+		pixelPosition: function() {
+			computeStyleTests();
+			return pixelPositionVal;
+		},
+		reliableMarginLeft: function() {
+			computeStyleTests();
+			return reliableMarginLeftVal;
+		},
+		scrollboxSize: function() {
+			computeStyleTests();
+			return scrollboxSizeVal;
+		}
+	} );
+} )();
+
+
+function curCSS( elem, name, computed ) {
+	var width, minWidth, maxWidth, ret,
+
+		// Support: Firefox 51+
+		// Retrieving style before computed somehow
+		// fixes an issue with getting wrong values
+		// on detached elements
+		style = elem.style;
+
+	computed = computed || getStyles( elem );
+
+	// getPropertyValue is needed for:
+	//   .css('filter') (IE 9 only, #12537)
+	//   .css('--customProperty) (#3144)
+	if ( computed ) {
+		ret = computed.getPropertyValue( name ) || computed[ name ];
+
+		if ( ret === "" && !jQuery.contains( elem.ownerDocument, elem ) ) {
+			ret = jQuery.style( elem, name );
+		}
+
+		// A tribute to the "awesome hack by Dean Edwards"
+		// Android Browser returns percentage for some values,
+		// but width seems to be reliably pixels.
+		// This is against the CSSOM draft spec:
+		// https://drafts.csswg.org/cssom/#resolved-values
+		if ( !support.pixelBoxStyles() && rnumnonpx.test( ret ) && rboxStyle.test( name ) ) {
+
+			// Remember the original values
+			width = style.width;
+			minWidth = style.minWidth;
+			maxWidth = style.maxWidth;
+
+			// Put in the new values to get a computed value out
+			style.minWidth = style.maxWidth = style.width = ret;
+			ret = computed.width;
+
+			// Revert the changed values
+			style.width = width;
+			style.minWidth = minWidth;
+			style.maxWidth = maxWidth;
+		}
+	}
+
+	return ret !== undefined ?
+
+		// Support: IE <=9 - 11 only
+		// IE returns zIndex value as an integer.
+		ret + "" :
+		ret;
+}
+
+
+function addGetHookIf( conditionFn, hookFn ) {
+
+	// Define the hook, we'll check on the first run if it's really needed.
+	return {
+		get: function() {
+			if ( conditionFn() ) {
+
+				// Hook not needed (or it's not possible to use it due
+				// to missing dependency), remove it.
+				delete this.get;
+				return;
+			}
+
+			// Hook needed; redefine it so that the support test is not executed again.
+			return ( this.get = hookFn ).apply( this, arguments );
+		}
+	};
+}
+
+
+var
+
+	// Swappable if display is none or starts with table
+	// except "table", "table-cell", or "table-caption"
+	// See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display
+	rdisplayswap = /^(none|table(?!-c[ea]).+)/,
+	rcustomProp = /^--/,
+	cssShow = { position: "absolute", visibility: "hidden", display: "block" },
+	cssNormalTransform = {
+		letterSpacing: "0",
+		fontWeight: "400"
+	},
+
+	cssPrefixes = [ "Webkit", "Moz", "ms" ],
+	emptyStyle = document.createElement( "div" ).style;
+
+// Return a css property mapped to a potentially vendor prefixed property
+function vendorPropName( name ) {
+
+	// Shortcut for names that are not vendor prefixed
+	if ( name in emptyStyle ) {
+		return name;
+	}
+
+	// Check for vendor prefixed names
+	var capName = name[ 0 ].toUpperCase() + name.slice( 1 ),
+		i = cssPrefixes.length;
+
+	while ( i-- ) {
+		name = cssPrefixes[ i ] + capName;
+		if ( name in emptyStyle ) {
+			return name;
+		}
+	}
+}
+
+// Return a property mapped along what jQuery.cssProps suggests or to
+// a vendor prefixed property.
+function finalPropName( name ) {
+	var ret = jQuery.cssProps[ name ];
+	if ( !ret ) {
+		ret = jQuery.cssProps[ name ] = vendorPropName( name ) || name;
+	}
+	return ret;
+}
+
+function setPositiveNumber( elem, value, subtract ) {
+
+	// Any relative (+/-) values have already been
+	// normalized at this point
+	var matches = rcssNum.exec( value );
+	return matches ?
+
+		// Guard against undefined "subtract", e.g., when used as in cssHooks
+		Math.max( 0, matches[ 2 ] - ( subtract || 0 ) ) + ( matches[ 3 ] || "px" ) :
+		value;
+}
+
+function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computedVal ) {
+	var i = dimension === "width" ? 1 : 0,
+		extra = 0,
+		delta = 0;
+
+	// Adjustment may not be necessary
+	if ( box === ( isBorderBox ? "border" : "content" ) ) {
+		return 0;
+	}
+
+	for ( ; i < 4; i += 2 ) {
+
+		// Both box models exclude margin
+		if ( box === "margin" ) {
+			delta += jQuery.css( elem, box + cssExpand[ i ], true, styles );
+		}
+
+		// If we get here with a content-box, we're seeking "padding" or "border" or "margin"
+		if ( !isBorderBox ) {
+
+			// Add padding
+			delta += jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
+
+			// For "border" or "margin", add border
+			if ( box !== "padding" ) {
+				delta += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+
+			// But still keep track of it otherwise
+			} else {
+				extra += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+			}
+
+		// If we get here with a border-box (content + padding + border), we're seeking "content" or
+		// "padding" or "margin"
+		} else {
+
+			// For "content", subtract padding
+			if ( box === "content" ) {
+				delta -= jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
+			}
+
+			// For "content" or "padding", subtract border
+			if ( box !== "margin" ) {
+				delta -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+			}
+		}
+	}
+
+	// Account for positive content-box scroll gutter when requested by providing computedVal
+	if ( !isBorderBox && computedVal >= 0 ) {
+
+		// offsetWidth/offsetHeight is a rounded sum of content, padding, scroll gutter, and border
+		// Assuming integer scroll gutter, subtract the rest and round down
+		delta += Math.max( 0, Math.ceil(
+			elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ] -
+			computedVal -
+			delta -
+			extra -
+			0.5
+		) );
+	}
+
+	return delta;
+}
+
+function getWidthOrHeight( elem, dimension, extra ) {
+
+	// Start with computed style
+	var styles = getStyles( elem ),
+		val = curCSS( elem, dimension, styles ),
+		isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
+		valueIsBorderBox = isBorderBox;
+
+	// Support: Firefox <=54
+	// Return a confounding non-pixel value or feign ignorance, as appropriate.
+	if ( rnumnonpx.test( val ) ) {
+		if ( !extra ) {
+			return val;
+		}
+		val = "auto";
+	}
+
+	// Check for style in case a browser which returns unreliable values
+	// for getComputedStyle silently falls back to the reliable elem.style
+	valueIsBorderBox = valueIsBorderBox &&
+		( support.boxSizingReliable() || val === elem.style[ dimension ] );
+
+	// Fall back to offsetWidth/offsetHeight when value is "auto"
+	// This happens for inline elements with no explicit setting (gh-3571)
+	// Support: Android <=4.1 - 4.3 only
+	// Also use offsetWidth/offsetHeight for misreported inline dimensions (gh-3602)
+	if ( val === "auto" ||
+		!parseFloat( val ) && jQuery.css( elem, "display", false, styles ) === "inline" ) {
+
+		val = elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ];
+
+		// offsetWidth/offsetHeight provide border-box values
+		valueIsBorderBox = true;
+	}
+
+	// Normalize "" and auto
+	val = parseFloat( val ) || 0;
+
+	// Adjust for the element's box model
+	return ( val +
+		boxModelAdjustment(
+			elem,
+			dimension,
+			extra || ( isBorderBox ? "border" : "content" ),
+			valueIsBorderBox,
+			styles,
+
+			// Provide the current computed size to request scroll gutter calculation (gh-3589)
+			val
+		)
+	) + "px";
+}
+
+jQuery.extend( {
+
+	// Add in style property hooks for overriding the default
+	// behavior of getting and setting a style property
+	cssHooks: {
+		opacity: {
+			get: function( elem, computed ) {
+				if ( computed ) {
+
+					// We should always get a number back from opacity
+					var ret = curCSS( elem, "opacity" );
+					return ret === "" ? "1" : ret;
+				}
+			}
+		}
+	},
+
+	// Don't automatically add "px" to these possibly-unitless properties
+	cssNumber: {
+		"animationIterationCount": true,
+		"columnCount": true,
+		"fillOpacity": true,
+		"flexGrow": true,
+		"flexShrink": true,
+		"fontWeight": true,
+		"lineHeight": true,
+		"opacity": true,
+		"order": true,
+		"orphans": true,
+		"widows": true,
+		"zIndex": true,
+		"zoom": true
+	},
+
+	// Add in properties whose names you wish to fix before
+	// setting or getting the value
+	cssProps: {},
+
+	// Get and set the style property on a DOM Node
+	style: function( elem, name, value, extra ) {
+
+		// Don't set styles on text and comment nodes
+		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
+			return;
+		}
+
+		// Make sure that we're working with the right name
+		var ret, type, hooks,
+			origName = camelCase( name ),
+			isCustomProp = rcustomProp.test( name ),
+			style = elem.style;
+
+		// Make sure that we're working with the right name. We don't
+		// want to query the value if it is a CSS custom property
+		// since they are user-defined.
+		if ( !isCustomProp ) {
+			name = finalPropName( origName );
+		}
+
+		// Gets hook for the prefixed version, then unprefixed version
+		hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+
+		// Check if we're setting a value
+		if ( value !== undefined ) {
+			type = typeof value;
+
+			// Convert "+=" or "-=" to relative numbers (#7345)
+			if ( type === "string" && ( ret = rcssNum.exec( value ) ) && ret[ 1 ] ) {
+				value = adjustCSS( elem, name, ret );
+
+				// Fixes bug #9237
+				type = "number";
+			}
+
+			// Make sure that null and NaN values aren't set (#7116)
+			if ( value == null || value !== value ) {
+				return;
+			}
+
+			// If a number was passed in, add the unit (except for certain CSS properties)
+			if ( type === "number" ) {
+				value += ret && ret[ 3 ] || ( jQuery.cssNumber[ origName ] ? "" : "px" );
+			}
+
+			// background-* props affect original clone's values
+			if ( !support.clearCloneStyle && value === "" && name.indexOf( "background" ) === 0 ) {
+				style[ name ] = "inherit";
+			}
+
+			// If a hook was provided, use that value, otherwise just set the specified value
+			if ( !hooks || !( "set" in hooks ) ||
+				( value = hooks.set( elem, value, extra ) ) !== undefined ) {
+
+				if ( isCustomProp ) {
+					style.setProperty( name, value );
+				} else {
+					style[ name ] = value;
+				}
+			}
+
+		} else {
+
+			// If a hook was provided get the non-computed value from there
+			if ( hooks && "get" in hooks &&
+				( ret = hooks.get( elem, false, extra ) ) !== undefined ) {
+
+				return ret;
+			}
+
+			// Otherwise just get the value from the style object
+			return style[ name ];
+		}
+	},
+
+	css: function( elem, name, extra, styles ) {
+		var val, num, hooks,
+			origName = camelCase( name ),
+			isCustomProp = rcustomProp.test( name );
+
+		// Make sure that we're working with the right name. We don't
+		// want to modify the value if it is a CSS custom property
+		// since they are user-defined.
+		if ( !isCustomProp ) {
+			name = finalPropName( origName );
+		}
+
+		// Try prefixed name followed by the unprefixed name
+		hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+
+		// If a hook was provided get the computed value from there
+		if ( hooks && "get" in hooks ) {
+			val = hooks.get( elem, true, extra );
+		}
+
+		// Otherwise, if a way to get the computed value exists, use that
+		if ( val === undefined ) {
+			val = curCSS( elem, name, styles );
+		}
+
+		// Convert "normal" to computed value
+		if ( val === "normal" && name in cssNormalTransform ) {
+			val = cssNormalTransform[ name ];
+		}
+
+		// Make numeric if forced or a qualifier was provided and val looks numeric
+		if ( extra === "" || extra ) {
+			num = parseFloat( val );
+			return extra === true || isFinite( num ) ? num || 0 : val;
+		}
+
+		return val;
+	}
+} );
+
+jQuery.each( [ "height", "width" ], function( i, dimension ) {
+	jQuery.cssHooks[ dimension ] = {
+		get: function( elem, computed, extra ) {
+			if ( computed ) {
+
+				// Certain elements can have dimension info if we invisibly show them
+				// but it must have a current display style that would benefit
+				return rdisplayswap.test( jQuery.css( elem, "display" ) ) &&
+
+					// Support: Safari 8+
+					// Table columns in Safari have non-zero offsetWidth & zero
+					// getBoundingClientRect().width unless display is changed.
+					// Support: IE <=11 only
+					// Running getBoundingClientRect on a disconnected node
+					// in IE throws an error.
+					( !elem.getClientRects().length || !elem.getBoundingClientRect().width ) ?
+						swap( elem, cssShow, function() {
+							return getWidthOrHeight( elem, dimension, extra );
+						} ) :
+						getWidthOrHeight( elem, dimension, extra );
+			}
+		},
+
+		set: function( elem, value, extra ) {
+			var matches,
+				styles = getStyles( elem ),
+				isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
+				subtract = extra && boxModelAdjustment(
+					elem,
+					dimension,
+					extra,
+					isBorderBox,
+					styles
+				);
+
+			// Account for unreliable border-box dimensions by comparing offset* to computed and
+			// faking a content-box to get border and padding (gh-3699)
+			if ( isBorderBox && support.scrollboxSize() === styles.position ) {
+				subtract -= Math.ceil(
+					elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ] -
+					parseFloat( styles[ dimension ] ) -
+					boxModelAdjustment( elem, dimension, "border", false, styles ) -
+					0.5
+				);
+			}
+
+			// Convert to pixels if value adjustment is needed
+			if ( subtract && ( matches = rcssNum.exec( value ) ) &&
+				( matches[ 3 ] || "px" ) !== "px" ) {
+
+				elem.style[ dimension ] = value;
+				value = jQuery.css( elem, dimension );
+			}
+
+			return setPositiveNumber( elem, value, subtract );
+		}
+	};
+} );
+
+jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
+	function( elem, computed ) {
+		if ( computed ) {
+			return ( parseFloat( curCSS( elem, "marginLeft" ) ) ||
+				elem.getBoundingClientRect().left -
+					swap( elem, { marginLeft: 0 }, function() {
+						return elem.getBoundingClientRect().left;
+					} )
+				) + "px";
+		}
+	}
+);
+
+// These hooks are used by animate to expand properties
+jQuery.each( {
+	margin: "",
+	padding: "",
+	border: "Width"
+}, function( prefix, suffix ) {
+	jQuery.cssHooks[ prefix + suffix ] = {
+		expand: function( value ) {
+			var i = 0,
+				expanded = {},
+
+				// Assumes a single number if not a string
+				parts = typeof value === "string" ? value.split( " " ) : [ value ];
+
+			for ( ; i < 4; i++ ) {
+				expanded[ prefix + cssExpand[ i ] + suffix ] =
+					parts[ i ] || parts[ i - 2 ] || parts[ 0 ];
+			}
+
+			return expanded;
+		}
+	};
+
+	if ( prefix !== "margin" ) {
+		jQuery.cssHooks[ prefix + suffix ].set = setPositiveNumber;
+	}
+} );
+
+jQuery.fn.extend( {
+	css: function( name, value ) {
+		return access( this, function( elem, name, value ) {
+			var styles, len,
+				map = {},
+				i = 0;
+
+			if ( Array.isArray( name ) ) {
+				styles = getStyles( elem );
+				len = name.length;
+
+				for ( ; i < len; i++ ) {
+					map[ name[ i ] ] = jQuery.css( elem, name[ i ], false, styles );
+				}
+
+				return map;
+			}
+
+			return value !== undefined ?
+				jQuery.style( elem, name, value ) :
+				jQuery.css( elem, name );
+		}, name, value, arguments.length > 1 );
+	}
+} );
+
+
+function Tween( elem, options, prop, end, easing ) {
+	return new Tween.prototype.init( elem, options, prop, end, easing );
+}
+jQuery.Tween = Tween;
+
+Tween.prototype = {
+	constructor: Tween,
+	init: function( elem, options, prop, end, easing, unit ) {
+		this.elem = elem;
+		this.prop = prop;
+		this.easing = easing || jQuery.easing._default;
+		this.options = options;
+		this.start = this.now = this.cur();
+		this.end = end;
+		this.unit = unit || ( jQuery.cssNumber[ prop ] ? "" : "px" );
+	},
+	cur: function() {
+		var hooks = Tween.propHooks[ this.prop ];
+
+		return hooks && hooks.get ?
+			hooks.get( this ) :
+			Tween.propHooks._default.get( this );
+	},
+	run: function( percent ) {
+		var eased,
+			hooks = Tween.propHooks[ this.prop ];
+
+		if ( this.options.duration ) {
+			this.pos = eased = jQuery.easing[ this.easing ](
+				percent, this.options.duration * percent, 0, 1, this.options.duration
+			);
+		} else {
+			this.pos = eased = percent;
+		}
+		this.now = ( this.end - this.start ) * eased + this.start;
+
+		if ( this.options.step ) {
+			this.options.step.call( this.elem, this.now, this );
+		}
+
+		if ( hooks && hooks.set ) {
+			hooks.set( this );
+		} else {
+			Tween.propHooks._default.set( this );
+		}
+		return this;
+	}
+};
+
+Tween.prototype.init.prototype = Tween.prototype;
+
+Tween.propHooks = {
+	_default: {
+		get: function( tween ) {
+			var result;
+
+			// Use a property on the element directly when it is not a DOM element,
+			// or when there is no matching style property that exists.
+			if ( tween.elem.nodeType !== 1 ||
+				tween.elem[ tween.prop ] != null && tween.elem.style[ tween.prop ] == null ) {
+				return tween.elem[ tween.prop ];
+			}
+
+			// Passing an empty string as a 3rd parameter to .css will automatically
+			// attempt a parseFloat and fallback to a string if the parse fails.
+			// Simple values such as "10px" are parsed to Float;
+			// complex values such as "rotate(1rad)" are returned as-is.
+			result = jQuery.css( tween.elem, tween.prop, "" );
+
+			// Empty strings, null, undefined and "auto" are converted to 0.
+			return !result || result === "auto" ? 0 : result;
+		},
+		set: function( tween ) {
+
+			// Use step hook for back compat.
+			// Use cssHook if its there.
+			// Use .style if available and use plain properties where available.
+			if ( jQuery.fx.step[ tween.prop ] ) {
+				jQuery.fx.step[ tween.prop ]( tween );
+			} else if ( tween.elem.nodeType === 1 &&
+				( tween.elem.style[ jQuery.cssProps[ tween.prop ] ] != null ||
+					jQuery.cssHooks[ tween.prop ] ) ) {
+				jQuery.style( tween.elem, tween.prop, tween.now + tween.unit );
+			} else {
+				tween.elem[ tween.prop ] = tween.now;
+			}
+		}
+	}
+};
+
+// Support: IE <=9 only
+// Panic based approach to setting things on disconnected nodes
+Tween.propHooks.scrollTop = Tween.propHooks.scrollLeft = {
+	set: function( tween ) {
+		if ( tween.elem.nodeType && tween.elem.parentNode ) {
+			tween.elem[ tween.prop ] = tween.now;
+		}
+	}
+};
+
+jQuery.easing = {
+	linear: function( p ) {
+		return p;
+	},
+	swing: function( p ) {
+		return 0.5 - Math.cos( p * Math.PI ) / 2;
+	},
+	_default: "swing"
+};
+
+jQuery.fx = Tween.prototype.init;
+
+// Back compat <1.8 extension point
+jQuery.fx.step = {};
+
+
+
+
+var
+	fxNow, inProgress,
+	rfxtypes = /^(?:toggle|show|hide)$/,
+	rrun = /queueHooks$/;
+
+function schedule() {
+	if ( inProgress ) {
+		if ( document.hidden === false && window.requestAnimationFrame ) {
+			window.requestAnimationFrame( schedule );
+		} else {
+			window.setTimeout( schedule, jQuery.fx.interval );
+		}
+
+		jQuery.fx.tick();
+	}
+}
+
+// Animations created synchronously will run synchronously
+function createFxNow() {
+	window.setTimeout( function() {
+		fxNow = undefined;
+	} );
+	return ( fxNow = Date.now() );
+}
+
+// Generate parameters to create a standard animation
+function genFx( type, includeWidth ) {
+	var which,
+		i = 0,
+		attrs = { height: type };
+
+	// If we include width, step value is 1 to do all cssExpand values,
+	// otherwise step value is 2 to skip over Left and Right
+	includeWidth = includeWidth ? 1 : 0;
+	for ( ; i < 4; i += 2 - includeWidth ) {
+		which = cssExpand[ i ];
+		attrs[ "margin" + which ] = attrs[ "padding" + which ] = type;
+	}
+
+	if ( includeWidth ) {
+		attrs.opacity = attrs.width = type;
+	}
+
+	return attrs;
+}
+
+function createTween( value, prop, animation ) {
+	var tween,
+		collection = ( Animation.tweeners[ prop ] || [] ).concat( Animation.tweeners[ "*" ] ),
+		index = 0,
+		length = collection.length;
+	for ( ; index < length; index++ ) {
+		if ( ( tween = collection[ index ].call( animation, prop, value ) ) ) {
+
+			// We're done with this property
+			return tween;
+		}
+	}
+}
+
+function defaultPrefilter( elem, props, opts ) {
+	var prop, value, toggle, hooks, oldfire, propTween, restoreDisplay, display,
+		isBox = "width" in props || "height" in props,
+		anim = this,
+		orig = {},
+		style = elem.style,
+		hidden = elem.nodeType && isHiddenWithinTree( elem ),
+		dataShow = dataPriv.get( elem, "fxshow" );
+
+	// Queue-skipping animations hijack the fx hooks
+	if ( !opts.queue ) {
+		hooks = jQuery._queueHooks( elem, "fx" );
+		if ( hooks.unqueued == null ) {
+			hooks.unqueued = 0;
+			oldfire = hooks.empty.fire;
+			hooks.empty.fire = function() {
+				if ( !hooks.unqueued ) {
+					oldfire();
+				}
+			};
+		}
+		hooks.unqueued++;
+
+		anim.always( function() {
+
+			// Ensure the complete handler is called before this completes
+			anim.always( function() {
+				hooks.unqueued--;
+				if ( !jQuery.queue( elem, "fx" ).length ) {
+					hooks.empty.fire();
+				}
+			} );
+		} );
+	}
+
+	// Detect show/hide animations
+	for ( prop in props ) {
+		value = props[ prop ];
+		if ( rfxtypes.test( value ) ) {
+			delete props[ prop ];
+			toggle = toggle || value === "toggle";
+			if ( value === ( hidden ? "hide" : "show" ) ) {
+
+				// Pretend to be hidden if this is a "show" and
+				// there is still data from a stopped show/hide
+				if ( value === "show" && dataShow && dataShow[ prop ] !== undefined ) {
+					hidden = true;
+
+				// Ignore all other no-op show/hide data
+				} else {
+					continue;
+				}
+			}
+			orig[ prop ] = dataShow && dataShow[ prop ] || jQuery.style( elem, prop );
+		}
+	}
+
+	// Bail out if this is a no-op like .hide().hide()
+	propTween = !jQuery.isEmptyObject( props );
+	if ( !propTween && jQuery.isEmptyObject( orig ) ) {
+		return;
+	}
+
+	// Restrict "overflow" and "display" styles during box animations
+	if ( isBox && elem.nodeType === 1 ) {
+
+		// Support: IE <=9 - 11, Edge 12 - 15
+		// Record all 3 overflow attributes because IE does not infer the shorthand
+		// from identically-valued overflowX and overflowY and Edge just mirrors
+		// the overflowX value there.
+		opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
+
+		// Identify a display type, preferring old show/hide data over the CSS cascade
+		restoreDisplay = dataShow && dataShow.display;
+		if ( restoreDisplay == null ) {
+			restoreDisplay = dataPriv.get( elem, "display" );
+		}
+		display = jQuery.css( elem, "display" );
+		if ( display === "none" ) {
+			if ( restoreDisplay ) {
+				display = restoreDisplay;
+			} else {
+
+				// Get nonempty value(s) by temporarily forcing visibility
+				showHide( [ elem ], true );
+				restoreDisplay = elem.style.display || restoreDisplay;
+				display = jQuery.css( elem, "display" );
+				showHide( [ elem ] );
+			}
+		}
+
+		// Animate inline elements as inline-block
+		if ( display === "inline" || display === "inline-block" && restoreDisplay != null ) {
+			if ( jQuery.css( elem, "float" ) === "none" ) {
+
+				// Restore the original display value at the end of pure show/hide animations
+				if ( !propTween ) {
+					anim.done( function() {
+						style.display = restoreDisplay;
+					} );
+					if ( restoreDisplay == null ) {
+						display = style.display;
+						restoreDisplay = display === "none" ? "" : display;
+					}
+				}
+				style.display = "inline-block";
+			}
+		}
+	}
+
+	if ( opts.overflow ) {
+		style.overflow = "hidden";
+		anim.always( function() {
+			style.overflow = opts.overflow[ 0 ];
+			style.overflowX = opts.overflow[ 1 ];
+			style.overflowY = opts.overflow[ 2 ];
+		} );
+	}
+
+	// Implement show/hide animations
+	propTween = false;
+	for ( prop in orig ) {
+
+		// General show/hide setup for this element animation
+		if ( !propTween ) {
+			if ( dataShow ) {
+				if ( "hidden" in dataShow ) {
+					hidden = dataShow.hidden;
+				}
+			} else {
+				dataShow = dataPriv.access( elem, "fxshow", { display: restoreDisplay } );
+			}
+
+			// Store hidden/visible for toggle so `.stop().toggle()` "reverses"
+			if ( toggle ) {
+				dataShow.hidden = !hidden;
+			}
+
+			// Show elements before animating them
+			if ( hidden ) {
+				showHide( [ elem ], true );
+			}
+
+			/* eslint-disable no-loop-func */
+
+			anim.done( function() {
+
+			/* eslint-enable no-loop-func */
+
+				// The final step of a "hide" animation is actually hiding the element
+				if ( !hidden ) {
+					showHide( [ elem ] );
+				}
+				dataPriv.remove( elem, "fxshow" );
+				for ( prop in orig ) {
+					jQuery.style( elem, prop, orig[ prop ] );
+				}
+			} );
+		}
+
+		// Per-property setup
+		propTween = createTween( hidden ? dataShow[ prop ] : 0, prop, anim );
+		if ( !( prop in dataShow ) ) {
+			dataShow[ prop ] = propTween.start;
+			if ( hidden ) {
+				propTween.end = propTween.start;
+				propTween.start = 0;
+			}
+		}
+	}
+}
+
+function propFilter( props, specialEasing ) {
+	var index, name, easing, value, hooks;
+
+	// camelCase, specialEasing and expand cssHook pass
+	for ( index in props ) {
+		name = camelCase( index );
+		easing = specialEasing[ name ];
+		value = props[ index ];
+		if ( Array.isArray( value ) ) {
+			easing = value[ 1 ];
+			value = props[ index ] = value[ 0 ];
+		}
+
+		if ( index !== name ) {
+			props[ name ] = value;
+			delete props[ index ];
+		}
+
+		hooks = jQuery.cssHooks[ name ];
+		if ( hooks && "expand" in hooks ) {
+			value = hooks.expand( value );
+			delete props[ name ];
+
+			// Not quite $.extend, this won't overwrite existing keys.
+			// Reusing 'index' because we have the correct "name"
+			for ( index in value ) {
+				if ( !( index in props ) ) {
+					props[ index ] = value[ index ];
+					specialEasing[ index ] = easing;
+				}
+			}
+		} else {
+			specialEasing[ name ] = easing;
+		}
+	}
+}
+
+function Animation( elem, properties, options ) {
+	var result,
+		stopped,
+		index = 0,
+		length = Animation.prefilters.length,
+		deferred = jQuery.Deferred().always( function() {
+
+			// Don't match elem in the :animated selector
+			delete tick.elem;
+		} ),
+		tick = function() {
+			if ( stopped ) {
+				return false;
+			}
+			var currentTime = fxNow || createFxNow(),
+				remaining = Math.max( 0, animation.startTime + animation.duration - currentTime ),
+
+				// Support: Android 2.3 only
+				// Archaic crash bug won't allow us to use `1 - ( 0.5 || 0 )` (#12497)
+				temp = remaining / animation.duration || 0,
+				percent = 1 - temp,
+				index = 0,
+				length = animation.tweens.length;
+
+			for ( ; index < length; index++ ) {
+				animation.tweens[ index ].run( percent );
+			}
+
+			deferred.notifyWith( elem, [ animation, percent, remaining ] );
+
+			// If there's more to do, yield
+			if ( percent < 1 && length ) {
+				return remaining;
+			}
+
+			// If this was an empty animation, synthesize a final progress notification
+			if ( !length ) {
+				deferred.notifyWith( elem, [ animation, 1, 0 ] );
+			}
+
+			// Resolve the animation and report its conclusion
+			deferred.resolveWith( elem, [ animation ] );
+			return false;
+		},
+		animation = deferred.promise( {
+			elem: elem,
+			props: jQuery.extend( {}, properties ),
+			opts: jQuery.extend( true, {
+				specialEasing: {},
+				easing: jQuery.easing._default
+			}, options ),
+			originalProperties: properties,
+			originalOptions: options,
+			startTime: fxNow || createFxNow(),
+			duration: options.duration,
+			tweens: [],
+			createTween: function( prop, end ) {
+				var tween = jQuery.Tween( elem, animation.opts, prop, end,
+						animation.opts.specialEasing[ prop ] || animation.opts.easing );
+				animation.tweens.push( tween );
+				return tween;
+			},
+			stop: function( gotoEnd ) {
+				var index = 0,
+
+					// If we are going to the end, we want to run all the tweens
+					// otherwise we skip this part
+					length = gotoEnd ? animation.tweens.length : 0;
+				if ( stopped ) {
+					return this;
+				}
+				stopped = true;
+				for ( ; index < length; index++ ) {
+					animation.tweens[ index ].run( 1 );
+				}
+
+				// Resolve when we played the last frame; otherwise, reject
+				if ( gotoEnd ) {
+					deferred.notifyWith( elem, [ animation, 1, 0 ] );
+					deferred.resolveWith( elem, [ animation, gotoEnd ] );
+				} else {
+					deferred.rejectWith( elem, [ animation, gotoEnd ] );
+				}
+				return this;
+			}
+		} ),
+		props = animation.props;
+
+	propFilter( props, animation.opts.specialEasing );
+
+	for ( ; index < length; index++ ) {
+		result = Animation.prefilters[ index ].call( animation, elem, props, animation.opts );
+		if ( result ) {
+			if ( isFunction( result.stop ) ) {
+				jQuery._queueHooks( animation.elem, animation.opts.queue ).stop =
+					result.stop.bind( result );
+			}
+			return result;
+		}
+	}
+
+	jQuery.map( props, createTween, animation );
+
+	if ( isFunction( animation.opts.start ) ) {
+		animation.opts.start.call( elem, animation );
+	}
+
+	// Attach callbacks from options
+	animation
+		.progress( animation.opts.progress )
+		.done( animation.opts.done, animation.opts.complete )
+		.fail( animation.opts.fail )
+		.always( animation.opts.always );
+
+	jQuery.fx.timer(
+		jQuery.extend( tick, {
+			elem: elem,
+			anim: animation,
+			queue: animation.opts.queue
+		} )
+	);
+
+	return animation;
+}
+
+jQuery.Animation = jQuery.extend( Animation, {
+
+	tweeners: {
+		"*": [ function( prop, value ) {
+			var tween = this.createTween( prop, value );
+			adjustCSS( tween.elem, prop, rcssNum.exec( value ), tween );
+			return tween;
+		} ]
+	},
+
+	tweener: function( props, callback ) {
+		if ( isFunction( props ) ) {
+			callback = props;
+			props = [ "*" ];
+		} else {
+			props = props.match( rnothtmlwhite );
+		}
+
+		var prop,
+			index = 0,
+			length = props.length;
+
+		for ( ; index < length; index++ ) {
+			prop = props[ index ];
+			Animation.tweeners[ prop ] = Animation.tweeners[ prop ] || [];
+			Animation.tweeners[ prop ].unshift( callback );
+		}
+	},
+
+	prefilters: [ defaultPrefilter ],
+
+	prefilter: function( callback, prepend ) {
+		if ( prepend ) {
+			Animation.prefilters.unshift( callback );
+		} else {
+			Animation.prefilters.push( callback );
+		}
+	}
+} );
+
+jQuery.speed = function( speed, easing, fn ) {
+	var opt = speed && typeof speed === "object" ? jQuery.extend( {}, speed ) : {
+		complete: fn || !fn && easing ||
+			isFunction( speed ) && speed,
+		duration: speed,
+		easing: fn && easing || easing && !isFunction( easing ) && easing
+	};
+
+	// Go to the end state if fx are off
+	if ( jQuery.fx.off ) {
+		opt.duration = 0;
+
+	} else {
+		if ( typeof opt.duration !== "number" ) {
+			if ( opt.duration in jQuery.fx.speeds ) {
+				opt.duration = jQuery.fx.speeds[ opt.duration ];
+
+			} else {
+				opt.duration = jQuery.fx.speeds._default;
+			}
+		}
+	}
+
+	// Normalize opt.queue - true/undefined/null -> "fx"
+	if ( opt.queue == null || opt.queue === true ) {
+		opt.queue = "fx";
+	}
+
+	// Queueing
+	opt.old = opt.complete;
+
+	opt.complete = function() {
+		if ( isFunction( opt.old ) ) {
+			opt.old.call( this );
+		}
+
+		if ( opt.queue ) {
+			jQuery.dequeue( this, opt.queue );
+		}
+	};
+
+	return opt;
+};
+
+jQuery.fn.extend( {
+	fadeTo: function( speed, to, easing, callback ) {
+
+		// Show any hidden elements after setting opacity to 0
+		return this.filter( isHiddenWithinTree ).css( "opacity", 0 ).show()
+
+			// Animate to the value specified
+			.end().animate( { opacity: to }, speed, easing, callback );
+	},
+	animate: function( prop, speed, easing, callback ) {
+		var empty = jQuery.isEmptyObject( prop ),
+			optall = jQuery.speed( speed, easing, callback ),
+			doAnimation = function() {
+
+				// Operate on a copy of prop so per-property easing won't be lost
+				var anim = Animation( this, jQuery.extend( {}, prop ), optall );
+
+				// Empty animations, or finishing resolves immediately
+				if ( empty || dataPriv.get( this, "finish" ) ) {
+					anim.stop( true );
+				}
+			};
+			doAnimation.finish = doAnimation;
+
+		return empty || optall.queue === false ?
+			this.each( doAnimation ) :
+			this.queue( optall.queue, doAnimation );
+	},
+	stop: function( type, clearQueue, gotoEnd ) {
+		var stopQueue = function( hooks ) {
+			var stop = hooks.stop;
+			delete hooks.stop;
+			stop( gotoEnd );
+		};
+
+		if ( typeof type !== "string" ) {
+			gotoEnd = clearQueue;
+			clearQueue = type;
+			type = undefined;
+		}
+		if ( clearQueue && type !== false ) {
+			this.queue( type || "fx", [] );
+		}
+
+		return this.each( function() {
+			var dequeue = true,
+				index = type != null && type + "queueHooks",
+				timers = jQuery.timers,
+				data = dataPriv.get( this );
+
+			if ( index ) {
+				if ( data[ index ] && data[ index ].stop ) {
+					stopQueue( data[ index ] );
+				}
+			} else {
+				for ( index in data ) {
+					if ( data[ index ] && data[ index ].stop && rrun.test( index ) ) {
+						stopQueue( data[ index ] );
+					}
+				}
+			}
+
+			for ( index = timers.length; index--; ) {
+				if ( timers[ index ].elem === this &&
+					( type == null || timers[ index ].queue === type ) ) {
+
+					timers[ index ].anim.stop( gotoEnd );
+					dequeue = false;
+					timers.splice( index, 1 );
+				}
+			}
+
+			// Start the next in the queue if the last step wasn't forced.
+			// Timers currently will call their complete callbacks, which
+			// will dequeue but only if they were gotoEnd.
+			if ( dequeue || !gotoEnd ) {
+				jQuery.dequeue( this, type );
+			}
+		} );
+	},
+	finish: function( type ) {
+		if ( type !== false ) {
+			type = type || "fx";
+		}
+		return this.each( function() {
+			var index,
+				data = dataPriv.get( this ),
+				queue = data[ type + "queue" ],
+				hooks = data[ type + "queueHooks" ],
+				timers = jQuery.timers,
+				length = queue ? queue.length : 0;
+
+			// Enable finishing flag on private data
+			data.finish = true;
+
+			// Empty the queue first
+			jQuery.queue( this, type, [] );
+
+			if ( hooks && hooks.stop ) {
+				hooks.stop.call( this, true );
+			}
+
+			// Look for any active animations, and finish them
+			for ( index = timers.length; index--; ) {
+				if ( timers[ index ].elem === this && timers[ index ].queue === type ) {
+					timers[ index ].anim.stop( true );
+					timers.splice( index, 1 );
+				}
+			}
+
+			// Look for any animations in the old queue and finish them
+			for ( index = 0; index < length; index++ ) {
+				if ( queue[ index ] && queue[ index ].finish ) {
+					queue[ index ].finish.call( this );
+				}
+			}
+
+			// Turn off finishing flag
+			delete data.finish;
+		} );
+	}
+} );
+
+jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {
+	var cssFn = jQuery.fn[ name ];
+	jQuery.fn[ name ] = function( speed, easing, callback ) {
+		return speed == null || typeof speed === "boolean" ?
+			cssFn.apply( this, arguments ) :
+			this.animate( genFx( name, true ), speed, easing, callback );
+	};
+} );
+
+// Generate shortcuts for custom animations
+jQuery.each( {
+	slideDown: genFx( "show" ),
+	slideUp: genFx( "hide" ),
+	slideToggle: genFx( "toggle" ),
+	fadeIn: { opacity: "show" },
+	fadeOut: { opacity: "hide" },
+	fadeToggle: { opacity: "toggle" }
+}, function( name, props ) {
+	jQuery.fn[ name ] = function( speed, easing, callback ) {
+		return this.animate( props, speed, easing, callback );
+	};
+} );
+
+jQuery.timers = [];
+jQuery.fx.tick = function() {
+	var timer,
+		i = 0,
+		timers = jQuery.timers;
+
+	fxNow = Date.now();
+
+	for ( ; i < timers.length; i++ ) {
+		timer = timers[ i ];
+
+		// Run the timer and safely remove it when done (allowing for external removal)
+		if ( !timer() && timers[ i ] === timer ) {
+			timers.splice( i--, 1 );
+		}
+	}
+
+	if ( !timers.length ) {
+		jQuery.fx.stop();
+	}
+	fxNow = undefined;
+};
+
+jQuery.fx.timer = function( timer ) {
+	jQuery.timers.push( timer );
+	jQuery.fx.start();
+};
+
+jQuery.fx.interval = 13;
+jQuery.fx.start = function() {
+	if ( inProgress ) {
+		return;
+	}
+
+	inProgress = true;
+	schedule();
+};
+
+jQuery.fx.stop = function() {
+	inProgress = null;
+};
+
+jQuery.fx.speeds = {
+	slow: 600,
+	fast: 200,
+
+	// Default speed
+	_default: 400
+};
+
+
+// Based off of the plugin by Clint Helfers, with permission.
+// https://web.archive.org/web/20100324014747/http://blindsignals.com/index.php/2009/07/jquery-delay/
+jQuery.fn.delay = function( time, type ) {
+	time = jQuery.fx ? jQuery.fx.speeds[ time ] || time : time;
+	type = type || "fx";
+
+	return this.queue( type, function( next, hooks ) {
+		var timeout = window.setTimeout( next, time );
+		hooks.stop = function() {
+			window.clearTimeout( timeout );
+		};
+	} );
+};
+
+
+( function() {
+	var input = document.createElement( "input" ),
+		select = document.createElement( "select" ),
+		opt = select.appendChild( document.createElement( "option" ) );
+
+	input.type = "checkbox";
+
+	// Support: Android <=4.3 only
+	// Default value for a checkbox should be "on"
+	support.checkOn = input.value !== "";
+
+	// Support: IE <=11 only
+	// Must access selectedIndex to make default options select
+	support.optSelected = opt.selected;
+
+	// Support: IE <=11 only
+	// An input loses its value after becoming a radio
+	input = document.createElement( "input" );
+	input.value = "t";
+	input.type = "radio";
+	support.radioValue = input.value === "t";
+} )();
+
+
+var boolHook,
+	attrHandle = jQuery.expr.attrHandle;
+
+jQuery.fn.extend( {
+	attr: function( name, value ) {
+		return access( this, jQuery.attr, name, value, arguments.length > 1 );
+	},
+
+	removeAttr: function( name ) {
+		return this.each( function() {
+			jQuery.removeAttr( this, name );
+		} );
+	}
+} );
+
+jQuery.extend( {
+	attr: function( elem, name, value ) {
+		var ret, hooks,
+			nType = elem.nodeType;
+
+		// Don't get/set attributes on text, comment and attribute nodes
+		if ( nType === 3 || nType === 8 || nType === 2 ) {
+			return;
+		}
+
+		// Fallback to prop when attributes are not supported
+		if ( typeof elem.getAttribute === "undefined" ) {
+			return jQuery.prop( elem, name, value );
+		}
+
+		// Attribute hooks are determined by the lowercase version
+		// Grab necessary hook if one is defined
+		if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
+			hooks = jQuery.attrHooks[ name.toLowerCase() ] ||
+				( jQuery.expr.match.bool.test( name ) ? boolHook : undefined );
+		}
+
+		if ( value !== undefined ) {
+			if ( value === null ) {
+				jQuery.removeAttr( elem, name );
+				return;
+			}
+
+			if ( hooks && "set" in hooks &&
+				( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+				return ret;
+			}
+
+			elem.setAttribute( name, value + "" );
+			return value;
+		}
+
+		if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
+			return ret;
+		}
+
+		ret = jQuery.find.attr( elem, name );
+
+		// Non-existent attributes return null, we normalize to undefined
+		return ret == null ? undefined : ret;
+	},
+
+	attrHooks: {
+		type: {
+			set: function( elem, value ) {
+				if ( !support.radioValue && value === "radio" &&
+					nodeName( elem, "input" ) ) {
+					var val = elem.value;
+					elem.setAttribute( "type", value );
+					if ( val ) {
+						elem.value = val;
+					}
+					return value;
+				}
+			}
+		}
+	},
+
+	removeAttr: function( elem, value ) {
+		var name,
+			i = 0,
+
+			// Attribute names can contain non-HTML whitespace characters
+			// https://html.spec.whatwg.org/multipage/syntax.html#attributes-2
+			attrNames = value && value.match( rnothtmlwhite );
+
+		if ( attrNames && elem.nodeType === 1 ) {
+			while ( ( name = attrNames[ i++ ] ) ) {
+				elem.removeAttribute( name );
+			}
+		}
+	}
+} );
+
+// Hooks for boolean attributes
+boolHook = {
+	set: function( elem, value, name ) {
+		if ( value === false ) {
+
+			// Remove boolean attributes when set to false
+			jQuery.removeAttr( elem, name );
+		} else {
+			elem.setAttribute( name, name );
+		}
+		return name;
+	}
+};
+
+jQuery.each( jQuery.expr.match.bool.source.match( /\w+/g ), function( i, name ) {
+	var getter = attrHandle[ name ] || jQuery.find.attr;
+
+	attrHandle[ name ] = function( elem, name, isXML ) {
+		var ret, handle,
+			lowercaseName = name.toLowerCase();
+
+		if ( !isXML ) {
+
+			// Avoid an infinite loop by temporarily removing this function from the getter
+			handle = attrHandle[ lowercaseName ];
+			attrHandle[ lowercaseName ] = ret;
+			ret = getter( elem, name, isXML ) != null ?
+				lowercaseName :
+				null;
+			attrHandle[ lowercaseName ] = handle;
+		}
+		return ret;
+	};
+} );
+
+
+
+
+var rfocusable = /^(?:input|select|textarea|button)$/i,
+	rclickable = /^(?:a|area)$/i;
+
+jQuery.fn.extend( {
+	prop: function( name, value ) {
+		return access( this, jQuery.prop, name, value, arguments.length > 1 );
+	},
+
+	removeProp: function( name ) {
+		return this.each( function() {
+			delete this[ jQuery.propFix[ name ] || name ];
+		} );
+	}
+} );
+
+jQuery.extend( {
+	prop: function( elem, name, value ) {
+		var ret, hooks,
+			nType = elem.nodeType;
+
+		// Don't get/set properties on text, comment and attribute nodes
+		if ( nType === 3 || nType === 8 || nType === 2 ) {
+			return;
+		}
+
+		if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
+
+			// Fix name and attach hooks
+			name = jQuery.propFix[ name ] || name;
+			hooks = jQuery.propHooks[ name ];
+		}
+
+		if ( value !== undefined ) {
+			if ( hooks && "set" in hooks &&
+				( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+				return ret;
+			}
+
+			return ( elem[ name ] = value );
+		}
+
+		if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
+			return ret;
+		}
+
+		return elem[ name ];
+	},
+
+	propHooks: {
+		tabIndex: {
+			get: function( elem ) {
+
+				// Support: IE <=9 - 11 only
+				// elem.tabIndex doesn't always return the
+				// correct value when it hasn't been explicitly set
+				// https://web.archive.org/web/20141116233347/http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
+				// Use proper attribute retrieval(#12072)
+				var tabindex = jQuery.find.attr( elem, "tabindex" );
+
+				if ( tabindex ) {
+					return parseInt( tabindex, 10 );
+				}
+
+				if (
+					rfocusable.test( elem.nodeName ) ||
+					rclickable.test( elem.nodeName ) &&
+					elem.href
+				) {
+					return 0;
+				}
+
+				return -1;
+			}
+		}
+	},
+
+	propFix: {
+		"for": "htmlFor",
+		"class": "className"
+	}
+} );
+
+// Support: IE <=11 only
+// Accessing the selectedIndex property
+// forces the browser to respect setting selected
+// on the option
+// The getter ensures a default option is selected
+// when in an optgroup
+// eslint rule "no-unused-expressions" is disabled for this code
+// since it considers such accessions noop
+if ( !support.optSelected ) {
+	jQuery.propHooks.selected = {
+		get: function( elem ) {
+
+			/* eslint no-unused-expressions: "off" */
+
+			var parent = elem.parentNode;
+			if ( parent && parent.parentNode ) {
+				parent.parentNode.selectedIndex;
+			}
+			return null;
+		},
+		set: function( elem ) {
+
+			/* eslint no-unused-expressions: "off" */
+
+			var parent = elem.parentNode;
+			if ( parent ) {
+				parent.selectedIndex;
+
+				if ( parent.parentNode ) {
+					parent.parentNode.selectedIndex;
+				}
+			}
+		}
+	};
+}
+
+jQuery.each( [
+	"tabIndex",
+	"readOnly",
+	"maxLength",
+	"cellSpacing",
+	"cellPadding",
+	"rowSpan",
+	"colSpan",
+	"useMap",
+	"frameBorder",
+	"contentEditable"
+], function() {
+	jQuery.propFix[ this.toLowerCase() ] = this;
+} );
+
+
+
+
+	// Strip and collapse whitespace according to HTML spec
+	// https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace
+	function stripAndCollapse( value ) {
+		var tokens = value.match( rnothtmlwhite ) || [];
+		return tokens.join( " " );
+	}
+
+
+function getClass( elem ) {
+	return elem.getAttribute && elem.getAttribute( "class" ) || "";
+}
+
+function classesToArray( value ) {
+	if ( Array.isArray( value ) ) {
+		return value;
+	}
+	if ( typeof value === "string" ) {
+		return value.match( rnothtmlwhite ) || [];
+	}
+	return [];
+}
+
+jQuery.fn.extend( {
+	addClass: function( value ) {
+		var classes, elem, cur, curValue, clazz, j, finalValue,
+			i = 0;
+
+		if ( isFunction( value ) ) {
+			return this.each( function( j ) {
+				jQuery( this ).addClass( value.call( this, j, getClass( this ) ) );
+			} );
+		}
+
+		classes = classesToArray( value );
+
+		if ( classes.length ) {
+			while ( ( elem = this[ i++ ] ) ) {
+				curValue = getClass( elem );
+				cur = elem.nodeType === 1 && ( " " + stripAndCollapse( curValue ) + " " );
+
+				if ( cur ) {
+					j = 0;
+					while ( ( clazz = classes[ j++ ] ) ) {
+						if ( cur.indexOf( " " + clazz + " " ) < 0 ) {
+							cur += clazz + " ";
+						}
+					}
+
+					// Only assign if different to avoid unneeded rendering.
+					finalValue = stripAndCollapse( cur );
+					if ( curValue !== finalValue ) {
+						elem.setAttribute( "class", finalValue );
+					}
+				}
+			}
+		}
+
+		return this;
+	},
+
+	removeClass: function( value ) {
+		var classes, elem, cur, curValue, clazz, j, finalValue,
+			i = 0;
+
+		if ( isFunction( value ) ) {
+			return this.each( function( j ) {
+				jQuery( this ).removeClass( value.call( this, j, getClass( this ) ) );
+			} );
+		}
+
+		if ( !arguments.length ) {
+			return this.attr( "class", "" );
+		}
+
+		classes = classesToArray( value );
+
+		if ( classes.length ) {
+			while ( ( elem = this[ i++ ] ) ) {
+				curValue = getClass( elem );
+
+				// This expression is here for better compressibility (see addClass)
+				cur = elem.nodeType === 1 && ( " " + stripAndCollapse( curValue ) + " " );
+
+				if ( cur ) {
+					j = 0;
+					while ( ( clazz = classes[ j++ ] ) ) {
+
+						// Remove *all* instances
+						while ( cur.indexOf( " " + clazz + " " ) > -1 ) {
+							cur = cur.replace( " " + clazz + " ", " " );
+						}
+					}
+
+					// Only assign if different to avoid unneeded rendering.
+					finalValue = stripAndCollapse( cur );
+					if ( curValue !== finalValue ) {
+						elem.setAttribute( "class", finalValue );
+					}
+				}
+			}
+		}
+
+		return this;
+	},
+
+	toggleClass: function( value, stateVal ) {
+		var type = typeof value,
+			isValidValue = type === "string" || Array.isArray( value );
+
+		if ( typeof stateVal === "boolean" && isValidValue ) {
+			return stateVal ? this.addClass( value ) : this.removeClass( value );
+		}
+
+		if ( isFunction( value ) ) {
+			return this.each( function( i ) {
+				jQuery( this ).toggleClass(
+					value.call( this, i, getClass( this ), stateVal ),
+					stateVal
+				);
+			} );
+		}
+
+		return this.each( function() {
+			var className, i, self, classNames;
+
+			if ( isValidValue ) {
+
+				// Toggle individual class names
+				i = 0;
+				self = jQuery( this );
+				classNames = classesToArray( value );
+
+				while ( ( className = classNames[ i++ ] ) ) {
+
+					// Check each className given, space separated list
+					if ( self.hasClass( className ) ) {
+						self.removeClass( className );
+					} else {
+						self.addClass( className );
+					}
+				}
+
+			// Toggle whole class name
+			} else if ( value === undefined || type === "boolean" ) {
+				className = getClass( this );
+				if ( className ) {
+
+					// Store className if set
+					dataPriv.set( this, "__className__", className );
+				}
+
+				// If the element has a class name or if we're passed `false`,
+				// then remove the whole classname (if there was one, the above saved it).
+				// Otherwise bring back whatever was previously saved (if anything),
+				// falling back to the empty string if nothing was stored.
+				if ( this.setAttribute ) {
+					this.setAttribute( "class",
+						className || value === false ?
+						"" :
+						dataPriv.get( this, "__className__" ) || ""
+					);
+				}
+			}
+		} );
+	},
+
+	hasClass: function( selector ) {
+		var className, elem,
+			i = 0;
+
+		className = " " + selector + " ";
+		while ( ( elem = this[ i++ ] ) ) {
+			if ( elem.nodeType === 1 &&
+				( " " + stripAndCollapse( getClass( elem ) ) + " " ).indexOf( className ) > -1 ) {
+					return true;
+			}
+		}
+
+		return false;
+	}
+} );
+
+
+
+
+var rreturn = /\r/g;
+
+jQuery.fn.extend( {
+	val: function( value ) {
+		var hooks, ret, valueIsFunction,
+			elem = this[ 0 ];
+
+		if ( !arguments.length ) {
+			if ( elem ) {
+				hooks = jQuery.valHooks[ elem.type ] ||
+					jQuery.valHooks[ elem.nodeName.toLowerCase() ];
+
+				if ( hooks &&
+					"get" in hooks &&
+					( ret = hooks.get( elem, "value" ) ) !== undefined
+				) {
+					return ret;
+				}
+
+				ret = elem.value;
+
+				// Handle most common string cases
+				if ( typeof ret === "string" ) {
+					return ret.replace( rreturn, "" );
+				}
+
+				// Handle cases where value is null/undef or number
+				return ret == null ? "" : ret;
+			}
+
+			return;
+		}
+
+		valueIsFunction = isFunction( value );
+
+		return this.each( function( i ) {
+			var val;
+
+			if ( this.nodeType !== 1 ) {
+				return;
+			}
+
+			if ( valueIsFunction ) {
+				val = value.call( this, i, jQuery( this ).val() );
+			} else {
+				val = value;
+			}
+
+			// Treat null/undefined as ""; convert numbers to string
+			if ( val == null ) {
+				val = "";
+
+			} else if ( typeof val === "number" ) {
+				val += "";
+
+			} else if ( Array.isArray( val ) ) {
+				val = jQuery.map( val, function( value ) {
+					return value == null ? "" : value + "";
+				} );
+			}
+
+			hooks = jQuery.valHooks[ this.type ] || jQuery.valHooks[ this.nodeName.toLowerCase() ];
+
+			// If set returns undefined, fall back to normal setting
+			if ( !hooks || !( "set" in hooks ) || hooks.set( this, val, "value" ) === undefined ) {
+				this.value = val;
+			}
+		} );
+	}
+} );
+
+jQuery.extend( {
+	valHooks: {
+		option: {
+			get: function( elem ) {
+
+				var val = jQuery.find.attr( elem, "value" );
+				return val != null ?
+					val :
+
+					// Support: IE <=10 - 11 only
+					// option.text throws exceptions (#14686, #14858)
+					// Strip and collapse whitespace
+					// https://html.spec.whatwg.org/#strip-and-collapse-whitespace
+					stripAndCollapse( jQuery.text( elem ) );
+			}
+		},
+		select: {
+			get: function( elem ) {
+				var value, option, i,
+					options = elem.options,
+					index = elem.selectedIndex,
+					one = elem.type === "select-one",
+					values = one ? null : [],
+					max = one ? index + 1 : options.length;
+
+				if ( index < 0 ) {
+					i = max;
+
+				} else {
+					i = one ? index : 0;
+				}
+
+				// Loop through all the selected options
+				for ( ; i < max; i++ ) {
+					option = options[ i ];
+
+					// Support: IE <=9 only
+					// IE8-9 doesn't update selected after form reset (#2551)
+					if ( ( option.selected || i === index ) &&
+
+							// Don't return options that are disabled or in a disabled optgroup
+							!option.disabled &&
+							( !option.parentNode.disabled ||
+								!nodeName( option.parentNode, "optgroup" ) ) ) {
+
+						// Get the specific value for the option
+						value = jQuery( option ).val();
+
+						// We don't need an array for one selects
+						if ( one ) {
+							return value;
+						}
+
+						// Multi-Selects return an array
+						values.push( value );
+					}
+				}
+
+				return values;
+			},
+
+			set: function( elem, value ) {
+				var optionSet, option,
+					options = elem.options,
+					values = jQuery.makeArray( value ),
+					i = options.length;
+
+				while ( i-- ) {
+					option = options[ i ];
+
+					/* eslint-disable no-cond-assign */
+
+					if ( option.selected =
+						jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
+					) {
+						optionSet = true;
+					}
+
+					/* eslint-enable no-cond-assign */
+				}
+
+				// Force browsers to behave consistently when non-matching value is set
+				if ( !optionSet ) {
+					elem.selectedIndex = -1;
+				}
+				return values;
+			}
+		}
+	}
+} );
+
+// Radios and checkboxes getter/setter
+jQuery.each( [ "radio", "checkbox" ], function() {
+	jQuery.valHooks[ this ] = {
+		set: function( elem, value ) {
+			if ( Array.isArray( value ) ) {
+				return ( elem.checked = jQuery.inArray( jQuery( elem ).val(), value ) > -1 );
+			}
+		}
+	};
+	if ( !support.checkOn ) {
+		jQuery.valHooks[ this ].get = function( elem ) {
+			return elem.getAttribute( "value" ) === null ? "on" : elem.value;
+		};
+	}
+} );
+
+
+
+
+// Return jQuery for attributes-only inclusion
+
+
+support.focusin = "onfocusin" in window;
+
+
+var rfocusMorph = /^(?:focusinfocus|focusoutblur)$/,
+	stopPropagationCallback = function( e ) {
+		e.stopPropagation();
+	};
+
+jQuery.extend( jQuery.event, {
+
+	trigger: function( event, data, elem, onlyHandlers ) {
+
+		var i, cur, tmp, bubbleType, ontype, handle, special, lastElement,
+			eventPath = [ elem || document ],
+			type = hasOwn.call( event, "type" ) ? event.type : event,
+			namespaces = hasOwn.call( event, "namespace" ) ? event.namespace.split( "." ) : [];
+
+		cur = lastElement = tmp = elem = elem || document;
+
+		// Don't do events on text and comment nodes
+		if ( elem.nodeType === 3 || elem.nodeType === 8 ) {
+			return;
+		}
+
+		// focus/blur morphs to focusin/out; ensure we're not firing them right now
+		if ( rfocusMorph.test( type + jQuery.event.triggered ) ) {
+			return;
+		}
+
+		if ( type.indexOf( "." ) > -1 ) {
+
+			// Namespaced trigger; create a regexp to match event type in handle()
+			namespaces = type.split( "." );
+			type = namespaces.shift();
+			namespaces.sort();
+		}
+		ontype = type.indexOf( ":" ) < 0 && "on" + type;
+
+		// Caller can pass in a jQuery.Event object, Object, or just an event type string
+		event = event[ jQuery.expando ] ?
+			event :
+			new jQuery.Event( type, typeof event === "object" && event );
+
+		// Trigger bitmask: & 1 for native handlers; & 2 for jQuery (always true)
+		event.isTrigger = onlyHandlers ? 2 : 3;
+		event.namespace = namespaces.join( "." );
+		event.rnamespace = event.namespace ?
+			new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" ) :
+			null;
+
+		// Clean up the event in case it is being reused
+		event.result = undefined;
+		if ( !event.target ) {
+			event.target = elem;
+		}
+
+		// Clone any incoming data and prepend the event, creating the handler arg list
+		data = data == null ?
+			[ event ] :
+			jQuery.makeArray( data, [ event ] );
+
+		// Allow special events to draw outside the lines
+		special = jQuery.event.special[ type ] || {};
+		if ( !onlyHandlers && special.trigger && special.trigger.apply( elem, data ) === false ) {
+			return;
+		}
+
+		// Determine event propagation path in advance, per W3C events spec (#9951)
+		// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
+		if ( !onlyHandlers && !special.noBubble && !isWindow( elem ) ) {
+
+			bubbleType = special.delegateType || type;
+			if ( !rfocusMorph.test( bubbleType + type ) ) {
+				cur = cur.parentNode;
+			}
+			for ( ; cur; cur = cur.parentNode ) {
+				eventPath.push( cur );
+				tmp = cur;
+			}
+
+			// Only add window if we got to document (e.g., not plain obj or detached DOM)
+			if ( tmp === ( elem.ownerDocument || document ) ) {
+				eventPath.push( tmp.defaultView || tmp.parentWindow || window );
+			}
+		}
+
+		// Fire handlers on the event path
+		i = 0;
+		while ( ( cur = eventPath[ i++ ] ) && !event.isPropagationStopped() ) {
+			lastElement = cur;
+			event.type = i > 1 ?
+				bubbleType :
+				special.bindType || type;
+
+			// jQuery handler
+			handle = ( dataPriv.get( cur, "events" ) || {} )[ event.type ] &&
+				dataPriv.get( cur, "handle" );
+			if ( handle ) {
+				handle.apply( cur, data );
+			}
+
+			// Native handler
+			handle = ontype && cur[ ontype ];
+			if ( handle && handle.apply && acceptData( cur ) ) {
+				event.result = handle.apply( cur, data );
+				if ( event.result === false ) {
+					event.preventDefault();
+				}
+			}
+		}
+		event.type = type;
+
+		// If nobody prevented the default action, do it now
+		if ( !onlyHandlers && !event.isDefaultPrevented() ) {
+
+			if ( ( !special._default ||
+				special._default.apply( eventPath.pop(), data ) === false ) &&
+				acceptData( elem ) ) {
+
+				// Call a native DOM method on the target with the same name as the event.
+				// Don't do default actions on window, that's where global variables be (#6170)
+				if ( ontype && isFunction( elem[ type ] ) && !isWindow( elem ) ) {
+
+					// Don't re-trigger an onFOO event when we call its FOO() method
+					tmp = elem[ ontype ];
+
+					if ( tmp ) {
+						elem[ ontype ] = null;
+					}
+
+					// Prevent re-triggering of the same event, since we already bubbled it above
+					jQuery.event.triggered = type;
+
+					if ( event.isPropagationStopped() ) {
+						lastElement.addEventListener( type, stopPropagationCallback );
+					}
+
+					elem[ type ]();
+
+					if ( event.isPropagationStopped() ) {
+						lastElement.removeEventListener( type, stopPropagationCallback );
+					}
+
+					jQuery.event.triggered = undefined;
+
+					if ( tmp ) {
+						elem[ ontype ] = tmp;
+					}
+				}
+			}
+		}
+
+		return event.result;
+	},
+
+	// Piggyback on a donor event to simulate a different one
+	// Used only for `focus(in | out)` events
+	simulate: function( type, elem, event ) {
+		var e = jQuery.extend(
+			new jQuery.Event(),
+			event,
+			{
+				type: type,
+				isSimulated: true
+			}
+		);
+
+		jQuery.event.trigger( e, null, elem );
+	}
+
+} );
+
+jQuery.fn.extend( {
+
+	trigger: function( type, data ) {
+		return this.each( function() {
+			jQuery.event.trigger( type, data, this );
+		} );
+	},
+	triggerHandler: function( type, data ) {
+		var elem = this[ 0 ];
+		if ( elem ) {
+			return jQuery.event.trigger( type, data, elem, true );
+		}
+	}
+} );
+
+
+// Support: Firefox <=44
+// Firefox doesn't have focus(in | out) events
+// Related ticket - https://bugzilla.mozilla.org/show_bug.cgi?id=687787
+//
+// Support: Chrome <=48 - 49, Safari <=9.0 - 9.1
+// focus(in | out) events fire after focus & blur events,
+// which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
+// Related ticket - https://bugs.chromium.org/p/chromium/issues/detail?id=449857
+if ( !support.focusin ) {
+	jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {
+
+		// Attach a single capturing handler on the document while someone wants focusin/focusout
+		var handler = function( event ) {
+			jQuery.event.simulate( fix, event.target, jQuery.event.fix( event ) );
+		};
+
+		jQuery.event.special[ fix ] = {
+			setup: function() {
+				var doc = this.ownerDocument || this,
+					attaches = dataPriv.access( doc, fix );
+
+				if ( !attaches ) {
+					doc.addEventListener( orig, handler, true );
+				}
+				dataPriv.access( doc, fix, ( attaches || 0 ) + 1 );
+			},
+			teardown: function() {
+				var doc = this.ownerDocument || this,
+					attaches = dataPriv.access( doc, fix ) - 1;
+
+				if ( !attaches ) {
+					doc.removeEventListener( orig, handler, true );
+					dataPriv.remove( doc, fix );
+
+				} else {
+					dataPriv.access( doc, fix, attaches );
+				}
+			}
+		};
+	} );
+}
+var location = window.location;
+
+var nonce = Date.now();
+
+var rquery = ( /\?/ );
+
+
+
+// Cross-browser xml parsing
+jQuery.parseXML = function( data ) {
+	var xml;
+	if ( !data || typeof data !== "string" ) {
+		return null;
+	}
+
+	// Support: IE 9 - 11 only
+	// IE throws on parseFromString with invalid input.
+	try {
+		xml = ( new window.DOMParser() ).parseFromString( data, "text/xml" );
+	} catch ( e ) {
+		xml = undefined;
+	}
+
+	if ( !xml || xml.getElementsByTagName( "parsererror" ).length ) {
+		jQuery.error( "Invalid XML: " + data );
+	}
+	return xml;
+};
+
+
+var
+	rbracket = /\[\]$/,
+	rCRLF = /\r?\n/g,
+	rsubmitterTypes = /^(?:submit|button|image|reset|file)$/i,
+	rsubmittable = /^(?:input|select|textarea|keygen)/i;
+
+function buildParams( prefix, obj, traditional, add ) {
+	var name;
+
+	if ( Array.isArray( obj ) ) {
+
+		// Serialize array item.
+		jQuery.each( obj, function( i, v ) {
+			if ( traditional || rbracket.test( prefix ) ) {
+
+				// Treat each array item as a scalar.
+				add( prefix, v );
+
+			} else {
+
+				// Item is non-scalar (array or object), encode its numeric index.
+				buildParams(
+					prefix + "[" + ( typeof v === "object" && v != null ? i : "" ) + "]",
+					v,
+					traditional,
+					add
+				);
+			}
+		} );
+
+	} else if ( !traditional && toType( obj ) === "object" ) {
+
+		// Serialize object item.
+		for ( name in obj ) {
+			buildParams( prefix + "[" + name + "]", obj[ name ], traditional, add );
+		}
+
+	} else {
+
+		// Serialize scalar item.
+		add( prefix, obj );
+	}
+}
+
+// Serialize an array of form elements or a set of
+// key/values into a query string
+jQuery.param = function( a, traditional ) {
+	var prefix,
+		s = [],
+		add = function( key, valueOrFunction ) {
+
+			// If value is a function, invoke it and use its return value
+			var value = isFunction( valueOrFunction ) ?
+				valueOrFunction() :
+				valueOrFunction;
+
+			s[ s.length ] = encodeURIComponent( key ) + "=" +
+				encodeURIComponent( value == null ? "" : value );
+		};
+
+	// If an array was passed in, assume that it is an array of form elements.
+	if ( Array.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
+
+		// Serialize the form elements
+		jQuery.each( a, function() {
+			add( this.name, this.value );
+		} );
+
+	} else {
+
+		// If traditional, encode the "old" way (the way 1.3.2 or older
+		// did it), otherwise encode params recursively.
+		for ( prefix in a ) {
+			buildParams( prefix, a[ prefix ], traditional, add );
+		}
+	}
+
+	// Return the resulting serialization
+	return s.join( "&" );
+};
+
+jQuery.fn.extend( {
+	serialize: function() {
+		return jQuery.param( this.serializeArray() );
+	},
+	serializeArray: function() {
+		return this.map( function() {
+
+			// Can add propHook for "elements" to filter or add form elements
+			var elements = jQuery.prop( this, "elements" );
+			return elements ? jQuery.makeArray( elements ) : this;
+		} )
+		.filter( function() {
+			var type = this.type;
+
+			// Use .is( ":disabled" ) so that fieldset[disabled] works
+			return this.name && !jQuery( this ).is( ":disabled" ) &&
+				rsubmittable.test( this.nodeName ) && !rsubmitterTypes.test( type ) &&
+				( this.checked || !rcheckableType.test( type ) );
+		} )
+		.map( function( i, elem ) {
+			var val = jQuery( this ).val();
+
+			if ( val == null ) {
+				return null;
+			}
+
+			if ( Array.isArray( val ) ) {
+				return jQuery.map( val, function( val ) {
+					return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
+				} );
+			}
+
+			return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
+		} ).get();
+	}
+} );
+
+
+var
+	r20 = /%20/g,
+	rhash = /#.*$/,
+	rantiCache = /([?&])_=[^&]*/,
+	rheaders = /^(.*?):[ \t]*([^\r\n]*)$/mg,
+
+	// #7653, #8125, #8152: local protocol detection
+	rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
+	rnoContent = /^(?:GET|HEAD)$/,
+	rprotocol = /^\/\//,
+
+	/* Prefilters
+	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+	 * 2) These are called:
+	 *    - BEFORE asking for a transport
+	 *    - AFTER param serialization (s.data is a string if s.processData is true)
+	 * 3) key is the dataType
+	 * 4) the catchall symbol "*" can be used
+	 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+	 */
+	prefilters = {},
+
+	/* Transports bindings
+	 * 1) key is the dataType
+	 * 2) the catchall symbol "*" can be used
+	 * 3) selection will start with transport dataType and THEN go to "*" if needed
+	 */
+	transports = {},
+
+	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
+	allTypes = "*/".concat( "*" ),
+
+	// Anchor tag for parsing the document origin
+	originAnchor = document.createElement( "a" );
+	originAnchor.href = location.href;
+
+// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
+function addToPrefiltersOrTransports( structure ) {
+
+	// dataTypeExpression is optional and defaults to "*"
+	return function( dataTypeExpression, func ) {
+
+		if ( typeof dataTypeExpression !== "string" ) {
+			func = dataTypeExpression;
+			dataTypeExpression = "*";
+		}
+
+		var dataType,
+			i = 0,
+			dataTypes = dataTypeExpression.toLowerCase().match( rnothtmlwhite ) || [];
+
+		if ( isFunction( func ) ) {
+
+			// For each dataType in the dataTypeExpression
+			while ( ( dataType = dataTypes[ i++ ] ) ) {
+
+				// Prepend if requested
+				if ( dataType[ 0 ] === "+" ) {
+					dataType = dataType.slice( 1 ) || "*";
+					( structure[ dataType ] = structure[ dataType ] || [] ).unshift( func );
+
+				// Otherwise append
+				} else {
+					( structure[ dataType ] = structure[ dataType ] || [] ).push( func );
+				}
+			}
+		}
+	};
+}
+
+// Base inspection function for prefilters and transports
+function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
+
+	var inspected = {},
+		seekingTransport = ( structure === transports );
+
+	function inspect( dataType ) {
+		var selected;
+		inspected[ dataType ] = true;
+		jQuery.each( structure[ dataType ] || [], function( _, prefilterOrFactory ) {
+			var dataTypeOrTransport = prefilterOrFactory( options, originalOptions, jqXHR );
+			if ( typeof dataTypeOrTransport === "string" &&
+				!seekingTransport && !inspected[ dataTypeOrTransport ] ) {
+
+				options.dataTypes.unshift( dataTypeOrTransport );
+				inspect( dataTypeOrTransport );
+				return false;
+			} else if ( seekingTransport ) {
+				return !( selected = dataTypeOrTransport );
+			}
+		} );
+		return selected;
+	}
+
+	return inspect( options.dataTypes[ 0 ] ) || !inspected[ "*" ] && inspect( "*" );
+}
+
+// A special extend for ajax options
+// that takes "flat" options (not to be deep extended)
+// Fixes #9887
+function ajaxExtend( target, src ) {
+	var key, deep,
+		flatOptions = jQuery.ajaxSettings.flatOptions || {};
+
+	for ( key in src ) {
+		if ( src[ key ] !== undefined ) {
+			( flatOptions[ key ] ? target : ( deep || ( deep = {} ) ) )[ key ] = src[ key ];
+		}
+	}
+	if ( deep ) {
+		jQuery.extend( true, target, deep );
+	}
+
+	return target;
+}
+
+/* Handles responses to an ajax request:
+ * - finds the right dataType (mediates between content-type and expected dataType)
+ * - returns the corresponding response
+ */
+function ajaxHandleResponses( s, jqXHR, responses ) {
+
+	var ct, type, finalDataType, firstDataType,
+		contents = s.contents,
+		dataTypes = s.dataTypes;
+
+	// Remove auto dataType and get content-type in the process
+	while ( dataTypes[ 0 ] === "*" ) {
+		dataTypes.shift();
+		if ( ct === undefined ) {
+			ct = s.mimeType || jqXHR.getResponseHeader( "Content-Type" );
+		}
+	}
+
+	// Check if we're dealing with a known content-type
+	if ( ct ) {
+		for ( type in contents ) {
+			if ( contents[ type ] && contents[ type ].test( ct ) ) {
+				dataTypes.unshift( type );
+				break;
+			}
+		}
+	}
+
+	// Check to see if we have a response for the expected dataType
+	if ( dataTypes[ 0 ] in responses ) {
+		finalDataType = dataTypes[ 0 ];
+	} else {
+
+		// Try convertible dataTypes
+		for ( type in responses ) {
+			if ( !dataTypes[ 0 ] || s.converters[ type + " " + dataTypes[ 0 ] ] ) {
+				finalDataType = type;
+				break;
+			}
+			if ( !firstDataType ) {
+				firstDataType = type;
+			}
+		}
+
+		// Or just use first one
+		finalDataType = finalDataType || firstDataType;
+	}
+
+	// If we found a dataType
+	// We add the dataType to the list if needed
+	// and return the corresponding response
+	if ( finalDataType ) {
+		if ( finalDataType !== dataTypes[ 0 ] ) {
+			dataTypes.unshift( finalDataType );
+		}
+		return responses[ finalDataType ];
+	}
+}
+
+/* Chain conversions given the request and the original response
+ * Also sets the responseXXX fields on the jqXHR instance
+ */
+function ajaxConvert( s, response, jqXHR, isSuccess ) {
+	var conv2, current, conv, tmp, prev,
+		converters = {},
+
+		// Work with a copy of dataTypes in case we need to modify it for conversion
+		dataTypes = s.dataTypes.slice();
+
+	// Create converters map with lowercased keys
+	if ( dataTypes[ 1 ] ) {
+		for ( conv in s.converters ) {
+			converters[ conv.toLowerCase() ] = s.converters[ conv ];
+		}
+	}
+
+	current = dataTypes.shift();
+
+	// Convert to each sequential dataType
+	while ( current ) {
+
+		if ( s.responseFields[ current ] ) {
+			jqXHR[ s.responseFields[ current ] ] = response;
+		}
+
+		// Apply the dataFilter if provided
+		if ( !prev && isSuccess && s.dataFilter ) {
+			response = s.dataFilter( response, s.dataType );
+		}
+
+		prev = current;
+		current = dataTypes.shift();
+
+		if ( current ) {
+
+			// There's only work to do if current dataType is non-auto
+			if ( current === "*" ) {
+
+				current = prev;
+
+			// Convert response if prev dataType is non-auto and differs from current
+			} else if ( prev !== "*" && prev !== current ) {
+
+				// Seek a direct converter
+				conv = converters[ prev + " " + current ] || converters[ "* " + current ];
+
+				// If none found, seek a pair
+				if ( !conv ) {
+					for ( conv2 in converters ) {
+
+						// If conv2 outputs current
+						tmp = conv2.split( " " );
+						if ( tmp[ 1 ] === current ) {
+
+							// If prev can be converted to accepted input
+							conv = converters[ prev + " " + tmp[ 0 ] ] ||
+								converters[ "* " + tmp[ 0 ] ];
+							if ( conv ) {
+
+								// Condense equivalence converters
+								if ( conv === true ) {
+									conv = converters[ conv2 ];
+
+								// Otherwise, insert the intermediate dataType
+								} else if ( converters[ conv2 ] !== true ) {
+									current = tmp[ 0 ];
+									dataTypes.unshift( tmp[ 1 ] );
+								}
+								break;
+							}
+						}
+					}
+				}
+
+				// Apply converter (if not an equivalence)
+				if ( conv !== true ) {
+
+					// Unless errors are allowed to bubble, catch and return them
+					if ( conv && s.throws ) {
+						response = conv( response );
+					} else {
+						try {
+							response = conv( response );
+						} catch ( e ) {
+							return {
+								state: "parsererror",
+								error: conv ? e : "No conversion from " + prev + " to " + current
+							};
+						}
+					}
+				}
+			}
+		}
+	}
+
+	return { state: "success", data: response };
+}
+
+jQuery.extend( {
+
+	// Counter for holding the number of active queries
+	active: 0,
+
+	// Last-Modified header cache for next request
+	lastModified: {},
+	etag: {},
+
+	ajaxSettings: {
+		url: location.href,
+		type: "GET",
+		isLocal: rlocalProtocol.test( location.protocol ),
+		global: true,
+		processData: true,
+		async: true,
+		contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+
+		/*
+		timeout: 0,
+		data: null,
+		dataType: null,
+		username: null,
+		password: null,
+		cache: null,
+		throws: false,
+		traditional: false,
+		headers: {},
+		*/
+
+		accepts: {
+			"*": allTypes,
+			text: "text/plain",
+			html: "text/html",
+			xml: "application/xml, text/xml",
+			json: "application/json, text/javascript"
+		},
+
+		contents: {
+			xml: /\bxml\b/,
+			html: /\bhtml/,
+			json: /\bjson\b/
+		},
+
+		responseFields: {
+			xml: "responseXML",
+			text: "responseText",
+			json: "responseJSON"
+		},
+
+		// Data converters
+		// Keys separate source (or catchall "*") and destination types with a single space
+		converters: {
+
+			// Convert anything to text
+			"* text": String,
+
+			// Text to html (true = no transformation)
+			"text html": true,
+
+			// Evaluate text as a json expression
+			"text json": JSON.parse,
+
+			// Parse text as xml
+			"text xml": jQuery.parseXML
+		},
+
+		// For options that shouldn't be deep extended:
+		// you can add your own custom options here if
+		// and when you create one that shouldn't be
+		// deep extended (see ajaxExtend)
+		flatOptions: {
+			url: true,
+			context: true
+		}
+	},
+
+	// Creates a full fledged settings object into target
+	// with both ajaxSettings and settings fields.
+	// If target is omitted, writes into ajaxSettings.
+	ajaxSetup: function( target, settings ) {
+		return settings ?
+
+			// Building a settings object
+			ajaxExtend( ajaxExtend( target, jQuery.ajaxSettings ), settings ) :
+
+			// Extending ajaxSettings
+			ajaxExtend( jQuery.ajaxSettings, target );
+	},
+
+	ajaxPrefilter: addToPrefiltersOrTransports( prefilters ),
+	ajaxTransport: addToPrefiltersOrTransports( transports ),
+
+	// Main method
+	ajax: function( url, options ) {
+
+		// If url is an object, simulate pre-1.5 signature
+		if ( typeof url === "object" ) {
+			options = url;
+			url = undefined;
+		}
+
+		// Force options to be an object
+		options = options || {};
+
+		var transport,
+
+			// URL without anti-cache param
+			cacheURL,
+
+			// Response headers
+			responseHeadersString,
+			responseHeaders,
+
+			// timeout handle
+			timeoutTimer,
+
+			// Url cleanup var
+			urlAnchor,
+
+			// Request state (becomes false upon send and true upon completion)
+			completed,
+
+			// To know if global events are to be dispatched
+			fireGlobals,
+
+			// Loop variable
+			i,
+
+			// uncached part of the url
+			uncached,
+
+			// Create the final options object
+			s = jQuery.ajaxSetup( {}, options ),
+
+			// Callbacks context
+			callbackContext = s.context || s,
+
+			// Context for global events is callbackContext if it is a DOM node or jQuery collection
+			globalEventContext = s.context &&
+				( callbackContext.nodeType || callbackContext.jquery ) ?
+					jQuery( callbackContext ) :
+					jQuery.event,
+
+			// Deferreds
+			deferred = jQuery.Deferred(),
+			completeDeferred = jQuery.Callbacks( "once memory" ),
+
+			// Status-dependent callbacks
+			statusCode = s.statusCode || {},
+
+			// Headers (they are sent all at once)
+			requestHeaders = {},
+			requestHeadersNames = {},
+
+			// Default abort message
+			strAbort = "canceled",
+
+			// Fake xhr
+			jqXHR = {
+				readyState: 0,
+
+				// Builds headers hashtable if needed
+				getResponseHeader: function( key ) {
+					var match;
+					if ( completed ) {
+						if ( !responseHeaders ) {
+							responseHeaders = {};
+							while ( ( match = rheaders.exec( responseHeadersString ) ) ) {
+								responseHeaders[ match[ 1 ].toLowerCase() ] = match[ 2 ];
+							}
+						}
+						match = responseHeaders[ key.toLowerCase() ];
+					}
+					return match == null ? null : match;
+				},
+
+				// Raw string
+				getAllResponseHeaders: function() {
+					return completed ? responseHeadersString : null;
+				},
+
+				// Caches the header
+				setRequestHeader: function( name, value ) {
+					if ( completed == null ) {
+						name = requestHeadersNames[ name.toLowerCase() ] =
+							requestHeadersNames[ name.toLowerCase() ] || name;
+						requestHeaders[ name ] = value;
+					}
+					return this;
+				},
+
+				// Overrides response content-type header
+				overrideMimeType: function( type ) {
+					if ( completed == null ) {
+						s.mimeType = type;
+					}
+					return this;
+				},
+
+				// Status-dependent callbacks
+				statusCode: function( map ) {
+					var code;
+					if ( map ) {
+						if ( completed ) {
+
+							// Execute the appropriate callbacks
+							jqXHR.always( map[ jqXHR.status ] );
+						} else {
+
+							// Lazy-add the new callbacks in a way that preserves old ones
+							for ( code in map ) {
+								statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
+							}
+						}
+					}
+					return this;
+				},
+
+				// Cancel the request
+				abort: function( statusText ) {
+					var finalText = statusText || strAbort;
+					if ( transport ) {
+						transport.abort( finalText );
+					}
+					done( 0, finalText );
+					return this;
+				}
+			};
+
+		// Attach deferreds
+		deferred.promise( jqXHR );
+
+		// Add protocol if not provided (prefilters might expect it)
+		// Handle falsy url in the settings object (#10093: consistency with old signature)
+		// We also use the url parameter if available
+		s.url = ( ( url || s.url || location.href ) + "" )
+			.replace( rprotocol, location.protocol + "//" );
+
+		// Alias method option to type as per ticket #12004
+		s.type = options.method || options.type || s.method || s.type;
+
+		// Extract dataTypes list
+		s.dataTypes = ( s.dataType || "*" ).toLowerCase().match( rnothtmlwhite ) || [ "" ];
+
+		// A cross-domain request is in order when the origin doesn't match the current origin.
+		if ( s.crossDomain == null ) {
+			urlAnchor = document.createElement( "a" );
+
+			// Support: IE <=8 - 11, Edge 12 - 15
+			// IE throws exception on accessing the href property if url is malformed,
+			// e.g. http://example.com:80x/
+			try {
+				urlAnchor.href = s.url;
+
+				// Support: IE <=8 - 11 only
+				// Anchor's host property isn't correctly set when s.url is relative
+				urlAnchor.href = urlAnchor.href;
+				s.crossDomain = originAnchor.protocol + "//" + originAnchor.host !==
+					urlAnchor.protocol + "//" + urlAnchor.host;
+			} catch ( e ) {
+
+				// If there is an error parsing the URL, assume it is crossDomain,
+				// it can be rejected by the transport if it is invalid
+				s.crossDomain = true;
+			}
+		}
+
+		// Convert data if not already a string
+		if ( s.data && s.processData && typeof s.data !== "string" ) {
+			s.data = jQuery.param( s.data, s.traditional );
+		}
+
+		// Apply prefilters
+		inspectPrefiltersOrTransports( prefilters, s, options, jqXHR );
+
+		// If request was aborted inside a prefilter, stop there
+		if ( completed ) {
+			return jqXHR;
+		}
+
+		// We can fire global events as of now if asked to
+		// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
+		fireGlobals = jQuery.event && s.global;
+
+		// Watch for a new set of requests
+		if ( fireGlobals && jQuery.active++ === 0 ) {
+			jQuery.event.trigger( "ajaxStart" );
+		}
+
+		// Uppercase the type
+		s.type = s.type.toUpperCase();
+
+		// Determine if request has content
+		s.hasContent = !rnoContent.test( s.type );
+
+		// Save the URL in case we're toying with the If-Modified-Since
+		// and/or If-None-Match header later on
+		// Remove hash to simplify url manipulation
+		cacheURL = s.url.replace( rhash, "" );
+
+		// More options handling for requests with no content
+		if ( !s.hasContent ) {
+
+			// Remember the hash so we can put it back
+			uncached = s.url.slice( cacheURL.length );
+
+			// If data is available and should be processed, append data to url
+			if ( s.data && ( s.processData || typeof s.data === "string" ) ) {
+				cacheURL += ( rquery.test( cacheURL ) ? "&" : "?" ) + s.data;
+
+				// #9682: remove data so that it's not used in an eventual retry
+				delete s.data;
+			}
+
+			// Add or update anti-cache param if needed
+			if ( s.cache === false ) {
+				cacheURL = cacheURL.replace( rantiCache, "$1" );
+				uncached = ( rquery.test( cacheURL ) ? "&" : "?" ) + "_=" + ( nonce++ ) + uncached;
+			}
+
+			// Put hash and anti-cache on the URL that will be requested (gh-1732)
+			s.url = cacheURL + uncached;
+
+		// Change '%20' to '+' if this is encoded form body content (gh-2658)
+		} else if ( s.data && s.processData &&
+			( s.contentType || "" ).indexOf( "application/x-www-form-urlencoded" ) === 0 ) {
+			s.data = s.data.replace( r20, "+" );
+		}
+
+		// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
+		if ( s.ifModified ) {
+			if ( jQuery.lastModified[ cacheURL ] ) {
+				jqXHR.setRequestHeader( "If-Modified-Since", jQuery.lastModified[ cacheURL ] );
+			}
+			if ( jQuery.etag[ cacheURL ] ) {
+				jqXHR.setRequestHeader( "If-None-Match", jQuery.etag[ cacheURL ] );
+			}
+		}
+
+		// Set the correct header, if data is being sent
+		if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
+			jqXHR.setRequestHeader( "Content-Type", s.contentType );
+		}
+
+		// Set the Accepts header for the server, depending on the dataType
+		jqXHR.setRequestHeader(
+			"Accept",
+			s.dataTypes[ 0 ] && s.accepts[ s.dataTypes[ 0 ] ] ?
+				s.accepts[ s.dataTypes[ 0 ] ] +
+					( s.dataTypes[ 0 ] !== "*" ? ", " + allTypes + "; q=0.01" : "" ) :
+				s.accepts[ "*" ]
+		);
+
+		// Check for headers option
+		for ( i in s.headers ) {
+			jqXHR.setRequestHeader( i, s.headers[ i ] );
+		}
+
+		// Allow custom headers/mimetypes and early abort
+		if ( s.beforeSend &&
+			( s.beforeSend.call( callbackContext, jqXHR, s ) === false || completed ) ) {
+
+			// Abort if not done already and return
+			return jqXHR.abort();
+		}
+
+		// Aborting is no longer a cancellation
+		strAbort = "abort";
+
+		// Install callbacks on deferreds
+		completeDeferred.add( s.complete );
+		jqXHR.done( s.success );
+		jqXHR.fail( s.error );
+
+		// Get transport
+		transport = inspectPrefiltersOrTransports( transports, s, options, jqXHR );
+
+		// If no transport, we auto-abort
+		if ( !transport ) {
+			done( -1, "No Transport" );
+		} else {
+			jqXHR.readyState = 1;
+
+			// Send global event
+			if ( fireGlobals ) {
+				globalEventContext.trigger( "ajaxSend", [ jqXHR, s ] );
+			}
+
+			// If request was aborted inside ajaxSend, stop there
+			if ( completed ) {
+				return jqXHR;
+			}
+
+			// Timeout
+			if ( s.async && s.timeout > 0 ) {
+				timeoutTimer = window.setTimeout( function() {
+					jqXHR.abort( "timeout" );
+				}, s.timeout );
+			}
+
+			try {
+				completed = false;
+				transport.send( requestHeaders, done );
+			} catch ( e ) {
+
+				// Rethrow post-completion exceptions
+				if ( completed ) {
+					throw e;
+				}
+
+				// Propagate others as results
+				done( -1, e );
+			}
+		}
+
+		// Callback for when everything is done
+		function done( status, nativeStatusText, responses, headers ) {
+			var isSuccess, success, error, response, modified,
+				statusText = nativeStatusText;
+
+			// Ignore repeat invocations
+			if ( completed ) {
+				return;
+			}
+
+			completed = true;
+
+			// Clear timeout if it exists
+			if ( timeoutTimer ) {
+				window.clearTimeout( timeoutTimer );
+			}
+
+			// Dereference transport for early garbage collection
+			// (no matter how long the jqXHR object will be used)
+			transport = undefined;
+
+			// Cache response headers
+			responseHeadersString = headers || "";
+
+			// Set readyState
+			jqXHR.readyState = status > 0 ? 4 : 0;
+
+			// Determine if successful
+			isSuccess = status >= 200 && status < 300 || status === 304;
+
+			// Get response data
+			if ( responses ) {
+				response = ajaxHandleResponses( s, jqXHR, responses );
+			}
+
+			// Convert no matter what (that way responseXXX fields are always set)
+			response = ajaxConvert( s, response, jqXHR, isSuccess );
+
+			// If successful, handle type chaining
+			if ( isSuccess ) {
+
+				// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
+				if ( s.ifModified ) {
+					modified = jqXHR.getResponseHeader( "Last-Modified" );
+					if ( modified ) {
+						jQuery.lastModified[ cacheURL ] = modified;
+					}
+					modified = jqXHR.getResponseHeader( "etag" );
+					if ( modified ) {
+						jQuery.etag[ cacheURL ] = modified;
+					}
+				}
+
+				// if no content
+				if ( status === 204 || s.type === "HEAD" ) {
+					statusText = "nocontent";
+
+				// if not modified
+				} else if ( status === 304 ) {
+					statusText = "notmodified";
+
+				// If we have data, let's convert it
+				} else {
+					statusText = response.state;
+					success = response.data;
+					error = response.error;
+					isSuccess = !error;
+				}
+			} else {
+
+				// Extract error from statusText and normalize for non-aborts
+				error = statusText;
+				if ( status || !statusText ) {
+					statusText = "error";
+					if ( status < 0 ) {
+						status = 0;
+					}
+				}
+			}
+
+			// Set data for the fake xhr object
+			jqXHR.status = status;
+			jqXHR.statusText = ( nativeStatusText || statusText ) + "";
+
+			// Success/Error
+			if ( isSuccess ) {
+				deferred.resolveWith( callbackContext, [ success, statusText, jqXHR ] );
+			} else {
+				deferred.rejectWith( callbackContext, [ jqXHR, statusText, error ] );
+			}
+
+			// Status-dependent callbacks
+			jqXHR.statusCode( statusCode );
+			statusCode = undefined;
+
+			if ( fireGlobals ) {
+				globalEventContext.trigger( isSuccess ? "ajaxSuccess" : "ajaxError",
+					[ jqXHR, s, isSuccess ? success : error ] );
+			}
+
+			// Complete
+			completeDeferred.fireWith( callbackContext, [ jqXHR, statusText ] );
+
+			if ( fireGlobals ) {
+				globalEventContext.trigger( "ajaxComplete", [ jqXHR, s ] );
+
+				// Handle the global AJAX counter
+				if ( !( --jQuery.active ) ) {
+					jQuery.event.trigger( "ajaxStop" );
+				}
+			}
+		}
+
+		return jqXHR;
+	},
+
+	getJSON: function( url, data, callback ) {
+		return jQuery.get( url, data, callback, "json" );
+	},
+
+	getScript: function( url, callback ) {
+		return jQuery.get( url, undefined, callback, "script" );
+	}
+} );
+
+jQuery.each( [ "get", "post" ], function( i, method ) {
+	jQuery[ method ] = function( url, data, callback, type ) {
+
+		// Shift arguments if data argument was omitted
+		if ( isFunction( data ) ) {
+			type = type || callback;
+			callback = data;
+			data = undefined;
+		}
+
+		// The url can be an options object (which then must have .url)
+		return jQuery.ajax( jQuery.extend( {
+			url: url,
+			type: method,
+			dataType: type,
+			data: data,
+			success: callback
+		}, jQuery.isPlainObject( url ) && url ) );
+	};
+} );
+
+
+jQuery._evalUrl = function( url ) {
+	return jQuery.ajax( {
+		url: url,
+
+		// Make this explicit, since user can override this through ajaxSetup (#11264)
+		type: "GET",
+		dataType: "script",
+		cache: true,
+		async: false,
+		global: false,
+		"throws": true
+	} );
+};
+
+
+jQuery.fn.extend( {
+	wrapAll: function( html ) {
+		var wrap;
+
+		if ( this[ 0 ] ) {
+			if ( isFunction( html ) ) {
+				html = html.call( this[ 0 ] );
+			}
+
+			// The elements to wrap the target around
+			wrap = jQuery( html, this[ 0 ].ownerDocument ).eq( 0 ).clone( true );
+
+			if ( this[ 0 ].parentNode ) {
+				wrap.insertBefore( this[ 0 ] );
+			}
+
+			wrap.map( function() {
+				var elem = this;
+
+				while ( elem.firstElementChild ) {
+					elem = elem.firstElementChild;
+				}
+
+				return elem;
+			} ).append( this );
+		}
+
+		return this;
+	},
+
+	wrapInner: function( html ) {
+		if ( isFunction( html ) ) {
+			return this.each( function( i ) {
+				jQuery( this ).wrapInner( html.call( this, i ) );
+			} );
+		}
+
+		return this.each( function() {
+			var self = jQuery( this ),
+				contents = self.contents();
+
+			if ( contents.length ) {
+				contents.wrapAll( html );
+
+			} else {
+				self.append( html );
+			}
+		} );
+	},
+
+	wrap: function( html ) {
+		var htmlIsFunction = isFunction( html );
+
+		return this.each( function( i ) {
+			jQuery( this ).wrapAll( htmlIsFunction ? html.call( this, i ) : html );
+		} );
+	},
+
+	unwrap: function( selector ) {
+		this.parent( selector ).not( "body" ).each( function() {
+			jQuery( this ).replaceWith( this.childNodes );
+		} );
+		return this;
+	}
+} );
+
+
+jQuery.expr.pseudos.hidden = function( elem ) {
+	return !jQuery.expr.pseudos.visible( elem );
+};
+jQuery.expr.pseudos.visible = function( elem ) {
+	return !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+};
+
+
+
+
+jQuery.ajaxSettings.xhr = function() {
+	try {
+		return new window.XMLHttpRequest();
+	} catch ( e ) {}
+};
+
+var xhrSuccessStatus = {
+
+		// File protocol always yields status code 0, assume 200
+		0: 200,
+
+		// Support: IE <=9 only
+		// #1450: sometimes IE returns 1223 when it should be 204
+		1223: 204
+	},
+	xhrSupported = jQuery.ajaxSettings.xhr();
+
+support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
+support.ajax = xhrSupported = !!xhrSupported;
+
+jQuery.ajaxTransport( function( options ) {
+	var callback, errorCallback;
+
+	// Cross domain only allowed if supported through XMLHttpRequest
+	if ( support.cors || xhrSupported && !options.crossDomain ) {
+		return {
+			send: function( headers, complete ) {
+				var i,
+					xhr = options.xhr();
+
+				xhr.open(
+					options.type,
+					options.url,
+					options.async,
+					options.username,
+					options.password
+				);
+
+				// Apply custom fields if provided
+				if ( options.xhrFields ) {
+					for ( i in options.xhrFields ) {
+						xhr[ i ] = options.xhrFields[ i ];
+					}
+				}
+
+				// Override mime type if needed
+				if ( options.mimeType && xhr.overrideMimeType ) {
+					xhr.overrideMimeType( options.mimeType );
+				}
+
+				// X-Requested-With header
+				// For cross-domain requests, seeing as conditions for a preflight are
+				// akin to a jigsaw puzzle, we simply never set it to be sure.
+				// (it can always be set on a per-request basis or even using ajaxSetup)
+				// For same-domain requests, won't change header if already provided.
+				if ( !options.crossDomain && !headers[ "X-Requested-With" ] ) {
+					headers[ "X-Requested-With" ] = "XMLHttpRequest";
+				}
+
+				// Set headers
+				for ( i in headers ) {
+					xhr.setRequestHeader( i, headers[ i ] );
+				}
+
+				// Callback
+				callback = function( type ) {
+					return function() {
+						if ( callback ) {
+							callback = errorCallback = xhr.onload =
+								xhr.onerror = xhr.onabort = xhr.ontimeout =
+									xhr.onreadystatechange = null;
+
+							if ( type === "abort" ) {
+								xhr.abort();
+							} else if ( type === "error" ) {
+
+								// Support: IE <=9 only
+								// On a manual native abort, IE9 throws
+								// errors on any property access that is not readyState
+								if ( typeof xhr.status !== "number" ) {
+									complete( 0, "error" );
+								} else {
+									complete(
+
+										// File: protocol always yields status 0; see #8605, #14207
+										xhr.status,
+										xhr.statusText
+									);
+								}
+							} else {
+								complete(
+									xhrSuccessStatus[ xhr.status ] || xhr.status,
+									xhr.statusText,
+
+									// Support: IE <=9 only
+									// IE9 has no XHR2 but throws on binary (trac-11426)
+									// For XHR2 non-text, let the caller handle it (gh-2498)
+									( xhr.responseType || "text" ) !== "text"  ||
+									typeof xhr.responseText !== "string" ?
+										{ binary: xhr.response } :
+										{ text: xhr.responseText },
+									xhr.getAllResponseHeaders()
+								);
+							}
+						}
+					};
+				};
+
+				// Listen to events
+				xhr.onload = callback();
+				errorCallback = xhr.onerror = xhr.ontimeout = callback( "error" );
+
+				// Support: IE 9 only
+				// Use onreadystatechange to replace onabort
+				// to handle uncaught aborts
+				if ( xhr.onabort !== undefined ) {
+					xhr.onabort = errorCallback;
+				} else {
+					xhr.onreadystatechange = function() {
+
+						// Check readyState before timeout as it changes
+						if ( xhr.readyState === 4 ) {
+
+							// Allow onerror to be called first,
+							// but that will not handle a native abort
+							// Also, save errorCallback to a variable
+							// as xhr.onerror cannot be accessed
+							window.setTimeout( function() {
+								if ( callback ) {
+									errorCallback();
+								}
+							} );
+						}
+					};
+				}
+
+				// Create the abort callback
+				callback = callback( "abort" );
+
+				try {
+
+					// Do send the request (this may raise an exception)
+					xhr.send( options.hasContent && options.data || null );
+				} catch ( e ) {
+
+					// #14683: Only rethrow if this hasn't been notified as an error yet
+					if ( callback ) {
+						throw e;
+					}
+				}
+			},
+
+			abort: function() {
+				if ( callback ) {
+					callback();
+				}
+			}
+		};
+	}
+} );
+
+
+
+
+// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
+jQuery.ajaxPrefilter( function( s ) {
+	if ( s.crossDomain ) {
+		s.contents.script = false;
+	}
+} );
+
+// Install script dataType
+jQuery.ajaxSetup( {
+	accepts: {
+		script: "text/javascript, application/javascript, " +
+			"application/ecmascript, application/x-ecmascript"
+	},
+	contents: {
+		script: /\b(?:java|ecma)script\b/
+	},
+	converters: {
+		"text script": function( text ) {
+			jQuery.globalEval( text );
+			return text;
+		}
+	}
+} );
+
+// Handle cache's special case and crossDomain
+jQuery.ajaxPrefilter( "script", function( s ) {
+	if ( s.cache === undefined ) {
+		s.cache = false;
+	}
+	if ( s.crossDomain ) {
+		s.type = "GET";
+	}
+} );
+
+// Bind script tag hack transport
+jQuery.ajaxTransport( "script", function( s ) {
+
+	// This transport only deals with cross domain requests
+	if ( s.crossDomain ) {
+		var script, callback;
+		return {
+			send: function( _, complete ) {
+				script = jQuery( "<script>" ).prop( {
+					charset: s.scriptCharset,
+					src: s.url
+				} ).on(
+					"load error",
+					callback = function( evt ) {
+						script.remove();
+						callback = null;
+						if ( evt ) {
+							complete( evt.type === "error" ? 404 : 200, evt.type );
+						}
+					}
+				);
+
+				// Use native DOM manipulation to avoid our domManip AJAX trickery
+				document.head.appendChild( script[ 0 ] );
+			},
+			abort: function() {
+				if ( callback ) {
+					callback();
+				}
+			}
+		};
+	}
+} );
+
+
+
+
+var oldCallbacks = [],
+	rjsonp = /(=)\?(?=&|$)|\?\?/;
+
+// Default jsonp settings
+jQuery.ajaxSetup( {
+	jsonp: "callback",
+	jsonpCallback: function() {
+		var callback = oldCallbacks.pop() || ( jQuery.expando + "_" + ( nonce++ ) );
+		this[ callback ] = true;
+		return callback;
+	}
+} );
+
+// Detect, normalize options and install callbacks for jsonp requests
+jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
+
+	var callbackName, overwritten, responseContainer,
+		jsonProp = s.jsonp !== false && ( rjsonp.test( s.url ) ?
+			"url" :
+			typeof s.data === "string" &&
+				( s.contentType || "" )
+					.indexOf( "application/x-www-form-urlencoded" ) === 0 &&
+				rjsonp.test( s.data ) && "data"
+		);
+
+	// Handle iff the expected data type is "jsonp" or we have a parameter to set
+	if ( jsonProp || s.dataTypes[ 0 ] === "jsonp" ) {
+
+		// Get callback name, remembering preexisting value associated with it
+		callbackName = s.jsonpCallback = isFunction( s.jsonpCallback ) ?
+			s.jsonpCallback() :
+			s.jsonpCallback;
+
+		// Insert callback into url or form data
+		if ( jsonProp ) {
+			s[ jsonProp ] = s[ jsonProp ].replace( rjsonp, "$1" + callbackName );
+		} else if ( s.jsonp !== false ) {
+			s.url += ( rquery.test( s.url ) ? "&" : "?" ) + s.jsonp + "=" + callbackName;
+		}
+
+		// Use data converter to retrieve json after script execution
+		s.converters[ "script json" ] = function() {
+			if ( !responseContainer ) {
+				jQuery.error( callbackName + " was not called" );
+			}
+			return responseContainer[ 0 ];
+		};
+
+		// Force json dataType
+		s.dataTypes[ 0 ] = "json";
+
+		// Install callback
+		overwritten = window[ callbackName ];
+		window[ callbackName ] = function() {
+			responseContainer = arguments;
+		};
+
+		// Clean-up function (fires after converters)
+		jqXHR.always( function() {
+
+			// If previous value didn't exist - remove it
+			if ( overwritten === undefined ) {
+				jQuery( window ).removeProp( callbackName );
+
+			// Otherwise restore preexisting value
+			} else {
+				window[ callbackName ] = overwritten;
+			}
+
+			// Save back as free
+			if ( s[ callbackName ] ) {
+
+				// Make sure that re-using the options doesn't screw things around
+				s.jsonpCallback = originalSettings.jsonpCallback;
+
+				// Save the callback name for future use
+				oldCallbacks.push( callbackName );
+			}
+
+			// Call if it was a function and we have a response
+			if ( responseContainer && isFunction( overwritten ) ) {
+				overwritten( responseContainer[ 0 ] );
+			}
+
+			responseContainer = overwritten = undefined;
+		} );
+
+		// Delegate to script
+		return "script";
+	}
+} );
+
+
+
+
+// Support: Safari 8 only
+// In Safari 8 documents created via document.implementation.createHTMLDocument
+// collapse sibling forms: the second one becomes a child of the first one.
+// Because of that, this security measure has to be disabled in Safari 8.
+// https://bugs.webkit.org/show_bug.cgi?id=137337
+support.createHTMLDocument = ( function() {
+	var body = document.implementation.createHTMLDocument( "" ).body;
+	body.innerHTML = "<form></form><form></form>";
+	return body.childNodes.length === 2;
+} )();
+
+
+// Argument "data" should be string of html
+// context (optional): If specified, the fragment will be created in this context,
+// defaults to document
+// keepScripts (optional): If true, will include scripts passed in the html string
+jQuery.parseHTML = function( data, context, keepScripts ) {
+	if ( typeof data !== "string" ) {
+		return [];
+	}
+	if ( typeof context === "boolean" ) {
+		keepScripts = context;
+		context = false;
+	}
+
+	var base, parsed, scripts;
+
+	if ( !context ) {
+
+		// Stop scripts or inline event handlers from being executed immediately
+		// by using document.implementation
+		if ( support.createHTMLDocument ) {
+			context = document.implementation.createHTMLDocument( "" );
+
+			// Set the base href for the created document
+			// so any parsed elements with URLs
+			// are based on the document's URL (gh-2965)
+			base = context.createElement( "base" );
+			base.href = document.location.href;
+			context.head.appendChild( base );
+		} else {
+			context = document;
+		}
+	}
+
+	parsed = rsingleTag.exec( data );
+	scripts = !keepScripts && [];
+
+	// Single tag
+	if ( parsed ) {
+		return [ context.createElement( parsed[ 1 ] ) ];
+	}
+
+	parsed = buildFragment( [ data ], context, scripts );
+
+	if ( scripts && scripts.length ) {
+		jQuery( scripts ).remove();
+	}
+
+	return jQuery.merge( [], parsed.childNodes );
+};
+
+
+/**
+ * Load a url into a page
+ */
+jQuery.fn.load = function( url, params, callback ) {
+	var selector, type, response,
+		self = this,
+		off = url.indexOf( " " );
+
+	if ( off > -1 ) {
+		selector = stripAndCollapse( url.slice( off ) );
+		url = url.slice( 0, off );
+	}
+
+	// If it's a function
+	if ( isFunction( params ) ) {
+
+		// We assume that it's the callback
+		callback = params;
+		params = undefined;
+
+	// Otherwise, build a param string
+	} else if ( params && typeof params === "object" ) {
+		type = "POST";
+	}
+
+	// If we have elements to modify, make the request
+	if ( self.length > 0 ) {
+		jQuery.ajax( {
+			url: url,
+
+			// If "type" variable is undefined, then "GET" method will be used.
+			// Make value of this field explicit since
+			// user can override it through ajaxSetup method
+			type: type || "GET",
+			dataType: "html",
+			data: params
+		} ).done( function( responseText ) {
+
+			// Save response for use in complete callback
+			response = arguments;
+
+			self.html( selector ?
+
+				// If a selector was specified, locate the right elements in a dummy div
+				// Exclude scripts to avoid IE 'Permission Denied' errors
+				jQuery( "<div>" ).append( jQuery.parseHTML( responseText ) ).find( selector ) :
+
+				// Otherwise use the full result
+				responseText );
+
+		// If the request succeeds, this function gets "data", "status", "jqXHR"
+		// but they are ignored because response was set above.
+		// If it fails, this function gets "jqXHR", "status", "error"
+		} ).always( callback && function( jqXHR, status ) {
+			self.each( function() {
+				callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
+			} );
+		} );
+	}
+
+	return this;
+};
+
+
+
+
+// Attach a bunch of functions for handling common AJAX events
+jQuery.each( [
+	"ajaxStart",
+	"ajaxStop",
+	"ajaxComplete",
+	"ajaxError",
+	"ajaxSuccess",
+	"ajaxSend"
+], function( i, type ) {
+	jQuery.fn[ type ] = function( fn ) {
+		return this.on( type, fn );
+	};
+} );
+
+
+
+
+jQuery.expr.pseudos.animated = function( elem ) {
+	return jQuery.grep( jQuery.timers, function( fn ) {
+		return elem === fn.elem;
+	} ).length;
+};
+
+
+
+
+jQuery.offset = {
+	setOffset: function( elem, options, i ) {
+		var curPosition, curLeft, curCSSTop, curTop, curOffset, curCSSLeft, calculatePosition,
+			position = jQuery.css( elem, "position" ),
+			curElem = jQuery( elem ),
+			props = {};
+
+		// Set position first, in-case top/left are set even on static elem
+		if ( position === "static" ) {
+			elem.style.position = "relative";
+		}
+
+		curOffset = curElem.offset();
+		curCSSTop = jQuery.css( elem, "top" );
+		curCSSLeft = jQuery.css( elem, "left" );
+		calculatePosition = ( position === "absolute" || position === "fixed" ) &&
+			( curCSSTop + curCSSLeft ).indexOf( "auto" ) > -1;
+
+		// Need to be able to calculate position if either
+		// top or left is auto and position is either absolute or fixed
+		if ( calculatePosition ) {
+			curPosition = curElem.position();
+			curTop = curPosition.top;
+			curLeft = curPosition.left;
+
+		} else {
+			curTop = parseFloat( curCSSTop ) || 0;
+			curLeft = parseFloat( curCSSLeft ) || 0;
+		}
+
+		if ( isFunction( options ) ) {
+
+			// Use jQuery.extend here to allow modification of coordinates argument (gh-1848)
+			options = options.call( elem, i, jQuery.extend( {}, curOffset ) );
+		}
+
+		if ( options.top != null ) {
+			props.top = ( options.top - curOffset.top ) + curTop;
+		}
+		if ( options.left != null ) {
+			props.left = ( options.left - curOffset.left ) + curLeft;
+		}
+
+		if ( "using" in options ) {
+			options.using.call( elem, props );
+
+		} else {
+			curElem.css( props );
+		}
+	}
+};
+
+jQuery.fn.extend( {
+
+	// offset() relates an element's border box to the document origin
+	offset: function( options ) {
+
+		// Preserve chaining for setter
+		if ( arguments.length ) {
+			return options === undefined ?
+				this :
+				this.each( function( i ) {
+					jQuery.offset.setOffset( this, options, i );
+				} );
+		}
+
+		var rect, win,
+			elem = this[ 0 ];
+
+		if ( !elem ) {
+			return;
+		}
+
+		// Return zeros for disconnected and hidden (display: none) elements (gh-2310)
+		// Support: IE <=11 only
+		// Running getBoundingClientRect on a
+		// disconnected node in IE throws an error
+		if ( !elem.getClientRects().length ) {
+			return { top: 0, left: 0 };
+		}
+
+		// Get document-relative position by adding viewport scroll to viewport-relative gBCR
+		rect = elem.getBoundingClientRect();
+		win = elem.ownerDocument.defaultView;
+		return {
+			top: rect.top + win.pageYOffset,
+			left: rect.left + win.pageXOffset
+		};
+	},
+
+	// position() relates an element's margin box to its offset parent's padding box
+	// This corresponds to the behavior of CSS absolute positioning
+	position: function() {
+		if ( !this[ 0 ] ) {
+			return;
+		}
+
+		var offsetParent, offset, doc,
+			elem = this[ 0 ],
+			parentOffset = { top: 0, left: 0 };
+
+		// position:fixed elements are offset from the viewport, which itself always has zero offset
+		if ( jQuery.css( elem, "position" ) === "fixed" ) {
+
+			// Assume position:fixed implies availability of getBoundingClientRect
+			offset = elem.getBoundingClientRect();
+
+		} else {
+			offset = this.offset();
+
+			// Account for the *real* offset parent, which can be the document or its root element
+			// when a statically positioned element is identified
+			doc = elem.ownerDocument;
+			offsetParent = elem.offsetParent || doc.documentElement;
+			while ( offsetParent &&
+				( offsetParent === doc.body || offsetParent === doc.documentElement ) &&
+				jQuery.css( offsetParent, "position" ) === "static" ) {
+
+				offsetParent = offsetParent.parentNode;
+			}
+			if ( offsetParent && offsetParent !== elem && offsetParent.nodeType === 1 ) {
+
+				// Incorporate borders into its offset, since they are outside its content origin
+				parentOffset = jQuery( offsetParent ).offset();
+				parentOffset.top += jQuery.css( offsetParent, "borderTopWidth", true );
+				parentOffset.left += jQuery.css( offsetParent, "borderLeftWidth", true );
+			}
+		}
+
+		// Subtract parent offsets and element margins
+		return {
+			top: offset.top - parentOffset.top - jQuery.css( elem, "marginTop", true ),
+			left: offset.left - parentOffset.left - jQuery.css( elem, "marginLeft", true )
+		};
+	},
+
+	// This method will return documentElement in the following cases:
+	// 1) For the element inside the iframe without offsetParent, this method will return
+	//    documentElement of the parent window
+	// 2) For the hidden or detached element
+	// 3) For body or html element, i.e. in case of the html node - it will return itself
+	//
+	// but those exceptions were never presented as a real life use-cases
+	// and might be considered as more preferable results.
+	//
+	// This logic, however, is not guaranteed and can change at any point in the future
+	offsetParent: function() {
+		return this.map( function() {
+			var offsetParent = this.offsetParent;
+
+			while ( offsetParent && jQuery.css( offsetParent, "position" ) === "static" ) {
+				offsetParent = offsetParent.offsetParent;
+			}
+
+			return offsetParent || documentElement;
+		} );
+	}
+} );
+
+// Create scrollLeft and scrollTop methods
+jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( method, prop ) {
+	var top = "pageYOffset" === prop;
+
+	jQuery.fn[ method ] = function( val ) {
+		return access( this, function( elem, method, val ) {
+
+			// Coalesce documents and windows
+			var win;
+			if ( isWindow( elem ) ) {
+				win = elem;
+			} else if ( elem.nodeType === 9 ) {
+				win = elem.defaultView;
+			}
+
+			if ( val === undefined ) {
+				return win ? win[ prop ] : elem[ method ];
+			}
+
+			if ( win ) {
+				win.scrollTo(
+					!top ? val : win.pageXOffset,
+					top ? val : win.pageYOffset
+				);
+
+			} else {
+				elem[ method ] = val;
+			}
+		}, method, val, arguments.length );
+	};
+} );
+
+// Support: Safari <=7 - 9.1, Chrome <=37 - 49
+// Add the top/left cssHooks using jQuery.fn.position
+// Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
+// Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347
+// getComputedStyle returns percent when specified for top/left/bottom/right;
+// rather than make the css module depend on the offset module, just check for it here
+jQuery.each( [ "top", "left" ], function( i, prop ) {
+	jQuery.cssHooks[ prop ] = addGetHookIf( support.pixelPosition,
+		function( elem, computed ) {
+			if ( computed ) {
+				computed = curCSS( elem, prop );
+
+				// If curCSS returns percentage, fallback to offset
+				return rnumnonpx.test( computed ) ?
+					jQuery( elem ).position()[ prop ] + "px" :
+					computed;
+			}
+		}
+	);
+} );
+
+
+// Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
+jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
+	jQuery.each( { padding: "inner" + name, content: type, "": "outer" + name },
+		function( defaultExtra, funcName ) {
+
+		// Margin is only for outerHeight, outerWidth
+		jQuery.fn[ funcName ] = function( margin, value ) {
+			var chainable = arguments.length && ( defaultExtra || typeof margin !== "boolean" ),
+				extra = defaultExtra || ( margin === true || value === true ? "margin" : "border" );
+
+			return access( this, function( elem, type, value ) {
+				var doc;
+
+				if ( isWindow( elem ) ) {
+
+					// $( window ).outerWidth/Height return w/h including scrollbars (gh-1729)
+					return funcName.indexOf( "outer" ) === 0 ?
+						elem[ "inner" + name ] :
+						elem.document.documentElement[ "client" + name ];
+				}
+
+				// Get document width or height
+				if ( elem.nodeType === 9 ) {
+					doc = elem.documentElement;
+
+					// Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height],
+					// whichever is greatest
+					return Math.max(
+						elem.body[ "scroll" + name ], doc[ "scroll" + name ],
+						elem.body[ "offset" + name ], doc[ "offset" + name ],
+						doc[ "client" + name ]
+					);
+				}
+
+				return value === undefined ?
+
+					// Get width or height on the element, requesting but not forcing parseFloat
+					jQuery.css( elem, type, extra ) :
+
+					// Set width or height on the element
+					jQuery.style( elem, type, value, extra );
+			}, type, chainable ? margin : undefined, chainable );
+		};
+	} );
+} );
+
+
+jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
+	"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
+	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
+	function( i, name ) {
+
+	// Handle event binding
+	jQuery.fn[ name ] = function( data, fn ) {
+		return arguments.length > 0 ?
+			this.on( name, null, data, fn ) :
+			this.trigger( name );
+	};
+} );
+
+jQuery.fn.extend( {
+	hover: function( fnOver, fnOut ) {
+		return this.mouseenter( fnOver ).mouseleave( fnOut || fnOver );
+	}
+} );
+
+
+
+
+jQuery.fn.extend( {
+
+	bind: function( types, data, fn ) {
+		return this.on( types, null, data, fn );
+	},
+	unbind: function( types, fn ) {
+		return this.off( types, null, fn );
+	},
+
+	delegate: function( selector, types, data, fn ) {
+		return this.on( types, selector, data, fn );
+	},
+	undelegate: function( selector, types, fn ) {
+
+		// ( namespace ) or ( selector, types [, fn] )
+		return arguments.length === 1 ?
+			this.off( selector, "**" ) :
+			this.off( types, selector || "**", fn );
+	}
+} );
+
+// Bind a function to a context, optionally partially applying any
+// arguments.
+// jQuery.proxy is deprecated to promote standards (specifically Function#bind)
+// However, it is not slated for removal any time soon
+jQuery.proxy = function( fn, context ) {
+	var tmp, args, proxy;
+
+	if ( typeof context === "string" ) {
+		tmp = fn[ context ];
+		context = fn;
+		fn = tmp;
+	}
+
+	// Quick check to determine if target is callable, in the spec
+	// this throws a TypeError, but we will just return undefined.
+	if ( !isFunction( fn ) ) {
+		return undefined;
+	}
+
+	// Simulated bind
+	args = slice.call( arguments, 2 );
+	proxy = function() {
+		return fn.apply( context || this, args.concat( slice.call( arguments ) ) );
+	};
+
+	// Set the guid of unique handler to the same of original handler, so it can be removed
+	proxy.guid = fn.guid = fn.guid || jQuery.guid++;
+
+	return proxy;
+};
+
+jQuery.holdReady = function( hold ) {
+	if ( hold ) {
+		jQuery.readyWait++;
+	} else {
+		jQuery.ready( true );
+	}
+};
+jQuery.isArray = Array.isArray;
+jQuery.parseJSON = JSON.parse;
+jQuery.nodeName = nodeName;
+jQuery.isFunction = isFunction;
+jQuery.isWindow = isWindow;
+jQuery.camelCase = camelCase;
+jQuery.type = toType;
+
+jQuery.now = Date.now;
+
+jQuery.isNumeric = function( obj ) {
+
+	// As of jQuery 3.0, isNumeric is limited to
+	// strings and numbers (primitives or objects)
+	// that can be coerced to finite numbers (gh-2662)
+	var type = jQuery.type( obj );
+	return ( type === "number" || type === "string" ) &&
+
+		// parseFloat NaNs numeric-cast false positives ("")
+		// ...but misinterprets leading-number strings, particularly hex literals ("0x...")
+		// subtraction forces infinities to NaN
+		!isNaN( obj - parseFloat( obj ) );
+};
+
+
+
+
+// Register as a named AMD module, since jQuery can be concatenated with other
+// files that may use define, but not via a proper concatenation script that
+// understands anonymous AMD modules. A named AMD is safest and most robust
+// way to register. Lowercase jquery is used because AMD module names are
+// derived from file names, and jQuery is normally delivered in a lowercase
+// file name. Do this after creating the global so that if an AMD module wants
+// to call noConflict to hide this version of jQuery, it will work.
+
+// Note that for maximum portability, libraries that are not jQuery should
+// declare themselves as anonymous modules, and avoid setting a global if an
+// AMD loader is present. jQuery is a special case. For more information, see
+// https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
+
+if ( true ) {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+		return jQuery;
+	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}
+
+
+
+
+var
+
+	// Map over jQuery in case of overwrite
+	_jQuery = window.jQuery,
+
+	// Map over the $ in case of overwrite
+	_$ = window.$;
+
+jQuery.noConflict = function( deep ) {
+	if ( window.$ === jQuery ) {
+		window.$ = _$;
+	}
+
+	if ( deep && window.jQuery === jQuery ) {
+		window.jQuery = _jQuery;
+	}
+
+	return jQuery;
+};
+
+// Expose jQuery and $ identifiers, even in AMD
+// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
+// and CommonJS for browser emulators (#13566)
+if ( !noGlobal ) {
+	window.jQuery = window.$ = jQuery;
+}
+
+
+
+
+return jQuery;
+} );
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony default export */ var _unused_webpack_default_export = (window.wui = {
+    formatDateTime: function () {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        var datetime = date.getFullYear() + "" // "年"
+        + (month >= 10 ? month : "0" + month) + "" // "月"
+        + (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + "" + (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) + "" + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()) + "" + (date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds());
+        return datetime;
+    },
+    loading: function (status) {
+        if (status === 'close') {
+            $('#wui-loading').remove();
+        } else {
+            var $loading = '<div class="wui-loading" id="wui-loading"></div>';
+            $('body').append($loading);
+        }
+        return this;
+    },
+    ajaxerror: function (status, text) {
+        var text = text || '请求数据错误，请刷新重试';
+        if (status === 'close') {
+            $('#wui-ajaxerror').remove();
+        } else {
+            var $ajaxerror = `<div class="wui-ajaxerror" id="wui-ajaxerror"><span class="reset">${text}</span></div>`;
+            $('body').append($ajaxerror);
+        }
+        return this;
+    }
+});
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(global) {var apply = Function.prototype.apply;
 
 // DOM APIs, for completeness
@@ -12515,7 +22987,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(22);
+__webpack_require__(27);
 // On some exotic environments, it's not clear which object `setimmeidate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -12526,10 +22998,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 22 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -12719,21 +23191,21 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(6)))
 
 /***/ }),
-/* 23 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_page_home_vue__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_page_album_vue__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_page_tools_vue__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_page_personal_vue__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_page_login_vue__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_page_home_vue__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_page_album_vue__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_page_tools_vue__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_page_personal_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_page_login_vue__ = __webpack_require__(50);
 
 
 
@@ -12771,7 +23243,7 @@ let router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /* harmony default export */ __webpack_exports__["a"] = (router);
 
 /***/ }),
-/* 24 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15402,13 +25874,13 @@ if (inBrowser && window.Vue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(6)))
 
 /***/ }),
-/* 25 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_home_vue__ = __webpack_require__(7);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_4d53224c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_home_vue__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_4d53224c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_home_vue__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
 var disposed = false
 /* script */
@@ -15456,17 +25928,110 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 26 */
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(32);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(4)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../../node_modules/_css-loader@0.28.10@css-loader/index.js!./mui.min.css", function() {
+		var newContent = require("!!../../../node_modules/_css-loader@0.28.10@css-loader/index.js!./mui.min.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(33);
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * =====================================================\r\n * Mui v3.6.1 (http://dev.dcloud.net.cn/mui)\r\n * =====================================================\r\n */\r\n\r\n\r\n/*! normalize.css v3.0.1 | MIT License | git.io/normalize */\r\n\r\nhtml {\r\n\tfont-family: sans-serif;\r\n\t-webkit-text-size-adjust: 100%\r\n}\r\n\r\nbody {\r\n\tmargin: 0\r\n}\r\n\r\narticle,\r\naside,\r\ndetails,\r\nfigcaption,\r\nfigure,\r\nfooter,\r\nheader,\r\nhgroup,\r\nmain,\r\nnav,\r\nsection,\r\nsummary {\r\n\tdisplay: block\r\n}\r\n\r\naudio,\r\ncanvas,\r\nprogress,\r\nvideo {\r\n\tdisplay: inline-block;\r\n\tvertical-align: baseline\r\n}\r\n\r\naudio:not([controls]) {\r\n\tdisplay: none;\r\n\theight: 0\r\n}\r\n\r\n[hidden],\r\ntemplate {\r\n\tdisplay: none\r\n}\r\n\r\na {\r\n\tbackground: 0 0\r\n}\r\n\r\na:active,\r\na:hover {\r\n\toutline: 0\r\n}\r\n\r\nabbr[title] {\r\n\tborder-bottom: 1px dotted\r\n}\r\n\r\nb,\r\nstrong {\r\n\tfont-weight: 700\r\n}\r\n\r\ndfn {\r\n\tfont-style: italic\r\n}\r\n\r\nh1 {\r\n\tmargin: .67em 0\r\n}\r\n\r\nmark {\r\n\tcolor: #000;\r\n\tbackground: #ff0\r\n}\r\n\r\nsmall {\r\n\tfont-size: 80%\r\n}\r\n\r\nsub,\r\nsup {\r\n\tfont-size: 75%;\r\n\tline-height: 0;\r\n\tposition: relative;\r\n\tvertical-align: baseline\r\n}\r\n\r\nsup {\r\n\ttop: -.5em\r\n}\r\n\r\nsub {\r\n\tbottom: -.25em\r\n}\r\n\r\nimg {\r\n\tborder: 0\r\n}\r\n\r\nsvg:not(:root) {\r\n\toverflow: hidden\r\n}\r\n\r\nfigure {\r\n\tmargin: 1em 40px\r\n}\r\n\r\nhr {\r\n\tbox-sizing: content-box;\r\n\theight: 0\r\n}\r\n\r\npre {\r\n\toverflow: auto\r\n}\r\n\r\ncode,\r\nkbd,\r\npre,\r\nsamp {\r\n\tfont-family: monospace, monospace;\r\n\tfont-size: 1em\r\n}\r\n\r\nbutton,\r\ninput,\r\noptgroup,\r\nselect,\r\ntextarea {\r\n\tfont: inherit;\r\n\tmargin: 0;\r\n\tcolor: inherit\r\n}\r\n\r\nbutton {\r\n\toverflow: visible\r\n}\r\n\r\nbutton,\r\nselect {\r\n\ttext-transform: none\r\n}\r\n\r\nbutton,\r\nhtml input[type=button],\r\ninput[type=reset],\r\ninput[type=submit] {\r\n\tcursor: pointer;\r\n\t-webkit-appearance: button\r\n}\r\n\r\nbutton[disabled],\r\nhtml input[disabled] {\r\n\tcursor: default\r\n}\r\n\r\ninput {\r\n\tline-height: normal\r\n}\r\n\r\ninput[type=checkbox],\r\ninput[type=radio] {\r\n\tbox-sizing: border-box;\r\n\tpadding: 0\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button,\r\ninput[type=number]::-webkit-outer-spin-button {\r\n\theight: auto\r\n}\r\n\r\ninput[type=search]::-webkit-search-cancel-button,\r\ninput[type=search]::-webkit-search-decoration {\r\n\t-webkit-appearance: none\r\n}\r\n\r\nfieldset {\r\n\tmargin: 0 2px;\r\n\tpadding: .35em .625em .75em;\r\n\tborder: 1px solid silver\r\n}\r\n\r\nlegend {\r\n\tpadding: 0;\r\n\tborder: 0\r\n}\r\n\r\ntextarea {\r\n\toverflow: auto\r\n}\r\n\r\noptgroup {\r\n\tfont-weight: 700\r\n}\r\n\r\ntable {\r\n\tborder-spacing: 0;\r\n\tborder-collapse: collapse\r\n}\r\n\r\ntd,\r\nth {\r\n\tpadding: 0\r\n}\r\n\r\n* {\r\n\t-webkit-box-sizing: border-box;\r\n\tbox-sizing: border-box;\r\n\t-webkit-user-select: none;\r\n\toutline: 0;\r\n\t-webkit-tap-highlight-color: transparent;\r\n\t-webkit-tap-highlight-color: transparent\r\n}\r\n\r\nbody {\r\n\t-webkit-overflow-scrolling: touch\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\na:active {\r\n\tcolor: #222\r\n}\r\n\r\n.mui-content {\r\n\tbackground-color: #efeff4;\r\n\t-webkit-overflow-scrolling: touch\r\n}\r\n\r\n.mui-bar-nav~.mui-content {\r\n\tpadding-top: 44px\r\n}\r\n\r\n.mui-bar-nav~.mui-content.mui-scroll-wrapper .mui-scrollbar-vertical {\r\n\ttop: 44px\r\n}\r\n\r\n.mui-bar-header-secondary~.mui-content {\r\n\tpadding-top: 88px\r\n}\r\n\r\n.mui-bar-header-secondary~.mui-content.mui-scroll-wrapper .mui-scrollbar-vertical {\r\n\ttop: 88px\r\n}\r\n\r\n.mui-bar-footer~.mui-content {\r\n\tpadding-bottom: 44px\r\n}\r\n\r\n.mui-bar-footer~.mui-content.mui-scroll-wrapper .mui-scrollbar-vertical {\r\n\tbottom: 44px\r\n}\r\n\r\n.mui-bar-footer-secondary~.mui-content {\r\n\tpadding-bottom: 88px\r\n}\r\n\r\n.mui-bar-footer-secondary~.mui-content.mui-scroll-wrapper .mui-scrollbar-vertical {\r\n\tbottom: 88px\r\n}\r\n\r\n.mui-bar-tab~.mui-content {\r\n\tpadding-bottom: 50px\r\n}\r\n\r\n.mui-bar-tab~.mui-content.mui-scroll-wrapper .mui-scrollbar-vertical {\r\n\tbottom: 50px\r\n}\r\n\r\n.mui-bar-footer-secondary-tab~.mui-content {\r\n\tpadding-bottom: 94px\r\n}\r\n\r\n.mui-bar-footer-secondary-tab~.mui-content.mui-scroll-wrapper .mui-scrollbar-vertical {\r\n\tbottom: 94px\r\n}\r\n\r\n.mui-content-padded {\r\n\tmargin: 10px\r\n}\r\n\r\n.mui-inline {\r\n\tdisplay: inline-block;\r\n\tvertical-align: top\r\n}\r\n\r\n.mui-block {\r\n\tdisplay: block!important\r\n}\r\n\r\n.mui-visibility {\r\n\tvisibility: visible!important\r\n}\r\n\r\n.mui-hidden {\r\n\tdisplay: none!important\r\n}\r\n\r\n.mui-ellipsis {\r\n\toverflow: hidden;\r\n\twhite-space: nowrap;\r\n\ttext-overflow: ellipsis\r\n}\r\n\r\n.mui-ellipsis-2 {\r\n\tdisplay: -webkit-box;\r\n\toverflow: hidden;\r\n\twhite-space: normal!important;\r\n\ttext-overflow: ellipsis;\r\n\tword-wrap: break-word;\r\n\t-webkit-line-clamp: 2;\r\n\t-webkit-box-orient: vertical\r\n}\r\n\r\n.mui-table {\r\n\tdisplay: table;\r\n\twidth: 100%;\r\n\ttable-layout: fixed\r\n}\r\n\r\n.mui-table-cell {\r\n\tposition: relative;\r\n\tdisplay: table-cell\r\n}\r\n\r\n.mui-text-left {\r\n\ttext-align: left!important\r\n}\r\n\r\n.mui-text-center {\r\n\ttext-align: center!important\r\n}\r\n\r\n.mui-text-justify {\r\n\ttext-align: justify!important\r\n}\r\n\r\n.mui-text-right {\r\n\ttext-align: right!important\r\n}\r\n\r\n.mui-pull-left {\r\n\tfloat: left\r\n}\r\n\r\n.mui-pull-right {\r\n\tfloat: right\r\n}\r\n\r\n.mui-list-unstyled {\r\n\tpadding-left: 0;\r\n\tlist-style: none\r\n}\r\n\r\n.mui-list-inline {\r\n\tmargin-left: -5px;\r\n\tpadding-left: 0;\r\n\tlist-style: none\r\n}\r\n\r\n.mui-list-inline>li {\r\n\tdisplay: inline-block;\r\n\tpadding-right: 5px;\r\n\tpadding-left: 5px\r\n}\r\n\r\n.mui-clearfix:after,\r\n.mui-clearfix:before {\r\n\tdisplay: table;\r\n\tcontent: ' '\r\n}\r\n\r\n.mui-clearfix:after {\r\n\tclear: both\r\n}\r\n\r\n.mui-bg-primary {\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-bg-positive {\r\n\tbackground-color: #4cd964\r\n}\r\n\r\n.mui-bg-negative {\r\n\tbackground-color: #dd524d\r\n}\r\n\r\n.mui-error {\r\n\tmargin: 88px 35px;\r\n\tpadding: 10px;\r\n\tborder-radius: 6px;\r\n\tbackground-color: #bbb\r\n}\r\n\r\n.mui-subtitle {\r\n\tfont-size: 15px\r\n}\r\n\r\n.mui-h1 {\r\n\tfont-size: 36px\r\n}\r\n\r\n.mui-h2 {\r\n\tfont-size: 30px\r\n}\r\n\r\n.mui-h3 {\r\n\tfont-size: 24px\r\n}\r\n\r\n.mui-h4 {\r\n\tfont-size: 18px\r\n}\r\n\r\n.mui-h5 {\r\n\tfont-size: 14px;\r\n\tfont-weight: 400;\r\n\tcolor: #8f8f94\r\n}\r\n\r\n.mui-h6 {\r\n\tfont-size: 12px;\r\n\tfont-weight: 400;\r\n\tcolor: #8f8f94\r\n}\r\n\r\np {\r\n\tfont-size: 14px;\r\n\tmargin-top: 0;\r\n\tmargin-bottom: 10px;\r\n\tcolor: #8f8f94\r\n}\r\n\r\n.mui-row:after,\r\n.mui-row:before {\r\n\tdisplay: table;\r\n\tcontent: ' '\r\n}\r\n\r\n.mui-row:after {\r\n\tclear: both\r\n}\r\n\r\n.mui-col-sm-1,\r\n.mui-col-sm-10,\r\n.mui-col-sm-11,\r\n.mui-col-sm-12,\r\n.mui-col-sm-2,\r\n.mui-col-sm-3,\r\n.mui-col-sm-4,\r\n.mui-col-sm-5,\r\n.mui-col-sm-6,\r\n.mui-col-sm-7,\r\n.mui-col-sm-8,\r\n.mui-col-sm-9,\r\n.mui-col-xs-1,\r\n.mui-col-xs-10,\r\n.mui-col-xs-11,\r\n.mui-col-xs-12,\r\n.mui-col-xs-2,\r\n.mui-col-xs-3,\r\n.mui-col-xs-4,\r\n.mui-col-xs-5,\r\n.mui-col-xs-6,\r\n.mui-col-xs-7,\r\n.mui-col-xs-8,\r\n.mui-col-xs-9 {\r\n\tposition: relative;\r\n\tmin-height: 1px\r\n}\r\n\r\n.mui-row>[class*=mui-col-] {\r\n\tfloat: left\r\n}\r\n\r\n.mui-col-xs-12 {\r\n\twidth: 100%\r\n}\r\n\r\n.mui-col-xs-11 {\r\n\twidth: 91.66666667%\r\n}\r\n\r\n.mui-col-xs-10 {\r\n\twidth: 83.33333333%\r\n}\r\n\r\n.mui-col-xs-9 {\r\n\twidth: 75%\r\n}\r\n\r\n.mui-col-xs-8 {\r\n\twidth: 66.66666667%\r\n}\r\n\r\n.mui-col-xs-7 {\r\n\twidth: 58.33333333%\r\n}\r\n\r\n.mui-col-xs-6 {\r\n\twidth: 50%\r\n}\r\n\r\n.mui-col-xs-5 {\r\n\twidth: 41.66666667%\r\n}\r\n\r\n.mui-col-xs-4 {\r\n\twidth: 33.33333333%\r\n}\r\n\r\n.mui-col-xs-3 {\r\n\twidth: 25%\r\n}\r\n\r\n.mui-col-xs-2 {\r\n\twidth: 16.66666667%\r\n}\r\n\r\n.mui-col-xs-1 {\r\n\twidth: 8.33333333%\r\n}\r\n\r\n@media (min-width:400px) {\r\n\t.mui-col-sm-12 {\r\n\t\twidth: 100%\r\n\t}\r\n\t.mui-col-sm-11 {\r\n\t\twidth: 91.66666667%\r\n\t}\r\n\t.mui-col-sm-10 {\r\n\t\twidth: 83.33333333%\r\n\t}\r\n\t.mui-col-sm-9 {\r\n\t\twidth: 75%\r\n\t}\r\n\t.mui-col-sm-8 {\r\n\t\twidth: 66.66666667%\r\n\t}\r\n\t.mui-col-sm-7 {\r\n\t\twidth: 58.33333333%\r\n\t}\r\n\t.mui-col-sm-6 {\r\n\t\twidth: 50%\r\n\t}\r\n\t.mui-col-sm-5 {\r\n\t\twidth: 41.66666667%\r\n\t}\r\n\t.mui-col-sm-4 {\r\n\t\twidth: 33.33333333%\r\n\t}\r\n\t.mui-col-sm-3 {\r\n\t\twidth: 25%\r\n\t}\r\n\t.mui-col-sm-2 {\r\n\t\twidth: 16.66666667%\r\n\t}\r\n\t.mui-col-sm-1 {\r\n\t\twidth: 8.33333333%\r\n\t}\r\n}\r\n\r\n.mui-scroll-wrapper {\r\n\tposition: absolute;\r\n\tz-index: 2;\r\n\ttop: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\toverflow: hidden;\r\n\twidth: 100%\r\n}\r\n\r\n.mui-scroll {\r\n\tposition: absolute;\r\n\tz-index: 1;\r\n\twidth: 100%;\r\n\t-webkit-transform: translateZ(0);\r\n\ttransform: translateZ(0)\r\n}\r\n\r\n.mui-scrollbar {\r\n\tposition: absolute;\r\n\tz-index: 9998;\r\n\toverflow: hidden;\r\n\t-webkit-transition: 500ms;\r\n\ttransition: 500ms;\r\n\ttransform: translateZ(0px);\r\n\tpointer-events: none;\r\n\topacity: 0\r\n}\r\n\r\n.mui-scrollbar-vertical {\r\n\ttop: 0;\r\n\tright: 1px;\r\n\tbottom: 2px;\r\n\twidth: 4px\r\n}\r\n\r\n.mui-scrollbar-vertical .mui-scrollbar-indicator {\r\n\twidth: 100%\r\n}\r\n\r\n.mui-scrollbar-horizontal {\r\n\tright: 2px;\r\n\tbottom: 0;\r\n\tleft: 2px;\r\n\theight: 4px\r\n}\r\n\r\n.mui-scrollbar-horizontal .mui-scrollbar-indicator {\r\n\theight: 100%\r\n}\r\n\r\n.mui-scrollbar-indicator {\r\n\tposition: absolute;\r\n\tdisplay: block;\r\n\tbox-sizing: border-box;\r\n\t-webkit-transition: .01s cubic-bezier(.1, .57, .1, 1);\r\n\ttransition: .01s cubic-bezier(.1, .57, .1, 1);\r\n\ttransform: translate(0px, 0) translateZ(0px);\r\n\tborder: 1px solid rgba(255, 255, 255, .80196);\r\n\tborder-radius: 2px;\r\n\tbackground: rgba(0, 0, 0, .39804)\r\n}\r\n\r\n.mui-plus-pullrefresh .mui-fullscreen .mui-scroll-wrapper .mui-scroll-wrapper,\r\n.mui-plus-pullrefresh .mui-fullscreen .mui-slider-group .mui-scroll-wrapper {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\toverflow: hidden;\r\n\twidth: 100%\r\n}\r\n\r\n.mui-plus-pullrefresh .mui-fullscreen .mui-scroll-wrapper .mui-scroll,\r\n.mui-plus-pullrefresh .mui-fullscreen .mui-slider-group .mui-scroll {\r\n\tposition: absolute;\r\n\twidth: 100%\r\n}\r\n\r\n.mui-plus-pullrefresh .mui-scroll-wrapper,\r\n.mui-plus-pullrefresh .mui-slider-group {\r\n\tposition: static;\r\n\ttop: auto;\r\n\tbottom: auto;\r\n\tleft: auto;\r\n\toverflow: auto;\r\n\twidth: auto\r\n}\r\n\r\n.mui-plus-pullrefresh .mui-slider-group {\r\n\toverflow: visible\r\n}\r\n\r\n.mui-plus-pullrefresh .mui-scroll {\r\n\tposition: static;\r\n\twidth: auto\r\n}\r\n\r\n.mui-off-canvas-wrap .mui-bar {\r\n\tposition: absolute!important;\r\n\t-webkit-transform: translate3d(0, 0, 0);\r\n\ttransform: translate3d(0, 0, 0);\r\n\t-webkit-box-shadow: none;\r\n\tbox-shadow: none\r\n}\r\n\r\n.mui-off-canvas-wrap {\r\n\tposition: relative;\r\n\tz-index: 1;\r\n\toverflow: hidden;\r\n\twidth: 100%;\r\n\theight: 100%\r\n}\r\n\r\n.mui-off-canvas-wrap .mui-inner-wrap {\r\n\tposition: relative;\r\n\tz-index: 1;\r\n\twidth: 100%;\r\n\theight: 100%\r\n}\r\n\r\n.mui-off-canvas-wrap .mui-inner-wrap.mui-transitioning {\r\n\t-webkit-transition: -webkit-transform 350ms;\r\n\ttransition: transform 350ms cubic-bezier(.165, .84, .44, 1)\r\n}\r\n\r\n.mui-off-canvas-wrap .mui-inner-wrap .mui-off-canvas-left {\r\n\t-webkit-transform: translate3d(-100%, 0, 0);\r\n\ttransform: translate3d(-100%, 0, 0)\r\n}\r\n\r\n.mui-off-canvas-wrap .mui-inner-wrap .mui-off-canvas-right {\r\n\t-webkit-transform: translate3d(100%, 0, 0);\r\n\ttransform: translate3d(100%, 0, 0)\r\n}\r\n\r\n.mui-off-canvas-wrap.mui-active {\r\n\toverflow: hidden;\r\n\theight: 100%\r\n}\r\n\r\n.mui-off-canvas-wrap.mui-active .mui-off-canvas-backdrop {\r\n\tposition: absolute;\r\n\tz-index: 998;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tdisplay: block;\r\n\ttransition: background 350ms cubic-bezier(.165, .84, .44, 1);\r\n\tbackground: rgba(0, 0, 0, .4);\r\n\tbox-shadow: -4px 0 4px rgba(0, 0, 0, .5), 4px 0 4px rgba(0, 0, 0, .5);\r\n\t-webkit-tap-highlight-color: transparent\r\n}\r\n\r\n.mui-off-canvas-wrap.mui-slide-in .mui-off-canvas-right {\r\n\tz-index: 10000!important;\r\n\t-webkit-transform: translate3d(100%, 0, 0)\r\n}\r\n\r\n.mui-off-canvas-wrap.mui-slide-in .mui-off-canvas-left {\r\n\tz-index: 10000!important;\r\n\t-webkit-transform: translate3d(-100%, 0, 0)\r\n}\r\n\r\n.mui-off-canvas-left,\r\n.mui-off-canvas-right {\r\n\tposition: absolute;\r\n\tz-index: -1;\r\n\ttop: 0;\r\n\tbottom: 0;\r\n\tvisibility: hidden;\r\n\tbox-sizing: content-box;\r\n\twidth: 70%;\r\n\tmin-height: 100%;\r\n\tbackground: #333;\r\n\t-webkit-overflow-scrolling: touch\r\n}\r\n\r\n.mui-off-canvas-left.mui-transitioning,\r\n.mui-off-canvas-right.mui-transitioning {\r\n\t-webkit-transition: -webkit-transform 350ms cubic-bezier(.165, .84, .44, 1);\r\n\ttransition: transform 350ms cubic-bezier(.165, .84, .44, 1)\r\n}\r\n\r\n.mui-off-canvas-left {\r\n\tleft: 0\r\n}\r\n\r\n.mui-off-canvas-right {\r\n\tright: 0\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable {\r\n\tbackground-color: #333\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable>.mui-off-canvas-left,\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable>.mui-off-canvas-right {\r\n\twidth: 80%;\r\n\t-webkit-transform: scale(.8);\r\n\ttransform: scale(.8);\r\n\topacity: .1\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable>.mui-off-canvas-left.mui-transitioning,\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable>.mui-off-canvas-right.mui-transitioning {\r\n\t-webkit-transition: -webkit-transform 350ms cubic-bezier(.165, .84, .44, 1), opacity 350ms cubic-bezier(.165, .84, .44, 1);\r\n\ttransition: transform 350ms cubic-bezier(.165, .84, .44, 1), opacity 350ms cubic-bezier(.165, .84, .44, 1)\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable>.mui-off-canvas-left {\r\n\t-webkit-transform-origin: -100%;\r\n\ttransform-origin: -100%\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable>.mui-off-canvas-right {\r\n\t-webkit-transform-origin: 200%;\r\n\ttransform-origin: 200%\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable.mui-active>.mui-inner-wrap {\r\n\t-webkit-transform: scale(.8);\r\n\ttransform: scale(.8)\r\n}\r\n\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable.mui-active>.mui-off-canvas-left,\r\n.mui-off-canvas-wrap:not(.mui-slide-in).mui-scalable.mui-active>.mui-off-canvas-right {\r\n\t-webkit-transform: scale(1);\r\n\ttransform: scale(1);\r\n\topacity: 1\r\n}\r\n\r\n.mui-loading .mui-spinner {\r\n\tdisplay: block;\r\n\tmargin: 0 auto\r\n}\r\n\r\n.mui-spinner {\r\n\tdisplay: inline-block;\r\n\twidth: 24px;\r\n\theight: 24px;\r\n\t-webkit-transform-origin: 50%;\r\n\ttransform-origin: 50%;\r\n\t-webkit-animation: spinner-spin 1s step-end infinite;\r\n\tanimation: spinner-spin 1s step-end infinite\r\n}\r\n\r\n.mui-spinner:after {\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tcontent: '';\r\n\tbackground-image: url('data:image/svg+xml;charset=utf-8,<svg viewBox=\\'0 0 120 120\\' xmlns=\\'http://www.w3.org/2000/svg\\' xmlns:xlink=\\'http://www.w3.org/1999/xlink\\'><defs><line id=\\'l\\' x1=\\'60\\' x2=\\'60\\' y1=\\'7\\' y2=\\'27\\' stroke=\\'%236c6c6c\\' stroke-width=\\'11\\' stroke-linecap=\\'round\\'/></defs><g><use xlink:href=\\'%23l\\' opacity=\\'.27\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(30 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(60 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(90 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(120 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(150 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.37\\' transform=\\'rotate(180 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.46\\' transform=\\'rotate(210 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.56\\' transform=\\'rotate(240 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.66\\' transform=\\'rotate(270 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.75\\' transform=\\'rotate(300 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.85\\' transform=\\'rotate(330 60,60)\\'/></g></svg>');\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position: 50%;\r\n\tbackground-size: 100%\r\n}\r\n\r\n.mui-spinner-white:after {\r\n\tbackground-image: url('data:image/svg+xml;charset=utf-8,<svg viewBox=\\'0 0 120 120\\' xmlns=\\'http://www.w3.org/2000/svg\\' xmlns:xlink=\\'http://www.w3.org/1999/xlink\\'><defs><line id=\\'l\\' x1=\\'60\\' x2=\\'60\\' y1=\\'7\\' y2=\\'27\\' stroke=\\'%23fff\\' stroke-width=\\'11\\' stroke-linecap=\\'round\\'/></defs><g><use xlink:href=\\'%23l\\' opacity=\\'.27\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(30 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(60 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(90 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(120 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.27\\' transform=\\'rotate(150 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.37\\' transform=\\'rotate(180 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.46\\' transform=\\'rotate(210 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.56\\' transform=\\'rotate(240 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.66\\' transform=\\'rotate(270 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.75\\' transform=\\'rotate(300 60,60)\\'/><use xlink:href=\\'%23l\\' opacity=\\'.85\\' transform=\\'rotate(330 60,60)\\'/></g></svg>')\r\n}\r\n\r\n@-webkit-keyframes spinner-spin {\r\n\t0% {\r\n\t\t-webkit-transform: rotate(0deg)\r\n\t}\r\n\t8.33333333% {\r\n\t\t-webkit-transform: rotate(30deg)\r\n\t}\r\n\t16.66666667% {\r\n\t\t-webkit-transform: rotate(60deg)\r\n\t}\r\n\t25% {\r\n\t\t-webkit-transform: rotate(90deg)\r\n\t}\r\n\t33.33333333% {\r\n\t\t-webkit-transform: rotate(120deg)\r\n\t}\r\n\t41.66666667% {\r\n\t\t-webkit-transform: rotate(150deg)\r\n\t}\r\n\t50% {\r\n\t\t-webkit-transform: rotate(180deg)\r\n\t}\r\n\t58.33333333% {\r\n\t\t-webkit-transform: rotate(210deg)\r\n\t}\r\n\t66.66666667% {\r\n\t\t-webkit-transform: rotate(240deg)\r\n\t}\r\n\t75% {\r\n\t\t-webkit-transform: rotate(270deg)\r\n\t}\r\n\t83.33333333% {\r\n\t\t-webkit-transform: rotate(300deg)\r\n\t}\r\n\t91.66666667% {\r\n\t\t-webkit-transform: rotate(330deg)\r\n\t}\r\n\t100% {\r\n\t\t-webkit-transform: rotate(360deg)\r\n\t}\r\n}\r\n\r\n@keyframes spinner-spin {\r\n\t0% {\r\n\t\ttransform: rotate(0deg)\r\n\t}\r\n\t8.33333333% {\r\n\t\ttransform: rotate(30deg)\r\n\t}\r\n\t16.66666667% {\r\n\t\ttransform: rotate(60deg)\r\n\t}\r\n\t25% {\r\n\t\ttransform: rotate(90deg)\r\n\t}\r\n\t33.33333333% {\r\n\t\ttransform: rotate(120deg)\r\n\t}\r\n\t41.66666667% {\r\n\t\ttransform: rotate(150deg)\r\n\t}\r\n\t50% {\r\n\t\ttransform: rotate(180deg)\r\n\t}\r\n\t58.33333333% {\r\n\t\ttransform: rotate(210deg)\r\n\t}\r\n\t66.66666667% {\r\n\t\ttransform: rotate(240deg)\r\n\t}\r\n\t75% {\r\n\t\ttransform: rotate(270deg)\r\n\t}\r\n\t83.33333333% {\r\n\t\ttransform: rotate(300deg)\r\n\t}\r\n\t91.66666667% {\r\n\t\ttransform: rotate(330deg)\r\n\t}\r\n\t100% {\r\n\t\ttransform: rotate(360deg)\r\n\t}\r\n}\r\n\r\n.mui-btn,\r\nbutton,\r\ninput[type=button],\r\ninput[type=reset],\r\ninput[type=submit] {\r\n\tfont-size: 14px;\r\n\tfont-weight: 400;\r\n\tline-height: 1.42;\r\n\tposition: relative;\r\n\tdisplay: inline-block;\r\n\tmargin-bottom: 0;\r\n\tpadding: 6px 12px;\r\n\tcursor: pointer;\r\n\t-webkit-transition: all;\r\n\ttransition: all;\r\n\t-webkit-transition-timing-function: linear;\r\n\ttransition-timing-function: linear;\r\n\t-webkit-transition-duration: .2s;\r\n\ttransition-duration: .2s;\r\n\ttext-align: center;\r\n\tvertical-align: top;\r\n\twhite-space: nowrap;\r\n\tcolor: #333;\r\n\tborder: 1px solid #ccc;\r\n\tborder-radius: 3px;\r\n\tborder-top-left-radius: 3px;\r\n\tborder-top-right-radius: 3px;\r\n\tborder-bottom-right-radius: 3px;\r\n\tborder-bottom-left-radius: 3px;\r\n\tbackground-color: #fff;\r\n\tbackground-clip: padding-box\r\n}\r\n\r\n.mui-btn.mui-active:enabled,\r\n.mui-btn:enabled:active,\r\nbutton.mui-active:enabled,\r\nbutton:enabled:active,\r\ninput[type=button].mui-active:enabled,\r\ninput[type=button]:enabled:active,\r\ninput[type=reset].mui-active:enabled,\r\ninput[type=reset]:enabled:active,\r\ninput[type=submit].mui-active:enabled,\r\ninput[type=submit]:enabled:active {\r\n\tcolor: #fff;\r\n\tbackground-color: #929292\r\n}\r\n\r\n.mui-btn.mui-disabled,\r\n.mui-btn:disabled,\r\nbutton.mui-disabled,\r\nbutton:disabled,\r\ninput[type=button].mui-disabled,\r\ninput[type=button]:disabled,\r\ninput[type=reset].mui-disabled,\r\ninput[type=reset]:disabled,\r\ninput[type=submit].mui-disabled,\r\ninput[type=submit]:disabled {\r\n\topacity: .6\r\n}\r\n\r\n.mui-btn-blue,\r\n.mui-btn-primary,\r\ninput[type=submit] {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #f08b2f;\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-btn-blue.mui-active:enabled,\r\n.mui-btn-blue:enabled:active,\r\n.mui-btn-primary.mui-active:enabled,\r\n.mui-btn-primary:enabled:active,\r\ninput[type=submit].mui-active:enabled,\r\ninput[type=submit]:enabled:active {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #0062cc;\r\n\tbackground-color: #0062cc\r\n}\r\n\r\n.mui-btn-green,\r\n.mui-btn-positive,\r\n.mui-btn-success {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #4cd964;\r\n\tbackground-color: #4cd964\r\n}\r\n\r\n.mui-btn-green.mui-active:enabled,\r\n.mui-btn-green:enabled:active,\r\n.mui-btn-positive.mui-active:enabled,\r\n.mui-btn-positive:enabled:active,\r\n.mui-btn-success.mui-active:enabled,\r\n.mui-btn-success:enabled:active {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #2ac845;\r\n\tbackground-color: #2ac845\r\n}\r\n\r\n.mui-btn-warning,\r\n.mui-btn-yellow {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #f0ad4e;\r\n\tbackground-color: #f0ad4e\r\n}\r\n\r\n.mui-btn-warning.mui-active:enabled,\r\n.mui-btn-warning:enabled:active,\r\n.mui-btn-yellow.mui-active:enabled,\r\n.mui-btn-yellow:enabled:active {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #ec971f;\r\n\tbackground-color: #ec971f\r\n}\r\n\r\n.mui-btn-danger,\r\n.mui-btn-negative,\r\n.mui-btn-red {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #dd524d;\r\n\tbackground-color: #dd524d\r\n}\r\n\r\n.mui-btn-danger.mui-active:enabled,\r\n.mui-btn-danger:enabled:active,\r\n.mui-btn-negative.mui-active:enabled,\r\n.mui-btn-negative:enabled:active,\r\n.mui-btn-red.mui-active:enabled,\r\n.mui-btn-red:enabled:active {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #cf2d28;\r\n\tbackground-color: #cf2d28\r\n}\r\n\r\n.mui-btn-purple,\r\n.mui-btn-royal {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #8a6de9;\r\n\tbackground-color: #8a6de9\r\n}\r\n\r\n.mui-btn-purple.mui-active:enabled,\r\n.mui-btn-purple:enabled:active,\r\n.mui-btn-royal.mui-active:enabled,\r\n.mui-btn-royal:enabled:active {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #6641e2;\r\n\tbackground-color: #6641e2\r\n}\r\n\r\n.mui-btn-grey {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #c7c7cc;\r\n\tbackground-color: #c7c7cc\r\n}\r\n\r\n.mui-btn-grey.mui-active:enabled,\r\n.mui-btn-grey:enabled:active {\r\n\tcolor: #fff;\r\n\tborder: 1px solid #acacb4;\r\n\tbackground-color: #acacb4\r\n}\r\n\r\n.mui-btn-outlined {\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-btn-outlined.mui-btn-blue,\r\n.mui-btn-outlined.mui-btn-primary {\r\n\tcolor: #f08b2f\r\n}\r\n\r\n.mui-btn-outlined.mui-btn-green,\r\n.mui-btn-outlined.mui-btn-positive,\r\n.mui-btn-outlined.mui-btn-success {\r\n\tcolor: #4cd964\r\n}\r\n\r\n.mui-btn-outlined.mui-btn-warning,\r\n.mui-btn-outlined.mui-btn-yellow {\r\n\tcolor: #f0ad4e\r\n}\r\n\r\n.mui-btn-outlined.mui-btn-danger,\r\n.mui-btn-outlined.mui-btn-negative,\r\n.mui-btn-outlined.mui-btn-red {\r\n\tcolor: #dd524d\r\n}\r\n\r\n.mui-btn-outlined.mui-btn-purple,\r\n.mui-btn-outlined.mui-btn-royal {\r\n\tcolor: #8a6de9\r\n}\r\n\r\n.mui-btn-outlined.mui-btn-blue:enabled:active,\r\n.mui-btn-outlined.mui-btn-danger:enabled:active,\r\n.mui-btn-outlined.mui-btn-green:enabled:active,\r\n.mui-btn-outlined.mui-btn-negative:enabled:active,\r\n.mui-btn-outlined.mui-btn-positive:enabled:active,\r\n.mui-btn-outlined.mui-btn-primary:enabled:active,\r\n.mui-btn-outlined.mui-btn-purple:enabled:active,\r\n.mui-btn-outlined.mui-btn-red:enabled:active,\r\n.mui-btn-outlined.mui-btn-royal:enabled:active,\r\n.mui-btn-outlined.mui-btn-success:enabled:active,\r\n.mui-btn-outlined.mui-btn-warning:enabled:active,\r\n.mui-btn-outlined.mui-btn-yellow:enabled:active {\r\n\tcolor: #fff\r\n}\r\n\r\n.mui-btn-link {\r\n\tpadding-top: 6px;\r\n\tpadding-bottom: 6px;\r\n\tcolor: #f08b2f;\r\n\tborder: 0;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-btn-link.mui-active:enabled,\r\n.mui-btn-link:enabled:active {\r\n\tcolor: #0062cc;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-btn-block {\r\n\tfont-size: 18px;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tmargin-bottom: 10px;\r\n\tpadding: 15px 0\r\n}\r\n\r\n.mui-btn .mui-badge {\r\n\tfont-size: 14px;\r\n\tmargin: -2px -4px -2px 4px;\r\n\tbackground-color: rgba(0, 0, 0, .15)\r\n}\r\n\r\n.mui-btn .mui-badge-inverted,\r\n.mui-btn:enabled:active .mui-badge-inverted {\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-btn-negative:enabled:active .mui-badge-inverted,\r\n.mui-btn-positive:enabled:active .mui-badge-inverted,\r\n.mui-btn-primary:enabled:active .mui-badge-inverted {\r\n\tcolor: #fff\r\n}\r\n\r\n.mui-btn-block .mui-badge {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tmargin-right: 10px\r\n}\r\n\r\n.mui-btn .mui-icon {\r\n\tfont-size: inherit\r\n}\r\n\r\n.mui-btn.mui-icon {\r\n\tfont-size: 14px;\r\n\tline-height: 1.42\r\n}\r\n\r\n.mui-btn.mui-fab {\r\n\twidth: 56px;\r\n\theight: 56px;\r\n\tpadding: 16px;\r\n\tborder-radius: 50%;\r\n\toutline: 0\r\n}\r\n\r\n.mui-btn.mui-fab.mui-btn-mini {\r\n\twidth: 40px;\r\n\theight: 40px;\r\n\tpadding: 8px\r\n}\r\n\r\n.mui-btn.mui-fab .mui-icon {\r\n\tfont-size: 24px;\r\n\tline-height: 24px;\r\n\twidth: 24px;\r\n\theight: 24px\r\n}\r\n\r\n.mui-btn .mui-spinner {\r\n\twidth: 14px;\r\n\theight: 14px;\r\n\tvertical-align: text-bottom\r\n}\r\n\r\n.mui-btn-block .mui-spinner {\r\n\twidth: 22px;\r\n\theight: 22px\r\n}\r\n\r\n.mui-bar {\r\n\tposition: fixed;\r\n\tz-index: 10;\r\n\tright: 0;\r\n\tleft: 0;\r\n\theight: 44px;\r\n\tpadding-right: 10px;\r\n\tpadding-left: 10px;\r\n\tborder-bottom: 0;\r\n\tbackground-color: #f7f7f7;\r\n\t-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);\r\n\tbox-shadow: 0 0 1px rgba(0, 0, 0, .85);\r\n\t-webkit-backface-visibility: hidden;\r\n\tbackface-visibility: hidden\r\n}\r\n\r\n.mui-bar .mui-title {\r\n\tright: 40px;\r\n\tleft: 40px;\r\n\tdisplay: inline-block;\r\n\toverflow: hidden;\r\n\twidth: auto;\r\n\tmargin: 0;\r\n\ttext-overflow: ellipsis\r\n}\r\n\r\n.mui-bar .mui-backdrop {\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-bar-header-secondary {\r\n\ttop: 44px\r\n}\r\n\r\n.mui-bar-footer {\r\n\tbottom: 0\r\n}\r\n\r\n.mui-bar-footer-secondary {\r\n\tbottom: 44px\r\n}\r\n\r\n.mui-bar-footer-secondary-tab {\r\n\tbottom: 50px\r\n}\r\n\r\n.mui-bar-footer,\r\n.mui-bar-footer-secondary,\r\n.mui-bar-footer-secondary-tab {\r\n\tborder-top: 0\r\n}\r\n\r\n.mui-bar-transparent {\r\n\ttop: 0;\r\n\tbackground-color: rgba(247, 247, 247, 0);\r\n\t-webkit-box-shadow: none;\r\n\tbox-shadow: none\r\n}\r\n\r\n.mui-bar-nav {\r\n\ttop: 0;\r\n\t-webkit-box-shadow: 0 1px 6px #ccc;\r\n\tbox-shadow: 0 1px 6px #ccc\r\n}\r\n\r\n.mui-bar-nav~.mui-content .mui-anchor {\r\n\tdisplay: block;\r\n\tvisibility: hidden;\r\n\theight: 45px;\r\n\tmargin-top: -45px\r\n}\r\n\r\n.mui-bar-nav.mui-bar .mui-icon {\r\n\tmargin-right: -10px;\r\n\tmargin-left: -10px;\r\n\tpadding-right: 10px;\r\n\tpadding-left: 10px\r\n}\r\n\r\n.mui-title {\r\n\tfont-size: 17px;\r\n\tfont-weight: 500;\r\n\tline-height: 44px;\r\n\tposition: absolute;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tmargin: 0 -10px;\r\n\tpadding: 0;\r\n\ttext-align: center;\r\n\twhite-space: nowrap;\r\n\tcolor: #000\r\n}\r\n\r\n.mui-title a {\r\n\tcolor: inherit\r\n}\r\n\r\n.mui-bar-tab {\r\n\tbottom: 0;\r\n\tdisplay: table;\r\n\twidth: 100%;\r\n\theight: 50px;\r\n\tpadding: 0;\r\n\ttable-layout: fixed;\r\n\tborder-top: 0;\r\n\tborder-bottom: 0;\r\n\t-webkit-touch-callout: none\r\n}\r\n\r\n.mui-bar-tab .mui-tab-item {\r\n\tdisplay: table-cell;\r\n\toverflow: hidden;\r\n\twidth: 1%;\r\n\theight: 50px;\r\n\ttext-align: center;\r\n\tvertical-align: middle;\r\n\twhite-space: nowrap;\r\n\ttext-overflow: ellipsis;\r\n\tcolor: #929292\r\n}\r\n\r\n.mui-bar-tab .mui-tab-item.mui-active {\r\n\tcolor: #f08b2f\r\n}\r\n\r\n.mui-bar-tab .mui-tab-item .mui-icon {\r\n\ttop: 3px;\r\n\twidth: 24px;\r\n\theight: 24px;\r\n\tpadding-top: 0;\r\n\tpadding-bottom: 0\r\n}\r\n\r\n.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label {\r\n\tfont-size: 11px;\r\n\tdisplay: block;\r\n\toverflow: hidden;\r\n\ttext-overflow: ellipsis\r\n}\r\n\r\n.mui-bar-tab .mui-tab-item .mui-icon:active {\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-focusin>.mui-bar-header-secondary,\r\n.mui-focusin>.mui-bar-nav {\r\n\tposition: absolute\r\n}\r\n\r\n.mui-focusin>.mui-bar~.mui-content {\r\n\tpadding-bottom: 0\r\n}\r\n\r\n.mui-bar .mui-btn {\r\n\tfont-weight: 400;\r\n\tposition: relative;\r\n\tz-index: 20;\r\n\ttop: 7px;\r\n\tmargin-top: 0;\r\n\tpadding: 6px 12px 7px\r\n}\r\n\r\n.mui-bar .mui-btn.mui-pull-right {\r\n\tmargin-left: 10px\r\n}\r\n\r\n.mui-bar .mui-btn.mui-pull-left {\r\n\tmargin-right: 10px\r\n}\r\n\r\n.mui-bar .mui-btn-link {\r\n\tfont-size: 16px;\r\n\tline-height: 44px;\r\n\ttop: 0;\r\n\tpadding: 0;\r\n\tcolor: #f08b2f;\r\n\tborder: 0\r\n}\r\n\r\n.mui-bar .mui-btn-link.mui-active,\r\n.mui-bar .mui-btn-link:active {\r\n\tcolor: #0062cc\r\n}\r\n\r\n.mui-bar .mui-btn-block {\r\n\tfont-size: 16px;\r\n\ttop: 6px;\r\n\tmargin-bottom: 0;\r\n\tpadding: 5px 0\r\n}\r\n\r\n.mui-bar .mui-btn-nav.mui-pull-left {\r\n\tmargin-left: -5px\r\n}\r\n\r\n.mui-bar .mui-btn-nav.mui-pull-left .mui-icon-left-nav {\r\n\tmargin-right: -3px\r\n}\r\n\r\n.mui-bar .mui-btn-nav.mui-pull-right {\r\n\tmargin-right: -5px\r\n}\r\n\r\n.mui-bar .mui-btn-nav.mui-pull-right .mui-icon-right-nav {\r\n\tmargin-left: -3px\r\n}\r\n\r\n.mui-bar .mui-btn-nav:active {\r\n\topacity: .3\r\n}\r\n\r\n.mui-bar .mui-icon {\r\n\tfont-size: 24px;\r\n\tposition: relative;\r\n\tz-index: 20;\r\n\tpadding-top: 10px;\r\n\tpadding-bottom: 10px\r\n}\r\n\r\n.mui-bar .mui-icon:active {\r\n\topacity: .3\r\n}\r\n\r\n.mui-bar .mui-btn .mui-icon {\r\n\ttop: 1px;\r\n\tmargin: 0;\r\n\tpadding: 0\r\n}\r\n\r\n.mui-bar .mui-title .mui-icon {\r\n\tmargin: 0;\r\n\tpadding: 0\r\n}\r\n\r\n.mui-bar .mui-title .mui-icon.mui-icon-caret {\r\n\ttop: 4px;\r\n\tmargin-left: -5px\r\n}\r\n\r\n.mui-bar input[type=search] {\r\n\theight: 29px;\r\n\tmargin: 6px 0\r\n}\r\n\r\n.mui-bar .mui-input-row .mui-btn {\r\n\tpadding: 12px 10px\r\n}\r\n\r\n.mui-bar .mui-search:before {\r\n\tmargin-top: -10px\r\n}\r\n\r\n.mui-bar .mui-input-row .mui-input-clear~.mui-icon-clear,\r\n.mui-bar .mui-input-row .mui-input-speech~.mui-icon-speech {\r\n\ttop: 0;\r\n\tright: 12px\r\n}\r\n\r\n.mui-bar.mui-bar-header-secondary .mui-input-row .mui-input-clear~.mui-icon-clear,\r\n.mui-bar.mui-bar-header-secondary .mui-input-row .mui-input-speech~.mui-icon-speech {\r\n\ttop: 0;\r\n\tright: 0\r\n}\r\n\r\n.mui-bar .mui-segmented-control {\r\n\ttop: 7px;\r\n\twidth: auto;\r\n\tmargin: 0 auto\r\n}\r\n\r\n.mui-bar.mui-bar-header-secondary .mui-segmented-control {\r\n\ttop: 0\r\n}\r\n\r\n.mui-badge {\r\n\tfont-size: 12px;\r\n\tline-height: 1;\r\n\tdisplay: inline-block;\r\n\tpadding: 3px 6px;\r\n\tcolor: #333;\r\n\tborder-radius: 100px;\r\n\tbackground-color: rgba(0, 0, 0, .15)\r\n}\r\n\r\n.mui-badge.mui-badge-inverted {\r\n\tpadding: 0 5px 0 0;\r\n\tcolor: #929292;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-badge-blue,\r\n.mui-badge-primary {\r\n\tcolor: #fff;\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-badge-blue.mui-badge-inverted,\r\n.mui-badge-primary.mui-badge-inverted {\r\n\tcolor: #f08b2f;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-badge-green,\r\n.mui-badge-success {\r\n\tcolor: #fff;\r\n\tbackground-color: #4cd964\r\n}\r\n\r\n.mui-badge-green.mui-badge-inverted,\r\n.mui-badge-success.mui-badge-inverted {\r\n\tcolor: #4cd964;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-badge-warning,\r\n.mui-badge-yellow {\r\n\tcolor: #fff;\r\n\tbackground-color: #f0ad4e\r\n}\r\n\r\n.mui-badge-warning.mui-badge-inverted,\r\n.mui-badge-yellow.mui-badge-inverted {\r\n\tcolor: #f0ad4e;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-badge-danger,\r\n.mui-badge-red {\r\n\tcolor: #fff;\r\n\tbackground-color: #dd524d\r\n}\r\n\r\n.mui-badge-danger.mui-badge-inverted,\r\n.mui-badge-red.mui-badge-inverted {\r\n\tcolor: #dd524d;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-badge-purple,\r\n.mui-badge-royal {\r\n\tcolor: #fff;\r\n\tbackground-color: #8a6de9\r\n}\r\n\r\n.mui-badge-purple.mui-badge-inverted,\r\n.mui-badge-royal.mui-badge-inverted {\r\n\tcolor: #8a6de9;\r\n\tbackground-color: transparent\r\n}\r\n\r\n.mui-icon .mui-badge {\r\n\tfont-size: 10px;\r\n\tline-height: 1.4;\r\n\tposition: absolute;\r\n\ttop: -2px;\r\n\tleft: 100%;\r\n\tmargin-left: -10px;\r\n\tpadding: 1px 5px;\r\n\tcolor: #fff;\r\n\tbackground: red\r\n}\r\n\r\n.mui-card {\r\n\tfont-size: 14px;\r\n\tposition: relative;\r\n\toverflow: hidden;\r\n\tmargin: 10px;\r\n\tborder-radius: 2px;\r\n\tbackground-color: #fff;\r\n\tbackground-clip: padding-box;\r\n\tbox-shadow: 0 1px 2px rgba(0, 0, 0, .3)\r\n}\r\n\r\n.mui-content>.mui-card:first-child {\r\n\tmargin-top: 15px\r\n}\r\n\r\n.mui-card .mui-input-group .mui-input-row:last-child:after,\r\n.mui-card .mui-input-group .mui-input-row:last-child:before,\r\n.mui-card .mui-input-group:after,\r\n.mui-card .mui-input-group:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-card .mui-table-view {\r\n\tmargin-bottom: 0;\r\n\tborder-top: 0;\r\n\tborder-bottom: 0;\r\n\tborder-radius: 6px\r\n}\r\n\r\n.mui-card .mui-table-view .mui-table-view-cell:first-child,\r\n.mui-card .mui-table-view .mui-table-view-divider:first-child {\r\n\ttop: 0;\r\n\tborder-top-left-radius: 6px;\r\n\tborder-top-right-radius: 6px\r\n}\r\n\r\n.mui-card .mui-table-view .mui-table-view-cell:last-child,\r\n.mui-card .mui-table-view .mui-table-view-divider:last-child {\r\n\tborder-bottom-right-radius: 6px;\r\n\tborder-bottom-left-radius: 6px\r\n}\r\n\r\n.mui-card .mui-table-view:after,\r\n.mui-card .mui-table-view:before,\r\n.mui-card>.mui-table-view>.mui-table-view-cell:last-child:after,\r\n.mui-card>.mui-table-view>.mui-table-view-cell:last-child:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-card-footer,\r\n.mui-card-header {\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\tmin-height: 44px;\r\n\tpadding: 10px 15px;\r\n\t-webkit-box-pack: justify;\r\n\t-webkit-justify-content: space-between;\r\n\tjustify-content: space-between;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\talign-items: center\r\n}\r\n\r\n.mui-card-footer .mui-card-link,\r\n.mui-card-header .mui-card-link {\r\n\tline-height: 44px;\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\theight: 44px;\r\n\tmargin-top: -10px;\r\n\tmargin-bottom: -10px;\r\n\t-webkit-transition-duration: .3s;\r\n\ttransition-duration: .3s;\r\n\ttext-decoration: none;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\tjustify-content: flex-start;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\talign-items: center\r\n}\r\n\r\n.mui-card-footer:before,\r\n.mui-card-header:after {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-card-header {\r\n\tfont-size: 17px;\r\n\tborder-radius: 2px 2px 0 0\r\n}\r\n\r\n.mui-card-header:after {\r\n\ttop: auto;\r\n\tbottom: 0\r\n}\r\n\r\n.mui-card-header>img:first-child {\r\n\tfont-size: 0;\r\n\tline-height: 0;\r\n\tfloat: left;\r\n\twidth: 34px;\r\n\theight: 34px\r\n}\r\n\r\n.mui-card-footer {\r\n\tcolor: #6d6d72;\r\n\tborder-radius: 0 0 2px 2px\r\n}\r\n\r\n.mui-card-content {\r\n\tfont-size: 14px;\r\n\tposition: relative\r\n}\r\n\r\n.mui-card-content-inner {\r\n\tposition: relative;\r\n\tpadding: 15px\r\n}\r\n\r\n.mui-card-media {\r\n\tvertical-align: bottom;\r\n\tcolor: #fff;\r\n\tbackground-position: center;\r\n\tbackground-size: cover\r\n}\r\n\r\n.mui-card-header.mui-card-media {\r\n\tdisplay: block;\r\n\tpadding: 10px\r\n}\r\n\r\n.mui-card-header.mui-card-media .mui-media-body {\r\n\tfont-size: 14px;\r\n\tfont-weight: 500;\r\n\tline-height: 17px;\r\n\tmargin-bottom: 0;\r\n\tmargin-left: 44px;\r\n\tcolor: #333\r\n}\r\n\r\n.mui-card-header.mui-card-media .mui-media-body p {\r\n\tfont-size: 13px;\r\n\tmargin-bottom: 0\r\n}\r\n\r\n.mui-table-view {\r\n\tposition: relative;\r\n\tmargin-top: 0;\r\n\tmargin-bottom: 0;\r\n\tpadding-left: 0;\r\n\tlist-style: none;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-table-view:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-table-view:before {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tleft: 0;\r\n\theight: 0.5px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #e5e5e5;\r\n\ttop: -1px\r\n}\r\n\r\n.mui-table-view-icon .mui-table-view-cell .mui-navigate-right .mui-icon {\r\n\tfont-size: 20px;\r\n\tmargin-top: -1px;\r\n\tmargin-right: 5px;\r\n\tmargin-left: -5px\r\n}\r\n\r\n.mui-table-view-icon .mui-table-view-cell:after {\r\n\tleft: 40px\r\n}\r\n\r\n.mui-table-view-chevron .mui-table-view-cell {\r\n\tpadding-right: 65px\r\n}\r\n\r\n.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {\r\n\tmargin-right: -65px\r\n}\r\n\r\n.mui-table-view-radio .mui-table-view-cell {\r\n\tpadding-right: 65px\r\n}\r\n\r\n.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {\r\n\tmargin-right: -65px\r\n}\r\n\r\n.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {\r\n\tfont-size: 30px;\r\n\tfont-weight: 600;\r\n\tright: 9px;\r\n\tcontent: '';\r\n\tcolor: #f08b2f\r\n}\r\n\r\n.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right:after {\r\n\tcontent: '\\E472'\r\n}\r\n\r\n.mui-table-view-inverted {\r\n\tcolor: #fff;\r\n\tbackground: #333\r\n}\r\n\r\n.mui-table-view-inverted:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #222\r\n}\r\n\r\n.mui-table-view-inverted:before {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #222\r\n}\r\n\r\n.mui-table-view-inverted .mui-table-view-cell:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 15px;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #222\r\n}\r\n\r\n.mui-table-view-inverted .mui-table-view-cell.mui-active,\r\n.mui-table-view-inverted .mui-table-view-cell>a:not(.mui-btn).mui-active {\r\n\tbackground-color: #242424\r\n}\r\n\r\n.mui-table-view-cell {\r\n\tposition: relative;\r\n\toverflow: hidden;\r\n\tpadding: 11px 15px;\r\n\t-webkit-touch-callout: none\r\n}\r\n\r\n.mui-table-view-cell:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 15px;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #e5e5e5\r\n}\r\n\r\n.mui-table-view-cell.mui-checkbox input[type=checkbox],\r\n.mui-table-view-cell.mui-radio input[type=radio] {\r\n\ttop: 8px\r\n}\r\n\r\n.mui-table-view-cell.mui-checkbox.mui-left,\r\n.mui-table-view-cell.mui-radio.mui-left {\r\n\tpadding-left: 58px\r\n}\r\n\r\n.mui-table-view-cell.mui-active {\r\n\tbackground-color: #eee\r\n}\r\n\r\n.mui-table-view-cell:last-child:after,\r\n.mui-table-view-cell:last-child:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-table-view-cell>a:not(.mui-btn) {\r\n\tposition: relative;\r\n\tdisplay: block;\r\n\toverflow: hidden;\r\n\tmargin: -11px -15px;\r\n\tpadding: inherit;\r\n\twhite-space: nowrap;\r\n\ttext-overflow: ellipsis;\r\n\tcolor: inherit\r\n}\r\n\r\n.mui-table-view-cell>a:not(.mui-btn).mui-active {\r\n\tbackground-color: #eee\r\n}\r\n\r\n.mui-table-view-cell p {\r\n\tmargin-bottom: 0\r\n}\r\n\r\n.mui-table-view-cell.mui-transitioning>.mui-slider-handle,\r\n.mui-table-view-cell.mui-transitioning>.mui-slider-left .mui-btn,\r\n.mui-table-view-cell.mui-transitioning>.mui-slider-right .mui-btn {\r\n\t-webkit-transition: -webkit-transform 300ms ease;\r\n\ttransition: transform 300ms ease\r\n}\r\n\r\n.mui-table-view-cell.mui-active>.mui-slider-handle {\r\n\tbackground-color: #eee\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-handle {\r\n\tposition: relative;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-handle .mui-navigate-right:after,\r\n.mui-table-view-cell>.mui-slider-handle.mui-navigate-right:after {\r\n\tright: 0\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-handle,\r\n.mui-table-view-cell>.mui-slider-left .mui-btn,\r\n.mui-table-view-cell>.mui-slider-right .mui-btn {\r\n\t-webkit-transition: -webkit-transform 0ms ease;\r\n\ttransition: transform 0ms ease\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-left,\r\n.mui-table-view-cell>.mui-slider-right {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\theight: 100%\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-left>.mui-btn,\r\n.mui-table-view-cell>.mui-slider-right>.mui-btn {\r\n\tposition: relative;\r\n\tleft: 0;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\tpadding: 0 30px;\r\n\tcolor: #fff;\r\n\tborder: 0;\r\n\tborder-radius: 0;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\talign-items: center\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-left>.mui-btn:after,\r\n.mui-table-view-cell>.mui-slider-right>.mui-btn:after {\r\n\tposition: absolute;\r\n\tz-index: -1;\r\n\ttop: 0;\r\n\twidth: 600%;\r\n\theight: 100%;\r\n\tcontent: '';\r\n\tbackground: inherit\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-left>.mui-btn.mui-icon,\r\n.mui-table-view-cell>.mui-slider-right>.mui-btn.mui-icon {\r\n\tfont-size: 30px\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-right {\r\n\tright: 0;\r\n\t-webkit-transition: -webkit-transform 0ms ease;\r\n\ttransition: transform 0ms ease;\r\n\t-webkit-transform: translateX(100%);\r\n\ttransform: translateX(100%)\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-left {\r\n\tleft: 0;\r\n\t-webkit-transition: -webkit-transform 0ms ease;\r\n\ttransition: transform 0ms ease;\r\n\t-webkit-transform: translateX(-100%);\r\n\ttransform: translateX(-100%)\r\n}\r\n\r\n.mui-table-view-cell>.mui-slider-left>.mui-btn:after {\r\n\tright: 100%;\r\n\tmargin-right: -1px\r\n}\r\n\r\n.mui-table-view-divider {\r\n\tfont-weight: 500;\r\n\tposition: relative;\r\n\tmargin-top: -1px;\r\n\tmargin-left: 0;\r\n\tpadding-top: 6px;\r\n\tpadding-bottom: 6px;\r\n\tpadding-left: 15px;\r\n\tcolor: #999;\r\n\tbackground-color: #fafafa\r\n}\r\n\r\n.mui-table-view-divider:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-table-view-divider:before {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-table-view .mui-media,\r\n.mui-table-view .mui-media-body {\r\n\toverflow: hidden\r\n}\r\n\r\n.mui-table-view .mui-media-large .mui-media-object {\r\n\tline-height: 80px;\r\n\tmax-width: 80px;\r\n\theight: 80px\r\n}\r\n\r\n.mui-table-view .mui-media .mui-subtitle {\r\n\tcolor: #000\r\n}\r\n\r\n.mui-table-view .mui-media-object {\r\n\tline-height: 42px;\r\n\tmax-width: 42px;\r\n\theight: 42px\r\n}\r\n\r\n.mui-table-view .mui-media-object.mui-pull-left {\r\n\tmargin-right: 10px\r\n}\r\n\r\n.mui-table-view .mui-media-object.mui-pull-right {\r\n\tmargin-left: 10px\r\n}\r\n\r\n.mui-table-view .mui-table-view-cell.mui-media-icon .mui-media-object {\r\n\tline-height: 29px;\r\n\tmax-width: 29px;\r\n\theight: 29px;\r\n\tmargin: -4px 0\r\n}\r\n\r\n.mui-table-view .mui-table-view-cell.mui-media-icon .mui-media-object img {\r\n\tline-height: 29px;\r\n\tmax-width: 29px;\r\n\theight: 29px\r\n}\r\n\r\n.mui-table-view .mui-table-view-cell.mui-media-icon .mui-media-object.mui-pull-left {\r\n\tmargin-right: 10px\r\n}\r\n\r\n.mui-table-view .mui-table-view-cell.mui-media-icon .mui-media-object .mui-icon {\r\n\tfont-size: 29px\r\n}\r\n\r\n.mui-table-view .mui-table-view-cell.mui-media-icon .mui-media-body:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 55px;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-table-view .mui-table-view-cell.mui-media-icon:after {\r\n\theight: 0!important\r\n}\r\n\r\n.mui-table-view.mui-unfold .mui-table-view-cell.mui-collapse .mui-table-view {\r\n\tdisplay: block\r\n}\r\n\r\n.mui-table-view.mui-unfold .mui-table-view-cell.mui-collapse .mui-table-view:after,\r\n.mui-table-view.mui-unfold .mui-table-view-cell.mui-collapse .mui-table-view:before {\r\n\theight: 0!important\r\n}\r\n\r\n.mui-table-view.mui-unfold .mui-table-view-cell.mui-media-icon.mui-collapse .mui-media-body:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 70px;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-table-view-cell>.mui-badge,\r\n.mui-table-view-cell>.mui-btn,\r\n.mui-table-view-cell>.mui-switch,\r\n.mui-table-view-cell>a>.mui-badge,\r\n.mui-table-view-cell>a>.mui-btn,\r\n.mui-table-view-cell>a>.mui-switch {\r\n\tposition: absolute;\r\n\ttop: 50%;\r\n\tright: 15px;\r\n\t-webkit-transform: translateY(-50%);\r\n\ttransform: translateY(-50%)\r\n}\r\n\r\n.mui-table-view-cell .mui-navigate-right>.mui-badge,\r\n.mui-table-view-cell .mui-navigate-right>.mui-btn,\r\n.mui-table-view-cell .mui-navigate-right>.mui-switch,\r\n.mui-table-view-cell .mui-push-left>.mui-badge,\r\n.mui-table-view-cell .mui-push-left>.mui-btn,\r\n.mui-table-view-cell .mui-push-left>.mui-switch,\r\n.mui-table-view-cell .mui-push-right>.mui-badge,\r\n.mui-table-view-cell .mui-push-right>.mui-btn,\r\n.mui-table-view-cell .mui-push-right>.mui-switch,\r\n.mui-table-view-cell>a .mui-navigate-right>.mui-badge,\r\n.mui-table-view-cell>a .mui-navigate-right>.mui-btn,\r\n.mui-table-view-cell>a .mui-navigate-right>.mui-switch,\r\n.mui-table-view-cell>a .mui-push-left>.mui-badge,\r\n.mui-table-view-cell>a .mui-push-left>.mui-btn,\r\n.mui-table-view-cell>a .mui-push-left>.mui-switch,\r\n.mui-table-view-cell>a .mui-push-right>.mui-badge,\r\n.mui-table-view-cell>a .mui-push-right>.mui-btn,\r\n.mui-table-view-cell>a .mui-push-right>.mui-switch {\r\n\tright: 35px\r\n}\r\n\r\n.mui-content>.mui-table-view:first-child {\r\n\tmargin-top: 15px\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell:last-child:after,\r\n.mui-table-view-cell.mui-collapse .mui-table-view:after,\r\n.mui-table-view-cell.mui-collapse .mui-table-view:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse>.mui-navigate-right:after,\r\n.mui-table-view-cell.mui-collapse>.mui-push-right:after {\r\n\tcontent: '\\E581'\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse.mui-active {\r\n\tmargin-top: -1px\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse.mui-active .mui-collapse-content,\r\n.mui-table-view-cell.mui-collapse.mui-active .mui-table-view {\r\n\tdisplay: block\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse.mui-active>.mui-navigate-right:after,\r\n.mui-table-view-cell.mui-collapse.mui-active>.mui-push-right:after {\r\n\tcontent: '\\E580'\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse.mui-active .mui-table-view-cell>a:not(.mui-btn).mui-active {\r\n\tmargin-left: -31px;\r\n\tpadding-left: 47px\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-collapse-content {\r\n\tposition: relative;\r\n\tdisplay: none;\r\n\toverflow: hidden;\r\n\tmargin: 11px -15px -11px;\r\n\tpadding: 8px 15px;\r\n\t-webkit-transition: height .35s ease;\r\n\t-o-transition: height .35s ease;\r\n\ttransition: height .35s ease;\r\n\tbackground: #fff\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-collapse-content>.mui-input-group,\r\n.mui-table-view-cell.mui-collapse .mui-collapse-content>.mui-slider {\r\n\twidth: auto;\r\n\theight: auto;\r\n\tmargin: -8px -15px\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-collapse-content>.mui-slider {\r\n\tmargin: -8px -16px\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-table-view {\r\n\tdisplay: none;\r\n\tmargin-top: 11px;\r\n\tmargin-right: -15px;\r\n\tmargin-bottom: -11px;\r\n\tmargin-left: -15px;\r\n\tborder: 0\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-table-view.mui-table-view-chevron {\r\n\tmargin-right: -65px\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell {\r\n\tpadding-left: 31px;\r\n\tbackground-position: 31px 100%\r\n}\r\n\r\n.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 30px;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-table-view.mui-grid-view {\r\n\tfont-size: 0;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tpadding: 0 10px 10px 0;\r\n\twhite-space: normal\r\n}\r\n\r\n.mui-table-view.mui-grid-view .mui-table-view-cell {\r\n\tfont-size: 17px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: -4px;\r\n\tpadding: 10px 0 0 14px;\r\n\ttext-align: center;\r\n\tvertical-align: middle;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-object {\r\n\twidth: 100%;\r\n\tmax-width: 100%;\r\n\theight: auto\r\n}\r\n\r\n.mui-table-view.mui-grid-view .mui-table-view-cell>a:not(.mui-btn) {\r\n\tmargin: -10px 0 0 -14px\r\n}\r\n\r\n.mui-table-view.mui-grid-view .mui-table-view-cell>a:not(.mui-btn).mui-active,\r\n.mui-table-view.mui-grid-view .mui-table-view-cell>a:not(.mui-btn):active {\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {\r\n\tfont-size: 15px;\r\n\tline-height: 15px;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 15px;\r\n\tmargin-top: 8px;\r\n\ttext-overflow: ellipsis;\r\n\tcolor: #333\r\n}\r\n\r\n.mui-table-view.mui-grid-view .mui-table-view-cell:after,\r\n.mui-table-view.mui-grid-view .mui-table-view-cell:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-grid-view.mui-grid-9 {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder-top: 1px solid #eee;\r\n\tborder-left: 1px solid #eee;\r\n\tbackground-color: #f2f2f2\r\n}\r\n\r\n.mui-grid-view.mui-grid-9:after,\r\n.mui-grid-view.mui-grid-9:before {\r\n\tdisplay: table;\r\n\tcontent: ' '\r\n}\r\n\r\n.mui-grid-view.mui-grid-9:after {\r\n\tclear: both;\r\n\tposition: static\r\n}\r\n\r\n.mui-grid-view.mui-grid-9 .mui-table-view-cell {\r\n\tmargin: 0;\r\n\tpadding: 11px 15px;\r\n\tvertical-align: top;\r\n\tborder-right: 1px solid #eee;\r\n\tborder-bottom: 1px solid #eee\r\n}\r\n\r\n.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active {\r\n\tbackground-color: #eee\r\n}\r\n\r\n.mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn) {\r\n\tmargin: 0;\r\n\tpadding: 10px 0\r\n}\r\n\r\n.mui-grid-view.mui-grid-9:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-grid-view.mui-grid-9 .mui-media {\r\n\tcolor: #797979\r\n}\r\n\r\n.mui-grid-view.mui-grid-9 .mui-media .mui-icon {\r\n\tfont-size: 2.4em;\r\n\tposition: relative\r\n}\r\n\r\n.mui-slider-cell {\r\n\tposition: relative\r\n}\r\n\r\n.mui-slider-cell>.mui-slider-handle {\r\n\tz-index: 1\r\n}\r\n\r\n.mui-slider-cell>.mui-slider-left,\r\n.mui-slider-cell>.mui-slider-right {\r\n\tposition: absolute;\r\n\tz-index: 0;\r\n\ttop: 0;\r\n\tbottom: 0\r\n}\r\n\r\n.mui-slider-cell>.mui-slider-left {\r\n\tleft: 0\r\n}\r\n\r\n.mui-slider-cell>.mui-slider-right {\r\n\tright: 0\r\n}\r\n\r\ninput,\r\nselect,\r\ntextarea {\r\n\tfont-family: 'Helvetica Neue', Helvetica, sans-serif;\r\n\tfont-size: 17px;\r\n\t-webkit-tap-highlight-color: transparent;\r\n\t-webkit-tap-highlight-color: transparent\r\n}\r\n\r\ninput:focus,\r\nselect:focus,\r\ntextarea:focus {\r\n\t-webkit-tap-highlight-color: transparent;\r\n\t-webkit-tap-highlight-color: transparent;\r\n\t-webkit-user-modify: read-write-plaintext-only\r\n}\r\n\r\ninput[type=color],\r\ninput[type=date],\r\ninput[type=datetime-local],\r\ninput[type=datetime],\r\ninput[type=email],\r\ninput[type=month],\r\ninput[type=number],\r\ninput[type=password],\r\ninput[type=search],\r\ninput[type=tel],\r\ninput[type=text],\r\ninput[type=time],\r\ninput[type=url],\r\ninput[type=week],\r\nselect,\r\ntextarea {\r\n\tline-height: 21px;\r\n\twidth: 100%;\r\n\theight: 40px;\r\n\tmargin-bottom: 15px;\r\n\tpadding: 10px 15px;\r\n\t-webkit-user-select: text;\r\n\tborder: 1px solid rgba(0, 0, 0, .2);\r\n\tborder-radius: 3px;\r\n\toutline: 0;\r\n\tbackground-color: #fff;\r\n\t-webkit-appearance: none\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button,\r\ninput[type=number]::-webkit-outer-spin-button {\r\n\tmargin: 0;\r\n\t-webkit-appearance: none\r\n}\r\n\r\ninput[type=search] {\r\n\tfont-size: 16px;\r\n\t-webkit-box-sizing: border-box;\r\n\tbox-sizing: border-box;\r\n\theight: 34px;\r\n\ttext-align: center;\r\n\tborder: 0;\r\n\tborder-radius: 6px;\r\n\tbackground-color: rgba(0, 0, 0, .1)\r\n}\r\n\r\ninput[type=search]:focus {\r\n\ttext-align: left\r\n}\r\n\r\ntextarea {\r\n\theight: auto;\r\n\tresize: none\r\n}\r\n\r\nselect {\r\n\tfont-size: 14px;\r\n\theight: auto;\r\n\tmargin-top: 1px;\r\n\tborder: 0!important;\r\n\tbackground-color: #fff\r\n}\r\n\r\nselect:focus {\r\n\t-webkit-user-modify: read-only\r\n}\r\n\r\n.mui-input-group {\r\n\tposition: relative;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-input-group:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-input-group:before {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-input-group input,\r\n.mui-input-group textarea {\r\n\tmargin-bottom: 0;\r\n\tborder: 0;\r\n\tborder-radius: 0;\r\n\tbackground-color: transparent;\r\n\t-webkit-box-shadow: none;\r\n\tbox-shadow: none\r\n}\r\n\r\n.mui-input-group input[type=search] {\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-input-group input:last-child {\r\n\tbackground-image: none\r\n}\r\n\r\n.mui-input-row {\r\n\tclear: left;\r\n\toverflow: hidden\r\n}\r\n\r\n.mui-input-row select {\r\n\tfont-size: 17px;\r\n\theight: 37px;\r\n\tpadding: 0\r\n}\r\n\r\n.mui-input-row .mui-btn+input,\r\n.mui-input-row label+input,\r\n.mui-input-row:last-child {\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-input-group .mui-input-row {\r\n\theight: 40px\r\n}\r\n\r\n.mui-input-group .mui-input-row:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 15px;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-input-row label {\r\n\tfont-family: 'Helvetica Neue', Helvetica, sans-serif;\r\n\tline-height: 1.1;\r\n\tfloat: left;\r\n\twidth: 35%;\r\n\tpadding: 11px 15px\r\n}\r\n\r\n.mui-input-row label~input,\r\n.mui-input-row label~select,\r\n.mui-input-row label~textarea {\r\n\tfloat: right;\r\n\twidth: 65%;\r\n\tmargin-bottom: 0;\r\n\tpadding-left: 0;\r\n\tborder: 0\r\n}\r\n\r\n.mui-input-row .mui-btn {\r\n\tline-height: 1.1;\r\n\tfloat: right;\r\n\twidth: 15%;\r\n\tpadding: 10px 15px\r\n}\r\n\r\n.mui-input-row .mui-btn~input,\r\n.mui-input-row .mui-btn~select,\r\n.mui-input-row .mui-btn~textarea {\r\n\tfloat: left;\r\n\twidth: 85%;\r\n\tmargin-bottom: 0;\r\n\tpadding-left: 0;\r\n\tborder: 0\r\n}\r\n\r\n.mui-button-row {\r\n\tposition: relative;\r\n\tpadding-top: 5px;\r\n\ttext-align: center\r\n}\r\n\r\n.mui-input-group .mui-button-row {\r\n\theight: 45px\r\n}\r\n\r\n.mui-input-row {\r\n\tposition: relative\r\n}\r\n\r\n.mui-input-row.mui-input-range {\r\n\toverflow: visible;\r\n\tpadding-right: 20px\r\n}\r\n\r\n.mui-input-row .mui-inline {\r\n\tpadding: 8px 0\r\n}\r\n\r\n.mui-input-row .mui-input-clear~.mui-icon-clear,\r\n.mui-input-row .mui-input-password~.mui-icon-eye,\r\n.mui-input-row .mui-input-speech~.mui-icon-speech {\r\n\tfont-size: 20px;\r\n\tposition: absolute;\r\n\tz-index: 1;\r\n\ttop: 10px;\r\n\tright: 0;\r\n\twidth: 38px;\r\n\theight: 38px;\r\n\ttext-align: center;\r\n\tcolor: #999\r\n}\r\n\r\n.mui-input-row .mui-input-clear~.mui-icon-clear.mui-active,\r\n.mui-input-row .mui-input-password~.mui-icon-eye.mui-active,\r\n.mui-input-row .mui-input-speech~.mui-icon-speech.mui-active {\r\n\tcolor: #f08b2f\r\n}\r\n\r\n.mui-input-row .mui-input-speech~.mui-icon-speech {\r\n\tfont-size: 24px;\r\n\ttop: 8px\r\n}\r\n\r\n.mui-input-row .mui-input-clear~.mui-icon-clear~.mui-icon-speech {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-input-row .mui-input-clear~.mui-icon-clear.mui-hidden~.mui-icon-speech {\r\n\tdisplay: inline-block\r\n}\r\n\r\n.mui-input-row .mui-icon-speech~.mui-placeholder {\r\n\tright: 38px\r\n}\r\n\r\n.mui-input-row.mui-search .mui-icon-clear {\r\n\ttop: 7px\r\n}\r\n\r\n.mui-input-row.mui-search .mui-icon-speech {\r\n\ttop: 5px\r\n}\r\n\r\n.mui-checkbox,\r\n.mui-radio {\r\n\tposition: relative\r\n}\r\n\r\n.mui-checkbox label,\r\n.mui-radio label {\r\n\tdisplay: inline-block;\r\n\tfloat: none;\r\n\twidth: 100%;\r\n\tpadding-right: 58px\r\n}\r\n\r\n.mui-checkbox.mui-left input[type=checkbox],\r\n.mui-radio.mui-left input[type=radio] {\r\n\tleft: 20px\r\n}\r\n\r\n.mui-checkbox.mui-left label,\r\n.mui-radio.mui-left label {\r\n\tpadding-right: 15px;\r\n\tpadding-left: 58px\r\n}\r\n\r\n.mui-checkbox input[type=checkbox],\r\n.mui-radio input[type=radio] {\r\n\tposition: absolute;\r\n\ttop: 4px;\r\n\tright: 20px;\r\n\tdisplay: inline-block;\r\n\twidth: 28px;\r\n\theight: 26px;\r\n\tborder: 0;\r\n\toutline: 0!important;\r\n\tbackground-color: transparent;\r\n\t-webkit-appearance: none\r\n}\r\n\r\n.mui-checkbox input[type=checkbox][disabled]:before,\r\n.mui-radio input[type=radio][disabled]:before {\r\n\topacity: .3\r\n}\r\n\r\n.mui-checkbox input[type=checkbox]:before,\r\n.mui-radio input[type=radio]:before {\r\n\tfont-family: Muiicons;\r\n\tfont-size: 28px;\r\n\tfont-weight: 400;\r\n\tline-height: 1;\r\n\ttext-decoration: none;\r\n\tcolor: #aaa;\r\n\tborder-radius: 0;\r\n\tbackground: 0 0;\r\n\t-webkit-font-smoothing: antialiased\r\n}\r\n\r\n.mui-checkbox input[type=checkbox]:checked:before,\r\n.mui-radio input[type=radio]:checked:before {\r\n\tcolor: #f08b2f\r\n}\r\n\r\n.mui-checkbox label.mui-disabled,\r\n.mui-checkbox.mui-disabled label,\r\n.mui-radio label.mui-disabled,\r\n.mui-radio.mui-disabled label {\r\n\topacity: .4\r\n}\r\n\r\n.mui-radio input[type=radio]:before {\r\n\tcontent: '\\E411'\r\n}\r\n\r\n.mui-radio input[type=radio]:checked:before {\r\n\tcontent: '\\E441'\r\n}\r\n\r\n.mui-checkbox input[type=checkbox]:before {\r\n\tcontent: '\\E411'\r\n}\r\n\r\n.mui-checkbox input[type=checkbox]:checked:before {\r\n\tcontent: '\\E442'\r\n}\r\n\r\n.mui-select {\r\n\tposition: relative\r\n}\r\n\r\n.mui-select:before {\r\n\tfont-family: Muiicons;\r\n\tposition: absolute;\r\n\ttop: 8px;\r\n\tright: 21px;\r\n\tcontent: '\\E581';\r\n\tcolor: rgba(170, 170, 170, .6)\r\n}\r\n\r\n.mui-input-row .mui-switch {\r\n\tfloat: right;\r\n\tmargin-top: 5px;\r\n\tmargin-right: 20px\r\n}\r\n\r\n.mui-input-range input[type=range] {\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 2px;\r\n\tmargin: 17px 0;\r\n\tpadding: 0;\r\n\tcursor: pointer;\r\n\tborder: 0;\r\n\tborder-radius: 3px;\r\n\toutline: 0;\r\n\tbackground-color: #999;\r\n\t-webkit-appearance: none!important\r\n}\r\n\r\n.mui-input-range input[type=range]::-webkit-slider-thumb {\r\n\twidth: 28px;\r\n\theight: 28px;\r\n\tborder-color: #0062cc;\r\n\tborder-radius: 50%;\r\n\tbackground-color: #f08b2f;\r\n\tbackground-clip: padding-box;\r\n\t-webkit-appearance: none!important\r\n}\r\n\r\n.mui-input-range label~input[type=range] {\r\n\twidth: 65%\r\n}\r\n\r\n.mui-input-range .mui-tooltip {\r\n\tfont-size: 36px;\r\n\tline-height: 64px;\r\n\tposition: absolute;\r\n\tz-index: 1;\r\n\ttop: -70px;\r\n\twidth: 64px;\r\n\theight: 64px;\r\n\ttext-align: center;\r\n\topacity: .8;\r\n\tcolor: #333;\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 6px;\r\n\tbackground-color: #fff;\r\n\ttext-shadow: 0 1px 0 #f3f3f3\r\n}\r\n\r\n.mui-search {\r\n\tposition: relative\r\n}\r\n\r\n.mui-search input[type=search] {\r\n\tpadding-left: 30px\r\n}\r\n\r\n.mui-search .mui-placeholder {\r\n\tfont-size: 16px;\r\n\tline-height: 34px;\r\n\tposition: absolute;\r\n\tz-index: 1;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tdisplay: inline-block;\r\n\theight: 34px;\r\n\ttext-align: center;\r\n\tcolor: #999;\r\n\tborder: 0;\r\n\tborder-radius: 6px;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-search .mui-placeholder .mui-icon {\r\n\tfont-size: 20px;\r\n\tcolor: #333\r\n}\r\n\r\n.mui-search:before {\r\n\tfont-family: Muiicons;\r\n\tfont-size: 20px;\r\n\tfont-weight: 400;\r\n\tposition: absolute;\r\n\ttop: 50%;\r\n\tright: 50%;\r\n\tdisplay: none;\r\n\tmargin-top: -18px;\r\n\tmargin-right: 31px;\r\n\tcontent: '\\E466'\r\n}\r\n\r\n.mui-search.mui-active:before {\r\n\tfont-size: 20px;\r\n\tright: auto;\r\n\tleft: 5px;\r\n\tdisplay: block;\r\n\tmargin-right: 0\r\n}\r\n\r\n.mui-search.mui-active input[type=search] {\r\n\ttext-align: left\r\n}\r\n\r\n.mui-search.mui-active .mui-placeholder {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-segmented-control {\r\n\tfont-size: 15px;\r\n\tfont-weight: 400;\r\n\tposition: relative;\r\n\tdisplay: table;\r\n\toverflow: hidden;\r\n\twidth: 100%;\r\n\ttable-layout: fixed;\r\n\tborder: 1px solid #f08b2f;\r\n\tborder-radius: 3px;\r\n\tbackground-color: transparent;\r\n\t-webkit-touch-callout: none\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-vertical {\r\n\tborder-collapse: collapse;\r\n\tborder-width: 0;\r\n\tborder-radius: 0\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-vertical .mui-control-item {\r\n\tdisplay: block;\r\n\tborder-bottom: 1px solid #c8c7cc;\r\n\tborder-left-width: 0\r\n}\r\n\r\n.mui-segmented-control.mui-scroll-wrapper {\r\n\theight: 38px\r\n}\r\n\r\n.mui-segmented-control.mui-scroll-wrapper .mui-scroll {\r\n\twidth: auto;\r\n\theight: 40px;\r\n\twhite-space: nowrap\r\n}\r\n\r\n.mui-segmented-control.mui-scroll-wrapper .mui-control-item {\r\n\tdisplay: inline-block;\r\n\twidth: auto;\r\n\tpadding: 0 20px;\r\n\tborder: 0\r\n}\r\n\r\n.mui-segmented-control .mui-control-item {\r\n\tline-height: 38px;\r\n\tdisplay: table-cell;\r\n\toverflow: hidden;\r\n\twidth: 1%;\r\n\t-webkit-transition: background-color .1s linear;\r\n\ttransition: background-color .1s linear;\r\n\ttext-align: center;\r\n\twhite-space: nowrap;\r\n\ttext-overflow: ellipsis;\r\n\tcolor: #f08b2f;\r\n\tborder-color: #f08b2f;\r\n\tborder-left: 1px solid #f08b2f\r\n}\r\n\r\n.mui-segmented-control .mui-control-item:first-child {\r\n\tborder-left-width: 0\r\n}\r\n\r\n.mui-segmented-control .mui-control-item.mui-active {\r\n\tcolor: #fff;\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-inverted {\r\n\twidth: 100%;\r\n\tborder: 0;\r\n\tborder-radius: 0\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item,\r\n.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item.mui-active {\r\n\tborder-bottom: 1px solid #c8c7cc\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {\r\n\tcolor: inherit;\r\n\tborder: 0\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {\r\n\tcolor: #f08b2f;\r\n\tborder-bottom: 2px solid #f08b2f;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-segmented-control-positive {\r\n\tborder: 1px solid #4cd964\r\n}\r\n\r\n.mui-segmented-control-positive .mui-control-item {\r\n\tcolor: #4cd964;\r\n\tborder-color: inherit\r\n}\r\n\r\n.mui-segmented-control-positive .mui-control-item.mui-active {\r\n\tcolor: #fff;\r\n\tbackground-color: #4cd964\r\n}\r\n\r\n.mui-segmented-control-positive.mui-segmented-control-inverted .mui-control-item.mui-active {\r\n\tcolor: #4cd964;\r\n\tborder-bottom: 2px solid #4cd964;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-segmented-control-positive.mui-segmented-control-inverted~.mui-slider-progress-bar {\r\n\tbackground-color: #4cd964\r\n}\r\n\r\n.mui-segmented-control-negative {\r\n\tborder: 1px solid #dd524d\r\n}\r\n\r\n.mui-segmented-control-negative .mui-control-item {\r\n\tcolor: #dd524d;\r\n\tborder-color: inherit\r\n}\r\n\r\n.mui-segmented-control-negative .mui-control-item.mui-active {\r\n\tcolor: #fff;\r\n\tbackground-color: #dd524d\r\n}\r\n\r\n.mui-segmented-control-negative.mui-segmented-control-inverted .mui-control-item.mui-active {\r\n\tcolor: #dd524d;\r\n\tborder-bottom: 2px solid #dd524d;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-segmented-control-negative.mui-segmented-control-inverted~.mui-slider-progress-bar {\r\n\tbackground-color: #dd524d\r\n}\r\n\r\n.mui-control-content {\r\n\tposition: relative;\r\n\tdisplay: none\r\n}\r\n\r\n.mui-control-content.mui-active {\r\n\tdisplay: block\r\n}\r\n\r\n.mui-popover {\r\n\tposition: absolute;\r\n\tz-index: 999;\r\n\tdisplay: none;\r\n\twidth: 280px;\r\n\t-webkit-transition: opacity .3s;\r\n\ttransition: opacity .3s;\r\n\t-webkit-transition-property: opacity;\r\n\ttransition-property: opacity;\r\n\t-webkit-transform: none;\r\n\ttransform: none;\r\n\topacity: 0;\r\n\tborder-radius: 7px;\r\n\tbackground-color: #f7f7f7;\r\n\t-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .1);\r\n\tbox-shadow: 0 0 15px rgba(0, 0, 0, .1)\r\n}\r\n\r\n.mui-popover .mui-popover-arrow {\r\n\tposition: absolute;\r\n\tz-index: 1000;\r\n\ttop: -25px;\r\n\tleft: 0;\r\n\toverflow: hidden;\r\n\twidth: 26px;\r\n\theight: 26px\r\n}\r\n\r\n.mui-popover .mui-popover-arrow:after {\r\n\tposition: absolute;\r\n\ttop: 19px;\r\n\tleft: 0;\r\n\twidth: 26px;\r\n\theight: 26px;\r\n\tcontent: ' ';\r\n\t-webkit-transform: rotate(45deg);\r\n\ttransform: rotate(45deg);\r\n\tborder-radius: 3px;\r\n\tbackground: #f7f7f7\r\n}\r\n\r\n.mui-popover .mui-popover-arrow.mui-bottom {\r\n\ttop: 100%;\r\n\tleft: -26px;\r\n\tmargin-top: -1px\r\n}\r\n\r\n.mui-popover .mui-popover-arrow.mui-bottom:after {\r\n\ttop: -19px;\r\n\tleft: 0\r\n}\r\n\r\n.mui-popover.mui-popover-action {\r\n\tbottom: 0;\r\n\twidth: 100%;\r\n\t-webkit-transition: -webkit-transform .3s, opacity .3s;\r\n\ttransition: transform .3s, opacity .3s;\r\n\t-webkit-transform: translate3d(0, 100%, 0);\r\n\ttransform: translate3d(0, 100%, 0);\r\n\tborder-radius: 0;\r\n\tbackground: 0 0;\r\n\t-webkit-box-shadow: none;\r\n\tbox-shadow: none\r\n}\r\n\r\n.mui-popover.mui-popover-action .mui-popover-arrow {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-popover.mui-popover-action.mui-popover-bottom {\r\n\tposition: fixed\r\n}\r\n\r\n.mui-popover.mui-popover-action.mui-active {\r\n\t-webkit-transform: translate3d(0, 0, 0);\r\n\ttransform: translate3d(0, 0, 0)\r\n}\r\n\r\n.mui-popover.mui-popover-action .mui-table-view {\r\n\tmargin: 8px;\r\n\ttext-align: center;\r\n\tcolor: #f08b2f;\r\n\tborder-radius: 4px\r\n}\r\n\r\n.mui-popover.mui-popover-action .mui-table-view .mui-table-view-cell:after {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\tbackground-color: #c8c7cc\r\n}\r\n\r\n.mui-popover.mui-popover-action .mui-table-view small {\r\n\tfont-weight: 400;\r\n\tline-height: 1.3;\r\n\tdisplay: block\r\n}\r\n\r\n.mui-popover.mui-active {\r\n\tdisplay: block;\r\n\topacity: 1\r\n}\r\n\r\n.mui-popover .mui-bar~.mui-table-view {\r\n\tpadding-top: 44px\r\n}\r\n\r\n.mui-backdrop {\r\n\tposition: fixed;\r\n\tz-index: 998;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tbackground-color: rgba(0, 0, 0, .3)\r\n}\r\n\r\n.mui-bar-backdrop.mui-backdrop {\r\n\tbottom: 50px;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-backdrop-action.mui-backdrop {\r\n\tbackground-color: rgba(0, 0, 0, .3)\r\n}\r\n\r\n.mui-backdrop-action.mui-backdrop,\r\n.mui-bar-backdrop.mui-backdrop {\r\n\topacity: 0\r\n}\r\n\r\n.mui-backdrop-action.mui-backdrop.mui-active,\r\n.mui-bar-backdrop.mui-backdrop.mui-active {\r\n\t-webkit-transition: all .4s ease;\r\n\ttransition: all .4s ease;\r\n\topacity: 1\r\n}\r\n\r\n.mui-popover .mui-btn-block {\r\n\tmargin-bottom: 5px\r\n}\r\n\r\n.mui-popover .mui-btn-block:last-child {\r\n\tmargin-bottom: 0\r\n}\r\n\r\n.mui-popover .mui-bar {\r\n\t-webkit-box-shadow: none;\r\n\tbox-shadow: none\r\n}\r\n\r\n.mui-popover .mui-bar-nav {\r\n\tborder-bottom: 1px solid rgba(0, 0, 0, .15);\r\n\tborder-top-left-radius: 12px;\r\n\tborder-top-right-radius: 12px;\r\n\t-webkit-box-shadow: none;\r\n\tbox-shadow: none\r\n}\r\n\r\n.mui-popover .mui-scroll-wrapper {\r\n\tmargin: 7px 0;\r\n\tborder-radius: 7px;\r\n\tbackground-clip: padding-box\r\n}\r\n\r\n.mui-popover .mui-scroll .mui-table-view {\r\n\tmax-height: none\r\n}\r\n\r\n.mui-popover .mui-table-view {\r\n\toverflow: auto;\r\n\tmax-height: 300px;\r\n\tmargin-bottom: 0;\r\n\tborder-radius: 7px;\r\n\tbackground-color: #f7f7f7;\r\n\tbackground-image: none;\r\n\t-webkit-overflow-scrolling: touch\r\n}\r\n\r\n.mui-popover .mui-table-view:after,\r\n.mui-popover .mui-table-view:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-popover .mui-table-view .mui-table-view-cell:first-child,\r\n.mui-popover .mui-table-view .mui-table-view-cell:first-child>a:not(.mui-btn) {\r\n\tborder-top-left-radius: 12px;\r\n\tborder-top-right-radius: 12px\r\n}\r\n\r\n.mui-popover .mui-table-view .mui-table-view-cell:last-child,\r\n.mui-popover .mui-table-view .mui-table-view-cell:last-child>a:not(.mui-btn) {\r\n\tborder-bottom-right-radius: 12px;\r\n\tborder-bottom-left-radius: 12px\r\n}\r\n\r\n.mui-popover.mui-bar-popover .mui-table-view {\r\n\twidth: 106px\r\n}\r\n\r\n.mui-popover.mui-bar-popover .mui-table-view .mui-table-view-cell {\r\n\tpadding: 11px 15px;\r\n\tbackground-position: 0 100%\r\n}\r\n\r\n.mui-popover.mui-bar-popover .mui-table-view .mui-table-view-cell>a:not(.mui-btn) {\r\n\tmargin: -11px -15px -11px -15px\r\n}\r\n\r\n.mui-popup-backdrop {\r\n\tposition: fixed;\r\n\tz-index: 998;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\t-webkit-transition-duration: 400ms;\r\n\ttransition-duration: 400ms;\r\n\topacity: 0;\r\n\tbackground: rgba(0, 0, 0, .4)\r\n}\r\n\r\n.mui-popup-backdrop.mui-active {\r\n\topacity: 1\r\n}\r\n\r\n.mui-popup {\r\n\tposition: fixed;\r\n\tz-index: 10000;\r\n\ttop: 50%;\r\n\tleft: 50%;\r\n\tdisplay: none;\r\n\toverflow: hidden;\r\n\twidth: 270px;\r\n\t-webkit-transition-property: -webkit-transform, opacity;\r\n\ttransition-property: transform, opacity;\r\n\t-webkit-transform: translate3d(-50%, -50%, 0) scale(1.185);\r\n\ttransform: translate3d(-50%, -50%, 0) scale(1.185);\r\n\ttext-align: center;\r\n\topacity: 0;\r\n\tcolor: #000;\r\n\tborder-radius: 4px\r\n}\r\n\r\n.mui-popup.mui-popup-in {\r\n\tdisplay: block;\r\n\t-webkit-transition-duration: 400ms;\r\n\ttransition-duration: 400ms;\r\n\t-webkit-transform: translate3d(-50%, -50%, 0) scale(1);\r\n\ttransform: translate3d(-50%, -50%, 0) scale(1);\r\n\topacity: 1\r\n}\r\n\r\n.mui-popup.mui-popup-out {\r\n\t-webkit-transition-duration: 400ms;\r\n\ttransition-duration: 400ms;\r\n\t-webkit-transform: translate3d(-50%, -50%, 0) scale(1);\r\n\ttransform: translate3d(-50%, -50%, 0) scale(1);\r\n\topacity: 0\r\n}\r\n\r\n.mui-popup-inner {\r\n\tposition: relative;\r\n\tpadding: 15px;\r\n\tborder-radius: 4px 4px 0 0;\r\n\tbackground: rgba(255, 255, 255, .95)\r\n}\r\n\r\n.mui-popup-inner:after {\r\n\tposition: absolute;\r\n\tz-index: 15;\r\n\ttop: auto;\r\n\tright: auto;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 1px;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleY(.5);\r\n\ttransform: scaleY(.5);\r\n\t-webkit-transform-origin: 50% 100%;\r\n\ttransform-origin: 50% 100%;\r\n\tbackground-color: rgba(0, 0, 0, .2)\r\n}\r\n\r\n.mui-popup-title {\r\n\tfont-size: 18px;\r\n\tfont-weight: 500;\r\n\ttext-align: center\r\n}\r\n\r\n.mui-popup-title+.mui-popup-text {\r\n\tfont-family: inherit;\r\n\tfont-size: 14px;\r\n\tmargin: 5px 0 0\r\n}\r\n\r\n.mui-popup-buttons {\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\theight: 44px;\r\n\t-webkit-box-pack: center;\r\n\t-webkit-justify-content: center;\r\n\tjustify-content: center\r\n}\r\n\r\n.mui-popup-button {\r\n\tfont-size: 14px;\r\n\tline-height: 44px;\r\n\tposition: relative;\r\n\tdisplay: block;\r\n\toverflow: hidden;\r\n\tbox-sizing: border-box;\r\n\twidth: 100%;\r\n\theight: 44px;\r\n\tpadding: 0 5px;\r\n\tcursor: pointer;\r\n\ttext-align: center;\r\n\twhite-space: nowrap;\r\n\ttext-overflow: ellipsis;\r\n\tcolor: #f08b2f;\r\n\tbackground: rgba(255, 255, 255, .95);\r\n\t-webkit-box-flex: 1\r\n}\r\n\r\n.mui-popup-button:after {\r\n\tposition: absolute;\r\n\tz-index: 15;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: auto;\r\n\tleft: auto;\r\n\tdisplay: block;\r\n\twidth: 1px;\r\n\theight: 100%;\r\n\tcontent: '';\r\n\t-webkit-transform: scaleX(.5);\r\n\ttransform: scaleX(.5);\r\n\t-webkit-transform-origin: 100% 50%;\r\n\ttransform-origin: 100% 50%;\r\n\tbackground-color: rgba(0, 0, 0, .2)\r\n}\r\n\r\n.mui-popup-button:first-child {\r\n\tborder-radius: 0 0 0 4px\r\n}\r\n\r\n.mui-popup-button:first-child:last-child {\r\n\tborder-radius: 0 0 4px 4px\r\n}\r\n\r\n.mui-popup-button:last-child {\r\n\tborder-radius: 0 0 4px\r\n}\r\n\r\n.mui-popup-button:last-child:after {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-popup-button.mui-popup-button-bold {\r\n\tfont-weight: 600\r\n}\r\n\r\n.mui-popup-input input {\r\n\tfont-size: 14px;\r\n\twidth: 100%;\r\n\theight: 26px;\r\n\tmargin: 15px 0 0;\r\n\tpadding: 0 5px;\r\n\tborder: 1px solid rgba(0, 0, 0, .3);\r\n\tborder-radius: 0;\r\n\tbackground: #fff\r\n}\r\n\r\n.mui-plus.mui-android .mui-popup-backdrop {\r\n\t-webkit-transition-duration: 1ms;\r\n\ttransition-duration: 1ms\r\n}\r\n\r\n.mui-plus.mui-android .mui-popup {\r\n\t-webkit-transition-duration: 1ms;\r\n\ttransition-duration: 1ms;\r\n\t-webkit-transform: translate3d(-50%, -50%, 0) scale(1);\r\n\ttransform: translate3d(-50%, -50%, 0) scale(1)\r\n}\r\n\r\n.mui-progressbar {\r\n\tposition: relative;\r\n\tdisplay: block;\r\n\toverflow: hidden;\r\n\twidth: 100%;\r\n\theight: 2px;\r\n\t-webkit-transform-origin: center top;\r\n\ttransform-origin: center top;\r\n\tvertical-align: middle;\r\n\tborder-radius: 2px;\r\n\tbackground: #b6b6b6;\r\n\t-webkit-transform-style: preserve-3d;\r\n\ttransform-style: preserve-3d\r\n}\r\n\r\n.mui-progressbar span {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\t-webkit-transition: 150ms;\r\n\ttransition: 150ms;\r\n\t-webkit-transform: translate3d(-100%, 0, 0);\r\n\ttransform: translate3d(-100%, 0, 0);\r\n\tbackground: #f08b2f\r\n}\r\n\r\n.mui-progressbar.mui-progressbar-infinite:before {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tcontent: '';\r\n\t-webkit-transform: translate3d(0, 0, 0);\r\n\ttransform: translate3d(0, 0, 0);\r\n\t-webkit-transform-origin: left center;\r\n\ttransform-origin: left center;\r\n\t-webkit-animation: mui-progressbar-infinite 1s linear infinite;\r\n\tanimation: mui-progressbar-infinite 1s linear infinite;\r\n\tbackground: #f08b2f\r\n}\r\n\r\nbody>.mui-progressbar {\r\n\tposition: absolute;\r\n\tz-index: 10000;\r\n\ttop: 44px;\r\n\tleft: 0;\r\n\tborder-radius: 0\r\n}\r\n\r\n.mui-progressbar-in {\r\n\t-webkit-animation: mui-progressbar-in 300ms forwards;\r\n\tanimation: mui-progressbar-in 300ms forwards\r\n}\r\n\r\n.mui-progressbar-out {\r\n\t-webkit-animation: mui-progressbar-out 300ms forwards;\r\n\tanimation: mui-progressbar-out 300ms forwards\r\n}\r\n\r\n@-webkit-keyframes mui-progressbar-in {\r\n\tfrom {\r\n\t\t-webkit-transform: scaleY(0);\r\n\t\topacity: 0\r\n\t}\r\n\tto {\r\n\t\t-webkit-transform: scaleY(1);\r\n\t\topacity: 1\r\n\t}\r\n}\r\n\r\n@keyframes mui-progressbar-in {\r\n\tfrom {\r\n\t\ttransform: scaleY(0);\r\n\t\topacity: 0\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleY(1);\r\n\t\topacity: 1\r\n\t}\r\n}\r\n\r\n@-webkit-keyframes mui-progressbar-out {\r\n\tfrom {\r\n\t\t-webkit-transform: scaleY(1);\r\n\t\topacity: 1\r\n\t}\r\n\tto {\r\n\t\t-webkit-transform: scaleY(0);\r\n\t\topacity: 0\r\n\t}\r\n}\r\n\r\n@keyframes mui-progressbar-out {\r\n\tfrom {\r\n\t\ttransform: scaleY(1);\r\n\t\topacity: 1\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleY(0);\r\n\t\topacity: 0\r\n\t}\r\n}\r\n\r\n@-webkit-keyframes mui-progressbar-infinite {\r\n\t0% {\r\n\t\t-webkit-transform: translate3d(-50%, 0, 0) scaleX(.5)\r\n\t}\r\n\t100% {\r\n\t\t-webkit-transform: translate3d(100%, 0, 0) scaleX(.5)\r\n\t}\r\n}\r\n\r\n@keyframes mui-progressbar-infinite {\r\n\t0% {\r\n\t\ttransform: translate3d(-50%, 0, 0) scaleX(.5)\r\n\t}\r\n\t100% {\r\n\t\ttransform: translate3d(100%, 0, 0) scaleX(.5)\r\n\t}\r\n}\r\n\r\n.mui-pagination {\r\n\tdisplay: inline-block;\r\n\tmargin: 0 auto;\r\n\tpadding-left: 0;\r\n\tborder-radius: 6px\r\n}\r\n\r\n.mui-pagination>li {\r\n\tdisplay: inline\r\n}\r\n\r\n.mui-pagination>li>a,\r\n.mui-pagination>li>span {\r\n\tline-height: 1.428571429;\r\n\tposition: relative;\r\n\tfloat: left;\r\n\tmargin-left: -1px;\r\n\tpadding: 6px 12px;\r\n\ttext-decoration: none;\r\n\tcolor: #f08b2f;\r\n\tborder: 1px solid #ddd;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-pagination>li:first-child>a,\r\n.mui-pagination>li:first-child>span {\r\n\tmargin-left: 0;\r\n\tborder-top-left-radius: 6px;\r\n\tborder-bottom-left-radius: 6px;\r\n\tbackground-clip: padding-box\r\n}\r\n\r\n.mui-pagination>li:last-child>a,\r\n.mui-pagination>li:last-child>span {\r\n\tborder-top-right-radius: 6px;\r\n\tborder-bottom-right-radius: 6px;\r\n\tbackground-clip: padding-box\r\n}\r\n\r\n.mui-pagination>li.mui-active>a,\r\n.mui-pagination>li.mui-active>a:active,\r\n.mui-pagination>li.mui-active>span,\r\n.mui-pagination>li.mui-active>span:active,\r\n.mui-pagination>li:active>a,\r\n.mui-pagination>li:active>a:active,\r\n.mui-pagination>li:active>span,\r\n.mui-pagination>li:active>span:active {\r\n\tz-index: 2;\r\n\tcursor: default;\r\n\tcolor: #fff;\r\n\tborder-color: #f08b2f;\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-pagination>li.mui-disabled>a,\r\n.mui-pagination>li.mui-disabled>a:active,\r\n.mui-pagination>li.mui-disabled>span,\r\n.mui-pagination>li.mui-disabled>span:active {\r\n\topacity: .6;\r\n\tcolor: #777;\r\n\tborder: 1px solid #ddd;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-pagination-lg>li>a,\r\n.mui-pagination-lg>li>span {\r\n\tfont-size: 18px;\r\n\tpadding: 10px 16px\r\n}\r\n\r\n.mui-pagination-sm>li>a,\r\n.mui-pagination-sm>li>span {\r\n\tfont-size: 12px;\r\n\tpadding: 5px 10px\r\n}\r\n\r\n.mui-pager {\r\n\tpadding-left: 0;\r\n\tlist-style: none;\r\n\ttext-align: center\r\n}\r\n\r\n.mui-pager:after,\r\n.mui-pager:before {\r\n\tdisplay: table;\r\n\tcontent: ' '\r\n}\r\n\r\n.mui-pager:after {\r\n\tclear: both\r\n}\r\n\r\n.mui-pager li {\r\n\tdisplay: inline\r\n}\r\n\r\n.mui-pager li>a,\r\n.mui-pager li>span {\r\n\tdisplay: inline-block;\r\n\tpadding: 5px 14px;\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 6px;\r\n\tbackground-color: #fff;\r\n\tbackground-clip: padding-box\r\n}\r\n\r\n.mui-pager li.mui-active>a,\r\n.mui-pager li.mui-active>span,\r\n.mui-pager li:active>a,\r\n.mui-pager li:active>span {\r\n\tcursor: default;\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tborder-color: #f08b2f;\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-pager .mui-next>a,\r\n.mui-pager .mui-next>span {\r\n\tfloat: right\r\n}\r\n\r\n.mui-pager .mui-previous>a,\r\n.mui-pager .mui-previous>span {\r\n\tfloat: left\r\n}\r\n\r\n.mui-pager .mui-disabled>a,\r\n.mui-pager .mui-disabled>a:active,\r\n.mui-pager .mui-disabled>span,\r\n.mui-pager .mui-disabled>span:active {\r\n\topacity: .6;\r\n\tcolor: #777;\r\n\tborder: 1px solid #ddd;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-modal {\r\n\tposition: fixed;\r\n\tz-index: 999;\r\n\ttop: 0;\r\n\toverflow: hidden;\r\n\twidth: 100%;\r\n\tmin-height: 100%;\r\n\t-webkit-transition: -webkit-transform .25s, opacity 1ms .25s;\r\n\ttransition: transform .25s, opacity 1ms .25s;\r\n\t-webkit-transition-timing-function: cubic-bezier(.1, .5, .1, 1);\r\n\ttransition-timing-function: cubic-bezier(.1, .5, .1, 1);\r\n\t-webkit-transform: translate3d(0, 100%, 0);\r\n\ttransform: translate3d(0, 100%, 0);\r\n\topacity: 0;\r\n\tbackground-color: #fff\r\n}\r\n\r\n.mui-modal.mui-active {\r\n\theight: 100%;\r\n\t-webkit-transition: -webkit-transform .25s;\r\n\ttransition: transform .25s;\r\n\t-webkit-transition-timing-function: cubic-bezier(.1, .5, .1, 1);\r\n\ttransition-timing-function: cubic-bezier(.1, .5, .1, 1);\r\n\t-webkit-transform: translate3d(0, 0, 0);\r\n\ttransform: translate3d(0, 0, 0);\r\n\topacity: 1\r\n}\r\n\r\n.mui-android .mui-modal .mui-bar {\r\n\tposition: static\r\n}\r\n\r\n.mui-android .mui-modal .mui-bar-nav~.mui-content {\r\n\tpadding-top: 0\r\n}\r\n\r\n.mui-slider {\r\n\tposition: relative;\r\n\tz-index: 1;\r\n\toverflow: hidden;\r\n\twidth: 100%\r\n}\r\n\r\n.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {\r\n\tborder-bottom: 0\r\n}\r\n\r\n.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {\r\n\tborder-top: 1px solid #c8c7cc;\r\n\tborder-bottom: 1px solid #c8c7cc\r\n}\r\n\r\n.mui-slider .mui-slider-group {\r\n\tfont-size: 0;\r\n\tposition: relative;\r\n\t-webkit-transition: all 0s linear;\r\n\ttransition: all 0s linear;\r\n\twhite-space: nowrap\r\n}\r\n\r\n.mui-slider .mui-slider-group .mui-slider-item {\r\n\tfont-size: 14px;\r\n\tposition: relative;\r\n\tdisplay: inline-block;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tvertical-align: top;\r\n\twhite-space: normal\r\n}\r\n\r\n.mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item) {\r\n\tline-height: 0;\r\n\tposition: relative;\r\n\tdisplay: block\r\n}\r\n\r\n.mui-slider .mui-slider-group .mui-slider-item img {\r\n\twidth: 100%\r\n}\r\n\r\n.mui-slider .mui-slider-group .mui-slider-item .mui-table-view:after,\r\n.mui-slider .mui-slider-group .mui-slider-item .mui-table-view:before {\r\n\theight: 0\r\n}\r\n\r\n.mui-slider .mui-slider-group.mui-slider-loop {\r\n\t-webkit-transform: translate(-100%, 0);\r\n\ttransform: translate(-100%, 0)\r\n}\r\n\r\n.mui-slider-title {\r\n\tline-height: 30px;\r\n\tposition: absolute;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 30px;\r\n\tmargin: 0;\r\n\ttext-align: left;\r\n\ttext-indent: 12px;\r\n\topacity: .8;\r\n\tbackground-color: #000\r\n}\r\n\r\n.mui-slider-indicator {\r\n\tposition: absolute;\r\n\tbottom: 8px;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n\tbackground: 0 0\r\n}\r\n\r\n.mui-slider-indicator.mui-segmented-control {\r\n\tposition: relative;\r\n\tbottom: auto\r\n}\r\n\r\n.mui-slider-indicator .mui-indicator {\r\n\tdisplay: inline-block;\r\n\twidth: 6px;\r\n\theight: 6px;\r\n\tmargin: 1px 6px;\r\n\tcursor: pointer;\r\n\tborder-radius: 50%;\r\n\tbackground: #aaa;\r\n\t-webkit-box-shadow: 0 0 1px 1px rgba(130, 130, 130, .7);\r\n\tbox-shadow: 0 0 1px 1px rgba(130, 130, 130, .7)\r\n}\r\n\r\n.mui-slider-indicator .mui-active.mui-indicator {\r\n\tbackground: #fff\r\n}\r\n\r\n.mui-slider-indicator .mui-icon {\r\n\tfont-size: 20px;\r\n\tline-height: 30px;\r\n\twidth: 40px;\r\n\theight: 30px;\r\n\tmargin: 3px;\r\n\ttext-align: center;\r\n\tborder: 1px solid #ddd\r\n}\r\n\r\n.mui-slider-indicator .mui-number {\r\n\tline-height: 32px;\r\n\tdisplay: inline-block;\r\n\twidth: 58px\r\n}\r\n\r\n.mui-slider-indicator .mui-number span {\r\n\tcolor: #ff5053\r\n}\r\n\r\n.mui-slider-progress-bar {\r\n\tz-index: 1;\r\n\theight: 2px;\r\n\t-webkit-transform: translateZ(0);\r\n\ttransform: translateZ(0)\r\n}\r\n\r\n.mui-switch {\r\n\tposition: relative;\r\n\tdisplay: block;\r\n\twidth: 74px;\r\n\theight: 30px;\r\n\t-webkit-transition-timing-function: ease-in-out;\r\n\ttransition-timing-function: ease-in-out;\r\n\t-webkit-transition-duration: .2s;\r\n\ttransition-duration: .2s;\r\n\t-webkit-transition-property: background-color, border;\r\n\ttransition-property: background-color, border;\r\n\tborder: 2px solid #ddd;\r\n\tborder-radius: 20px;\r\n\tbackground-color: #fff;\r\n\tbackground-clip: padding-box\r\n}\r\n\r\n.mui-switch.mui-disabled {\r\n\topacity: .3\r\n}\r\n\r\n.mui-switch .mui-switch-handle {\r\n\tposition: absolute;\r\n\tz-index: 1;\r\n\ttop: -1px;\r\n\tleft: -1px;\r\n\twidth: 28px;\r\n\theight: 28px;\r\n\t-webkit-transition: .2s ease-in-out;\r\n\ttransition: .2s ease-in-out;\r\n\t-webkit-transition-property: -webkit-transform, width, left;\r\n\ttransition-property: transform, width, left;\r\n\tborder-radius: 16px;\r\n\tbackground-color: #fff;\r\n\tbackground-clip: padding-box;\r\n\t-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .4);\r\n\tbox-shadow: 0 2px 5px rgba(0, 0, 0, .4)\r\n}\r\n\r\n.mui-switch:before {\r\n\tfont-size: 13px;\r\n\tposition: absolute;\r\n\ttop: 3px;\r\n\tright: 11px;\r\n\tcontent: 'Off';\r\n\ttext-transform: uppercase;\r\n\tcolor: #999\r\n}\r\n\r\n.mui-switch.mui-dragging {\r\n\tborder-color: #f7f7f7;\r\n\tbackground-color: #f7f7f7\r\n}\r\n\r\n.mui-switch.mui-dragging .mui-switch-handle {\r\n\twidth: 38px\r\n}\r\n\r\n.mui-switch.mui-dragging.mui-active .mui-switch-handle {\r\n\tleft: -11px;\r\n\twidth: 38px\r\n}\r\n\r\n.mui-switch.mui-active {\r\n\tborder-color: #4cd964;\r\n\tbackground-color: #4cd964\r\n}\r\n\r\n.mui-switch.mui-active .mui-switch-handle {\r\n\t-webkit-transform: translate(43px, 0);\r\n\ttransform: translate(43px, 0)\r\n}\r\n\r\n.mui-switch.mui-active:before {\r\n\tright: auto;\r\n\tleft: 15px;\r\n\tcontent: 'On';\r\n\tcolor: #fff\r\n}\r\n\r\n.mui-switch input[type=checkbox] {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-switch-mini {\r\n\twidth: 47px\r\n}\r\n\r\n.mui-switch-mini:before {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-switch-mini.mui-active .mui-switch-handle {\r\n\t-webkit-transform: translate(16px, 0);\r\n\ttransform: translate(16px, 0)\r\n}\r\n\r\n.mui-switch-blue.mui-active {\r\n\tborder: 2px solid #f08b2f;\r\n\tbackground-color: #f08b2f\r\n}\r\n\r\n.mui-content.mui-fade {\r\n\tleft: 0;\r\n\topacity: 0\r\n}\r\n\r\n.mui-content.mui-fade.mui-in {\r\n\topacity: 1\r\n}\r\n\r\n.mui-content.mui-sliding {\r\n\tz-index: 2;\r\n\t-webkit-transition: -webkit-transform .4s;\r\n\ttransition: transform .4s;\r\n\t-webkit-transform: translate3d(0, 0, 0);\r\n\ttransform: translate3d(0, 0, 0)\r\n}\r\n\r\n.mui-content.mui-sliding.mui-left {\r\n\tz-index: 1;\r\n\t-webkit-transform: translate3d(-100%, 0, 0);\r\n\ttransform: translate3d(-100%, 0, 0)\r\n}\r\n\r\n.mui-content.mui-sliding.mui-right {\r\n\tz-index: 3;\r\n\t-webkit-transform: translate3d(100%, 0, 0);\r\n\ttransform: translate3d(100%, 0, 0)\r\n}\r\n\r\n.mui-navigate-right:after,\r\n.mui-push-left:after,\r\n.mui-push-right:after {\r\n\tfont-family: Muiicons;\r\n\tfont-size: inherit;\r\n\tline-height: 1;\r\n\tposition: absolute;\r\n\ttop: 50%;\r\n\tdisplay: inline-block;\r\n\t-webkit-transform: translateY(-50%);\r\n\ttransform: translateY(-50%);\r\n\ttext-decoration: none;\r\n\tcolor: #bbb;\r\n\t-webkit-font-smoothing: antialiased\r\n}\r\n\r\n.mui-push-left:after {\r\n\tleft: 15px;\r\n\tcontent: '\\E582'\r\n}\r\n\r\n.mui-navigate-right:after,\r\n.mui-push-right:after {\r\n\tright: 15px;\r\n\tcontent: '\\E583'\r\n}\r\n\r\n.mui-pull-bottom-pocket,\r\n.mui-pull-top-pocket {\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\tdisplay: block;\r\n\tvisibility: hidden;\r\n\toverflow: hidden;\r\n\twidth: 100%;\r\n\theight: 50px\r\n}\r\n\r\n.mui-plus-pullrefresh .mui-pull-bottom-pocket,\r\n.mui-plus-pullrefresh .mui-pull-top-pocket {\r\n\tdisplay: none;\r\n\tvisibility: visible\r\n}\r\n\r\n.mui-pull-top-pocket {\r\n\ttop: 0\r\n}\r\n\r\n.mui-bar-nav~.mui-content .mui-pull-top-pocket {\r\n\ttop: 44px\r\n}\r\n\r\n.mui-bar-nav~.mui-bar-header-secondary~.mui-content .mui-pull-top-pocket {\r\n\ttop: 88px\r\n}\r\n\r\n.mui-pull-bottom-pocket {\r\n\tposition: relative;\r\n\tbottom: 0;\r\n\theight: 40px\r\n}\r\n\r\n.mui-pull-bottom-pocket .mui-pull-loading {\r\n\tvisibility: hidden\r\n}\r\n\r\n.mui-pull-bottom-pocket .mui-pull-loading.mui-in {\r\n\tdisplay: inline-block\r\n}\r\n\r\n.mui-pull {\r\n\tfont-weight: 700;\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tbottom: 10px;\r\n\tleft: 0;\r\n\ttext-align: center;\r\n\tcolor: #777\r\n}\r\n\r\n.mui-pull-loading {\r\n\tmargin-right: 10px;\r\n\t-webkit-transition: -webkit-transform .4s;\r\n\ttransition: transform .4s;\r\n\t-webkit-transition-duration: 400ms;\r\n\ttransition-duration: 400ms;\r\n\tvertical-align: middle\r\n}\r\n\r\n.mui-pull-loading.mui-reverse {\r\n\t-webkit-transform: rotate(180deg) translateZ(0);\r\n\ttransform: rotate(180deg) translateZ(0)\r\n}\r\n\r\n.mui-pull-caption {\r\n\tfont-size: 15px;\r\n\tline-height: 24px;\r\n\tposition: relative;\r\n\tdisplay: inline-block;\r\n\toverflow: visible;\r\n\tmargin-top: 0;\r\n\tvertical-align: middle\r\n}\r\n\r\n.mui-pull-caption span {\r\n\tdisplay: none\r\n}\r\n\r\n.mui-pull-caption span.mui-in {\r\n\tdisplay: inline\r\n}\r\n\r\n.mui-toast-container {\r\n\tline-height: 17px;\r\n\tposition: fixed;\r\n\tz-index: 9999;\r\n\tbottom: 50px;\r\n\tleft: 50%;\r\n\t-webkit-transition: opacity .3s;\r\n\ttransition: opacity .3s;\r\n\t-webkit-transform: translate(-50%, 0);\r\n\ttransform: translate(-50%, 0);\r\n\topacity: 0\r\n}\r\n\r\n.mui-toast-container.mui-active {\r\n\topacity: .9\r\n}\r\n\r\n.mui-toast-message {\r\n\tfont-size: 14px;\r\n\tpadding: 10px 25px;\r\n\ttext-align: center;\r\n\tcolor: #fff;\r\n\tborder-radius: 6px;\r\n\tbackground-color: #323232\r\n}\r\n\r\n.mui-numbox {\r\n\tposition: relative;\r\n\tdisplay: inline-block;\r\n\toverflow: hidden;\r\n\twidth: 120px;\r\n\theight: 35px;\r\n\tpadding: 0 40px;\r\n\tvertical-align: top;\r\n\tvertical-align: middle;\r\n\tborder: solid 1px #bbb;\r\n\tborder-radius: 3px;\r\n\tbackground-color: #efeff4\r\n}\r\n\r\n.mui-numbox [class*=btn-numbox],\r\n.mui-numbox [class*=numbox-btn] {\r\n\tfont-size: 18px;\r\n\tfont-weight: 400;\r\n\tline-height: 100%;\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\toverflow: hidden;\r\n\twidth: 40px;\r\n\theight: 100%;\r\n\tpadding: 0;\r\n\tcolor: #555;\r\n\tborder: none;\r\n\tborder-radius: 0;\r\n\tbackground-color: #f9f9f9\r\n}\r\n\r\n.mui-numbox [class*=btn-numbox]:active,\r\n.mui-numbox [class*=numbox-btn]:active {\r\n\tbackground-color: #ccc\r\n}\r\n\r\n.mui-numbox [class*=btn-numbox][disabled],\r\n.mui-numbox [class*=numbox-btn][disabled] {\r\n\tcolor: silver\r\n}\r\n\r\n.mui-numbox .mui-btn-numbox-plus,\r\n.mui-numbox .mui-numbox-btn-plus {\r\n\tright: 0;\r\n\tborder-top-right-radius: 3px;\r\n\tborder-bottom-right-radius: 3px\r\n}\r\n\r\n.mui-numbox .mui-btn-numbox-minus,\r\n.mui-numbox .mui-numbox-btn-minus {\r\n\tleft: 0;\r\n\tborder-top-left-radius: 3px;\r\n\tborder-bottom-left-radius: 3px\r\n}\r\n\r\n.mui-numbox .mui-input-numbox,\r\n.mui-numbox .mui-numbox-input {\r\n\tdisplay: inline-block;\r\n\toverflow: hidden;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tmargin: 0;\r\n\tpadding: 0 3px!important;\r\n\ttext-align: center;\r\n\ttext-overflow: ellipsis;\r\n\tword-break: normal;\r\n\tborder: none;\r\n\tborder-right: solid 1px #ccc;\r\n\tborder-left: solid 1px #ccc;\r\n\tborder-radius: 0!important\r\n}\r\n\r\n.mui-input-row .mui-numbox {\r\n\tfloat: right;\r\n\tmargin: 2px 8px\r\n}\r\n\r\n@font-face {\r\n\tfont-family: Muiicons;\r\n\tfont-weight: 400;\r\n\tfont-style: normal;\r\n\tsrc: url(" + escape(__webpack_require__(34)) + ") format('truetype')\r\n}\r\n\r\n.mui-icon {\r\n\tfont-family: Muiicons;\r\n\tfont-size: 24px;\r\n\tfont-weight: 400;\r\n\tfont-style: normal;\r\n\tline-height: 1;\r\n\tdisplay: inline-block;\r\n\ttext-decoration: none;\r\n\t-webkit-font-smoothing: antialiased\r\n}\r\n\r\n.mui-icon.mui-active {\r\n\tcolor: #f08b2f\r\n}\r\n\r\n.mui-icon.mui-right:before {\r\n\tfloat: right;\r\n\tpadding-left: .2em\r\n}\r\n\r\n.mui-icon-contact:before {\r\n\tcontent: '\\E100'\r\n}\r\n\r\n.mui-icon-person:before {\r\n\tcontent: '\\E101'\r\n}\r\n\r\n.mui-icon-personadd:before {\r\n\tcontent: '\\E102'\r\n}\r\n\r\n.mui-icon-contact-filled:before {\r\n\tcontent: '\\E130'\r\n}\r\n\r\n.mui-icon-person-filled:before {\r\n\tcontent: '\\E131'\r\n}\r\n\r\n.mui-icon-personadd-filled:before {\r\n\tcontent: '\\E132'\r\n}\r\n\r\n.mui-icon-phone:before {\r\n\tcontent: '\\E200'\r\n}\r\n\r\n.mui-icon-email:before {\r\n\tcontent: '\\E201'\r\n}\r\n\r\n.mui-icon-chatbubble:before {\r\n\tcontent: '\\E202'\r\n}\r\n\r\n.mui-icon-chatboxes:before {\r\n\tcontent: '\\E203'\r\n}\r\n\r\n.mui-icon-phone-filled:before {\r\n\tcontent: '\\E230'\r\n}\r\n\r\n.mui-icon-email-filled:before {\r\n\tcontent: '\\E231'\r\n}\r\n\r\n.mui-icon-chatbubble-filled:before {\r\n\tcontent: '\\E232'\r\n}\r\n\r\n.mui-icon-chatboxes-filled:before {\r\n\tcontent: '\\E233'\r\n}\r\n\r\n.mui-icon-weibo:before {\r\n\tcontent: '\\E260'\r\n}\r\n\r\n.mui-icon-weixin:before {\r\n\tcontent: '\\E261'\r\n}\r\n\r\n.mui-icon-pengyouquan:before {\r\n\tcontent: '\\E262'\r\n}\r\n\r\n.mui-icon-chat:before {\r\n\tcontent: '\\E263'\r\n}\r\n\r\n.mui-icon-qq:before {\r\n\tcontent: '\\E264'\r\n}\r\n\r\n.mui-icon-videocam:before {\r\n\tcontent: '\\E300'\r\n}\r\n\r\n.mui-icon-camera:before {\r\n\tcontent: '\\E301'\r\n}\r\n\r\n.mui-icon-mic:before {\r\n\tcontent: '\\E302'\r\n}\r\n\r\n.mui-icon-location:before {\r\n\tcontent: '\\E303'\r\n}\r\n\r\n.mui-icon-mic-filled:before,\r\n.mui-icon-speech:before {\r\n\tcontent: '\\E332'\r\n}\r\n\r\n.mui-icon-location-filled:before {\r\n\tcontent: '\\E333'\r\n}\r\n\r\n.mui-icon-micoff:before {\r\n\tcontent: '\\E360'\r\n}\r\n\r\n.mui-icon-image:before {\r\n\tcontent: '\\E363'\r\n}\r\n\r\n.mui-icon-map:before {\r\n\tcontent: '\\E364'\r\n}\r\n\r\n.mui-icon-compose:before {\r\n\tcontent: '\\E400'\r\n}\r\n\r\n.mui-icon-trash:before {\r\n\tcontent: '\\E401'\r\n}\r\n\r\n.mui-icon-upload:before {\r\n\tcontent: '\\E402'\r\n}\r\n\r\n.mui-icon-download:before {\r\n\tcontent: '\\E403'\r\n}\r\n\r\n.mui-icon-close:before {\r\n\tcontent: '\\E404'\r\n}\r\n\r\n.mui-icon-redo:before {\r\n\tcontent: '\\E405'\r\n}\r\n\r\n.mui-icon-undo:before {\r\n\tcontent: '\\E406'\r\n}\r\n\r\n.mui-icon-refresh:before {\r\n\tcontent: '\\E407'\r\n}\r\n\r\n.mui-icon-star:before {\r\n\tcontent: '\\E408'\r\n}\r\n\r\n.mui-icon-plus:before {\r\n\tcontent: '\\E409'\r\n}\r\n\r\n.mui-icon-minus:before {\r\n\tcontent: '\\E410'\r\n}\r\n\r\n.mui-icon-checkbox:before,\r\n.mui-icon-circle:before {\r\n\tcontent: '\\E411'\r\n}\r\n\r\n.mui-icon-clear:before,\r\n.mui-icon-close-filled:before {\r\n\tcontent: '\\E434'\r\n}\r\n\r\n.mui-icon-refresh-filled:before {\r\n\tcontent: '\\E437'\r\n}\r\n\r\n.mui-icon-star-filled:before {\r\n\tcontent: '\\E438'\r\n}\r\n\r\n.mui-icon-plus-filled:before {\r\n\tcontent: '\\E439'\r\n}\r\n\r\n.mui-icon-minus-filled:before {\r\n\tcontent: '\\E440'\r\n}\r\n\r\n.mui-icon-circle-filled:before {\r\n\tcontent: '\\E441'\r\n}\r\n\r\n.mui-icon-checkbox-filled:before {\r\n\tcontent: '\\E442'\r\n}\r\n\r\n.mui-icon-closeempty:before {\r\n\tcontent: '\\E460'\r\n}\r\n\r\n.mui-icon-refreshempty:before {\r\n\tcontent: '\\E461'\r\n}\r\n\r\n.mui-icon-reload:before {\r\n\tcontent: '\\E462'\r\n}\r\n\r\n.mui-icon-starhalf:before {\r\n\tcontent: '\\E463'\r\n}\r\n\r\n.mui-icon-spinner:before {\r\n\tcontent: '\\E464'\r\n}\r\n\r\n.mui-icon-spinner-cycle:before {\r\n\tcontent: '\\E465'\r\n}\r\n\r\n.mui-icon-search:before {\r\n\tcontent: '\\E466'\r\n}\r\n\r\n.mui-icon-plusempty:before {\r\n\tcontent: '\\E468'\r\n}\r\n\r\n.mui-icon-forward:before {\r\n\tcontent: '\\E470'\r\n}\r\n\r\n.mui-icon-back:before,\r\n.mui-icon-left-nav:before {\r\n\tcontent: '\\E471'\r\n}\r\n\r\n.mui-icon-checkmarkempty:before {\r\n\tcontent: '\\E472'\r\n}\r\n\r\n.mui-icon-home:before {\r\n\tcontent: '\\E500'\r\n}\r\n\r\n.mui-icon-navigate:before {\r\n\tcontent: '\\E501'\r\n}\r\n\r\n.mui-icon-gear:before {\r\n\tcontent: '\\E502'\r\n}\r\n\r\n.mui-icon-paperplane:before {\r\n\tcontent: '\\E503'\r\n}\r\n\r\n.mui-icon-info:before {\r\n\tcontent: '\\E504'\r\n}\r\n\r\n.mui-icon-help:before {\r\n\tcontent: '\\E505'\r\n}\r\n\r\n.mui-icon-locked:before {\r\n\tcontent: '\\E506'\r\n}\r\n\r\n.mui-icon-more:before {\r\n\tcontent: '\\E507'\r\n}\r\n\r\n.mui-icon-flag:before {\r\n\tcontent: '\\E508'\r\n}\r\n\r\n.mui-icon-home-filled:before {\r\n\tcontent: '\\E530'\r\n}\r\n\r\n.mui-icon-gear-filled:before {\r\n\tcontent: '\\E532'\r\n}\r\n\r\n.mui-icon-info-filled:before {\r\n\tcontent: '\\E534'\r\n}\r\n\r\n.mui-icon-help-filled:before {\r\n\tcontent: '\\E535'\r\n}\r\n\r\n.mui-icon-more-filled:before {\r\n\tcontent: '\\E537'\r\n}\r\n\r\n.mui-icon-settings:before {\r\n\tcontent: '\\E560'\r\n}\r\n\r\n.mui-icon-list:before {\r\n\tcontent: '\\E562'\r\n}\r\n\r\n.mui-icon-bars:before {\r\n\tcontent: '\\E563'\r\n}\r\n\r\n.mui-icon-loop:before {\r\n\tcontent: '\\E565'\r\n}\r\n\r\n.mui-icon-paperclip:before {\r\n\tcontent: '\\E567'\r\n}\r\n\r\n.mui-icon-eye:before {\r\n\tcontent: '\\E568'\r\n}\r\n\r\n.mui-icon-arrowup:before {\r\n\tcontent: '\\E580'\r\n}\r\n\r\n.mui-icon-arrowdown:before {\r\n\tcontent: '\\E581'\r\n}\r\n\r\n.mui-icon-arrowleft:before {\r\n\tcontent: '\\E582'\r\n}\r\n\r\n.mui-icon-arrowright:before {\r\n\tcontent: '\\E583'\r\n}\r\n\r\n.mui-icon-arrowthinup:before {\r\n\tcontent: '\\E584'\r\n}\r\n\r\n.mui-icon-arrowthindown:before {\r\n\tcontent: '\\E585'\r\n}\r\n\r\n.mui-icon-arrowthinleft:before {\r\n\tcontent: '\\E586'\r\n}\r\n\r\n.mui-icon-arrowthinright:before {\r\n\tcontent: '\\E587'\r\n}\r\n\r\n.mui-icon-pulldown:before {\r\n\tcontent: '\\E588'\r\n}\r\n\r\n.mui-fullscreen {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0\r\n}\r\n\r\n.mui-fullscreen.mui-slider .mui-slider-group {\r\n\theight: 100%\r\n}\r\n\r\n.mui-fullscreen .mui-segmented-control~.mui-slider-group {\r\n\tposition: absolute;\r\n\ttop: 40px;\r\n\tbottom: 0;\r\n\twidth: 100%;\r\n\theight: auto\r\n}\r\n\r\n.mui-fullscreen.mui-slider .mui-slider-item>a {\r\n\ttop: 50%;\r\n\t-webkit-transform: translateY(-50%);\r\n\ttransform: translateY(-50%)\r\n}\r\n\r\n.mui-fullscreen .mui-off-canvas-wrap .mui-slider-item>a {\r\n\ttop: auto;\r\n\t-webkit-transform: none;\r\n\ttransform: none\r\n}\r\n\r\n.mui-bar-nav~.mui-content .mui-slider.mui-fullscreen {\r\n\ttop: 44px\r\n}\r\n\r\n.mui-bar-tab~.mui-content .mui-slider.mui-fullscreen .mui-segmented-control~.mui-slider-group {\r\n\tbottom: 50px\r\n}\r\n\r\n.mui-android.mui-android-4-0 input:focus,\r\n.mui-android.mui-android-4-0 textarea:focus {\r\n\t-webkit-user-modify: inherit\r\n}\r\n\r\n.mui-android.mui-android-4-2 input,\r\n.mui-android.mui-android-4-2 textarea,\r\n.mui-android.mui-android-4-3 input,\r\n.mui-android.mui-android-4-3 textarea {\r\n\t-webkit-user-select: text\r\n}\r\n\r\n.mui-ios .mui-table-view-cell {\r\n\t-webkit-transform-style: preserve-3d;\r\n\ttransform-style: preserve-3d\r\n}\r\n\r\n.mui-plus-visible,\r\n.mui-wechat-visible {\r\n\tdisplay: none!important\r\n}\r\n\r\n.mui-plus-hidden,\r\n.mui-wechat-hidden {\r\n\tdisplay: block!important\r\n}\r\n\r\n.mui-tab-item.mui-plus-hidden,\r\n.mui-tab-item.mui-wechat-hidden {\r\n\tdisplay: table-cell!important\r\n}\r\n\r\n.mui-plus .mui-plus-visible,\r\n.mui-wechat .mui-wechat-visible {\r\n\tdisplay: block!important\r\n}\r\n\r\n.mui-plus .mui-tab-item.mui-plus-visible,\r\n.mui-wechat .mui-tab-item.mui-wechat-visible {\r\n\tdisplay: table-cell!important\r\n}\r\n\r\n.mui-plus .mui-plus-hidden,\r\n.mui-wechat .mui-wechat-hidden {\r\n\tdisplay: none!important\r\n}\r\n\r\n.mui-plus.mui-statusbar.mui-statusbar-offset .mui-bar-nav {\r\n\theight: 64px;\r\n\tpadding-top: 20px\r\n}\r\n\r\n.mui-plus.mui-statusbar.mui-statusbar-offset .mui-bar-nav~.mui-content {\r\n\tpadding-top: 64px\r\n}\r\n\r\n.mui-plus.mui-statusbar.mui-statusbar-offset .mui-bar-header-secondary,\r\n.mui-plus.mui-statusbar.mui-statusbar-offset .mui-bar-nav~.mui-content .mui-pull-top-pocket {\r\n\ttop: 64px\r\n}\r\n\r\n.mui-plus.mui-statusbar.mui-statusbar-offset .mui-bar-header-secondary~.mui-content {\r\n\tpadding-top: 94px\r\n}\r\n\r\n.mui-iframe-wrapper {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\tleft: 0;\r\n\t-webkit-overflow-scrolling: touch\r\n}\r\n\r\n.mui-iframe-wrapper iframe {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tborder: 0\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
+}
+
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+module.exports = "data:font/ttf;base64,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GyFZY7ABRWJgIy4jICA8ijgjIVktsDMssAAWILAJQyAuRyNHI2EgYLAgYGawgGIjICA8ijgtsDQsIyAuRrACJUZSWCA8WS6xJAEUKy2wNSwjIC5GsAIlRlBYIDxZLrEkARQrLbA2LCMgLkawAiVGUlggPFkjIC5GsAIlRlBYIDxZLrEkARQrLbA3LLAuKyMgLkawAiVGUlggPFkusSQBFCstsDgssC8riiAgPLAEI0KKOCMgLkawAiVGUlggPFkusSQBFCuwBEMusCQrLbA5LLAAFrAEJbAEJiAuRyNHI2GwBkUrIyA8IC4jOLEkARQrLbA6LLEJBCVCsAAWsAQlsAQlIC5HI0cjYSCwBCNCsAZFKyCwYFBYILBAUVizAiADIBuzAiYDGllCQiMgR7AEQ7CAYmAgsAArIIqKYSCwAkNgZCOwA0NhZFBYsAJDYRuwA0NgWbADJbCAYmGwAiVGYTgjIDwjOBshICBGI0ewACsjYTghWbEkARQrLbA7LLAuKy6xJAEUKy2wPCywLyshIyAgPLAEI0IjOLEkARQrsARDLrAkKy2wPSywABUgR7AAI0KyAAEBFRQTLrAqKi2wPiywABUgR7AAI0KyAAEBFRQTLrAqKi2wPyyxAAEUE7ArKi2wQCywLSotsEEssAAWRSMgLiBGiiNhOLEkARQrLbBCLLAJI0KwQSstsEMssgAAOistsEQssgABOistsEUssgEAOistsEYssgEBOistsEcssgAAOystsEgssgABOystsEkssgEAOystsEossgEBOystsEsssgAANystsEwssgABNystsE0ssgEANystsE4ssgEBNystsE8ssgAAOSstsFAssgABOSstsFEssgEAOSstsFIssgEBOSstsFMssgAAPCstsFQssgABPCstsFUssgEAPCstsFYssgEBPCstsFcssgAAOCstsFgssgABOCstsFkssgEAOCstsFossgEBOCstsFsssDArLrEkARQrLbBcLLAwK7A0Ky2wXSywMCuwNSstsF4ssAAWsDArsDYrLbBfLLAxKy6xJAEUKy2wYCywMSuwNCstsGEssDErsDUrLbBiLLAxK7A2Ky2wYyywMisusSQBFCstsGQssDIrsDQrLbBlLLAyK7A1Ky2wZiywMiuwNistsGcssDMrLrEkARQrLbBoLLAzK7A0Ky2waSywMyuwNSstsGossDMrsDYrLbBrLCuwCGWwAyRQeLABFTAtAABLuADIUlixAQGOWbkIAAgAYyCwASNEILADI3CwDkUgIEu4AA5RS7AGU1pYsDQbsChZYGYgilVYsAIlYbABRWMjYrACI0SzCgkFBCuzCgsFBCuzDg8FBCtZsgQoCUVSRLMKDQYEK7EGAUSxJAGIUViwQIhYsQYDRLEmAYhRWLgEAIhYsQYBRFlZWVm4Af+FsASNsQUARAAAAA=="
+
+/***/ }),
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(27);
+var content = __webpack_require__(36);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var add = __webpack_require__(28).default
+var add = __webpack_require__(37).default
 var update = add("4a0bc8f0", content, false, {});
 // Hot Module Replacement
 if(false) {
@@ -15483,7 +26048,7 @@ if(false) {
 }
 
 /***/ }),
-/* 27 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -15497,13 +26062,13 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 28 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["default"] = addStylesClient;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listToStyles__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listToStyles__ = __webpack_require__(38);
 /*
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
@@ -15729,7 +26294,7 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 29 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15764,7 +26329,7 @@ function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 30 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15841,7 +26406,2114 @@ if (false) {
 }
 
 /***/ }),
-/* 31 */
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * =====================================================
+ * Mui v3.6.1 (http://dev.dcloud.net.cn/mui)
+ * =====================================================
+ */
+var mui = function (a, b) {
+  var c = /complete|loaded|interactive/,
+      d = /^#([\w-]+)$/,
+      e = /^\.([\w-]+)$/,
+      f = /^[\w-]+$/,
+      g = /translate(?:3d)?\((.+?)\)/,
+      h = /matrix(3d)?\((.+?)\)/,
+      i = function (b, c) {
+    if (c = c || a, !b) return j();if ("object" == typeof b) return i.isArrayLike(b) ? j(i.slice.call(b), null) : j([b], null);if ("function" == typeof b) return i.ready(b);if ("string" == typeof b) try {
+      if (b = b.trim(), d.test(b)) {
+        var e = a.getElementById(RegExp.$1);return j(e ? [e] : []);
+      }return j(i.qsa(b, c), b);
+    } catch (f) {}return j();
+  },
+      j = function (a, b) {
+    return a = a || [], Object.setPrototypeOf(a, i.fn), a.selector = b || "", a;
+  };i.uuid = 0, i.data = {}, i.extend = function () {
+    var a,
+        c,
+        d,
+        e,
+        f,
+        g,
+        h = arguments[0] || {},
+        j = 1,
+        k = arguments.length,
+        l = !1;for ("boolean" == typeof h && (l = h, h = arguments[j] || {}, j++), "object" == typeof h || i.isFunction(h) || (h = {}), j === k && (h = this, j--); k > j; j++) if (null != (a = arguments[j])) for (c in a) d = h[c], e = a[c], h !== e && (l && e && (i.isPlainObject(e) || (f = i.isArray(e))) ? (f ? (f = !1, g = d && i.isArray(d) ? d : []) : g = d && i.isPlainObject(d) ? d : {}, h[c] = i.extend(l, g, e)) : e !== b && (h[c] = e));return h;
+  }, i.noop = function () {}, i.slice = [].slice, i.filter = [].filter, i.type = function (a) {
+    return null == a ? String(a) : k[{}.toString.call(a)] || "object";
+  }, i.isArray = Array.isArray || function (a) {
+    return a instanceof Array;
+  }, i.isArrayLike = function (a) {
+    var b = !!a && "length" in a && a.length,
+        c = i.type(a);return "function" === c || i.isWindow(a) ? !1 : "array" === c || 0 === b || "number" == typeof b && b > 0 && b - 1 in a;
+  }, i.isWindow = function (a) {
+    return null != a && a === a.window;
+  }, i.isObject = function (a) {
+    return "object" === i.type(a);
+  }, i.isPlainObject = function (a) {
+    return i.isObject(a) && !i.isWindow(a) && Object.getPrototypeOf(a) === Object.prototype;
+  }, i.isEmptyObject = function (a) {
+    for (var c in a) if (c !== b) return !1;return !0;
+  }, i.isFunction = function (a) {
+    return "function" === i.type(a);
+  }, i.qsa = function (b, c) {
+    return c = c || a, i.slice.call(e.test(b) ? c.getElementsByClassName(RegExp.$1) : f.test(b) ? c.getElementsByTagName(b) : c.querySelectorAll(b));
+  }, i.ready = function (b) {
+    return c.test(a.readyState) ? b(i) : a.addEventListener("DOMContentLoaded", function () {
+      b(i);
+    }, !1), this;
+  }, i.buffer = function (a, b, c) {
+    function d() {
+      e && (e.cancel(), e = 0), f = i.now(), a.apply(c || this, arguments), g = i.now();
+    }var e,
+        f = 0,
+        g = 0,
+        b = b || 150;return i.extend(function () {
+      !f || g >= f && i.now() - g > b || f > g && i.now() - f > 8 * b ? d.apply(this, arguments) : (e && e.cancel(), e = i.later(d, b, null, i.slice.call(arguments)));
+    }, { stop: function () {
+        e && (e.cancel(), e = 0);
+      } });
+  }, i.each = function (a, b, c) {
+    if (!a) return this;if ("number" == typeof a.length) [].every.call(a, function (a, c) {
+      return b.call(a, c, a) !== !1;
+    });else for (var d in a) if (c) {
+      if (a.hasOwnProperty(d) && b.call(a[d], d, a[d]) === !1) return a;
+    } else if (b.call(a[d], d, a[d]) === !1) return a;return this;
+  }, i.focus = function (a) {
+    i.os.ios ? setTimeout(function () {
+      a.focus();
+    }, 10) : a.focus();
+  }, i.trigger = function (a, b, c) {
+    return a.dispatchEvent(new CustomEvent(b, { detail: c, bubbles: !0, cancelable: !0 })), this;
+  }, i.getStyles = function (a, b) {
+    var c = a.ownerDocument.defaultView.getComputedStyle(a, null);return b ? c.getPropertyValue(b) || c[b] : c;
+  }, i.parseTranslate = function (a, b) {
+    var c = a.match(g || "");return c && c[1] || (c = ["", "0,0,0"]), c = c[1].split(","), c = { x: parseFloat(c[0]), y: parseFloat(c[1]), z: parseFloat(c[2]) }, b && c.hasOwnProperty(b) ? c[b] : c;
+  }, i.parseTranslateMatrix = function (a, b) {
+    var c = a.match(h),
+        d = c && c[1];c ? (c = c[2].split(","), "3d" === d ? c = c.slice(12, 15) : (c.push(0), c = c.slice(4, 7))) : c = [0, 0, 0];var e = { x: parseFloat(c[0]), y: parseFloat(c[1]), z: parseFloat(c[2]) };return b && e.hasOwnProperty(b) ? e[b] : e;
+  }, i.hooks = {}, i.addAction = function (a, b) {
+    var c = i.hooks[a];return c || (c = []), b.index = b.index || 1e3, c.push(b), c.sort(function (a, b) {
+      return a.index - b.index;
+    }), i.hooks[a] = c, i.hooks[a];
+  }, i.doAction = function (a, b) {
+    i.isFunction(b) ? i.each(i.hooks[a], b) : i.each(i.hooks[a], function (a, b) {
+      return !b.handle();
+    });
+  }, i.later = function (a, b, c, d) {
+    b = b || 0;var e,
+        f,
+        g = a,
+        h = d;return "string" == typeof a && (g = c[a]), e = function () {
+      g.apply(c, i.isArray(h) ? h : [h]);
+    }, f = setTimeout(e, b), { id: f, cancel: function () {
+        clearTimeout(f);
+      } };
+  }, i.now = Date.now || function () {
+    return +new Date();
+  };var k = {};return i.each(["Boolean", "Number", "String", "Function", "Array", "Date", "RegExp", "Object", "Error"], function (a, b) {
+    k["[object " + b + "]"] = b.toLowerCase();
+  }), window.JSON && (i.parseJSON = JSON.parse), i.fn = { each: function (a) {
+      return [].every.call(this, function (b, c) {
+        return a.call(b, c, b) !== !1;
+      }), this;
+    } }, "function" == "function" && __webpack_require__(41) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+    return i;
+  }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)), i;
+}(document);!function (a, b) {
+  function c(c) {
+    this.os = {};var d = [function () {
+      var a = c.match(/(MicroMessenger)\/([\d\.]+)/i);return a && (this.os.wechat = { version: a[2].replace(/_/g, ".") }), !1;
+    }, function () {
+      var a = c.match(/(Android);?[\s\/]+([\d.]+)?/);return a && (this.os.android = !0, this.os.version = a[2], this.os.isBadAndroid = !/Chrome\/\d/.test(b.navigator.appVersion)), this.os.android === !0;
+    }, function () {
+      var a = c.match(/(iPhone\sOS)\s([\d_]+)/);if (a) this.os.ios = this.os.iphone = !0, this.os.version = a[2].replace(/_/g, ".");else {
+        var b = c.match(/(iPad).*OS\s([\d_]+)/);b && (this.os.ios = this.os.ipad = !0, this.os.version = b[2].replace(/_/g, "."));
+      }return this.os.ios === !0;
+    }];[].every.call(d, function (b) {
+      return !b.call(a);
+    });
+  }c.call(a, navigator.userAgent);
+}(mui, window), function (a, b) {
+  function c(c) {
+    this.os = this.os || {};var d = c.match(/Html5Plus/i);d && (this.os.plus = !0, a(function () {
+      b.body.classList.add("mui-plus");
+    }), c.match(/StreamApp/i) && (this.os.stream = !0, a(function () {
+      b.body.classList.add("mui-plus-stream");
+    })));
+  }c.call(a, navigator.userAgent);
+}(mui, document), function (a) {
+  "ontouchstart" in window ? (a.isTouchable = !0, a.EVENT_START = "touchstart", a.EVENT_MOVE = "touchmove", a.EVENT_END = "touchend") : (a.isTouchable = !1, a.EVENT_START = "mousedown", a.EVENT_MOVE = "mousemove", a.EVENT_END = "mouseup"), a.EVENT_CANCEL = "touchcancel", a.EVENT_CLICK = "click";var b = 1,
+      c = {},
+      d = { preventDefault: "isDefaultPrevented", stopImmediatePropagation: "isImmediatePropagationStopped", stopPropagation: "isPropagationStopped" },
+      e = function () {
+    return !0;
+  },
+      f = function () {
+    return !1;
+  },
+      g = function (b, c) {
+    return b.detail ? b.detail.currentTarget = c : b.detail = { currentTarget: c }, a.each(d, function (a, c) {
+      var d = b[a];b[a] = function () {
+        return this[c] = e, d && d.apply(b, arguments);
+      }, b[c] = f;
+    }, !0), b;
+  },
+      h = function (a) {
+    return a && (a._mid || (a._mid = b++));
+  },
+      i = {},
+      j = function (b, d, e, f) {
+    return function (e) {
+      for (var f = c[b._mid][d], h = [], i = e.target, j = {}; i && i !== document && i !== b && (!~["click", "tap", "doubletap", "longtap", "hold"].indexOf(d) || !i.disabled && !i.classList.contains("mui-disabled")); i = i.parentNode) {
+        var k = {};a.each(f, function (c, d) {
+          j[c] || (j[c] = a.qsa(c, b)), j[c] && ~j[c].indexOf(i) && (k[c] || (k[c] = d));
+        }, !0), a.isEmptyObject(k) || h.push({ element: i, handlers: k });
+      }j = null, e = g(e), a.each(h, function (b, c) {
+        i = c.element;var f = i.tagName;return "tap" === d && "INPUT" !== f && "TEXTAREA" !== f && "SELECT" !== f && (e.preventDefault(), e.detail && e.detail.gesture && e.detail.gesture.preventDefault()), a.each(c.handlers, function (b, c) {
+          a.each(c, function (a, b) {
+            b.call(i, e) === !1 && (e.preventDefault(), e.stopPropagation());
+          }, !0);
+        }, !0), e.isPropagationStopped() ? !1 : void 0;
+      }, !0);
+    };
+  },
+      k = function (a, b) {
+    var c = i[h(a)],
+        d = [];if (c) {
+      if (d = [], b) {
+        var e = function (a) {
+          return a.type === b;
+        };return c.filter(e);
+      }d = c;
+    }return d;
+  },
+      l = /^(INPUT|TEXTAREA|BUTTON|SELECT)$/;a.fn.on = function (b, d, e) {
+    return this.each(function () {
+      var f = this;h(f), h(e);var g = !1,
+          k = c[f._mid] || (c[f._mid] = {}),
+          m = k[b] || (k[b] = {});a.isEmptyObject(m) && (g = !0);var n = m[d] || (m[d] = []);if (n.push(e), g) {
+        var o = i[h(f)];o || (o = []);var p = j(f, b, d, e);o.push(p), p.i = o.length - 1, p.type = b, i[h(f)] = o, f.addEventListener(b, p), "tap" === b && f.addEventListener("click", function (a) {
+          if (a.target) {
+            var b = a.target.tagName;if (!l.test(b)) if ("A" === b) {
+              var c = a.target.href;c && ~c.indexOf("tel:") || a.preventDefault();
+            } else a.preventDefault();
+          }
+        });
+      }
+    });
+  }, a.fn.off = function (b, d, e) {
+    return this.each(function () {
+      var f = h(this);if (b) {
+        if (d) {
+          if (e) {
+            var g = c[f] && c[f][b] && c[f][b][d];a.each(g, function (a, b) {
+              return h(b) === h(e) ? (g.splice(a, 1), !1) : void 0;
+            }, !0);
+          } else c[f] && c[f][b] && delete c[f][b][d];
+        } else c[f] && delete c[f][b];
+      } else c[f] && delete c[f];c[f] ? (!c[f][b] || a.isEmptyObject(c[f][b])) && k(this, b).forEach(function (a) {
+        this.removeEventListener(a.type, a), delete i[f][a.i];
+      }.bind(this)) : k(this).forEach(function (a) {
+        this.removeEventListener(a.type, a), delete i[f][a.i];
+      }.bind(this));
+    });
+  };
+}(mui), function (a, b, c) {
+  a.targets = {}, a.targetHandles = [], a.registerTarget = function (b) {
+    return b.index = b.index || 1e3, a.targetHandles.push(b), a.targetHandles.sort(function (a, b) {
+      return a.index - b.index;
+    }), a.targetHandles;
+  }, b.addEventListener(a.EVENT_START, function (b) {
+    for (var d = b.target, e = {}; d && d !== c; d = d.parentNode) {
+      var f = !1;if (a.each(a.targetHandles, function (c, g) {
+        var h = g.name;f || e[h] || !g.hasOwnProperty("handle") ? e[h] || g.isReset !== !1 && (a.targets[h] = !1) : (a.targets[h] = g.handle(b, d), a.targets[h] && (e[h] = !0, g.isContinue !== !0 && (f = !0)));
+      }), f) break;
+    }
+  }), b.addEventListener("click", function (b) {
+    for (var d = b.target, e = !1; d && d !== c && ("A" !== d.tagName || (a.each(a.targetHandles, function (a, c) {
+      c.name;return c.hasOwnProperty("handle") && c.handle(b, d) ? (e = !0, b.preventDefault(), !1) : void 0;
+    }), !e)); d = d.parentNode);
+  });
+}(mui, window, document), function (a) {
+  String.prototype.trim === a && (String.prototype.trim = function () {
+    return this.replace(/^\s+|\s+$/g, "");
+  }), Object.setPrototypeOf = Object.setPrototypeOf || function (a, b) {
+    return a.__proto__ = b, a;
+  };
+}(), function () {
+  function a(a, b) {
+    b = b || { bubbles: !1, cancelable: !1, detail: void 0 };var c = document.createEvent("Events"),
+        d = !0;for (var e in b) "bubbles" === e ? d = !!b[e] : c[e] = b[e];return c.initEvent(a, d, !0), c;
+  }"undefined" == typeof window.CustomEvent && (a.prototype = window.Event.prototype, window.CustomEvent = a);
+}(), Function.prototype.bind = Function.prototype.bind || function (a) {
+  var b = Array.prototype.splice.call(arguments, 1),
+      c = this,
+      d = function () {
+    var e = b.concat(Array.prototype.splice.call(arguments, 0));return this instanceof d ? void c.apply(this, e) : c.apply(a, e);
+  };return d.prototype = c.prototype, d;
+}, function (a) {
+  "classList" in a.documentElement || !Object.defineProperty || "undefined" == typeof HTMLElement || Object.defineProperty(HTMLElement.prototype, "classList", { get: function () {
+      function a(a) {
+        return function (c) {
+          var d = b.className.split(/\s+/),
+              e = d.indexOf(c);a(d, e, c), b.className = d.join(" ");
+        };
+      }var b = this,
+          c = { add: a(function (a, b, c) {
+          ~b || a.push(c);
+        }), remove: a(function (a, b) {
+          ~b && a.splice(b, 1);
+        }), toggle: a(function (a, b, c) {
+          ~b ? a.splice(b, 1) : a.push(c);
+        }), contains: function (a) {
+          return !!~b.className.split(/\s+/).indexOf(a);
+        }, item: function (a) {
+          return b.className.split(/\s+/)[a] || null;
+        } };return Object.defineProperty(c, "length", { get: function () {
+          return b.className.split(/\s+/).length;
+        } }), c;
+    } });
+}(document), function (a) {
+  if (!a.requestAnimationFrame) {
+    var b = 0;a.requestAnimationFrame = a.webkitRequestAnimationFrame || function (c, d) {
+      var e = new Date().getTime(),
+          f = Math.max(0, 16.7 - (e - b)),
+          g = a.setTimeout(function () {
+        c(e + f);
+      }, f);return b = e + f, g;
+    }, a.cancelAnimationFrame = a.webkitCancelAnimationFrame || a.webkitCancelRequestAnimationFrame || function (a) {
+      clearTimeout(a);
+    };
+  }
+}(window), function (a, b, c) {
+  if ((a.os.android || a.os.ios) && !b.FastClick) {
+    var d = function (a, b) {
+      return "LABEL" === b.tagName && b.parentNode && (b = b.parentNode.querySelector("input")), !b || "radio" !== b.type && "checkbox" !== b.type || b.disabled ? !1 : b;
+    };a.registerTarget({ name: c, index: 40, handle: d, target: !1 });var e = function (c) {
+      var d = a.targets.click;if (d) {
+        var e, f;document.activeElement && document.activeElement !== d && document.activeElement.blur(), f = c.detail.gesture.changedTouches[0], e = document.createEvent("MouseEvents"), e.initMouseEvent("click", !0, !0, b, 1, f.screenX, f.screenY, f.clientX, f.clientY, !1, !1, !1, !1, 0, null), e.forwardedTouchEvent = !0, d.dispatchEvent(e), c.detail && c.detail.gesture.preventDefault();
+      }
+    };b.addEventListener("tap", e), b.addEventListener("doubletap", e), b.addEventListener("click", function (b) {
+      return a.targets.click && !b.forwardedTouchEvent ? (b.stopImmediatePropagation ? b.stopImmediatePropagation() : b.propagationStopped = !0, b.stopPropagation(), b.preventDefault(), !1) : void 0;
+    }, !0);
+  }
+}(mui, window, "click"), function (a, b) {
+  a(function () {
+    if (a.os.ios) {
+      var c = "mui-focusin",
+          d = "mui-bar-tab",
+          e = "mui-bar-footer",
+          f = "mui-bar-footer-secondary",
+          g = "mui-bar-footer-secondary-tab";b.addEventListener("focusin", function (h) {
+        if (!(a.os.plus && window.plus && plus.webview.currentWebview().children().length > 0)) {
+          var i = h.target;if (i.tagName && ("TEXTAREA" === i.tagName || "INPUT" === i.tagName && ("text" === i.type || "search" === i.type || "number" === i.type))) {
+            if (i.disabled || i.readOnly) return;b.body.classList.add(c);for (var j = !1; i && i !== b; i = i.parentNode) {
+              var k = i.classList;if (k && k.contains(d) || k.contains(e) || k.contains(f) || k.contains(g)) {
+                j = !0;break;
+              }
+            }if (j) {
+              var l = b.body.scrollHeight,
+                  m = b.body.scrollLeft;setTimeout(function () {
+                window.scrollTo(m, l);
+              }, 20);
+            }
+          }
+        }
+      }), b.addEventListener("focusout", function (a) {
+        var d = b.body.classList;d.contains(c) && (d.remove(c), setTimeout(function () {
+          window.scrollTo(b.body.scrollLeft, b.body.scrollTop);
+        }, 20));
+      });
+    }
+  });
+}(mui, document), function (a) {
+  a.namespace = "mui", a.classNamePrefix = a.namespace + "-", a.classSelectorPrefix = "." + a.classNamePrefix, a.className = function (b) {
+    return a.classNamePrefix + b;
+  }, a.classSelector = function (b) {
+    return b.replace(/\./g, a.classSelectorPrefix);
+  }, a.eventName = function (b, c) {
+    return b + (a.namespace ? "." + a.namespace : "") + (c ? "." + c : "");
+  };
+}(mui), function (a, b) {
+  a.gestures = { session: {} }, a.preventDefault = function (a) {
+    a.preventDefault();
+  }, a.stopPropagation = function (a) {
+    a.stopPropagation();
+  }, a.addGesture = function (b) {
+    return a.addAction("gestures", b);
+  };var c = Math.round,
+      d = Math.abs,
+      e = Math.sqrt,
+      f = (Math.atan, Math.atan2),
+      g = function (a, b, c) {
+    c || (c = ["x", "y"]);var d = b[c[0]] - a[c[0]],
+        f = b[c[1]] - a[c[1]];return e(d * d + f * f);
+  },
+      h = function (a, b) {
+    if (a.length >= 2 && b.length >= 2) {
+      var c = ["pageX", "pageY"];return g(b[1], b[0], c) / g(a[1], a[0], c);
+    }return 1;
+  },
+      i = function (a, b, c) {
+    c || (c = ["x", "y"]);var d = b[c[0]] - a[c[0]],
+        e = b[c[1]] - a[c[1]];return 180 * f(e, d) / Math.PI;
+  },
+      j = function (a, b) {
+    return a === b ? "" : d(a) >= d(b) ? a > 0 ? "left" : "right" : b > 0 ? "up" : "down";
+  },
+      k = function (a, b) {
+    var c = ["pageX", "pageY"];return i(b[1], b[0], c) - i(a[1], a[0], c);
+  },
+      l = function (a, b, c) {
+    return { x: b / a || 0, y: c / a || 0 };
+  },
+      m = function (b, c) {
+    a.gestures.stoped || a.doAction("gestures", function (d, e) {
+      a.gestures.stoped || a.options.gestureConfig[e.name] !== !1 && e.handle(b, c);
+    });
+  },
+      n = function (a, b) {
+    for (; a;) {
+      if (a == b) return !0;a = a.parentNode;
+    }return !1;
+  },
+      o = function (a, b, c) {
+    for (var d = [], e = [], f = 0; f < a.length;) {
+      var g = b ? a[f][b] : a[f];e.indexOf(g) < 0 && d.push(a[f]), e[f] = g, f++;
+    }return c && (d = b ? d.sort(function (a, c) {
+      return a[b] > c[b];
+    }) : d.sort()), d;
+  },
+      p = function (a) {
+    var b = a.length;if (1 === b) return { x: c(a[0].pageX), y: c(a[0].pageY) };for (var d = 0, e = 0, f = 0; b > f;) d += a[f].pageX, e += a[f].pageY, f++;return { x: c(d / b), y: c(e / b) };
+  },
+      q = function () {
+    return a.options.gestureConfig.pinch;
+  },
+      r = function (b) {
+    for (var d = [], e = 0; e < b.touches.length;) d[e] = { pageX: c(b.touches[e].pageX), pageY: c(b.touches[e].pageY) }, e++;return { timestamp: a.now(), gesture: b.gesture, touches: d, center: p(b.touches), deltaX: b.deltaX, deltaY: b.deltaY };
+  },
+      s = function (b) {
+    var c = a.gestures.session,
+        d = b.center,
+        e = c.offsetDelta || {},
+        f = c.prevDelta || {},
+        g = c.prevTouch || {};(b.gesture.type === a.EVENT_START || b.gesture.type === a.EVENT_END) && (f = c.prevDelta = { x: g.deltaX || 0, y: g.deltaY || 0 }, e = c.offsetDelta = { x: d.x, y: d.y }), b.deltaX = f.x + (d.x - e.x), b.deltaY = f.y + (d.y - e.y);
+  },
+      t = function (b) {
+    var c = a.gestures.session,
+        d = b.touches,
+        e = d.length;c.firstTouch || (c.firstTouch = r(b)), q() && e > 1 && !c.firstMultiTouch ? c.firstMultiTouch = r(b) : 1 === e && (c.firstMultiTouch = !1);var f = c.firstTouch,
+        l = c.firstMultiTouch,
+        m = l ? l.center : f.center,
+        n = b.center = p(d);b.timestamp = a.now(), b.deltaTime = b.timestamp - f.timestamp, b.angle = i(m, n), b.distance = g(m, n), s(b), b.offsetDirection = j(b.deltaX, b.deltaY), b.scale = l ? h(l.touches, d) : 1, b.rotation = l ? k(l.touches, d) : 0, v(b);
+  },
+      u = 25,
+      v = function (b) {
+    var c,
+        e,
+        f,
+        g,
+        h = a.gestures.session,
+        i = h.lastInterval || b,
+        k = b.timestamp - i.timestamp;if (b.gesture.type != a.EVENT_CANCEL && (k > u || void 0 === i.velocity)) {
+      var m = i.deltaX - b.deltaX,
+          n = i.deltaY - b.deltaY,
+          o = l(k, m, n);e = o.x, f = o.y, c = d(o.x) > d(o.y) ? o.x : o.y, g = j(m, n) || i.direction, h.lastInterval = b;
+    } else c = i.velocity, e = i.velocityX, f = i.velocityY, g = i.direction;b.velocity = c, b.velocityX = e, b.velocityY = f, b.direction = g;
+  },
+      w = {},
+      x = function (a) {
+    for (var b = 0; b < a.length; b++) !a.identifier && (a.identifier = 0);return a;
+  },
+      y = function (b, c) {
+    var d = x(a.slice.call(b.touches || [b])),
+        e = b.type,
+        f = [],
+        g = [];if (e !== a.EVENT_START && e !== a.EVENT_MOVE || 1 !== d.length) {
+      var h = 0,
+          f = [],
+          g = [],
+          i = x(a.slice.call(b.changedTouches || [b]));c.target = b.target;var j = a.gestures.session.target || b.target;if (f = d.filter(function (a) {
+        return n(a.target, j);
+      }), e === a.EVENT_START) for (h = 0; h < f.length;) w[f[h].identifier] = !0, h++;for (h = 0; h < i.length;) w[i[h].identifier] && g.push(i[h]), (e === a.EVENT_END || e === a.EVENT_CANCEL) && delete w[i[h].identifier], h++;if (!g.length) return !1;
+    } else w[d[0].identifier] = !0, f = d, g = d, c.target = b.target;f = o(f.concat(g), "identifier", !0);var k = f.length,
+        l = g.length;return e === a.EVENT_START && k - l === 0 && (c.isFirst = !0, a.gestures.touch = a.gestures.session = { target: b.target }), c.isFinal = (e === a.EVENT_END || e === a.EVENT_CANCEL) && k - l === 0, c.touches = f, c.changedTouches = g, !0;
+  },
+      z = function (b) {
+    var c = { gesture: b },
+        d = y(b, c);d && (t(c), m(b, c), a.gestures.session.prevTouch = c, b.type !== a.EVENT_END || a.isTouchable || (a.gestures.touch = a.gestures.session = {}));
+  };b.addEventListener(a.EVENT_START, z), b.addEventListener(a.EVENT_MOVE, z), b.addEventListener(a.EVENT_END, z), b.addEventListener(a.EVENT_CANCEL, z), b.addEventListener(a.EVENT_CLICK, function (b) {
+    (a.os.android || a.os.ios) && (a.targets.popover && b.target === a.targets.popover || a.targets.tab || a.targets.offcanvas || a.targets.modal) && b.preventDefault();
+  }, !0), a.isScrolling = !1;var A = null;b.addEventListener("scroll", function () {
+    a.isScrolling = !0, A && clearTimeout(A), A = setTimeout(function () {
+      a.isScrolling = !1;
+    }, 250);
+  });
+}(mui, window), function (a, b) {
+  var c = 0,
+      d = function (d, e) {
+    var f = a.gestures.session,
+        g = this.options,
+        h = a.now();switch (d.type) {case a.EVENT_MOVE:
+        h - c > 300 && (c = h, f.flickStart = e.center);break;case a.EVENT_END:case a.EVENT_CANCEL:
+        e.flick = !1, f.flickStart && g.flickMaxTime > h - c && e.distance > g.flickMinDistince && (e.flick = !0, e.flickTime = h - c, e.flickDistanceX = e.center.x - f.flickStart.x, e.flickDistanceY = e.center.y - f.flickStart.y, a.trigger(f.target, b, e), a.trigger(f.target, b + e.direction, e));}
+  };a.addGesture({ name: b, index: 5, handle: d, options: { flickMaxTime: 200, flickMinDistince: 10 } });
+}(mui, "flick"), function (a, b) {
+  var c = function (c, d) {
+    var e = a.gestures.session;if (c.type === a.EVENT_END || c.type === a.EVENT_CANCEL) {
+      var f = this.options;d.swipe = !1, d.direction && f.swipeMaxTime > d.deltaTime && d.distance > f.swipeMinDistince && (d.swipe = !0, a.trigger(e.target, b, d), a.trigger(e.target, b + d.direction, d));
+    }
+  };a.addGesture({ name: b, index: 10, handle: c, options: { swipeMaxTime: 300, swipeMinDistince: 18 } });
+}(mui, "swipe"), function (a, b) {
+  var c = function (c, d) {
+    var e = a.gestures.session;switch (c.type) {case a.EVENT_START:
+        break;case a.EVENT_MOVE:
+        if (!d.direction || !e.target) return;e.lockDirection && e.startDirection && e.startDirection && e.startDirection !== d.direction && ("up" === e.startDirection || "down" === e.startDirection ? d.direction = d.deltaY < 0 ? "up" : "down" : d.direction = d.deltaX < 0 ? "left" : "right"), e.drag || (e.drag = !0, a.trigger(e.target, b + "start", d)), a.trigger(e.target, b, d), a.trigger(e.target, b + d.direction, d);break;case a.EVENT_END:case a.EVENT_CANCEL:
+        e.drag && d.isFinal && a.trigger(e.target, b + "end", d);}
+  };a.addGesture({ name: b, index: 20, handle: c, options: { fingers: 1 } });
+}(mui, "drag"), function (a, b) {
+  var c,
+      d,
+      e = function (e, f) {
+    var g = a.gestures.session,
+        h = this.options;switch (e.type) {case a.EVENT_END:
+        if (!f.isFinal) return;var i = g.target;if (!i || i.disabled || i.classList && i.classList.contains("mui-disabled")) return;if (f.distance < h.tapMaxDistance && f.deltaTime < h.tapMaxTime) {
+          if (a.options.gestureConfig.doubletap && c && c === i && d && f.timestamp - d < h.tapMaxInterval) return a.trigger(i, "doubletap", f), d = a.now(), void (c = i);a.trigger(i, b, f), d = a.now(), c = i;
+        }}
+  };a.addGesture({ name: b, index: 30, handle: e, options: { fingers: 1, tapMaxInterval: 300, tapMaxDistance: 5, tapMaxTime: 250 } });
+}(mui, "tap"), function (a, b) {
+  var c,
+      d = function (d, e) {
+    var f = a.gestures.session,
+        g = this.options;switch (d.type) {case a.EVENT_START:
+        clearTimeout(c), c = setTimeout(function () {
+          a.trigger(f.target, b, e);
+        }, g.holdTimeout);break;case a.EVENT_MOVE:
+        e.distance > g.holdThreshold && clearTimeout(c);break;case a.EVENT_END:case a.EVENT_CANCEL:
+        clearTimeout(c);}
+  };a.addGesture({ name: b, index: 10, handle: d, options: { fingers: 1, holdTimeout: 500, holdThreshold: 2 } });
+}(mui, "longtap"), function (a, b) {
+  var c,
+      d = function (d, e) {
+    var f = a.gestures.session,
+        g = this.options;switch (d.type) {case a.EVENT_START:
+        a.options.gestureConfig.hold && (c && clearTimeout(c), c = setTimeout(function () {
+          e.hold = !0, a.trigger(f.target, b, e);
+        }, g.holdTimeout));break;case a.EVENT_MOVE:
+        break;case a.EVENT_END:case a.EVENT_CANCEL:
+        c && (clearTimeout(c) && (c = null), a.trigger(f.target, "release", e));}
+  };a.addGesture({ name: b, index: 10, handle: d, options: { fingers: 1, holdTimeout: 0 } });
+}(mui, "hold"), function (a, b) {
+  var c = function (c, d) {
+    var e = this.options,
+        f = a.gestures.session;switch (c.type) {case a.EVENT_START:
+        break;case a.EVENT_MOVE:
+        if (a.options.gestureConfig.pinch) {
+          if (d.touches.length < 2) return;f.pinch || (f.pinch = !0, a.trigger(f.target, b + "start", d)), a.trigger(f.target, b, d);var g = d.scale,
+              h = d.rotation,
+              i = "undefined" == typeof d.lastScale ? 1 : d.lastScale,
+              j = 1e-12;g > i ? (i = g - j, a.trigger(f.target, b + "out", d)) : i > g && (i = g + j, a.trigger(f.target, b + "in", d)), Math.abs(h) > e.minRotationAngle && a.trigger(f.target, "rotate", d);
+        }break;case a.EVENT_END:case a.EVENT_CANCEL:
+        a.options.gestureConfig.pinch && f.pinch && 2 === d.touches.length && (f.pinch = !1, a.trigger(f.target, b + "end", d));}
+  };a.addGesture({ name: b, index: 10, handle: c, options: { minRotationAngle: 0 } });
+}(mui, "pinch"), function (a) {
+  function b(a, b) {
+    var c = "MUI_SCROLL_POSITION_" + document.location.href + "_" + b.src,
+        d = parseFloat(localStorage.getItem(c)) || 0;d && !function (a) {
+      b.onload = function () {
+        window.scrollTo(0, a);
+      };
+    }(d), setInterval(function () {
+      var a = window.scrollY;d !== a && (localStorage.setItem(c, a + ""), d = a);
+    }, 100);
+  }a.global = a.options = { gestureConfig: { tap: !0, doubletap: !1, longtap: !1, hold: !1, flick: !0, swipe: !0, drag: !0, pinch: !1 } }, a.initGlobal = function (b) {
+    return a.options = a.extend(!0, a.global, b), this;
+  };var c = {};a.init = function (b) {
+    return a.options = a.extend(!0, a.global, b || {}), a.ready(function () {
+      a.doAction("inits", function (b, d) {
+        var e = !(c[d.name] && !d.repeat);e && (d.handle.call(a), c[d.name] = !0);
+      });
+    }), this;
+  }, a.addInit = function (b) {
+    return a.addAction("inits", b);
+  }, a.addInit({ name: "iframe", index: 100, handle: function () {
+      var b = a.options,
+          c = b.subpages || [];!a.os.plus && c.length && d(c[0]);
+    } });var d = function (c) {
+    var d = document.createElement("div");d.className = "mui-iframe-wrapper";var e = c.styles || {};"string" != typeof e.top && (e.top = "0px"), "string" != typeof e.bottom && (e.bottom = "0px"), d.style.top = e.top, d.style.bottom = e.bottom;var f = document.createElement("iframe");f.src = c.url, f.id = c.id || c.url, f.name = f.id, d.appendChild(f), document.body.appendChild(d), a.os.wechat && b(d, f);
+  };a(function () {
+    var b = document.body.classList,
+        c = [];a.os.ios ? (c.push({ os: "ios", version: a.os.version }), b.add("mui-ios")) : a.os.android && (c.push({ os: "android", version: a.os.version }), b.add("mui-android")), a.os.wechat && (c.push({ os: "wechat", version: a.os.wechat.version }), b.add("mui-wechat")), c.length && a.each(c, function (c, d) {
+      var e = "";d.version && a.each(d.version.split("."), function (c, f) {
+        e = e + (e ? "-" : "") + f, b.add(a.className(d.os + "-" + e));
+      });
+    });
+  });
+}(mui), function (a) {
+  var b = { swipeBack: !1, preloadPages: [], preloadLimit: 10, keyEventBind: { backbutton: !0, menubutton: !0 }, titleConfig: { height: "44px", backgroundColor: "#f7f7f7", bottomBorderColor: "#cccccc", title: { text: "", position: { top: 0, left: 0, width: "100%", height: "100%" }, styles: { color: "#000000", align: "center", family: "'Helvetica Neue',Helvetica,sans-serif", size: "17px", style: "normal", weight: "normal", fontSrc: "" } }, back: { image: { base64Data: "", imgSrc: "", sprite: { top: "0px", left: "0px", width: "100%", height: "100%" }, position: { top: "10px", left: "10px", width: "24px", height: "24px" } } } } },
+      c = { event: "titleUpdate", autoShow: !0, duration: 300, aniShow: "slide-in-right", extras: {} };a.options.show && (c = a.extend(!0, c, a.options.show)), a.currentWebview = null, a.extend(!0, a.global, b), a.extend(!0, a.options, b), a.waitingOptions = function (b) {
+    return a.extend(!0, {}, { autoShow: !0, title: "", modal: !1 }, b);
+  }, a.showOptions = function (b) {
+    return a.extend(!0, {}, c, b);
+  }, a.windowOptions = function (b) {
+    return a.extend({ scalable: !1, bounce: "" }, b);
+  }, a.plusReady = function (a) {
+    return window.plus ? setTimeout(function () {
+      a();
+    }, 0) : document.addEventListener("plusready", function () {
+      a();
+    }, !1), this;
+  }, a.fire = function (b, c, d) {
+    if (b) {
+      if ("undefined" == typeof d) d = "";else {
+        if ("boolean" == typeof d || "number" == typeof d) return void b.evalJS("typeof mui!=='undefined'&&mui.receive('" + c + "'," + d + ")");(a.isPlainObject(d) || a.isArray(d)) && (d = JSON.stringify(d || {}).replace(/\'/g, "\\u0027").replace(/\\/g, "\\u005c"));
+      }b.evalJS("typeof mui!=='undefined'&&mui.receive('" + c + "','" + d + "')");
+    }
+  }, a.receive = function (b, c) {
+    if (b) {
+      try {
+        c && "string" == typeof c && (c = JSON.parse(c));
+      } catch (d) {}a.trigger(document, b, c);
+    }
+  };var d = function (b) {
+    if (!b.preloaded) {
+      a.fire(b, "preload");for (var c = b.children(), d = 0; d < c.length; d++) a.fire(c[d], "preload");b.preloaded = !0;
+    }
+  },
+      e = function (b, c, d) {
+    if (d) {
+      if (!b[c + "ed"]) {
+        a.fire(b, c);for (var e = b.children(), f = 0; f < e.length; f++) a.fire(e[f], c);b[c + "ed"] = !0;
+      }
+    } else {
+      a.fire(b, c);for (var e = b.children(), f = 0; f < e.length; f++) a.fire(e[f], c);
+    }
+  };a.openWindow = function (b, f, g) {
+    if ("object" == typeof b ? (g = b, b = g.url, f = g.id || b) : "object" == typeof f ? (g = f, f = g.id || b) : f = f || b, !a.os.plus) return void (a.os.ios || a.os.android ? window.top.location.href = b : window.parent.location.href = b);if (window.plus) {
+      g = g || {};var h,
+          i,
+          j = g.params || {},
+          k = null,
+          l = null;if (a.webviews[f] ? (l = a.webviews[f], plus.webview.getWebviewById(f) && (k = l.webview)) : g.createNew !== !0 && (k = plus.webview.getWebviewById(f)), k) return h = l ? l.show : c, h = g.show ? a.extend(h, g.show) : h, h.autoShow && k.show(h.aniShow, h.duration, function () {
+        d(k), e(k, "pagebeforeshow", !1);
+      }), l && l.afterShowMethodName && k.evalJS(l.afterShowMethodName + "('" + JSON.stringify(j) + "')"), k;if (!b) throw new Error("webview[" + f + "] does not exist");var m = a.waitingOptions(g.waiting);if (m.autoShow && (i = plus.nativeUI.showWaiting(m.title, m.options)), g = a.extend(g, { id: f, url: b }), k = a.createWindow(g), h = a.showOptions(g.show), h.autoShow) {
+        var n = function () {
+          i && i.close(), k.show(h.aniShow, h.duration, function () {}, h.extras), g.afterShowMethodName && k.evalJS(g.afterShowMethodName + "('" + JSON.stringify(j) + "')");
+        };k.addEventListener(h.event, n, !1), k.addEventListener("loaded", function () {
+          d(k), e(k, "pagebeforeshow", !1);
+        }, !1);
+      }return k;
+    }
+  }, a.openWindowWithTitle = function (b, f) {
+    b = b || {};var g = b.url,
+        h = b.id || g;if (!a.os.plus) return void (a.os.ios || a.os.android ? window.top.location.href = g : window.parent.location.href = g);if (window.plus) {
+      var i,
+          j,
+          k = b.params || {},
+          l = null,
+          m = null;if (a.webviews[h] ? (m = a.webviews[h], plus.webview.getWebviewById(h) && (l = m.webview)) : b.createNew !== !0 && (l = plus.webview.getWebviewById(h)), l) return i = m ? m.show : c, i = b.show ? a.extend(i, b.show) : i, i.autoShow && l.show(i.aniShow, i.duration, function () {
+        d(l), e(l, "pagebeforeshow", !1);
+      }), m && m.afterShowMethodName && l.evalJS(m.afterShowMethodName + "('" + JSON.stringify(k) + "')"), l;if (!g) throw new Error("webview[" + h + "] does not exist");var n = a.waitingOptions(b.waiting);if (n.autoShow && (j = plus.nativeUI.showWaiting(n.title, n.options)), b = a.extend(b, { id: h, url: g }), l = a.createWindow(b), f) {
+        a.extend(!0, a.options.titleConfig, f);var o = a.options.titleConfig.id ? a.options.titleConfig.id : h + "_title",
+            p = new plus.nativeObj.View(o, { top: 0, height: a.options.titleConfig.height, width: "100%", dock: "top", position: "dock" });p.drawRect(a.options.titleConfig.backgroundColor);var q = parseInt(a.options.titleConfig.height) - 1;if (p.drawRect(a.options.titleConfig.bottomBorderColor, { top: q + "px", left: "0px" }), a.options.titleConfig.title.text) {
+          var r = a.options.titleConfig.title;p.drawText(r.text, r.position, r.styles);
+        }var s = a.options.titleConfig.back,
+            t = null,
+            u = s.image;if (u.base64Data || u.imgSrc) {
+          t = { left: parseInt(u.position.left), right: parseInt(u.position.left) + parseInt(u.position.width) };var v = new plus.nativeObj.Bitmap(h + "_back");u.base64Data ? v.loadBase64Data(u.base64Data) : v.load(u.imgSrc), p.drawBitmap(v, u.sprite, u.position);
+        }p.setTouchEventRect({ top: "0px", left: "0px", width: "100%", height: "100%" }), p.interceptTouchEvent(!0), p.addEventListener("click", function (b) {
+          var c = b.clientX;t && c > t.left && c < t.right && (s.click && a.isFunction(s.click) ? s.click() : l.evalJS("window.mui&&mui.back();"));
+        }, !1), l.append(p);
+      }return i = a.showOptions(b.show), i.autoShow && l.addEventListener(i.event, function () {
+        j && j.close(), l.show(i.aniShow, i.duration, function () {}, i.extras);
+      }, !1), l;
+    }
+  }, a.createWindow = function (b, c) {
+    if (window.plus) {
+      var d,
+          e = b.id || b.url;if (b.preload) {
+        a.webviews[e] && a.webviews[e].webview.getURL() ? d = a.webviews[e].webview : (b.createNew !== !0 && (d = plus.webview.getWebviewById(e)), d || (d = plus.webview.create(b.url, e, a.windowOptions(b.styles), a.extend({ preload: !0 }, b.extras)), b.subpages && a.each(b.subpages, function (b, c) {
+          var e = c.id || c.url;if (e) {
+            var f = plus.webview.getWebviewById(e);f || (f = plus.webview.create(c.url, e, a.windowOptions(c.styles), a.extend({ preload: !0 }, c.extras))), d.append(f);
+          }
+        }))), a.webviews[e] = { webview: d, preload: !0, show: a.showOptions(b.show), afterShowMethodName: b.afterShowMethodName };var f = a.data.preloads,
+            g = f.indexOf(e);if (~g && f.splice(g, 1), f.push(e), f.length > a.options.preloadLimit) {
+          var h = a.data.preloads.shift(),
+              i = a.webviews[h];i && i.webview && a.closeAll(i.webview), delete a.webviews[h];
+        }
+      } else c !== !1 && (d = plus.webview.create(b.url, e, a.windowOptions(b.styles), b.extras), b.subpages && a.each(b.subpages, function (b, c) {
+        var e = c.id || c.url,
+            f = plus.webview.getWebviewById(e);f || (f = plus.webview.create(c.url, e, a.windowOptions(c.styles), c.extras)), d.append(f);
+      }));return d;
+    }
+  }, a.preload = function (b) {
+    return b.preload || (b.preload = !0), a.createWindow(b);
+  }, a.closeOpened = function (b) {
+    var c = b.opened();if (c) for (var d = 0, e = c.length; e > d; d++) {
+      var f = c[d],
+          g = f.opened();g && g.length > 0 ? (a.closeOpened(f), f.close("none")) : f.parent() !== b && f.close("none");
+    }
+  }, a.closeAll = function (b, c) {
+    a.closeOpened(b), c ? b.close(c) : b.close();
+  }, a.createWindows = function (b) {
+    a.each(b, function (b, c) {
+      a.createWindow(c, !1);
+    });
+  }, a.appendWebview = function (b) {
+    if (window.plus) {
+      var c,
+          d = b.id || b.url;return a.webviews[d] || (plus.webview.getWebviewById(d) || (c = plus.webview.create(b.url, d, b.styles, b.extras)), plus.webview.currentWebview().append(c), a.webviews[d] = b), c;
+    }
+  }, a.webviews = {}, a.data.preloads = [], a.plusReady(function () {
+    a.currentWebview = plus.webview.currentWebview();
+  }), a.addInit({ name: "5+", index: 100, handle: function () {
+      var b = a.options,
+          c = b.subpages || [];a.os.plus && a.plusReady(function () {
+        a.each(c, function (b, c) {
+          a.appendWebview(c);
+        }), plus.webview.currentWebview() === plus.webview.getWebviewById(plus.runtime.appid) && setTimeout(function () {
+          d(plus.webview.currentWebview());
+        }, 300), a.os.ios && a.options.statusBarBackground && plus.navigator.setStatusBarBackground(a.options.statusBarBackground), a.os.android && parseFloat(a.os.version) < 4.4 && null == plus.webview.currentWebview().parent() && document.addEventListener("resume", function () {
+          var a = document.body;a.style.display = "none", setTimeout(function () {
+            a.style.display = "";
+          }, 10);
+        });
+      });
+    } }), window.addEventListener("preload", function () {
+    var b = a.options.preloadPages || [];a.plusReady(function () {
+      a.each(b, function (b, c) {
+        a.createWindow(a.extend(c, { preload: !0 }));
+      });
+    });
+  }), a.supportStatusbarOffset = function () {
+    return a.os.plus && a.os.ios && parseFloat(a.os.version) >= 7;
+  }, a.ready(function () {
+    a.supportStatusbarOffset() && document.body.classList.add("mui-statusbar");
+  });
+}(mui), function (a, b) {
+  a.addBack = function (b) {
+    return a.addAction("backs", b);
+  }, a.addBack({ name: "browser", index: 100, handle: function () {
+      return b.history.length > 1 ? (b.history.back(), !0) : !1;
+    } }), a.back = function () {
+    ("function" != typeof a.options.beforeback || a.options.beforeback() !== !1) && a.doAction("backs");
+  }, b.addEventListener("tap", function (b) {
+    var c = a.targets.action;c && c.classList.contains("mui-action-back") && (a.back(), a.targets.action = !1);
+  }), b.addEventListener("swiperight", function (b) {
+    var c = b.detail;a.options.swipeBack === !0 && Math.abs(c.angle) < 3 && a.back();
+  });
+}(mui, window), function (a, b) {
+  a.os.plus && a.os.android && a.addBack({ name: "mui", index: 5, handle: function () {
+      if (a.targets._popover && a.targets._popover.classList.contains("mui-active")) return a(a.targets._popover).popover("hide"), !0;var b = document.querySelector(".mui-off-canvas-wrap.mui-active");if (b) return a(b).offCanvas("close"), !0;var c = a.isFunction(a.getPreviewImage) && a.getPreviewImage();return c && c.isShown() ? (c.close(), !0) : a.closePopup();
+    } }), a.__back__first = null, a.addBack({ name: "5+", index: 10, handle: function () {
+      if (!b.plus) return !1;var c = plus.webview.currentWebview(),
+          d = c.parent();return d ? d.evalJS("mui&&mui.back();") : c.canBack(function (d) {
+        d.canBack ? b.history.back() : c.id === plus.runtime.appid ? a.__back__first ? new Date().getTime() - a.__back__first < 2e3 && plus.runtime.quit() : (a.__back__first = new Date().getTime(), mui.toast("再按一次退出应用"), setTimeout(function () {
+          a.__back__first = null;
+        }, 2e3)) : c.preload ? c.hide("auto") : a.closeAll(c);
+      }), !0;
+    } }), a.menu = function () {
+    var c = document.querySelector(".mui-action-menu");if (c) a.trigger(c, a.EVENT_START), a.trigger(c, "tap");else if (b.plus) {
+      var d = a.currentWebview,
+          e = d.parent();
+      e && e.evalJS("mui&&mui.menu();");
+    }
+  };var c = function () {
+    a.back();
+  },
+      d = function () {
+    a.menu();
+  };a.plusReady(function () {
+    a.options.keyEventBind.backbutton && plus.key.addEventListener("backbutton", c, !1), a.options.keyEventBind.menubutton && plus.key.addEventListener("menubutton", d, !1);
+  }), a.addInit({ name: "keyEventBind", index: 1e3, handle: function () {
+      a.plusReady(function () {
+        a.options.keyEventBind.backbutton || plus.key.removeEventListener("backbutton", c), a.options.keyEventBind.menubutton || plus.key.removeEventListener("menubutton", d);
+      });
+    } });
+}(mui, window), function (a) {
+  a.addInit({ name: "pullrefresh", index: 1e3, handle: function () {
+      var b = a.options,
+          c = b.pullRefresh || {},
+          d = c.down && c.down.hasOwnProperty("callback"),
+          e = c.up && c.up.hasOwnProperty("callback");if (d || e) {
+        var f = c.container;if (f) {
+          var g = a(f);1 === g.length && (a.os.plus && a.os.android ? a.plusReady(function () {
+            var b = plus.webview.currentWebview();if (e) {
+              var f = {};f.up = c.up, f.webviewId = b.id || b.getURL(), g.pullRefresh(f);
+            }if (d) {
+              var h = b.parent(),
+                  i = b.id || b.getURL();if (h) {
+                e || g.pullRefresh({ webviewId: i });var j = { webviewId: i };j.down = a.extend({}, c.down), j.down.callback = "_CALLBACK", h.evalJS("mui&&mui(document.querySelector('.mui-content')).pullRefresh('" + JSON.stringify(j) + "')");
+              }
+            }
+          }) : g.pullRefresh(c));
+        }
+      }
+    } });
+}(mui), function (a, b, c) {
+  var d = "application/json",
+      e = "text/html",
+      f = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+      g = /^(?:text|application)\/javascript/i,
+      h = /^(?:text|application)\/xml/i,
+      i = /^\s*$/;a.ajaxSettings = { type: "GET", beforeSend: a.noop, success: a.noop, error: a.noop, complete: a.noop, context: null, xhr: function (a) {
+      return new b.XMLHttpRequest();
+    }, accepts: { script: "text/javascript, application/javascript, application/x-javascript", json: d, xml: "application/xml, text/xml", html: e, text: "text/plain" }, timeout: 0, processData: !0, cache: !0 };var j = function (a, b) {
+    var c = b.context;return b.beforeSend.call(c, a, b) === !1 ? !1 : void 0;
+  },
+      k = function (a, b, c) {
+    c.success.call(c.context, a, "success", b), m("success", b, c);
+  },
+      l = function (a, b, c, d) {
+    d.error.call(d.context, c, b, a), m(b, c, d);
+  },
+      m = function (a, b, c) {
+    c.complete.call(c.context, b, a);
+  },
+      n = function (b, c, d, e) {
+    var f,
+        g = a.isArray(c),
+        h = a.isPlainObject(c);a.each(c, function (c, i) {
+      f = a.type(i), e && (c = d ? e : e + "[" + (h || "object" === f || "array" === f ? c : "") + "]"), !e && g ? b.add(i.name, i.value) : "array" === f || !d && "object" === f ? n(b, i, d, c) : b.add(c, i);
+    });
+  },
+      o = function (b) {
+    if (b.processData && b.data && "string" != typeof b.data) {
+      var e = b.contentType;!e && b.headers && (e = b.headers["Content-Type"]), e && ~e.indexOf(d) ? b.data = JSON.stringify(b.data) : b.data = a.param(b.data, b.traditional);
+    }!b.data || b.type && "GET" !== b.type.toUpperCase() || (b.url = p(b.url, b.data), b.data = c);
+  },
+      p = function (a, b) {
+    return "" === b ? a : (a + "&" + b).replace(/[&?]{1,2}/, "?");
+  },
+      q = function (a) {
+    return a && (a = a.split(";", 2)[0]), a && (a === e ? "html" : a === d ? "json" : g.test(a) ? "script" : h.test(a) && "xml") || "text";
+  },
+      r = function (b, d, e, f) {
+    return a.isFunction(d) && (f = e, e = d, d = c), a.isFunction(e) || (f = e, e = c), { url: b, data: d, success: e, dataType: f };
+  };a.ajax = function (d, e) {
+    "object" == typeof d && (e = d, d = c);var f = e || {};f.url = d || f.url;for (var g in a.ajaxSettings) f[g] === c && (f[g] = a.ajaxSettings[g]);o(f);var h = f.dataType;f.cache !== !1 && (e && e.cache === !0 || "script" !== h) || (f.url = p(f.url, "_=" + a.now()));var m,
+        n = f.accepts[h && h.toLowerCase()],
+        r = {},
+        s = function (a, b) {
+      r[a.toLowerCase()] = [a, b];
+    },
+        t = /^([\w-]+:)\/\//.test(f.url) ? RegExp.$1 : b.location.protocol,
+        u = f.xhr(f),
+        v = u.setRequestHeader;if (s("X-Requested-With", "XMLHttpRequest"), s("Accept", n || "*/*"), (n = f.mimeType || n) && (n.indexOf(",") > -1 && (n = n.split(",", 2)[0]), u.overrideMimeType && u.overrideMimeType(n)), (f.contentType || f.contentType !== !1 && f.data && "GET" !== f.type.toUpperCase()) && s("Content-Type", f.contentType || "application/x-www-form-urlencoded"), f.headers) for (var w in f.headers) s(w, f.headers[w]);if (u.setRequestHeader = s, u.onreadystatechange = function () {
+      if (4 === u.readyState) {
+        u.onreadystatechange = a.noop, clearTimeout(m);var b,
+            c = !1,
+            d = "file:" === t;if (u.status >= 200 && u.status < 300 || 304 === u.status || 0 === u.status && d && u.responseText) {
+          h = h || q(f.mimeType || u.getResponseHeader("content-type")), b = u.responseText;try {
+            "script" === h ? (1, eval)(b) : "xml" === h ? b = u.responseXML : "json" === h && (b = i.test(b) ? null : a.parseJSON(b));
+          } catch (e) {
+            c = e;
+          }c ? l(c, "parsererror", u, f) : k(b, u, f);
+        } else {
+          var g = u.status ? "error" : "abort",
+              j = u.statusText || null;d && (g = "error", j = "404"), l(j, g, u, f);
+        }
+      }
+    }, j(u, f) === !1) return u.abort(), l(null, "abort", u, f), u;if (f.xhrFields) for (var w in f.xhrFields) u[w] = f.xhrFields[w];var x = "async" in f ? f.async : !0;u.open(f.type.toUpperCase(), f.url, x, f.username, f.password);for (var w in r) r.hasOwnProperty(w) && v.apply(u, r[w]);return f.timeout > 0 && (m = setTimeout(function () {
+      u.onreadystatechange = a.noop, u.abort(), l(null, "timeout", u, f);
+    }, f.timeout)), u.send(f.data ? f.data : null), u;
+  }, a.param = function (a, b) {
+    var c = [];return c.add = function (a, b) {
+      this.push(encodeURIComponent(a) + "=" + encodeURIComponent(b));
+    }, n(c, a, b), c.join("&").replace(/%20/g, "+");
+  }, a.get = function () {
+    return a.ajax(r.apply(null, arguments));
+  }, a.post = function () {
+    var b = r.apply(null, arguments);return b.type = "POST", a.ajax(b);
+  }, a.getJSON = function () {
+    var b = r.apply(null, arguments);return b.dataType = "json", a.ajax(b);
+  }, a.fn.load = function (b, c, d) {
+    if (!this.length) return this;var e,
+        g = this,
+        h = b.split(/\s/),
+        i = r(b, c, d),
+        j = i.success;return h.length > 1 && (i.url = h[0], e = h[1]), i.success = function (a) {
+      if (e) {
+        var b = document.createElement("div");b.innerHTML = a.replace(f, "");var c = document.createElement("div"),
+            d = b.querySelectorAll(e);if (d && d.length > 0) for (var h = 0, i = d.length; i > h; h++) c.appendChild(d[h]);g[0].innerHTML = c.innerHTML;
+      } else g[0].innerHTML = a;j && j.apply(g, arguments);
+    }, a.ajax(i), this;
+  };
+}(mui, window), function (a) {
+  var b = document.createElement("a");b.href = window.location.href, a.plusReady(function () {
+    a.ajaxSettings = a.extend(a.ajaxSettings, { xhr: function (c) {
+        if (c.crossDomain) return new plus.net.XMLHttpRequest();if ("file:" !== b.protocol) {
+          var d = document.createElement("a");if (d.href = c.url, d.href = d.href, c.crossDomain = b.protocol + "//" + b.host != d.protocol + "//" + d.host, c.crossDomain) return new plus.net.XMLHttpRequest();
+        }return a.os.ios && window.webkit && window.webkit.messageHandlers ? new plus.net.XMLHttpRequest() : new window.XMLHttpRequest();
+      } });
+  });
+}(mui), function (a, b, c) {
+  a.offset = function (a) {
+    var d = { top: 0, left: 0 };return typeof a.getBoundingClientRect !== c && (d = a.getBoundingClientRect()), { top: d.top + b.pageYOffset - a.clientTop, left: d.left + b.pageXOffset - a.clientLeft };
+  };
+}(mui, window), function (a, b) {
+  a.scrollTo = function (a, c, d) {
+    c = c || 1e3;var e = function (c) {
+      if (0 >= c) return b.scrollTo(0, a), void (d && d());var f = a - b.scrollY;setTimeout(function () {
+        b.scrollTo(0, b.scrollY + f / c * 10), e(c - 10);
+      }, 16.7);
+    };e(c);
+  }, a.animationFrame = function (a) {
+    var b, c, d;return function () {
+      b = arguments, d = this, c || (c = !0, requestAnimationFrame(function () {
+        a.apply(d, b), c = !1;
+      }));
+    };
+  };
+}(mui, window), function (a) {
+  var b = !1,
+      c = /xyz/.test(function () {
+    xyz;
+  }) ? /\b_super\b/ : /.*/,
+      d = function () {};d.extend = function (a) {
+    function d() {
+      !b && this.init && this.init.apply(this, arguments);
+    }var e = this.prototype;b = !0;var f = new this();b = !1;for (var g in a) f[g] = "function" == typeof a[g] && "function" == typeof e[g] && c.test(a[g]) ? function (a, b) {
+      return function () {
+        var c = this._super;this._super = e[a];var d = b.apply(this, arguments);return this._super = c, d;
+      };
+    }(g, a[g]) : a[g];return d.prototype = f, d.prototype.constructor = d, d.extend = arguments.callee, d;
+  }, a.Class = d;
+}(mui), function (a, b, c) {
+  var d = "mui-pull-top-pocket",
+      e = "mui-pull-bottom-pocket",
+      f = "mui-pull",
+      g = "mui-pull-loading",
+      h = "mui-pull-caption",
+      i = "mui-pull-caption-down",
+      j = "mui-pull-caption-refresh",
+      k = "mui-pull-caption-nomore",
+      l = "mui-icon",
+      m = "mui-spinner",
+      n = "mui-icon-pulldown",
+      o = "mui-block",
+      p = "mui-hidden",
+      q = "mui-visibility",
+      r = g + " " + l + " " + n,
+      s = g + " " + l + " " + n,
+      t = g + " " + l + " " + m,
+      u = ['<div class="' + f + '">', '<div class="{icon}"></div>', '<div class="' + h + '">{contentrefresh}</div>', "</div>"].join(""),
+      v = { init: function (b, c) {
+      this._super(b, a.extend(!0, { scrollY: !0, scrollX: !1, indicators: !0, deceleration: .003, down: { height: 50, contentinit: "下拉可以刷新", contentdown: "下拉可以刷新", contentover: "释放立即刷新", contentrefresh: "正在刷新..." }, up: { height: 50, auto: !1, contentinit: "上拉显示更多", contentdown: "上拉显示更多", contentrefresh: "正在加载...", contentnomore: "没有更多数据了", duration: 300 } }, c));
+    }, _init: function () {
+      this._super(), this._initPocket();
+    }, _initPulldownRefresh: function () {
+      this.pulldown = !0, this.pullPocket = this.topPocket, this.pullPocket.classList.add(o), this.pullPocket.classList.add(q), this.pullCaption = this.topCaption, this.pullLoading = this.topLoading;
+    }, _initPullupRefresh: function () {
+      this.pulldown = !1, this.pullPocket = this.bottomPocket, this.pullPocket.classList.add(o), this.pullPocket.classList.add(q), this.pullCaption = this.bottomCaption, this.pullLoading = this.bottomLoading;
+    }, _initPocket: function () {
+      var a = this.options;a.down && a.down.hasOwnProperty("callback") && (this.topPocket = this.scroller.querySelector("." + d), this.topPocket || (this.topPocket = this._createPocket(d, a.down, s), this.wrapper.insertBefore(this.topPocket, this.wrapper.firstChild)), this.topLoading = this.topPocket.querySelector("." + g), this.topCaption = this.topPocket.querySelector("." + h)), a.up && a.up.hasOwnProperty("callback") && (this.bottomPocket = this.scroller.querySelector("." + e), this.bottomPocket || (this.bottomPocket = this._createPocket(e, a.up, t), this.scroller.appendChild(this.bottomPocket)), this.bottomLoading = this.bottomPocket.querySelector("." + g), this.bottomCaption = this.bottomPocket.querySelector("." + h), this.wrapper.addEventListener("scrollbottom", this));
+    }, _createPocket: function (a, c, d) {
+      var e = b.createElement("div");return e.className = a, e.innerHTML = u.replace("{contentrefresh}", c.contentinit).replace("{icon}", d), e;
+    }, _resetPullDownLoading: function () {
+      var a = this.pullLoading;a && (this.pullCaption.innerHTML = this.options.down.contentdown, a.style.webkitTransition = "", a.style.webkitTransform = "", a.style.webkitAnimation = "", a.className = s);
+    }, _setCaptionClass: function (a, b, c) {
+      if (!a) switch (c) {case this.options.up.contentdown:
+          b.className = h + " " + i;break;case this.options.up.contentrefresh:
+          b.className = h + " " + j;break;case this.options.up.contentnomore:
+          b.className = h + " " + k;}
+    }, _setCaption: function (a, b) {
+      if (!this.loading) {
+        var c = this.options,
+            d = this.pullPocket,
+            e = this.pullCaption,
+            f = this.pullLoading,
+            g = this.pulldown,
+            h = this;d && (b ? setTimeout(function () {
+          e.innerHTML = h.lastTitle = a, g ? f.className = s : (h._setCaptionClass(!1, e, a), f.className = t), f.style.webkitAnimation = "", f.style.webkitTransition = "", f.style.webkitTransform = "";
+        }, 100) : a !== this.lastTitle && (e.innerHTML = a, g ? a === c.down.contentrefresh ? (f.className = t, f.style.webkitAnimation = "spinner-spin 1s step-end infinite") : a === c.down.contentover ? (f.className = r, f.style.webkitTransition = "-webkit-transform 0.3s ease-in", f.style.webkitTransform = "rotate(180deg)") : a === c.down.contentdown && (f.className = s, f.style.webkitTransition = "-webkit-transform 0.3s ease-in", f.style.webkitTransform = "rotate(0deg)") : (a === c.up.contentrefresh ? f.className = t + " " + q : f.className = t + " " + p, h._setCaptionClass(!1, e, a)), this.lastTitle = a));
+      }
+    } };a.PullRefresh = v;
+}(mui, document), function (a, b, c, d) {
+  var e = "mui-scroll",
+      f = "mui-scrollbar",
+      g = "mui-scrollbar-indicator",
+      h = f + "-vertical",
+      i = f + "-horizontal",
+      j = "mui-active",
+      k = { quadratic: { style: "cubic-bezier(0.25, 0.46, 0.45, 0.94)", fn: function (a) {
+        return a * (2 - a);
+      } }, circular: { style: "cubic-bezier(0.1, 0.57, 0.1, 1)", fn: function (a) {
+        return Math.sqrt(1 - --a * a);
+      } }, outCirc: { style: "cubic-bezier(0.075, 0.82, 0.165, 1)" }, outCubic: { style: "cubic-bezier(0.165, 0.84, 0.44, 1)" } },
+      l = a.Class.extend({ init: function (b, c) {
+      this.wrapper = this.element = b, this.scroller = this.wrapper.children[0], this.scrollerStyle = this.scroller && this.scroller.style, this.stopped = !1, this.options = a.extend(!0, { scrollY: !0, scrollX: !1, startX: 0, startY: 0, indicators: !0, stopPropagation: !1, hardwareAccelerated: !0, fixedBadAndorid: !1, preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|VIDEO)$/ }, momentum: !0, snapX: .5, snap: !1, bounce: !0, bounceTime: 500, bounceEasing: k.outCirc, scrollTime: 500, scrollEasing: k.outCubic, directionLockThreshold: 5, parallaxElement: !1, parallaxRatio: .5 }, c), this.x = 0, this.y = 0, this.translateZ = this.options.hardwareAccelerated ? " translateZ(0)" : "", this._init(), this.scroller && (this.refresh(), this.scrollTo(this.options.startX, this.options.startY));
+    }, _init: function () {
+      this._initParallax(), this._initIndicators(), this._initEvent();
+    }, _initParallax: function () {
+      this.options.parallaxElement && (this.parallaxElement = c.querySelector(this.options.parallaxElement), this.parallaxStyle = this.parallaxElement.style, this.parallaxHeight = this.parallaxElement.offsetHeight, this.parallaxImgStyle = this.parallaxElement.querySelector("img").style);
+    }, _initIndicators: function () {
+      var a = this;if (a.indicators = [], this.options.indicators) {
+        var b,
+            c = [];a.options.scrollY && (b = { el: this._createScrollBar(h), listenX: !1 }, this.wrapper.appendChild(b.el), c.push(b)), this.options.scrollX && (b = { el: this._createScrollBar(i), listenY: !1 }, this.wrapper.appendChild(b.el), c.push(b));for (var d = c.length; d--;) this.indicators.push(new m(this, c[d]));
+      }
+    }, _initSnap: function () {
+      this.currentPage = {}, this.pages = [];for (var a = this.snaps, b = a.length, c = 0, d = -1, e = 0, f = 0, g = 0, h = 0, i = 0; b > i; i++) {
+        var k = a[i],
+            l = k.offsetLeft,
+            m = k.offsetWidth;(0 === i || l <= a[i - 1].offsetLeft) && (c = 0, d++), this.pages[c] || (this.pages[c] = []), e = this._getSnapX(l), h = Math.round(m * this.options.snapX), f = e - h, g = e - m + h, this.pages[c][d] = { x: e, leftX: f, rightX: g, pageX: c, element: k }, k.classList.contains(j) && (this.currentPage = this.pages[c][0]), e >= this.maxScrollX && c++;
+      }this.options.startX = this.currentPage.x || 0;
+    }, _getSnapX: function (a) {
+      return Math.max(Math.min(0, -a + this.wrapperWidth / 2), this.maxScrollX);
+    }, _gotoPage: function (a) {
+      this.currentPage = this.pages[Math.min(a, this.pages.length - 1)][0];for (var b = 0, c = this.snaps.length; c > b; b++) b === a ? this.snaps[b].classList.add(j) : this.snaps[b].classList.remove(j);this.scrollTo(this.currentPage.x, 0, this.options.scrollTime);
+    }, _nearestSnap: function (a) {
+      if (!this.pages.length) return { x: 0, pageX: 0 };var b = 0,
+          c = this.pages.length;for (a > 0 ? a = 0 : a < this.maxScrollX && (a = this.maxScrollX); c > b; b++) {
+        var d = "left" === this.direction ? this.pages[b][0].leftX : this.pages[b][0].rightX;if (a >= d) return this.pages[b][0];
+      }return { x: 0, pageX: 0 };
+    }, _initEvent: function (c) {
+      var d = c ? "removeEventListener" : "addEventListener";b[d]("orientationchange", this), b[d]("resize", this), this.scroller[d]("webkitTransitionEnd", this), this.wrapper[d](a.EVENT_START, this), this.wrapper[d](a.EVENT_CANCEL, this), this.wrapper[d](a.EVENT_END, this), this.wrapper[d]("drag", this), this.wrapper[d]("dragend", this), this.wrapper[d]("flick", this), this.wrapper[d]("scrollend", this), this.options.scrollX && this.wrapper[d]("swiperight", this);var e = this.wrapper.querySelector(".mui-segmented-control");e && mui(e)[c ? "off" : "on"]("click", "a", a.preventDefault), this.wrapper[d]("scrollstart", this), this.wrapper[d]("refresh", this);
+    }, _handleIndicatorScrollend: function () {
+      this.indicators.map(function (a) {
+        a.fade();
+      });
+    }, _handleIndicatorScrollstart: function () {
+      this.indicators.map(function (a) {
+        a.fade(1);
+      });
+    }, _handleIndicatorRefresh: function () {
+      this.indicators.map(function (a) {
+        a.refresh();
+      });
+    }, handleEvent: function (b) {
+      if (this.stopped) return void this.resetPosition();switch (b.type) {case a.EVENT_START:
+          this._start(b);break;case "drag":
+          this.options.stopPropagation && b.stopPropagation(), this._drag(b);break;case "dragend":case "flick":
+          this.options.stopPropagation && b.stopPropagation(), this._flick(b);break;case a.EVENT_CANCEL:case a.EVENT_END:
+          this._end(b);break;case "webkitTransitionEnd":
+          this.transitionTimer && this.transitionTimer.cancel(), this._transitionEnd(b);break;case "scrollstart":
+          this._handleIndicatorScrollstart(b);break;case "scrollend":
+          this._handleIndicatorScrollend(b), this._scrollend(b), b.stopPropagation();break;case "orientationchange":case "resize":
+          this._resize();break;case "swiperight":
+          b.stopPropagation();break;case "refresh":
+          this._handleIndicatorRefresh(b);}
+    }, _start: function (b) {
+      if (this.moved = this.needReset = !1, this._transitionTime(), this.isInTransition) {
+        this.needReset = !0, this.isInTransition = !1;var c = a.parseTranslateMatrix(a.getStyles(this.scroller, "webkitTransform"));this.setTranslate(Math.round(c.x), Math.round(c.y)), a.trigger(this.scroller, "scrollend", this), b.preventDefault();
+      }this.reLayout(), a.trigger(this.scroller, "beforescrollstart", this);
+    }, _getDirectionByAngle: function (a) {
+      return -80 > a && a > -100 ? "up" : a >= 80 && 100 > a ? "down" : a >= 170 || -170 >= a ? "left" : a >= -35 && 10 >= a ? "right" : null;
+    }, _drag: function (c) {
+      var d = c.detail;if ((this.options.scrollY || "up" === d.direction || "down" === d.direction) && a.os.ios && parseFloat(a.os.version) >= 8) {
+        var e = d.gesture.touches[0].clientY;if (e + 10 > b.innerHeight || 10 > e) return void this.resetPosition(this.options.bounceTime);
+      }var f = isReturn = !1;this._getDirectionByAngle(d.angle);if ("left" === d.direction || "right" === d.direction ? this.options.scrollX ? (f = !0, this.moved || (a.gestures.session.lockDirection = !0, a.gestures.session.startDirection = d.direction)) : this.options.scrollY && !this.moved && (isReturn = !0) : "up" === d.direction || "down" === d.direction ? this.options.scrollY ? (f = !0, this.moved || (a.gestures.session.lockDirection = !0, a.gestures.session.startDirection = d.direction)) : this.options.scrollX && !this.moved && (isReturn = !0) : isReturn = !0, (this.moved || f) && (c.stopPropagation(), d.gesture && d.gesture.preventDefault()), !isReturn) {
+        this.moved ? c.stopPropagation() : a.trigger(this.scroller, "scrollstart", this);var g = 0,
+            h = 0;this.moved ? (g = d.deltaX - a.gestures.session.prevTouch.deltaX, h = d.deltaY - a.gestures.session.prevTouch.deltaY) : (g = d.deltaX, h = d.deltaY);var i = Math.abs(d.deltaX),
+            j = Math.abs(d.deltaY);i > j + this.options.directionLockThreshold ? h = 0 : j >= i + this.options.directionLockThreshold && (g = 0), g = this.hasHorizontalScroll ? g : 0, h = this.hasVerticalScroll ? h : 0;var k = this.x + g,
+            l = this.y + h;(k > 0 || k < this.maxScrollX) && (k = this.options.bounce ? this.x + g / 3 : k > 0 ? 0 : this.maxScrollX), (l > 0 || l < this.maxScrollY) && (l = this.options.bounce ? this.y + h / 3 : l > 0 ? 0 : this.maxScrollY), this.requestAnimationFrame || this._updateTranslate(), this.direction = d.deltaX > 0 ? "right" : "left", this.moved = !0, this.x = k, this.y = l, a.trigger(this.scroller, "scroll", this);
+      }
+    }, _flick: function (b) {
+      if (this.moved) {
+        b.stopPropagation();var c = b.detail;if (this._clearRequestAnimationFrame(), "dragend" !== b.type || !c.flick) {
+          var d = Math.round(this.x),
+              e = Math.round(this.y);if (this.isInTransition = !1, !this.resetPosition(this.options.bounceTime)) {
+            if (this.scrollTo(d, e), "dragend" === b.type) return void a.trigger(this.scroller, "scrollend", this);var f = 0,
+                g = "";return this.options.momentum && c.flickTime < 300 && (momentumX = this.hasHorizontalScroll ? this._momentum(this.x, c.flickDistanceX, c.flickTime, this.maxScrollX, this.options.bounce ? this.wrapperWidth : 0, this.options.deceleration) : { destination: d, duration: 0 }, momentumY = this.hasVerticalScroll ? this._momentum(this.y, c.flickDistanceY, c.flickTime, this.maxScrollY, this.options.bounce ? this.wrapperHeight : 0, this.options.deceleration) : { destination: e, duration: 0 }, d = momentumX.destination, e = momentumY.destination, f = Math.max(momentumX.duration, momentumY.duration), this.isInTransition = !0), d != this.x || e != this.y ? ((d > 0 || d < this.maxScrollX || e > 0 || e < this.maxScrollY) && (g = k.quadratic), void this.scrollTo(d, e, f, g)) : void a.trigger(this.scroller, "scrollend", this);
+          }
+        }
+      }
+    }, _end: function (b) {
+      this.needReset = !1, (!this.moved && this.needReset || b.type === a.EVENT_CANCEL) && this.resetPosition();
+    }, _transitionEnd: function (b) {
+      b.target == this.scroller && this.isInTransition && (this._transitionTime(), this.resetPosition(this.options.bounceTime) || (this.isInTransition = !1, a.trigger(this.scroller, "scrollend", this)));
+    }, _scrollend: function (b) {
+      (0 === this.y && 0 === this.maxScrollY || Math.abs(this.y) > 0 && this.y <= this.maxScrollY) && a.trigger(this.scroller, "scrollbottom", this);
+    }, _resize: function () {
+      var a = this;clearTimeout(a.resizeTimeout), a.resizeTimeout = setTimeout(function () {
+        a.refresh();
+      }, a.options.resizePolling);
+    }, _transitionTime: function (b) {
+      if (b = b || 0, this.scrollerStyle.webkitTransitionDuration = b + "ms", this.parallaxElement && this.options.scrollY && (this.parallaxStyle.webkitTransitionDuration = b + "ms"), this.options.fixedBadAndorid && !b && a.os.isBadAndroid && (this.scrollerStyle.webkitTransitionDuration = "0.001s", this.parallaxElement && this.options.scrollY && (this.parallaxStyle.webkitTransitionDuration = "0.001s")), this.indicators) for (var c = this.indicators.length; c--;) this.indicators[c].transitionTime(b);b && (this.transitionTimer && this.transitionTimer.cancel(), this.transitionTimer = a.later(function () {
+        a.trigger(this.scroller, "webkitTransitionEnd");
+      }, b + 100, this));
+    }, _transitionTimingFunction: function (a) {
+      if (this.scrollerStyle.webkitTransitionTimingFunction = a, this.parallaxElement && this.options.scrollY && (this.parallaxStyle.webkitTransitionDuration = a), this.indicators) for (var b = this.indicators.length; b--;) this.indicators[b].transitionTimingFunction(a);
+    }, _translate: function (a, b) {
+      this.x = a, this.y = b;
+    }, _clearRequestAnimationFrame: function () {
+      this.requestAnimationFrame && (cancelAnimationFrame(this.requestAnimationFrame), this.requestAnimationFrame = null);
+    }, _updateTranslate: function () {
+      var a = this;(a.x !== a.lastX || a.y !== a.lastY) && a.setTranslate(a.x, a.y), a.requestAnimationFrame = requestAnimationFrame(function () {
+        a._updateTranslate();
+      });
+    }, _createScrollBar: function (a) {
+      var b = c.createElement("div"),
+          d = c.createElement("div");return b.className = f + " " + a, d.className = g, b.appendChild(d), a === h ? (this.scrollbarY = b, this.scrollbarIndicatorY = d) : a === i && (this.scrollbarX = b, this.scrollbarIndicatorX = d), this.wrapper.appendChild(b), b;
+    }, _preventDefaultException: function (a, b) {
+      for (var c in b) if (b[c].test(a[c])) return !0;return !1;
+    }, _reLayout: function () {
+      if (this.hasHorizontalScroll || (this.maxScrollX = 0, this.scrollerWidth = this.wrapperWidth), this.hasVerticalScroll || (this.maxScrollY = 0, this.scrollerHeight = this.wrapperHeight), this.indicators.map(function (a) {
+        a.refresh();
+      }), this.options.snap && "string" == typeof this.options.snap) {
+        var a = this.scroller.querySelectorAll(this.options.snap);this.itemLength = 0, this.snaps = [];for (var b = 0, c = a.length; c > b; b++) {
+          var d = a[b];d.parentNode === this.scroller && (this.itemLength++, this.snaps.push(d));
+        }this._initSnap();
+      }
+    }, _momentum: function (a, b, c, e, f, g) {
+      var h,
+          i,
+          j = parseFloat(Math.abs(b) / c);return g = g === d ? 6e-4 : g, h = a + j * j / (2 * g) * (0 > b ? -1 : 1), i = j / g, e > h ? (h = f ? e - f / 2.5 * (j / 8) : e, b = Math.abs(h - a), i = b / j) : h > 0 && (h = f ? f / 2.5 * (j / 8) : 0, b = Math.abs(a) + h, i = b / j), { destination: Math.round(h), duration: i };
+    }, _getTranslateStr: function (a, b) {
+      return this.options.hardwareAccelerated ? "translate3d(" + a + "px," + b + "px,0px) " + this.translateZ : "translate(" + a + "px," + b + "px) ";
+    }, setStopped: function (a) {
+      this.stopped = !!a;
+    }, setTranslate: function (b, c) {
+      if (this.x = b, this.y = c, this.scrollerStyle.webkitTransform = this._getTranslateStr(b, c), this.parallaxElement && this.options.scrollY) {
+        var d = c * this.options.parallaxRatio,
+            e = 1 + d / ((this.parallaxHeight - d) / 2);e > 1 ? (this.parallaxImgStyle.opacity = 1 - d / 100 * this.options.parallaxRatio, this.parallaxStyle.webkitTransform = this._getTranslateStr(0, -d) + " scale(" + e + "," + e + ")") : (this.parallaxImgStyle.opacity = 1, this.parallaxStyle.webkitTransform = this._getTranslateStr(0, -1) + " scale(1,1)");
+      }if (this.indicators) for (var f = this.indicators.length; f--;) this.indicators[f].updatePosition();this.lastX = this.x, this.lastY = this.y, a.trigger(this.scroller, "scroll", this);
+    }, reLayout: function () {
+      this.wrapper.offsetHeight;var b = parseFloat(a.getStyles(this.wrapper, "padding-left")) || 0,
+          c = parseFloat(a.getStyles(this.wrapper, "padding-right")) || 0,
+          d = parseFloat(a.getStyles(this.wrapper, "padding-top")) || 0,
+          e = parseFloat(a.getStyles(this.wrapper, "padding-bottom")) || 0,
+          f = this.wrapper.clientWidth,
+          g = this.wrapper.clientHeight;this.scrollerWidth = this.scroller.offsetWidth, this.scrollerHeight = this.scroller.offsetHeight, this.wrapperWidth = f - b - c, this.wrapperHeight = g - d - e, this.maxScrollX = Math.min(this.wrapperWidth - this.scrollerWidth, 0), this.maxScrollY = Math.min(this.wrapperHeight - this.scrollerHeight, 0), this.hasHorizontalScroll = this.options.scrollX && this.maxScrollX < 0, this.hasVerticalScroll = this.options.scrollY && this.maxScrollY < 0, this._reLayout();
+    }, resetPosition: function (a) {
+      var b = this.x,
+          c = this.y;return a = a || 0, !this.hasHorizontalScroll || this.x > 0 ? b = 0 : this.x < this.maxScrollX && (b = this.maxScrollX), !this.hasVerticalScroll || this.y > 0 ? c = 0 : this.y < this.maxScrollY && (c = this.maxScrollY), b == this.x && c == this.y ? !1 : (this.scrollTo(b, c, a, this.options.scrollEasing), !0);
+    }, _reInit: function () {
+      for (var a = this.wrapper.querySelectorAll("." + e), b = 0, c = a.length; c > b; b++) if (a[b].parentNode === this.wrapper) {
+        this.scroller = a[b];break;
+      }this.scrollerStyle = this.scroller && this.scroller.style;
+    }, refresh: function () {
+      this._reInit(), this.reLayout(), a.trigger(this.scroller, "refresh", this), this.resetPosition();
+    }, scrollTo: function (a, b, c, d) {
+      var d = d || k.circular;this.isInTransition = c > 0, this.isInTransition ? (this._clearRequestAnimationFrame(), this._transitionTimingFunction(d.style), this._transitionTime(c), this.setTranslate(a, b)) : this.setTranslate(a, b);
+    }, scrollToBottom: function (a, b) {
+      a = a || this.options.scrollTime, this.scrollTo(0, this.maxScrollY, a, b);
+    }, gotoPage: function (a) {
+      this._gotoPage(a);
+    }, destroy: function () {
+      this._initEvent(!0), delete a.data[this.wrapper.getAttribute("data-scroll")], this.wrapper.setAttribute("data-scroll", "");
+    } }),
+      m = function (b, d) {
+    this.wrapper = "string" == typeof d.el ? c.querySelector(d.el) : d.el, this.wrapperStyle = this.wrapper.style, this.indicator = this.wrapper.children[0], this.indicatorStyle = this.indicator.style, this.scroller = b, this.options = a.extend({ listenX: !0, listenY: !0, fade: !1, speedRatioX: 0, speedRatioY: 0 }, d), this.sizeRatioX = 1, this.sizeRatioY = 1, this.maxPosX = 0, this.maxPosY = 0, this.options.fade && (this.wrapperStyle.webkitTransform = this.scroller.translateZ, this.wrapperStyle.webkitTransitionDuration = this.options.fixedBadAndorid && a.os.isBadAndroid ? "0.001s" : "0ms", this.wrapperStyle.opacity = "0");
+  };m.prototype = { handleEvent: function (a) {}, transitionTime: function (b) {
+      b = b || 0, this.indicatorStyle.webkitTransitionDuration = b + "ms", this.scroller.options.fixedBadAndorid && !b && a.os.isBadAndroid && (this.indicatorStyle.webkitTransitionDuration = "0.001s");
+    }, transitionTimingFunction: function (a) {
+      this.indicatorStyle.webkitTransitionTimingFunction = a;
+    }, refresh: function () {
+      this.transitionTime(), this.options.listenX && !this.options.listenY ? this.indicatorStyle.display = this.scroller.hasHorizontalScroll ? "block" : "none" : this.options.listenY && !this.options.listenX ? this.indicatorStyle.display = this.scroller.hasVerticalScroll ? "block" : "none" : this.indicatorStyle.display = this.scroller.hasHorizontalScroll || this.scroller.hasVerticalScroll ? "block" : "none", this.wrapper.offsetHeight, this.options.listenX && (this.wrapperWidth = this.wrapper.clientWidth, this.indicatorWidth = Math.max(Math.round(this.wrapperWidth * this.wrapperWidth / (this.scroller.scrollerWidth || this.wrapperWidth || 1)), 8), this.indicatorStyle.width = this.indicatorWidth + "px", this.maxPosX = this.wrapperWidth - this.indicatorWidth, this.minBoundaryX = 0, this.maxBoundaryX = this.maxPosX, this.sizeRatioX = this.options.speedRatioX || this.scroller.maxScrollX && this.maxPosX / this.scroller.maxScrollX), this.options.listenY && (this.wrapperHeight = this.wrapper.clientHeight, this.indicatorHeight = Math.max(Math.round(this.wrapperHeight * this.wrapperHeight / (this.scroller.scrollerHeight || this.wrapperHeight || 1)), 8), this.indicatorStyle.height = this.indicatorHeight + "px", this.maxPosY = this.wrapperHeight - this.indicatorHeight, this.minBoundaryY = 0, this.maxBoundaryY = this.maxPosY, this.sizeRatioY = this.options.speedRatioY || this.scroller.maxScrollY && this.maxPosY / this.scroller.maxScrollY), this.updatePosition();
+    }, updatePosition: function () {
+      var a = this.options.listenX && Math.round(this.sizeRatioX * this.scroller.x) || 0,
+          b = this.options.listenY && Math.round(this.sizeRatioY * this.scroller.y) || 0;a < this.minBoundaryX ? (this.width = Math.max(this.indicatorWidth + a, 8), this.indicatorStyle.width = this.width + "px", a = this.minBoundaryX) : a > this.maxBoundaryX ? (this.width = Math.max(this.indicatorWidth - (a - this.maxPosX), 8), this.indicatorStyle.width = this.width + "px", a = this.maxPosX + this.indicatorWidth - this.width) : this.width != this.indicatorWidth && (this.width = this.indicatorWidth, this.indicatorStyle.width = this.width + "px"), b < this.minBoundaryY ? (this.height = Math.max(this.indicatorHeight + 3 * b, 8), this.indicatorStyle.height = this.height + "px", b = this.minBoundaryY) : b > this.maxBoundaryY ? (this.height = Math.max(this.indicatorHeight - 3 * (b - this.maxPosY), 8), this.indicatorStyle.height = this.height + "px", b = this.maxPosY + this.indicatorHeight - this.height) : this.height != this.indicatorHeight && (this.height = this.indicatorHeight, this.indicatorStyle.height = this.height + "px"), this.x = a, this.y = b, this.indicatorStyle.webkitTransform = this.scroller._getTranslateStr(a, b);
+    }, fade: function (a, b) {
+      if (!b || this.visible) {
+        clearTimeout(this.fadeTimeout), this.fadeTimeout = null;var c = a ? 250 : 500,
+            d = a ? 0 : 300;a = a ? "1" : "0", this.wrapperStyle.webkitTransitionDuration = c + "ms", this.fadeTimeout = setTimeout(function (a) {
+          this.wrapperStyle.opacity = a, this.visible = +a;
+        }.bind(this, a), d);
+      }
+    } }, a.Scroll = l, a.fn.scroll = function (b) {
+    var c = [];return this.each(function () {
+      var d = null,
+          e = this,
+          f = e.getAttribute("data-scroll");if (f) d = a.data[f];else {
+        f = ++a.uuid;var g = a.extend({}, b);e.classList.contains("mui-segmented-control") && (g = a.extend(g, { scrollY: !1, scrollX: !0, indicators: !1, snap: ".mui-control-item" })), a.data[f] = d = new l(e, g), e.setAttribute("data-scroll", f);
+      }c.push(d);
+    }), 1 === c.length ? c[0] : c;
+  };
+}(mui, window, document), function (a, b, c, d) {
+  var e = "mui-visibility",
+      f = "mui-hidden",
+      g = a.Scroll.extend(a.extend({ handleEvent: function (a) {
+      this._super(a), "scrollbottom" === a.type && a.target === this.scroller && this._scrollbottom();
+    }, _scrollbottom: function () {
+      this.pulldown || this.loading || (this.pulldown = !1, this._initPullupRefresh(), this.pullupLoading());
+    }, _start: function (a) {
+      a.touches && a.touches.length && a.touches[0].clientX > 30 && a.target && !this._preventDefaultException(a.target, this.options.preventDefaultException) && a.preventDefault(), this.loading || (this.pulldown = this.pullPocket = this.pullCaption = this.pullLoading = !1), this._super(a);
+    }, _drag: function (a) {
+      this._super(a), !this.pulldown && !this.loading && this.topPocket && "down" === a.detail.direction && this.y >= 0 && this._initPulldownRefresh(), this.pulldown && this._setCaption(this.y > this.options.down.height ? this.options.down.contentover : this.options.down.contentdown);
+    }, _reLayout: function () {
+      this.hasVerticalScroll = !0, this._super();
+    }, resetPosition: function (a) {
+      if (this.pulldown) {
+        if (this.y >= this.options.down.height) return this.pulldownLoading(d, a || 0), !0;!this.loading && this.topPocket.classList.remove(e);
+      }return this._super(a);
+    }, pulldownLoading: function (a, b) {
+      if ("undefined" == typeof a && (a = this.options.down.height), this.scrollTo(0, a, b, this.options.bounceEasing), !this.loading) {
+        this._initPulldownRefresh(), this._setCaption(this.options.down.contentrefresh), this.loading = !0, this.indicators.map(function (a) {
+          a.fade(0);
+        });var c = this.options.down.callback;c && c.call(this);
+      }
+    }, endPulldownToRefresh: function () {
+      var a = this;a.topPocket && a.loading && this.pulldown && (a.scrollTo(0, 0, a.options.bounceTime, a.options.bounceEasing), a.loading = !1, a._setCaption(a.options.down.contentdown, !0), setTimeout(function () {
+        a.loading || a.topPocket.classList.remove(e);
+      }, 350));
+    }, pullupLoading: function (a, b, c) {
+      b = b || 0, this.scrollTo(b, this.maxScrollY, c, this.options.bounceEasing), this.loading || (this._initPullupRefresh(), this._setCaption(this.options.up.contentrefresh), this.indicators.map(function (a) {
+        a.fade(0);
+      }), this.loading = !0, a = a || this.options.up.callback, a && a.call(this));
+    }, endPullupToRefresh: function (a) {
+      var b = this;b.bottomPocket && (b.loading = !1, a ? (this.finished = !0, b._setCaption(b.options.up.contentnomore), b.wrapper.removeEventListener("scrollbottom", b)) : (b._setCaption(b.options.up.contentdown), b.loading || b.bottomPocket.classList.remove(e)));
+    }, disablePullupToRefresh: function () {
+      this._initPullupRefresh(), this.bottomPocket.className = "mui-pull-bottom-pocket " + f, this.wrapper.removeEventListener("scrollbottom", this);
+    }, enablePullupToRefresh: function () {
+      this._initPullupRefresh(), this.bottomPocket.classList.remove(f), this._setCaption(this.options.up.contentdown), this.wrapper.addEventListener("scrollbottom", this);
+    }, refresh: function (a) {
+      a && this.finished && (this.enablePullupToRefresh(), this.finished = !1), this._super();
+    } }, a.PullRefresh));a.fn.pullRefresh = function (b) {
+    if (1 === this.length) {
+      var c = this[0],
+          d = null;b = b || {};var e = c.getAttribute("data-pullrefresh");return e ? d = a.data[e] : (e = ++a.uuid, a.data[e] = d = new g(c, b), c.setAttribute("data-pullrefresh", e)), b.down && b.down.auto ? d.pulldownLoading(b.down.autoY) : b.up && b.up.auto && d.pullupLoading(), d;
+    }
+  };
+}(mui, window, document), function (a, b) {
+  var c = "mui-slider",
+      d = "mui-slider-group",
+      e = "mui-slider-loop",
+      f = "mui-action-previous",
+      g = "mui-action-next",
+      h = "mui-slider-item",
+      i = "mui-active",
+      j = "." + h,
+      k = ".mui-slider-progress-bar",
+      l = a.Slider = a.Scroll.extend({ init: function (b, c) {
+      this._super(b, a.extend(!0, { fingers: 1, interval: 0, scrollY: !1, scrollX: !0, indicators: !1, scrollTime: 1e3, startX: !1, slideTime: 0, snap: j }, c)), this.options.startX;
+    }, _init: function () {
+      this._reInit(), this.scroller && (this.scrollerStyle = this.scroller.style, this.progressBar = this.wrapper.querySelector(k), this.progressBar && (this.progressBarWidth = this.progressBar.offsetWidth, this.progressBarStyle = this.progressBar.style), this._super(), this._initTimer());
+    }, _triggerSlide: function () {
+      var b = this;b.isInTransition = !1;b.currentPage;b.slideNumber = b._fixedSlideNumber(), b.loop && (0 === b.slideNumber ? b.setTranslate(b.pages[1][0].x, 0) : b.slideNumber === b.itemLength - 3 && b.setTranslate(b.pages[b.itemLength - 2][0].x, 0)), b.lastSlideNumber != b.slideNumber && (b.lastSlideNumber = b.slideNumber, b.lastPage = b.currentPage, a.trigger(b.wrapper, "slide", { slideNumber: b.slideNumber })), b._initTimer();
+    }, _handleSlide: function (b) {
+      var c = this;if (b.target === c.wrapper) {
+        var d = b.detail;d.slideNumber = d.slideNumber || 0;for (var e = c.scroller.querySelectorAll(j), f = [], g = 0, h = e.length; h > g; g++) {
+          var k = e[g];k.parentNode === c.scroller && f.push(k);
+        }var l = d.slideNumber;if (c.loop && (l += 1), !c.wrapper.classList.contains("mui-segmented-control")) for (var g = 0, h = f.length; h > g; g++) {
+          var k = f[g];k.parentNode === c.scroller && (g === l ? k.classList.add(i) : k.classList.remove(i));
+        }var m = c.wrapper.querySelector(".mui-slider-indicator");if (m) {
+          m.getAttribute("data-scroll") && a(m).scroll().gotoPage(d.slideNumber);var n = m.querySelectorAll(".mui-indicator");if (n.length > 0) for (var g = 0, h = n.length; h > g; g++) n[g].classList[g === d.slideNumber ? "add" : "remove"](i);else {
+            var o = m.querySelector(".mui-number span");if (o) o.innerText = d.slideNumber + 1;else for (var p = m.querySelectorAll(".mui-control-item"), g = 0, h = p.length; h > g; g++) p[g].classList[g === d.slideNumber ? "add" : "remove"](i);
+          }
+        }b.stopPropagation();
+      }
+    }, _handleTabShow: function (a) {
+      var b = this;b.gotoItem(a.detail.tabNumber || 0, b.options.slideTime);
+    }, _handleIndicatorTap: function (a) {
+      var b = this,
+          c = a.target;(c.classList.contains(f) || c.classList.contains(g)) && (b[c.classList.contains(f) ? "prevItem" : "nextItem"](), a.stopPropagation());
+    }, _initEvent: function (b) {
+      var c = this;c._super(b);var d = b ? "removeEventListener" : "addEventListener";c.wrapper[d]("slide", this), c.wrapper[d](a.eventName("shown", "tab"), this);
+    }, handleEvent: function (b) {
+      switch (this._super(b), b.type) {case "slide":
+          this._handleSlide(b);break;case a.eventName("shown", "tab"):
+          ~this.snaps.indexOf(b.target) && this._handleTabShow(b);}
+    }, _scrollend: function (a) {
+      this._super(a), this._triggerSlide(a);
+    }, _drag: function (a) {
+      this._super(a);var c = a.detail.direction;if ("left" === c || "right" === c) {
+        var d = this.wrapper.getAttribute("data-slidershowTimer");d && b.clearTimeout(d), a.stopPropagation();
+      }
+    }, _initTimer: function () {
+      var a = this,
+          c = a.wrapper,
+          d = a.options.interval,
+          e = c.getAttribute("data-slidershowTimer");e && b.clearTimeout(e), d && (e = b.setTimeout(function () {
+        c && ((c.offsetWidth || c.offsetHeight) && a.nextItem(!0), a._initTimer());
+      }, d), c.setAttribute("data-slidershowTimer", e));
+    }, _fixedSlideNumber: function (a) {
+      a = a || this.currentPage;var b = a.pageX;return this.loop && (b = 0 === a.pageX ? this.itemLength - 3 : a.pageX === this.itemLength - 1 ? 0 : a.pageX - 1), b;
+    }, _reLayout: function () {
+      this.hasHorizontalScroll = !0, this.loop = this.scroller.classList.contains(e), this._super();
+    }, _getScroll: function () {
+      var b = a.parseTranslateMatrix(a.getStyles(this.scroller, "webkitTransform"));return b ? b.x : 0;
+    }, _transitionEnd: function (b) {
+      b.target === this.scroller && this.isInTransition && (this._transitionTime(), this.isInTransition = !1, a.trigger(this.wrapper, "scrollend", this));
+    }, _flick: function (a) {
+      if (this.moved) {
+        var b = a.detail,
+            c = b.direction;this._clearRequestAnimationFrame(), this.isInTransition = !0, "flick" === a.type ? (b.deltaTime < 200 && (this.x = this._getPage(this.slideNumber + ("right" === c ? -1 : 1), !0).x), this.resetPosition(this.options.bounceTime)) : "dragend" !== a.type || b.flick || this.resetPosition(this.options.bounceTime), a.stopPropagation();
+      }
+    }, _initSnap: function () {
+      if (this.scrollerWidth = this.itemLength * this.scrollerWidth, this.maxScrollX = Math.min(this.wrapperWidth - this.scrollerWidth, 0), this._super(), this.currentPage.x) this.slideNumber = this._fixedSlideNumber(), this.lastSlideNumber = "undefined" == typeof this.lastSlideNumber ? this.slideNumber : this.lastSlideNumber;else {
+        var a = this.pages[this.loop ? 1 : 0];if (a = a || this.pages[0], !a) return;this.currentPage = a[0], this.slideNumber = 0, this.lastSlideNumber = "undefined" == typeof this.lastSlideNumber ? 0 : this.lastSlideNumber;
+      }this.options.startX = this.currentPage.x || 0;
+    }, _getSnapX: function (a) {
+      return Math.max(-a, this.maxScrollX);
+    }, _getPage: function (a, b) {
+      return this.loop ? a > this.itemLength - (b ? 2 : 3) ? (a = 1, time = 0) : (b ? -1 : 0) > a ? (a = this.itemLength - 2, time = 0) : a += 1 : (b || (a > this.itemLength - 1 ? (a = 0, time = 0) : 0 > a && (a = this.itemLength - 1, time = 0)), a = Math.min(Math.max(0, a), this.itemLength - 1)), this.pages[a][0];
+    }, _gotoItem: function (b, c) {
+      this.currentPage = this._getPage(b, !0), this.scrollTo(this.currentPage.x, 0, c, this.options.scrollEasing), 0 === c && a.trigger(this.wrapper, "scrollend", this);
+    }, setTranslate: function (a, b) {
+      this._super(a, b);var c = this.progressBar;c && (this.progressBarStyle.webkitTransform = this._getTranslateStr(-a * (this.progressBarWidth / this.wrapperWidth), 0));
+    }, resetPosition: function (a) {
+      return a = a || 0, this.x > 0 ? this.x = 0 : this.x < this.maxScrollX && (this.x = this.maxScrollX), this.currentPage = this._nearestSnap(this.x), this.scrollTo(this.currentPage.x, 0, a, this.options.scrollEasing), !0;
+    }, gotoItem: function (a, b) {
+      this._gotoItem(a, "undefined" == typeof b ? this.options.scrollTime : b);
+    }, nextItem: function () {
+      this._gotoItem(this.slideNumber + 1, this.options.scrollTime);
+    }, prevItem: function () {
+      this._gotoItem(this.slideNumber - 1, this.options.scrollTime);
+    }, getSlideNumber: function () {
+      return this.slideNumber || 0;
+    }, _reInit: function () {
+      for (var a = this.wrapper.querySelectorAll("." + d), b = 0, c = a.length; c > b; b++) if (a[b].parentNode === this.wrapper) {
+        this.scroller = a[b];break;
+      }this.scrollerStyle = this.scroller && this.scroller.style, this.progressBar && (this.progressBarWidth = this.progressBar.offsetWidth, this.progressBarStyle = this.progressBar.style);
+    }, refresh: function (b) {
+      b ? (a.extend(this.options, b), this._super(), this._initTimer()) : this._super();
+    }, destroy: function () {
+      this._initEvent(!0), delete a.data[this.wrapper.getAttribute("data-slider")], this.wrapper.setAttribute("data-slider", "");
+    } });a.fn.slider = function (b) {
+    var d = null;return this.each(function () {
+      var e = this;if (this.classList.contains(c) || (e = this.querySelector("." + c)), e && e.querySelector(j)) {
+        var f = e.getAttribute("data-slider");f ? (d = a.data[f], d && b && d.refresh(b)) : (f = ++a.uuid, a.data[f] = d = new l(e, b), e.setAttribute("data-slider", f));
+      }
+    }), d;
+  }, a.ready(function () {
+    a(".mui-slider").slider(), a(".mui-scroll-wrapper.mui-slider-indicator.mui-segmented-control").scroll({ scrollY: !1, scrollX: !0, indicators: !1, snap: ".mui-control-item" });
+  });
+}(mui, window), function (a, b) {
+  a.os.plus && a.os.android && a.plusReady(function () {
+    if (window.__NWin_Enable__ !== !1) {
+      var c = "mui-plus-pullrefresh",
+          d = "mui-visibility",
+          e = "mui-hidden",
+          f = "mui-block",
+          g = "mui-pull-caption",
+          h = "mui-pull-caption-down",
+          i = "mui-pull-caption-refresh",
+          j = "mui-pull-caption-nomore",
+          k = a.Class.extend({ init: function (a, b) {
+          this.element = a, this.options = b, this.wrapper = this.scroller = a, this._init(), this._initPulldownRefreshEvent();
+        }, _init: function () {
+          var a = this;window.addEventListener("dragup", a), b.addEventListener("plusscrollbottom", a), a.scrollInterval = window.setInterval(function () {
+            a.isScroll && !a.loading && window.pageYOffset + window.innerHeight + 10 >= b.documentElement.scrollHeight && (a.isScroll = !1, a.bottomPocket && a.pullupLoading());
+          }, 100);
+        }, _initPulldownRefreshEvent: function () {
+          var b = this;b.topPocket && b.options.webviewId && a.plusReady(function () {
+            var a = plus.webview.getWebviewById(b.options.webviewId);if (a) {
+              b.options.webview = a;var c = b.options.down,
+                  d = c.height;a.addEventListener("close", function () {
+                var a = b.options.webviewId && b.options.webviewId.replace(/\//g, "_");b.element.removeAttribute("data-pullrefresh-plus-" + a);
+              }), a.addEventListener("dragBounce", function (d) {
+                switch (b.pulldown ? b.pullPocket.classList.add(f) : b._initPulldownRefresh(), d.status) {case "beforeChangeOffset":
+                    b._setCaption(c.contentdown);break;case "afterChangeOffset":
+                    b._setCaption(c.contentover);break;case "dragEndAfterChangeOffset":
+                    a.evalJS("mui&&mui.options.pullRefresh.down.callback()"), b._setCaption(c.contentrefresh);}
+              }, !1), a.setBounce({ position: { top: 2 * d + "px" }, changeoffset: { top: d + "px" } });
+            }
+          });
+        }, handleEvent: function (a) {
+          var b = this;b.stopped || (b.isScroll = !1, ("dragup" === a.type || "plusscrollbottom" === a.type) && (b.isScroll = !0, setTimeout(function () {
+            b.isScroll = !1;
+          }, 1e3)));
+        } }).extend(a.extend({ setStopped: function (a) {
+          this.stopped = !!a;var b = plus.webview.currentWebview();if (this.stopped) b.setStyle({ bounce: "none" }), b.setBounce({ position: { top: "none" } });else {
+            var c = this.options.down.height;b.setStyle({ bounce: "vertical" }), b.setBounce({ position: { top: 2 * c + "px" }, changeoffset: { top: c + "px" } });
+          }
+        }, pulldownLoading: function () {
+          a.plusReady(function () {
+            plus.webview.currentWebview().setBounce({ offset: { top: this.options.down.height + "px" } });
+          }.bind(this));
+        }, _pulldownLoading: function () {
+          var b = this;a.plusReady(function () {
+            var a = plus.webview.getWebviewById(b.options.webviewId);a.setBounce({ offset: { top: b.options.down.height + "px" } });
+          });
+        }, endPulldownToRefresh: function () {
+          var a = plus.webview.currentWebview();a.parent().evalJS("mui&&mui(document.querySelector('.mui-content')).pullRefresh('" + JSON.stringify({ webviewId: a.id }) + "')._endPulldownToRefresh()");
+        }, _endPulldownToRefresh: function () {
+          var a = this;a.topPocket && a.options.webview && (a.options.webview.endPullToRefresh(), a.loading = !1, a._setCaption(a.options.down.contentdown, !0), setTimeout(function () {
+            a.loading || a.topPocket.classList.remove(f);
+          }, 350));
+        }, pullupLoading: function (a) {
+          var b = this;b.isLoading || (b.isLoading = !0, b.pulldown !== !1 ? b._initPullupRefresh() : this.pullPocket.classList.add(f), setTimeout(function () {
+            b.pullLoading.classList.add(d), b.pullLoading.classList.remove(e), b.pullCaption.innerHTML = "", b.pullCaption.className = g + " " + i, b.pullCaption.innerHTML = b.options.up.contentrefresh, a = a || b.options.up.callback, a && a.call(b);
+          }, 300));
+        }, endPullupToRefresh: function (a) {
+          var c = this;c.pullLoading && (c.pullLoading.classList.remove(d), c.pullLoading.classList.add(e), c.isLoading = !1, a ? (c.finished = !0, c.pullCaption.className = g + " " + j, c.pullCaption.innerHTML = c.options.up.contentnomore, b.removeEventListener("plusscrollbottom", c), window.removeEventListener("dragup", c)) : (c.pullCaption.className = g + " " + h, c.pullCaption.innerHTML = c.options.up.contentdown));
+        }, disablePullupToRefresh: function () {
+          this._initPullupRefresh(), this.bottomPocket.className = "mui-pull-bottom-pocket " + e, window.removeEventListener("dragup", this);
+        }, enablePullupToRefresh: function () {
+          this._initPullupRefresh(), this.bottomPocket.classList.remove(e), this.pullCaption.className = g + " " + h, this.pullCaption.innerHTML = this.options.up.contentdown, b.addEventListener("plusscrollbottom", this), window.addEventListener("dragup", this);
+        }, scrollTo: function (b, c, d) {
+          a.scrollTo(c, d);
+        }, scrollToBottom: function (c) {
+          a.scrollTo(b.documentElement.scrollHeight, c);
+        }, refresh: function (a) {
+          a && this.finished && (this.enablePullupToRefresh(), this.finished = !1);
+        } }, a.PullRefresh));a.fn.pullRefresh = function (d) {
+        var e;0 === this.length ? (e = b.createElement("div"), e.className = "mui-content", b.body.appendChild(e)) : e = this[0];var f = d;d = d || {}, "string" == typeof d && (d = a.parseJSON(d)), !d.webviewId && (d.webviewId = plus.webview.currentWebview().id || plus.webview.currentWebview().getURL());var g = null,
+            h = d.webviewId && d.webviewId.replace(/\//g, "_"),
+            i = e.getAttribute("data-pullrefresh-plus-" + h);return i || "undefined" != typeof f ? (i ? g = a.data[i] : (i = ++a.uuid, e.setAttribute("data-pullrefresh-plus-" + h, i), b.body.classList.add(c), a.data[i] = g = new k(e, d)), d.down && d.down.auto ? g._pulldownLoading() : d.up && d.up.auto && g.pullupLoading(), g) : !1;
+      };
+    }
+  });
+}(mui, document), function (a, b, c, d) {
+  var e = "mui-off-canvas-left",
+      f = "mui-off-canvas-right",
+      g = "mui-off-canvas-backdrop",
+      h = "mui-off-canvas-wrap",
+      i = "mui-slide-in",
+      j = "mui-active",
+      k = "mui-transitioning",
+      l = ".mui-inner-wrap",
+      m = a.Class.extend({ init: function (b, d) {
+      this.wrapper = this.element = b, this.scroller = this.wrapper.querySelector(l), this.classList = this.wrapper.classList, this.scroller && (this.options = a.extend(!0, { dragThresholdX: 10, scale: .8, opacity: .1, preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|VIDEO)$/ } }, d), c.body.classList.add("mui-fullscreen"), this.refresh(), this.initEvent());
+    }, _preventDefaultException: function (a, b) {
+      for (var c in b) if (b[c].test(a[c])) return !0;return !1;
+    }, refresh: function (a) {
+      this.slideIn = this.classList.contains(i), this.scalable = this.classList.contains("mui-scalable") && !this.slideIn, this.scroller = this.wrapper.querySelector(l), this.offCanvasLefts = this.wrapper.querySelectorAll("." + e), this.offCanvasRights = this.wrapper.querySelectorAll("." + f), a ? a.classList.contains(e) ? this.offCanvasLeft = a : a.classList.contains(f) && (this.offCanvasRight = a) : (this.offCanvasRight = this.wrapper.querySelector("." + f), this.offCanvasLeft = this.wrapper.querySelector("." + e)), this.offCanvasRightWidth = this.offCanvasLeftWidth = 0, this.offCanvasLeftSlideIn = this.offCanvasRightSlideIn = !1, this.offCanvasRight && (this.offCanvasRightWidth = this.offCanvasRight.offsetWidth, this.offCanvasRightSlideIn = this.slideIn && this.offCanvasRight.parentNode === this.wrapper), this.offCanvasLeft && (this.offCanvasLeftWidth = this.offCanvasLeft.offsetWidth, this.offCanvasLeftSlideIn = this.slideIn && this.offCanvasLeft.parentNode === this.wrapper), this.backdrop = this.scroller.querySelector("." + g), this.options.dragThresholdX = this.options.dragThresholdX || 10, this.visible = !1, this.startX = null, this.lastX = null, this.offsetX = null, this.lastTranslateX = null;
+    }, handleEvent: function (b) {
+      switch (b.type) {case a.EVENT_START:
+          b.target && !this._preventDefaultException(b.target, this.options.preventDefaultException) && b.preventDefault();break;case "webkitTransitionEnd":
+          b.target === this.scroller && this._dispatchEvent();break;case "drag":
+          var c = b.detail;this.startX ? this.lastX = c.center.x : (this.startX = c.center.x, this.lastX = this.startX), !this.isDragging && Math.abs(this.lastX - this.startX) > this.options.dragThresholdX && ("left" === c.direction || "right" === c.direction) && (this.slideIn ? (this.scroller = this.wrapper.querySelector(l), this.classList.contains(j) ? this.offCanvasRight && this.offCanvasRight.classList.contains(j) ? (this.offCanvas = this.offCanvasRight, this.offCanvasWidth = this.offCanvasRightWidth) : (this.offCanvas = this.offCanvasLeft, this.offCanvasWidth = this.offCanvasLeftWidth) : "left" === c.direction && this.offCanvasRight ? (this.offCanvas = this.offCanvasRight, this.offCanvasWidth = this.offCanvasRightWidth) : "right" === c.direction && this.offCanvasLeft ? (this.offCanvas = this.offCanvasLeft, this.offCanvasWidth = this.offCanvasLeftWidth) : this.scroller = null) : this.classList.contains(j) ? "left" === c.direction ? (this.offCanvas = this.offCanvasLeft, this.offCanvasWidth = this.offCanvasLeftWidth) : (this.offCanvas = this.offCanvasRight, this.offCanvasWidth = this.offCanvasRightWidth) : "right" === c.direction ? (this.offCanvas = this.offCanvasLeft, this.offCanvasWidth = this.offCanvasLeftWidth) : (this.offCanvas = this.offCanvasRight, this.offCanvasWidth = this.offCanvasRightWidth), this.offCanvas && this.scroller && (this.startX = this.lastX, this.isDragging = !0, a.gestures.session.lockDirection = !0, a.gestures.session.startDirection = c.direction, this.offCanvas.classList.remove(k), this.scroller.classList.remove(k), this.offsetX = this.getTranslateX(), this._initOffCanvasVisible())), this.isDragging && (this.updateTranslate(this.offsetX + (this.lastX - this.startX)), c.gesture.preventDefault(), b.stopPropagation());break;case "dragend":
+          if (this.isDragging) {
+            var c = b.detail,
+                d = c.direction;this.isDragging = !1, this.offCanvas.classList.add(k), this.scroller.classList.add(k);var e = 0,
+                f = this.getTranslateX();if (this.slideIn) {
+              if (e = f >= 0 ? this.offCanvasRightWidth && f / this.offCanvasRightWidth || 0 : this.offCanvasLeftWidth && f / this.offCanvasLeftWidth || 0, "right" === d && 0 >= e && (e >= -.5 || c.swipe) ? this.openPercentage(100) : "right" === d && e > 0 && (e >= .5 || c.swipe) ? this.openPercentage(0) : "right" === d && -.5 >= e ? this.openPercentage(0) : "right" === d && e > 0 && .5 >= e ? this.openPercentage(-100) : "left" === d && e >= 0 && (.5 >= e || c.swipe) ? this.openPercentage(-100) : "left" === d && 0 > e && (-.5 >= e || c.swipe) ? this.openPercentage(0) : "left" === d && e >= .5 ? this.openPercentage(0) : "left" === d && e >= -.5 && 0 > e ? this.openPercentage(100) : this.openPercentage(0), 1 === e || -1 === e || 0 === e) return void this._dispatchEvent();
+            } else {
+              if (e = f >= 0 ? this.offCanvasLeftWidth && f / this.offCanvasLeftWidth || 0 : this.offCanvasRightWidth && f / this.offCanvasRightWidth || 0, 0 === e) return this.openPercentage(0), void this._dispatchEvent();"right" === d && e >= 0 && (e >= .5 || c.swipe) ? this.openPercentage(100) : "right" === d && 0 > e && (e > -.5 || c.swipe) ? this.openPercentage(0) : "right" === d && e > 0 && .5 > e ? this.openPercentage(0) : "right" === d && .5 > e ? this.openPercentage(-100) : "left" === d && 0 >= e && (-.5 >= e || c.swipe) ? this.openPercentage(-100) : "left" === d && e > 0 && (.5 >= e || c.swipe) ? this.openPercentage(0) : "left" === d && 0 > e && e >= -.5 ? this.openPercentage(0) : "left" === d && e > .5 ? this.openPercentage(100) : this.openPercentage(0), (1 === e || -1 === e) && this._dispatchEvent();
+            }
+          }}
+    }, _dispatchEvent: function () {
+      this.classList.contains(j) ? a.trigger(this.wrapper, "shown", this) : a.trigger(this.wrapper, "hidden", this);
+    }, _initOffCanvasVisible: function () {
+      this.visible || (this.visible = !0, this.offCanvasLeft && (this.offCanvasLeft.style.visibility = "visible"), this.offCanvasRight && (this.offCanvasRight.style.visibility = "visible"));
+    }, initEvent: function () {
+      var b = this;b.backdrop && b.backdrop.addEventListener("tap", function (a) {
+        b.close(), a.detail.gesture.preventDefault();
+      }), this.classList.contains("mui-draggable") && (this.wrapper.addEventListener(a.EVENT_START, this), this.wrapper.addEventListener("drag", this), this.wrapper.addEventListener("dragend", this)), this.wrapper.addEventListener("webkitTransitionEnd", this);
+    }, openPercentage: function (a) {
+      var b = a / 100;this.slideIn ? (this.offCanvasLeft && a >= 0 ? (b = 0 === b ? -1 : 0, this.updateTranslate(this.offCanvasLeftWidth * b), this.offCanvasLeft.classList[0 !== a ? "add" : "remove"](j)) : this.offCanvasRight && 0 >= a && (b = 0 === b ? 1 : 0, this.updateTranslate(this.offCanvasRightWidth * b), this.offCanvasRight.classList[0 !== a ? "add" : "remove"](j)), this.classList[0 !== a ? "add" : "remove"](j)) : (this.offCanvasLeft && a >= 0 ? (this.updateTranslate(this.offCanvasLeftWidth * b), this.offCanvasLeft.classList[0 !== b ? "add" : "remove"](j)) : this.offCanvasRight && 0 >= a && (this.updateTranslate(this.offCanvasRightWidth * b), this.offCanvasRight.classList[0 !== b ? "add" : "remove"](j)), this.classList[0 !== b ? "add" : "remove"](j));
+    }, updateTranslate: function (b) {
+      if (b !== this.lastTranslateX) {
+        if (this.slideIn) {
+          if (this.offCanvas.classList.contains(f)) {
+            if (0 > b) return void this.setTranslateX(0);if (b > this.offCanvasRightWidth) return void this.setTranslateX(this.offCanvasRightWidth);
+          } else {
+            if (b > 0) return void this.setTranslateX(0);if (b < -this.offCanvasLeftWidth) return void this.setTranslateX(-this.offCanvasLeftWidth);
+          }this.setTranslateX(b);
+        } else {
+          if (!this.offCanvasLeft && b > 0 || !this.offCanvasRight && 0 > b) return void this.setTranslateX(0);if (this.leftShowing && b > this.offCanvasLeftWidth) return void this.setTranslateX(this.offCanvasLeftWidth);if (this.rightShowing && b < -this.offCanvasRightWidth) return void this.setTranslateX(-this.offCanvasRightWidth);this.setTranslateX(b), b >= 0 ? (this.leftShowing = !0, this.rightShowing = !1, b > 0 && (this.offCanvasLeft && a.each(this.offCanvasLefts, function (a, b) {
+            b === this.offCanvasLeft ? this.offCanvasLeft.style.zIndex = 0 : b.style.zIndex = -1;
+          }.bind(this)), this.offCanvasRight && (this.offCanvasRight.style.zIndex = -1))) : (this.rightShowing = !0, this.leftShowing = !1, this.offCanvasRight && a.each(this.offCanvasRights, function (a, b) {
+            b === this.offCanvasRight ? b.style.zIndex = 0 : b.style.zIndex = -1;
+          }.bind(this)), this.offCanvasLeft && (this.offCanvasLeft.style.zIndex = -1));
+        }this.lastTranslateX = b;
+      }
+    }, setTranslateX: a.animationFrame(function (a) {
+      if (this.scroller) if (this.scalable && this.offCanvas.parentNode === this.wrapper) {
+        var b = Math.abs(a) / this.offCanvasWidth,
+            c = 1 - (1 - this.options.scale) * b,
+            d = this.options.scale + (1 - this.options.scale) * b,
+            f = (1 - (1 - this.options.opacity) * b, this.options.opacity + (1 - this.options.opacity) * b);this.offCanvas.classList.contains(e) ? (this.offCanvas.style.webkitTransformOrigin = "-100%", this.scroller.style.webkitTransformOrigin = "left") : (this.offCanvas.style.webkitTransformOrigin = "200%", this.scroller.style.webkitTransformOrigin = "right"), this.offCanvas.style.opacity = f, this.offCanvas.style.webkitTransform = "translate3d(0,0,0) scale(" + d + ")", this.scroller.style.webkitTransform = "translate3d(" + a + "px,0,0) scale(" + c + ")";
+      } else this.slideIn ? this.offCanvas.style.webkitTransform = "translate3d(" + a + "px,0,0)" : this.scroller.style.webkitTransform = "translate3d(" + a + "px,0,0)";
+    }), getTranslateX: function () {
+      if (this.offCanvas) {
+        var b = this.slideIn ? this.offCanvas : this.scroller,
+            c = a.parseTranslateMatrix(a.getStyles(b, "webkitTransform"));return c && c.x || 0;
+      }return 0;
+    }, isShown: function (a) {
+      var b = !1;if (this.slideIn) b = "left" === a ? this.classList.contains(j) && this.wrapper.querySelector("." + e + "." + j) : "right" === a ? this.classList.contains(j) && this.wrapper.querySelector("." + f + "." + j) : this.classList.contains(j) && (this.wrapper.querySelector("." + e + "." + j) || this.wrapper.querySelector("." + f + "." + j));else {
+        var c = this.getTranslateX();b = "right" === a ? this.classList.contains(j) && 0 > c : "left" === a ? this.classList.contains(j) && c > 0 : this.classList.contains(j) && 0 !== c;
+      }return b;
+    }, close: function () {
+      this._initOffCanvasVisible(), this.offCanvas = this.wrapper.querySelector("." + f + "." + j) || this.wrapper.querySelector("." + e + "." + j), this.offCanvasWidth = this.offCanvas.offsetWidth, this.scroller && (this.offCanvas.offsetHeight, this.offCanvas.classList.add(k), this.scroller.classList.add(k), this.openPercentage(0));
+    }, show: function (a) {
+      return this._initOffCanvasVisible(), this.isShown(a) ? !1 : (a || (a = this.wrapper.querySelector("." + f) ? "right" : "left"), "right" === a ? (this.offCanvas = this.offCanvasRight, this.offCanvasWidth = this.offCanvasRightWidth) : (this.offCanvas = this.offCanvasLeft, this.offCanvasWidth = this.offCanvasLeftWidth), this.scroller && (this.offCanvas.offsetHeight, this.offCanvas.classList.add(k), this.scroller.classList.add(k), this.openPercentage("left" === a ? 100 : -100)), !0);
+    }, toggle: function (a) {
+      var b = a;a && a.classList && (b = a.classList.contains(e) ? "left" : "right", this.refresh(a)), this.show(b) || this.close();
+    } }),
+      n = function (a) {
+    if (parentNode = a.parentNode, parentNode) {
+      if (parentNode.classList.contains(h)) return parentNode;if (parentNode = parentNode.parentNode, parentNode.classList.contains(h)) return parentNode;
+    }
+  },
+      o = function (b, d) {
+    if ("A" === d.tagName && d.hash) {
+      var e = c.getElementById(d.hash.replace("#", ""));if (e) {
+        var f = n(e);if (f) return a.targets._container = f, e;
+      }
+    }return !1;
+  };a.registerTarget({ name: d, index: 60, handle: o, target: !1, isReset: !1, isContinue: !0 }), b.addEventListener("tap", function (b) {
+    if (a.targets.offcanvas) for (var d = b.target; d && d !== c; d = d.parentNode) if ("A" === d.tagName && d.hash && d.hash === "#" + a.targets.offcanvas.id) {
+      b.detail && b.detail.gesture && b.detail.gesture.preventDefault(), a(a.targets._container).offCanvas().toggle(a.targets.offcanvas), a.targets.offcanvas = a.targets._container = null;break;
+    }
+  }), a.fn.offCanvas = function (b) {
+    var c = [];return this.each(function () {
+      var d = null,
+          e = this;e.classList.contains(h) || (e = n(e));var f = e.getAttribute("data-offCanvas");f ? d = a.data[f] : (f = ++a.uuid, a.data[f] = d = new m(e, b), e.setAttribute("data-offCanvas", f)), ("show" === b || "close" === b || "toggle" === b) && d.toggle(), c.push(d);
+    }), 1 === c.length ? c[0] : c;
+  }, a.ready(function () {
+    a(".mui-off-canvas-wrap").offCanvas();
+  });
+}(mui, window, document, "offcanvas"), function (a, b) {
+  var c = "mui-action",
+      d = function (a, b) {
+    var d = b.className || "";return "string" != typeof d && (d = ""), d && ~d.indexOf(c) ? (b.classList.contains("mui-action-back") && a.preventDefault(), b) : !1;
+  };a.registerTarget({ name: b, index: 50, handle: d, target: !1, isContinue: !0 });
+}(mui, "action"), function (a, b, c, d) {
+  var e = "mui-modal",
+      f = function (a, b) {
+    if ("A" === b.tagName && b.hash) {
+      var d = c.getElementById(b.hash.replace("#", ""));if (d && d.classList.contains(e)) return d;
+    }return !1;
+  };a.registerTarget({ name: d, index: 50, handle: f, target: !1, isReset: !1, isContinue: !0 }), b.addEventListener("tap", function (b) {
+    a.targets.modal && (b.detail.gesture.preventDefault(), a.targets.modal.classList.toggle("mui-active"));
+  });
+}(mui, window, document, "modal"), function (a, b, c, d) {
+  var e = "mui-popover",
+      f = "mui-popover-arrow",
+      g = "mui-popover-action",
+      h = "mui-backdrop",
+      i = "mui-bar-popover",
+      j = "mui-bar-backdrop",
+      k = "mui-backdrop-action",
+      l = "mui-active",
+      m = "mui-bottom",
+      n = function (b, d) {
+    if ("A" === d.tagName && d.hash) {
+      if (a.targets._popover = c.getElementById(d.hash.replace("#", "")), a.targets._popover && a.targets._popover.classList.contains(e)) return d;a.targets._popover = null;
+    }return !1;
+  };a.registerTarget({ name: d, index: 60, handle: n, target: !1, isReset: !1, isContinue: !0 });var o,
+      p = function (b) {
+    this.removeEventListener("webkitTransitionEnd", p), this.addEventListener(a.EVENT_MOVE, a.preventDefault), a.trigger(this, "shown", this);
+  },
+      q = function (b) {
+    u(this, "none"), this.removeEventListener("webkitTransitionEnd", q), this.removeEventListener(a.EVENT_MOVE, a.preventDefault), a.trigger(this, "hidden", this);
+  },
+      r = function () {
+    var b = c.createElement("div");return b.classList.add(h), b.addEventListener(a.EVENT_MOVE, a.preventDefault), b.addEventListener("tap", function (b) {
+      var c = a.targets._popover;c && (c.addEventListener("webkitTransitionEnd", q), c.classList.remove(l), s(c));
+    }), b;
+  }(),
+      s = function (b) {
+    r.setAttribute("style", "opacity:0"), a.targets.popover = a.targets._popover = null, o = a.later(function () {
+      !b.classList.contains(l) && r.parentNode && r.parentNode === c.body && c.body.removeChild(r);
+    }, 350);
+  };b.addEventListener("tap", function (b) {
+    if (a.targets.popover) {
+      for (var d = !1, e = b.target; e && e !== c; e = e.parentNode) e === a.targets.popover && (d = !0);d && (b.detail.gesture.preventDefault(), t(a.targets._popover, a.targets.popover));
+    }
+  });var t = function (a, b, d) {
+    if (!("show" === d && a.classList.contains(l) || "hide" === d && !a.classList.contains(l))) {
+      o && o.cancel(), a.removeEventListener("webkitTransitionEnd", p), a.removeEventListener("webkitTransitionEnd", q), r.classList.remove(j), r.classList.remove(k);var e = c.querySelector(".mui-popover.mui-active");if (e && (e.addEventListener("webkitTransitionEnd", q), e.classList.remove(l), a === e)) return void s(e);var f = !1;(a.classList.contains(i) || a.classList.contains(g)) && (a.classList.contains(g) ? (f = !0, r.classList.add(k)) : r.classList.add(j)), u(a, "block"), a.offsetHeight, a.classList.add(l), r.setAttribute("style", ""), c.body.appendChild(r), v(a, b, f), r.classList.add(l), a.addEventListener("webkitTransitionEnd", p);
+    }
+  },
+      u = function (a, b, c, d) {
+    var e = a.style;"undefined" != typeof b && (e.display = b), "undefined" != typeof c && (e.top = c + "px"), "undefined" != typeof d && (e.left = d + "px");
+  },
+      v = function (d, e, h) {
+    if (d && e) {
+      if (h) return void u(d, "block");var i = b.innerWidth,
+          j = b.innerHeight,
+          k = d.offsetWidth,
+          l = d.offsetHeight,
+          n = e.offsetWidth,
+          o = e.offsetHeight,
+          p = a.offset(e),
+          q = d.querySelector("." + f);q || (q = c.createElement("div"), q.className = f, d.appendChild(q));var r = q && q.offsetWidth / 2 || 0,
+          s = 0,
+          t = 0,
+          v = 0,
+          w = 0,
+          x = d.classList.contains(g) ? 0 : 5,
+          y = "top";l + r < p.top - b.pageYOffset ? s = p.top - l - r : l + r < j - (p.top - b.pageYOffset) - o ? (y = "bottom", s = p.top + o + r) : (y = "middle", s = Math.max((j - l) / 2 + b.pageYOffset, 0), t = Math.max((i - k) / 2 + b.pageXOffset, 0)), "top" === y || "bottom" === y ? (t = n / 2 + p.left - k / 2, v = t, x > t && (t = x), t + k > i && (t = i - k - x), q && ("top" === y ? q.classList.add(m) : q.classList.remove(m), v -= t, w = k / 2 - r / 2 + v, w = Math.max(Math.min(w, k - 2 * r - 6), 6), q.setAttribute("style", "left:" + w + "px"))) : "middle" === y && q.setAttribute("style", "display:none"), u(d, "block", s, t);
+    }
+  };a.createMask = function (b) {
+    var d = c.createElement("div");d.classList.add(h), d.addEventListener(a.EVENT_MOVE, a.preventDefault), d.addEventListener("tap", function () {
+      e.close();
+    });var e = [d];return e._show = !1, e.show = function () {
+      return e._show = !0, d.setAttribute("style", "opacity:1"), c.body.appendChild(d), e;
+    }, e._remove = function () {
+      return e._show && (e._show = !1, d.setAttribute("style", "opacity:0"), a.later(function () {
+        var a = c.body;d.parentNode === a && a.removeChild(d);
+      }, 350)), e;
+    }, e.close = function () {
+      b ? b() !== !1 && e._remove() : e._remove();
+    }, e;
+  }, a.fn.popover = function () {
+    var b = arguments;this.each(function () {
+      a.targets._popover = this, ("show" === b[0] || "hide" === b[0] || "toggle" === b[0]) && t(this, b[1], b[0]);
+    });
+  };
+}(mui, window, document, "popover"), function (a, b, c, d, e) {
+  var f = "mui-control-item",
+      g = "mui-segmented-control",
+      h = "mui-segmented-control-vertical",
+      i = "mui-control-content",
+      j = "mui-bar-tab",
+      k = "mui-tab-item",
+      l = function (a, b) {
+    return b.classList && (b.classList.contains(f) || b.classList.contains(k)) ? (b.parentNode && b.parentNode.classList && b.parentNode.classList.contains(h) || a.preventDefault(), b) : !1;
+  };a.registerTarget({ name: d, index: 80, handle: l, target: !1 }), b.addEventListener("tap", function (b) {
+    var e = a.targets.tab;if (e) {
+      for (var h, l, m, n = "mui-active", o = "." + n, p = e.parentNode; p && p !== c; p = p.parentNode) {
+        if (p.classList.contains(g)) {
+          h = p.querySelector(o + "." + f);break;
+        }p.classList.contains(j) && (h = p.querySelector(o + "." + k));
+      }h && h.classList.remove(n);var q = e === h;if (e && e.classList.add(n), e.hash && (m = c.getElementById(e.hash.replace("#", "")))) {
+        if (!m.classList.contains(i)) return void e.classList[q ? "remove" : "add"](n);if (!q) {
+          var r = m.parentNode;l = r.querySelectorAll("." + i + o);for (var s = 0; s < l.length; s++) {
+            var t = l[s];t.parentNode === r && t.classList.remove(n);
+          }m.classList.add(n);for (var u = [], v = r.querySelectorAll("." + i), s = 0; s < v.length; s++) v[s].parentNode === r && u.push(v[s]);a.trigger(m, a.eventName("shown", d), { tabNumber: Array.prototype.indexOf.call(u, m) }), b.detail && b.detail.gesture.preventDefault();
+        }
+      }
+    }
+  });
+}(mui, window, document, "tab"), function (a, b, c) {
+  var d = "mui-switch",
+      e = "mui-switch-handle",
+      f = "mui-active",
+      g = "mui-dragging",
+      h = "mui-disabled",
+      i = "." + e,
+      j = function (a, b) {
+    return b.classList && b.classList.contains(d) ? b : !1;
+  };a.registerTarget({ name: c, index: 100, handle: j, target: !1 });var k = function (a) {
+    this.element = a, this.classList = this.element.classList, this.handle = this.element.querySelector(i), this.init(), this.initEvent();
+  };k.prototype.init = function () {
+    this.toggleWidth = this.element.offsetWidth, this.handleWidth = this.handle.offsetWidth, this.handleX = this.toggleWidth - this.handleWidth - 3;
+  }, k.prototype.initEvent = function () {
+    this.element.addEventListener(a.EVENT_START, this), this.element.addEventListener("drag", this), this.element.addEventListener("swiperight", this), this.element.addEventListener(a.EVENT_END, this), this.element.addEventListener(a.EVENT_CANCEL, this);
+  }, k.prototype.handleEvent = function (b) {
+    if (!this.classList.contains(h)) switch (b.type) {case a.EVENT_START:
+        this.start(b);break;case "drag":
+        this.drag(b);break;case "swiperight":
+        this.swiperight();break;case a.EVENT_END:case a.EVENT_CANCEL:
+        this.end(b);}
+  }, k.prototype.start = function (a) {
+    this.handle.style.webkitTransitionDuration = this.element.style.webkitTransitionDuration = ".2s", this.classList.add(g), (0 === this.toggleWidth || 0 === this.handleWidth) && this.init();
+  }, k.prototype.drag = function (a) {
+    var b = a.detail;this.isDragging || ("left" === b.direction || "right" === b.direction) && (this.isDragging = !0, this.lastChanged = void 0, this.initialState = this.classList.contains(f)), this.isDragging && (this.setTranslateX(b.deltaX), a.stopPropagation(), b.gesture.preventDefault());
+  }, k.prototype.swiperight = function (a) {
+    this.isDragging && a.stopPropagation();
+  }, k.prototype.end = function (b) {
+    this.classList.remove(g), this.isDragging ? (this.isDragging = !1, b.stopPropagation(), a.trigger(this.element, "toggle", { isActive: this.classList.contains(f) })) : this.toggle();
+  }, k.prototype.toggle = function (b) {
+    var c = this.classList;b === !1 ? this.handle.style.webkitTransitionDuration = this.element.style.webkitTransitionDuration = "0s" : this.handle.style.webkitTransitionDuration = this.element.style.webkitTransitionDuration = ".2s", c.contains(f) ? (c.remove(f), this.handle.style.webkitTransform = "translate(0,0)") : (c.add(f), this.handle.style.webkitTransform = "translate(" + this.handleX + "px,0)"), a.trigger(this.element, "toggle", { isActive: this.classList.contains(f) });
+  }, k.prototype.setTranslateX = a.animationFrame(function (a) {
+    if (this.isDragging) {
+      var b = !1;(this.initialState && -a > this.handleX / 2 || !this.initialState && a > this.handleX / 2) && (b = !0), this.lastChanged !== b && (b ? (this.handle.style.webkitTransform = "translate(" + (this.initialState ? 0 : this.handleX) + "px,0)", this.classList[this.initialState ? "remove" : "add"](f)) : (this.handle.style.webkitTransform = "translate(" + (this.initialState ? this.handleX : 0) + "px,0)", this.classList[this.initialState ? "add" : "remove"](f)), this.lastChanged = b);
+    }
+  }), a.fn["switch"] = function (b) {
+    var c = [];return this.each(function () {
+      var b = null,
+          d = this.getAttribute("data-switch");d ? b = a.data[d] : (d = ++a.uuid, a.data[d] = new k(this), this.setAttribute("data-switch", d)), c.push(b);
+    }), c.length > 1 ? c : c[0];
+  }, a.ready(function () {
+    a("." + d)["switch"]();
+  });
+}(mui, window, "toggle"), function (a, b, c) {
+  function d(a, b) {
+    var c = b ? "removeEventListener" : "addEventListener";a[c]("drag", F), a[c]("dragend", F), a[c]("swiperight", F), a[c]("swipeleft", F), a[c]("flick", F);
+  }var e,
+      f,
+      g = "mui-active",
+      h = "mui-selected",
+      i = "mui-grid-view",
+      j = "mui-table-view-radio",
+      k = "mui-table-view-cell",
+      l = "mui-collapse-content",
+      m = "mui-disabled",
+      n = "mui-switch",
+      o = "mui-btn",
+      p = "mui-slider-handle",
+      q = "mui-slider-left",
+      r = "mui-slider-right",
+      s = "mui-transitioning",
+      t = "." + p,
+      u = "." + q,
+      v = "." + r,
+      w = "." + h,
+      x = "." + o,
+      y = .8,
+      z = isOpened = openedActions = progress = !1,
+      A = sliderActionLeft = sliderActionRight = buttonsLeft = buttonsRight = sliderDirection = sliderRequestAnimationFrame = !1,
+      B = translateX = lastTranslateX = sliderActionLeftWidth = sliderActionRightWidth = 0,
+      C = function (a) {
+    a ? f ? f.classList.add(g) : e && e.classList.add(g) : (B && B.cancel(), f ? f.classList.remove(g) : e && e.classList.remove(g));
+  },
+      D = function () {
+    if (translateX !== lastTranslateX) {
+      if (buttonsRight && buttonsRight.length > 0) {
+        progress = translateX / sliderActionRightWidth, translateX < -sliderActionRightWidth && (translateX = -sliderActionRightWidth - Math.pow(-translateX - sliderActionRightWidth, y));for (var a = 0, b = buttonsRight.length; b > a; a++) {
+          var c = buttonsRight[a];"undefined" == typeof c._buttonOffset && (c._buttonOffset = c.offsetLeft), buttonOffset = c._buttonOffset, E(c, translateX - buttonOffset * (1 + Math.max(progress, -1)));
+        }
+      }if (buttonsLeft && buttonsLeft.length > 0) {
+        progress = translateX / sliderActionLeftWidth, translateX > sliderActionLeftWidth && (translateX = sliderActionLeftWidth + Math.pow(translateX - sliderActionLeftWidth, y));for (var a = 0, b = buttonsLeft.length; b > a; a++) {
+          var d = buttonsLeft[a];"undefined" == typeof d._buttonOffset && (d._buttonOffset = sliderActionLeftWidth - d.offsetLeft - d.offsetWidth), buttonOffset = d._buttonOffset, buttonsLeft.length > 1 && (d.style.zIndex = buttonsLeft.length - a), E(d, translateX + buttonOffset * (1 - Math.min(progress, 1)));
+        }
+      }E(A, translateX), lastTranslateX = translateX;
+    }sliderRequestAnimationFrame = requestAnimationFrame(function () {
+      D();
+    });
+  },
+      E = function (a, b) {
+    a && (a.style.webkitTransform = "translate(" + b + "px,0)");
+  };b.addEventListener(a.EVENT_START, function (b) {
+    e && C(!1), e = f = !1, z = isOpened = openedActions = !1;for (var g = b.target, h = !1; g && g !== c; g = g.parentNode) if (g.classList) {
+      var p = g.classList;if (("INPUT" === g.tagName && "radio" !== g.type && "checkbox" !== g.type || "BUTTON" === g.tagName || p.contains(n) || p.contains(o) || p.contains(m)) && (h = !0), p.contains(l)) break;if (p.contains(k)) {
+        e = g;var q = e.parentNode.querySelector(w);if (!e.parentNode.classList.contains(j) && q && q !== e) return a.swipeoutClose(q), void (e = h = !1);if (!e.parentNode.classList.contains(i)) {
+          var r = e.querySelector("a");r && r.parentNode === e && (f = r);
+        }var s = e.querySelector(t);s && (d(e), b.stopPropagation()), h || (s ? (B && B.cancel(), B = a.later(function () {
+          C(!0);
+        }, 100)) : C(!0));break;
+      }
+    }
+  }), b.addEventListener(a.EVENT_MOVE, function (a) {
+    C(!1);
+  });var F = { handleEvent: function (a) {
+      switch (a.type) {case "drag":
+          this.drag(a);break;case "dragend":
+          this.dragend(a);break;case "flick":
+          this.flick(a);break;case "swiperight":
+          this.swiperight(a);break;case "swipeleft":
+          this.swipeleft(a);}
+    }, drag: function (a) {
+      if (e) {
+        z || (A = sliderActionLeft = sliderActionRight = buttonsLeft = buttonsRight = sliderDirection = sliderRequestAnimationFrame = !1, A = e.querySelector(t), A && (sliderActionLeft = e.querySelector(u), sliderActionRight = e.querySelector(v), sliderActionLeft && (sliderActionLeftWidth = sliderActionLeft.offsetWidth, buttonsLeft = sliderActionLeft.querySelectorAll(x)), sliderActionRight && (sliderActionRightWidth = sliderActionRight.offsetWidth, buttonsRight = sliderActionRight.querySelectorAll(x)), e.classList.remove(s), isOpened = e.classList.contains(h), isOpened && (openedActions = e.querySelector(u + w) ? "left" : "right")));var b = a.detail,
+            c = b.direction,
+            d = b.angle;if ("left" === c && (d > 150 || -150 > d) ? (buttonsRight || buttonsLeft && isOpened) && (z = !0) : "right" === c && d > -30 && 30 > d && (buttonsLeft || buttonsRight && isOpened) && (z = !0), z) {
+          a.stopPropagation(), a.detail.gesture.preventDefault();var f = a.detail.deltaX;if (isOpened && ("right" === openedActions ? f -= sliderActionRightWidth : f += sliderActionLeftWidth), f > 0 && !buttonsLeft || 0 > f && !buttonsRight) {
+            if (!isOpened) return;f = 0;
+          }0 > f ? sliderDirection = "toLeft" : f > 0 ? sliderDirection = "toRight" : sliderDirection || (sliderDirection = "toLeft"), sliderRequestAnimationFrame || D(), translateX = f;
+        }
+      }
+    }, flick: function (a) {
+      z && a.stopPropagation();
+    }, swipeleft: function (a) {
+      z && a.stopPropagation();
+    }, swiperight: function (a) {
+      z && a.stopPropagation();
+    }, dragend: function (b) {
+      if (z) {
+        b.stopPropagation(), sliderRequestAnimationFrame && (cancelAnimationFrame(sliderRequestAnimationFrame), sliderRequestAnimationFrame = null);var c = b.detail;z = !1;var d = "close",
+            f = "toLeft" === sliderDirection ? sliderActionRightWidth : sliderActionLeftWidth,
+            g = c.swipe || Math.abs(translateX) > f / 2;g && (isOpened ? "left" === c.direction && "right" === openedActions ? d = "open" : "right" === c.direction && "left" === openedActions && (d = "open") : d = "open"), e.classList.add(s);var i;if ("open" === d) {
+          var j = "toLeft" === sliderDirection ? -f : f;if (E(A, j), i = "toLeft" === sliderDirection ? buttonsRight : buttonsLeft, "undefined" != typeof i) {
+            for (var k = null, l = 0; l < i.length; l++) k = i[l], E(k, j);k.parentNode.classList.add(h), e.classList.add(h), isOpened || a.trigger(e, "toLeft" === sliderDirection ? "slideleft" : "slideright");
+          }
+        } else E(A, 0), sliderActionLeft && sliderActionLeft.classList.remove(h), sliderActionRight && sliderActionRight.classList.remove(h), e.classList.remove(h);var m;if (buttonsLeft && buttonsLeft.length > 0 && buttonsLeft !== i) for (var l = 0, n = buttonsLeft.length; n > l; l++) {
+          var o = buttonsLeft[l];m = o._buttonOffset, "undefined" == typeof m && (o._buttonOffset = sliderActionLeftWidth - o.offsetLeft - o.offsetWidth), E(o, m);
+        }if (buttonsRight && buttonsRight.length > 0 && buttonsRight !== i) for (var l = 0, n = buttonsRight.length; n > l; l++) {
+          var p = buttonsRight[l];m = p._buttonOffset, "undefined" == typeof m && (p._buttonOffset = p.offsetLeft), E(p, -m);
+        }
+      }
+    } };a.swipeoutOpen = function (b, c) {
+    if (b) {
+      var d = b.classList;if (!d.contains(h)) {
+        c || (c = b.querySelector(v) ? "right" : "left");var e = b.querySelector(a.classSelector(".slider-" + c));if (e) {
+          e.classList.add(h), d.add(h), d.remove(s);for (var f, g = e.querySelectorAll(x), i = e.offsetWidth, j = "right" === c ? -i : i, k = g.length, l = 0; k > l; l++) f = g[l], "right" === c ? E(f, -f.offsetLeft) : E(f, i - f.offsetWidth - f.offsetLeft);d.add(s);for (var l = 0; k > l; l++) E(g[l], j);E(b.querySelector(t), j);
+        }
+      }
+    }
+  }, a.swipeoutClose = function (b) {
+    if (b) {
+      var c = b.classList;if (c.contains(h)) {
+        var d = b.querySelector(v + w) ? "right" : "left",
+            e = b.querySelector(a.classSelector(".slider-" + d));if (e) {
+          e.classList.remove(h), c.remove(h), c.add(s);var f,
+              g = e.querySelectorAll(x),
+              i = e.offsetWidth,
+              j = g.length;E(b.querySelector(t), 0);for (var k = 0; j > k; k++) f = g[k], "right" === d ? E(f, -f.offsetLeft) : E(f, i - f.offsetWidth - f.offsetLeft);
+        }
+      }
+    }
+  }, b.addEventListener(a.EVENT_END, function (a) {
+    e && (C(!1), A && d(e, !0));
+  }), b.addEventListener(a.EVENT_CANCEL, function (a) {
+    e && (C(!1), A && d(e, !0));
+  });var G = function (b) {
+    var c = b.target && b.target.type || "";if ("radio" !== c && "checkbox" !== c) {
+      var d = e.classList;if (d.contains("mui-radio")) {
+        var f = e.querySelector("input[type=radio]");f && (f.disabled || f.readOnly || (f.checked = !f.checked, a.trigger(f, "change")));
+      } else if (d.contains("mui-checkbox")) {
+        var f = e.querySelector("input[type=checkbox]");f && (f.disabled || f.readOnly || (f.checked = !f.checked, a.trigger(f, "change")));
+      }
+    }
+  };b.addEventListener(a.EVENT_CLICK, function (a) {
+    e && e.classList.contains("mui-collapse") && a.preventDefault();
+  }), b.addEventListener("doubletap", function (a) {
+    e && G(a);
+  });var H = /^(INPUT|TEXTAREA|BUTTON|SELECT)$/;b.addEventListener("tap", function (b) {
+    if (e) {
+      var c = !1,
+          d = e.classList,
+          f = e.parentNode;if (f && f.classList.contains(j)) {
+        if (d.contains(h)) return;var i = f.querySelector("li" + w);return i && i.classList.remove(h), d.add(h), void a.trigger(e, "selected", { el: e });
+      }if (d.contains("mui-collapse") && !e.parentNode.classList.contains("mui-unfold")) {
+        if (H.test(b.target.tagName) || b.detail.gesture.preventDefault(), !d.contains(g)) {
+          var k = e.parentNode.querySelector(".mui-collapse.mui-active");k && k.classList.remove(g), c = !0;
+        }d.toggle(g), c && a.trigger(e, "expand");
+      } else G(b);
+    }
+  });
+}(mui, window, document), function (a, b) {
+  a.alert = function (c, d, e, f) {
+    if (a.os.plus) {
+      if ("undefined" == typeof c) return;"function" == typeof d ? (f = d, d = null, e = "确定") : "function" == typeof e && (f = e, e = null), a.plusReady(function () {
+        plus.nativeUI.alert(c, f, d, e);
+      });
+    } else b.alert(c);
+  };
+}(mui, window), function (a, b) {
+  a.confirm = function (c, d, e, f) {
+    if (a.os.plus) {
+      if ("undefined" == typeof c) return;"function" == typeof d ? (f = d, d = null, e = null) : "function" == typeof e && (f = e, e = null), a.plusReady(function () {
+        plus.nativeUI.confirm(c, f, d, e);
+      });
+    } else f(b.confirm(c) ? { index: 0 } : { index: 1 });
+  };
+}(mui, window), function (a, b) {
+  a.prompt = function (c, d, e, f, g) {
+    if (a.os.plus) {
+      if ("undefined" == typeof message) return;"function" == typeof d ? (g = d, d = null, e = null, f = null) : "function" == typeof e ? (g = e, e = null, f = null) : "function" == typeof f && (g = f, f = null), a.plusReady(function () {
+        plus.nativeUI.prompt(c, g, e, d, f);
+      });
+    } else {
+      var h = b.prompt(c);g(h ? { index: 0, value: h } : { index: 1, value: "" });
+    }
+  };
+}(mui, window), function (a, b) {
+  var c = "mui-active";a.toast = function (b, d) {
+    var e = { "long": 3500, "short": 2e3 };if (d = a.extend({ duration: "short" }, d || {}), !a.os.plus || "div" === d.type) {
+      "number" == typeof d.duration ? duration = d.duration > 0 ? d.duration : e["short"] : duration = e[d.duration], duration || (duration = e["short"]);var f = document.createElement("div");return f.classList.add("mui-toast-container"), f.innerHTML = '<div class="mui-toast-message">' + b + "</div>", f.addEventListener("webkitTransitionEnd", function () {
+        f.classList.contains(c) || (f.parentNode.removeChild(f), f = null);
+      }), f.addEventListener("click", function () {
+        f.parentNode.removeChild(f), f = null;
+      }), document.body.appendChild(f), f.offsetHeight, f.classList.add(c), setTimeout(function () {
+        f && f.classList.remove(c);
+      }, duration), { isVisible: function () {
+          return !!f;
+        } };
+    }a.plusReady(function () {
+      plus.nativeUI.toast(b, { verticalAlign: "bottom", duration: d.duration });
+    });
+  };
+}(mui, window), function (a, b, c) {
+  var d = "mui-popup",
+      e = "mui-popup-backdrop",
+      f = "mui-popup-in",
+      g = "mui-popup-out",
+      h = "mui-popup-inner",
+      i = "mui-popup-title",
+      j = "mui-popup-text",
+      k = "mui-popup-input",
+      l = "mui-popup-buttons",
+      m = "mui-popup-button",
+      n = "mui-popup-button-bold",
+      e = "mui-popup-backdrop",
+      o = "mui-active",
+      p = [],
+      q = function () {
+    var b = c.createElement("div");return b.classList.add(e), b.addEventListener(a.EVENT_MOVE, a.preventDefault), b.addEventListener("webkitTransitionEnd", function () {
+      this.classList.contains(o) || b.parentNode && b.parentNode.removeChild(b);
+    }), b;
+  }(),
+      r = function (a) {
+    return '<div class="' + k + '"><input type="text" autofocus placeholder="' + (a || "") + '"/></div>';
+  },
+      s = function (a, b, c) {
+    return '<div class="' + h + '"><div class="' + i + '">' + b + '</div><div class="' + j + '">' + a.replace(/\r\n/g, "<br/>").replace(/\n/g, "<br/>") + "</div>" + (c || "") + "</div>";
+  },
+      t = function (a) {
+    for (var b = a.length, c = [], d = 0; b > d; d++) c.push('<span class="' + m + (d === b - 1 ? " " + n : "") + '">' + a[d] + "</span>");return '<div class="' + l + '">' + c.join("") + "</div>";
+  },
+      u = function (b, e) {
+    var h = c.createElement("div");h.className = d, h.innerHTML = b;var i = function () {
+      h.parentNode && h.parentNode.removeChild(h), h = null;
+    };h.addEventListener(a.EVENT_MOVE, a.preventDefault), h.addEventListener("webkitTransitionEnd", function (a) {
+      h && a.target === h && h.classList.contains(g) && i();
+    }), h.style.display = "block", c.body.appendChild(h), h.offsetHeight, h.classList.add(f), q.classList.contains(o) || (q.style.display = "block", c.body.appendChild(q), q.offsetHeight, q.classList.add(o));var j = a.qsa("." + m, h),
+        l = h.querySelector("." + k + " input"),
+        n = { element: h, close: function (a, b) {
+        if (h) {
+          var c = e && e({ index: a || 0, value: l && l.value || "" });if (c === !1) return;b !== !1 ? (h.classList.remove(f), h.classList.add(g)) : i(), p.pop(), p.length ? p[p.length - 1].show(b) : q.classList.remove(o);
+        }
+      } },
+        r = function (a) {
+      n.close(j.indexOf(a.target));
+    };return a(h).on("tap", "." + m, r), p.length && p[p.length - 1].hide(), p.push({ close: n.close, show: function (a) {
+        h.style.display = "block", h.offsetHeight, h.classList.add(f);
+      }, hide: function () {
+        h.style.display = "none", h.classList.remove(f);
+      } }), n;
+  },
+      v = function (b, c, d, e, f) {
+    return "undefined" != typeof b ? ("function" == typeof c ? (e = c, f = d, c = null, d = null) : "function" == typeof d && (f = e, e = d, d = null), a.os.plus && "div" !== f ? plus.nativeUI.alert(b, e, c || "提示", d || "确定") : u(s(b, c || "提示") + t([d || "确定"]), e)) : void 0;
+  },
+      w = function (b, c, d, e, f) {
+    return "undefined" != typeof b ? ("function" == typeof c ? (e = c, f = d, c = null, d = null) : "function" == typeof d && (f = e, e = d, d = null), a.os.plus && "div" !== f ? plus.nativeUI.confirm(b, e, c, d || ["取消", "确认"]) : u(s(b, c || "提示") + t(d || ["取消", "确认"]), e)) : void 0;
+  },
+      x = function (b, c, d, e, f, g) {
+    return "undefined" != typeof b ? ("function" == typeof c ? (f = c, g = d, c = null, d = null, e = null) : "function" == typeof d ? (f = d, g = e, d = null, e = null) : "function" == typeof e && (g = f, f = e, e = null), a.os.plus && "div" !== g ? plus.nativeUI.prompt(b, f, d || "提示", c, e || ["取消", "确认"]) : u(s(b, d || "提示", r(c)) + t(e || ["取消", "确认"]), f)) : void 0;
+  },
+      y = function () {
+    return p.length ? (p[p.length - 1].close(), !0) : !1;
+  },
+      z = function () {
+    for (; p.length;) p[p.length - 1].close();
+  };a.closePopup = y, a.closePopups = z, a.alert = v, a.confirm = w, a.prompt = x;
+}(mui, window, document), function (a, b) {
+  var c = "mui-progressbar",
+      d = "mui-progressbar-in",
+      e = "mui-progressbar-out",
+      f = "mui-progressbar-infinite",
+      g = ".mui-progressbar",
+      h = function (b) {
+    if (b = a(b || "body"), 0 !== b.length) {
+      if (b = b[0], b.classList.contains(c)) return b;var d = b.querySelectorAll(g);if (d) for (var e = 0, f = d.length; f > e; e++) {
+        var h = d[e];if (h.parentNode === b) return h;
+      }
+    }
+  },
+      i = function (h, i, j) {
+    if ("number" == typeof h && (j = i, i = h, h = "body"), h = a(h || "body"), 0 !== h.length) {
+      h = h[0];var l;if (h.classList.contains(c)) l = h;else {
+        var m = h.querySelectorAll(g + ":not(." + e + ")");if (m) for (var n = 0, o = m.length; o > n; n++) {
+          var p = m[n];if (p.parentNode === h) {
+            l = p;break;
+          }
+        }l ? l.classList.add(d) : (l = b.createElement("span"), l.className = c + " " + d + ("undefined" != typeof i ? "" : " " + f) + (j ? " " + c + "-" + j : ""), "undefined" != typeof i && (l.innerHTML = "<span></span>"), h.appendChild(l));
+      }return i && k(h, i), l;
+    }
+  },
+      j = function (a) {
+    var b = h(a);if (b) {
+      var c = b.classList;c.contains(d) && !c.contains(e) && (c.remove(d), c.add(e), b.addEventListener("webkitAnimationEnd", function () {
+        b.parentNode && b.parentNode.removeChild(b), b = null;
+      }));
+    }
+  },
+      k = function (a, b, c) {
+    "number" == typeof a && (c = b, b = a, a = !1);var d = h(a);if (d && !d.classList.contains(f)) {
+      b && (b = Math.min(Math.max(b, 0), 100)), d.offsetHeight;var e = d.querySelector("span");if (e) {
+        var g = e.style;g.webkitTransform = "translate3d(" + (-100 + b) + "%,0,0)", "undefined" != typeof c ? g.webkitTransitionDuration = c + "ms" : g.webkitTransitionDuration = "";
+      }return d;
+    }
+  };a.fn.progressbar = function (a) {
+    var b = [];return a = a || {}, this.each(function () {
+      var c = this,
+          d = c.mui_plugin_progressbar;d ? a && d.setOptions(a) : c.mui_plugin_progressbar = d = { options: a, setOptions: function (a) {
+          this.options = a;
+        }, show: function () {
+          return i(c, this.options.progress, this.options.color);
+        }, setProgress: function (a) {
+          return k(c, a);
+        }, hide: function () {
+          return j(c);
+        } }, b.push(d);
+    }), 1 === b.length ? b[0] : b;
+  };
+}(mui, document), function (a, b, c) {
+  var d = "mui-icon",
+      e = "mui-icon-clear",
+      f = "mui-icon-speech",
+      g = "mui-icon-search",
+      h = "mui-icon-eye",
+      i = "mui-input-row",
+      j = "mui-placeholder",
+      k = "mui-tooltip",
+      l = "mui-hidden",
+      m = "mui-focusin",
+      n = "." + e,
+      o = "." + f,
+      p = "." + h,
+      q = "." + j,
+      r = "." + k,
+      s = function (a) {
+    for (; a && a !== c; a = a.parentNode) if (a.classList && a.classList.contains(i)) return a;return null;
+  },
+      t = function (a, b) {
+    this.element = a, this.options = b || { actions: "clear" }, ~this.options.actions.indexOf("slider") ? (this.sliderActionClass = k + " " + l, this.sliderActionSelector = r) : (~this.options.actions.indexOf("clear") && (this.clearActionClass = d + " " + e + " " + l, this.clearActionSelector = n), ~this.options.actions.indexOf("speech") && (this.speechActionClass = d + " " + f, this.speechActionSelector = o), ~this.options.actions.indexOf("search") && (this.searchActionClass = j, this.searchActionSelector = q), ~this.options.actions.indexOf("password") && (this.passwordActionClass = d + " " + h, this.passwordActionSelector = p)), this.init();
+  };t.prototype.init = function () {
+    this.initAction(), this.initElementEvent();
+  }, t.prototype.initAction = function () {
+    var b = this,
+        c = b.element.parentNode;c && (b.sliderActionClass ? b.sliderAction = b.createAction(c, b.sliderActionClass, b.sliderActionSelector) : (b.searchActionClass && (b.searchAction = b.createAction(c, b.searchActionClass, b.searchActionSelector), b.searchAction.addEventListener("tap", function (c) {
+      a.focus(b.element), c.stopPropagation();
+    })), b.speechActionClass && (b.speechAction = b.createAction(c, b.speechActionClass, b.speechActionSelector), b.speechAction.addEventListener("click", a.stopPropagation), b.speechAction.addEventListener("tap", function (a) {
+      b.speechActionClick(a);
+    })), b.clearActionClass && (b.clearAction = b.createAction(c, b.clearActionClass, b.clearActionSelector), b.clearAction.addEventListener("tap", function (a) {
+      b.clearActionClick(a);
+    })), b.passwordActionClass && (b.passwordAction = b.createAction(c, b.passwordActionClass, b.passwordActionSelector), b.passwordAction.addEventListener("tap", function (a) {
+      b.passwordActionClick(a);
+    }))));
+  }, t.prototype.createAction = function (a, b, e) {
+    var f = a.querySelector(e);if (!f) {
+      var f = c.createElement("span");f.className = b, b === this.searchActionClass && (f.innerHTML = '<span class="' + d + " " + g + '"></span><span>' + this.element.getAttribute("placeholder") + "</span>", this.element.setAttribute("placeholder", ""), this.element.value.trim() && a.classList.add("mui-active")), a.insertBefore(f, this.element.nextSibling);
+    }return f;
+  }, t.prototype.initElementEvent = function () {
+    var b = this.element;if (this.sliderActionClass) {
+      var c = this.sliderAction,
+          d = null,
+          e = function () {
+        c.classList.remove(l);var a = b.offsetLeft,
+            e = b.offsetWidth - 28,
+            f = c.offsetWidth,
+            g = Math.abs(b.max - b.min),
+            h = e / g * Math.abs(b.value - b.min);c.style.left = 14 + a + h - f / 2 + "px", c.innerText = b.value, d && clearTimeout(d), d = setTimeout(function () {
+          c.classList.add(l);
+        }, 1e3);
+      };b.addEventListener("input", e), b.addEventListener("tap", e), b.addEventListener(a.EVENT_MOVE, function (a) {
+        a.stopPropagation();
+      });
+    } else {
+      if (this.clearActionClass) {
+        var f = this.clearAction;if (!f) return;a.each(["keyup", "change", "input", "focus", "cut", "paste"], function (a, c) {
+          !function (a) {
+            b.addEventListener(a, function () {
+              f.classList[b.value.trim() ? "remove" : "add"](l);
+            });
+          }(c);
+        }), b.addEventListener("blur", function () {
+          f.classList.add(l);
+        });
+      }this.searchActionClass && (b.addEventListener("focus", function () {
+        b.parentNode.classList.add("mui-active");
+      }), b.addEventListener("blur", function () {
+        b.value.trim() || b.parentNode.classList.remove("mui-active");
+      }));
+    }
+  }, t.prototype.setPlaceholder = function (a) {
+    if (this.searchActionClass) {
+      var b = this.element.parentNode.querySelector(q);b && (b.getElementsByTagName("span")[1].innerText = a);
+    } else this.element.setAttribute("placeholder", a);
+  }, t.prototype.passwordActionClick = function (a) {
+    "text" === this.element.type ? this.element.type = "password" : this.element.type = "text", this.passwordAction.classList.toggle("mui-active"), a.preventDefault();
+  }, t.prototype.clearActionClick = function (b) {
+    var c = this;c.element.value = "", a.focus(c.element), c.clearAction.classList.add(l), b.preventDefault();
+  }, t.prototype.speechActionClick = function (d) {
+    if (b.plus) {
+      var e = this,
+          f = e.element.value;e.element.value = "", c.body.classList.add(m), plus.speech.startRecognize({ engine: "iFly" }, function (b) {
+        e.element.value += b, a.focus(e.element), plus.speech.stopRecognize(), a.trigger(e.element, "recognized", { value: e.element.value }), f !== e.element.value && (a.trigger(e.element, "change"), a.trigger(e.element, "input"));
+      }, function (a) {
+        c.body.classList.remove(m);
+      });
+    } else alert("only for 5+");d.preventDefault();
+  }, a.fn.input = function (b) {
+    var c = [];return this.each(function () {
+      var b = null,
+          d = [],
+          e = s(this.parentNode);if ("range" === this.type && e.classList.contains("mui-input-range")) d.push("slider");else {
+        var f = this.classList;f.contains("mui-input-clear") && d.push("clear"), a.os.android && a.os.stream || !f.contains("mui-input-speech") || d.push("speech"), f.contains("mui-input-password") && d.push("password"), "search" === this.type && e.classList.contains("mui-search") && d.push("search");
+      }var g = this.getAttribute("data-input-" + d[0]);if (g) b = a.data[g];else {
+        g = ++a.uuid, b = a.data[g] = new t(this, { actions: d.join(",") });for (var h = 0, i = d.length; i > h; h++) this.setAttribute("data-input-" + d[h], g);
+      }c.push(b);
+    }), 1 === c.length ? c[0] : c;
+  }, a.ready(function () {
+    a(".mui-input-row input").input();
+  });
+}(mui, window, document), function (a, b) {
+  var c = "mui-active",
+      d = /^rgba\((\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3}),\s*(\d*(?:\.\d+)?)\)$/,
+      e = function (a) {
+    var b = a.match(d);return b && 5 === b.length ? [b[1], b[2], b[3], b[4]] : [];
+  },
+      f = function (c, d) {
+    if (this.element = c, this.options = a.extend({ top: 0, offset: 150, duration: 16, scrollby: b }, d || {}), this.scrollByElem = this.options.scrollby || b, !this.scrollByElem) throw new Error("监听滚动的元素不存在");this.isNativeScroll = !1, this.scrollByElem === b ? this.isNativeScroll = !0 : ~this.scrollByElem.className.indexOf("mui-scroll-wrapper") || (this.isNativeScroll = !0), this._style = this.element.style, this._bgColor = this._style.backgroundColor;var f = e(mui.getStyles(this.element, "backgroundColor"));if (!f.length) throw new Error("元素背景颜色必须为RGBA");this._R = f[0], this._G = f[1], this._B = f[2], this._A = parseFloat(f[3]), this.lastOpacity = this._A, this._bufferFn = a.buffer(this.handleScroll, this.options.duration, this), this.initEvent();
+  };f.prototype.initEvent = function () {
+    this.scrollByElem.addEventListener("scroll", this._bufferFn), this.isNativeScroll && this.scrollByElem.addEventListener(a.EVENT_MOVE, this._bufferFn);
+  }, f.prototype.handleScroll = function (d) {
+    var e = b.scrollY;!this.isNativeScroll && d && d.detail && (e = -d.detail.y);var f = (e - this.options.top) / this.options.offset + this._A;f = Math.min(Math.max(this._A, f), 1), this._style.backgroundColor = "rgba(" + this._R + "," + this._G + "," + this._B + "," + f + ")", f > this._A ? this.element.classList.add(c) : this.element.classList.remove(c), this.lastOpacity !== f && (a.trigger(this.element, "alpha", { alpha: f }), this.lastOpacity = f);
+  }, f.prototype.destory = function () {
+    this.scrollByElem.removeEventListener("scroll", this._bufferFn), this.scrollByElem.removeEventListener(a.EVENT_MOVE, this._bufferFn), this.element.style.backgroundColor = this._bgColor, this.element.mui_plugin_transparent = null;
+  }, a.fn.transparent = function (a) {
+    a = a || {};var c = [];return this.each(function () {
+      var d = this.mui_plugin_transparent;if (!d) {
+        var e = this.getAttribute("data-top"),
+            g = this.getAttribute("data-offset"),
+            h = this.getAttribute("data-duration"),
+            i = this.getAttribute("data-scrollby");null !== e && "undefined" == typeof a.top && (a.top = e), null !== g && "undefined" == typeof a.offset && (a.offset = g), null !== h && "undefined" == typeof a.duration && (a.duration = h), null !== i && "undefined" == typeof a.scrollby && (a.scrollby = document.querySelector(i) || b), d = this.mui_plugin_transparent = new f(this, a);
+      }c.push(d);
+    }), 1 === c.length ? c[0] : c;
+  }, a.ready(function () {
+    a(".mui-bar-transparent").transparent();
+  });
+}(mui, window), function (a) {
+  var b = "ontouchstart" in document,
+      c = b ? "tap" : "click",
+      d = "change",
+      e = "mui-numbox",
+      f = ".mui-btn-numbox-plus,.mui-numbox-btn-plus",
+      g = ".mui-btn-numbox-minus,.mui-numbox-btn-minus",
+      h = ".mui-input-numbox,.mui-numbox-input",
+      i = a.Numbox = a.Class.extend({ init: function (b, c) {
+      var d = this;if (!b) throw "构造 numbox 时缺少容器元素";d.holder = b, c = c || {}, c.step = parseInt(c.step || 1), d.options = c, d.input = a.qsa(h, d.holder)[0], d.plus = a.qsa(f, d.holder)[0], d.minus = a.qsa(g, d.holder)[0], d.checkValue(), d.initEvent();
+    }, initEvent: function () {
+      var b = this;b.plus.addEventListener(c, function (c) {
+        var e = parseInt(b.input.value) + b.options.step;b.input.value = e.toString(), a.trigger(b.input, d, null);
+      }), b.minus.addEventListener(c, function (c) {
+        var e = parseInt(b.input.value) - b.options.step;b.input.value = e.toString(), a.trigger(b.input, d, null);
+      }), b.input.addEventListener(d, function (c) {
+        b.checkValue();var e = parseInt(b.input.value);a.trigger(b.holder, d, { value: e });
+      });
+    }, getValue: function () {
+      var a = this;return parseInt(a.input.value);
+    }, checkValue: function () {
+      var a = this,
+          b = a.input.value;if (null == b || "" == b || isNaN(b)) a.input.value = a.options.min || 0, a.minus.disabled = null != a.options.min;else {
+        var b = parseInt(b);null != a.options.max && !isNaN(a.options.max) && b >= parseInt(a.options.max) ? (b = a.options.max, a.plus.disabled = !0) : a.plus.disabled = !1, null != a.options.min && !isNaN(a.options.min) && b <= parseInt(a.options.min) ? (b = a.options.min, a.minus.disabled = !0) : a.minus.disabled = !1, a.input.value = b;
+      }
+    }, setOption: function (a, b) {
+      var c = this;c.options[a] = b;
+    }, setValue: function (a) {
+      this.input.value = a, this.checkValue();
+    } });a.fn.numbox = function (a) {
+    return this.each(function (a, b) {
+      if (!b.numbox) if (d) b.numbox = new i(b, d);else {
+        var c = b.getAttribute("data-numbox-options"),
+            d = c ? JSON.parse(c) : {};d.step = b.getAttribute("data-numbox-step") || d.step, d.min = b.getAttribute("data-numbox-min") || d.min, d.max = b.getAttribute("data-numbox-max") || d.max, b.numbox = new i(b, d);
+      }
+    }), this[0] ? this[0].numbox : null;
+  }, a.ready(function () {
+    a("." + e).numbox();
+  });
+}(mui), function (a, b, c) {
+  var d = "mui-disabled",
+      e = "reset",
+      f = "loading",
+      g = { loadingText: "Loading...", loadingIcon: "mui-spinner mui-spinner-white", loadingIconPosition: "left" },
+      h = function (b, c) {
+    this.element = b, this.options = a.extend({}, g, c), this.options.loadingText || (this.options.loadingText = g.loadingText), null === this.options.loadingIcon && (this.options.loadingIcon = "mui-spinner", "rgb(255, 255, 255)" === a.getStyles(this.element, "color") && (this.options.loadingIcon += " mui-spinner-white")), this.isInput = "INPUT" === this.element.tagName, this.resetHTML = this.isInput ? this.element.value : this.element.innerHTML, this.state = "";
+  };h.prototype.loading = function () {
+    this.setState(f);
+  }, h.prototype.reset = function () {
+    this.setState(e);
+  }, h.prototype.setState = function (a) {
+    if (this.state === a) return !1;if (this.state = a, a === e) this.element.disabled = !1, this.element.classList.remove(d), this.setHtml(this.resetHTML);else if (a === f) {
+      this.element.disabled = !0, this.element.classList.add(d);var b = this.isInput ? this.options.loadingText : "<span>" + this.options.loadingText + "</span>";this.options.loadingIcon && !this.isInput && ("right" === this.options.loadingIconPosition ? b += '&nbsp;<span class="' + this.options.loadingIcon + '"></span>' : b = '<span class="' + this.options.loadingIcon + '"></span>&nbsp;' + b), this.setHtml(b);
+    }
+  }, h.prototype.setHtml = function (a) {
+    this.isInput ? this.element.value = a : this.element.innerHTML = a;
+  }, a.fn.button = function (a) {
+    var b = [];return this.each(function () {
+      var c = this.mui_plugin_button;if (!c) {
+        var d = this.getAttribute("data-loading-text"),
+            g = this.getAttribute("data-loading-icon"),
+            i = this.getAttribute("data-loading-icon-position");this.mui_plugin_button = c = new h(this, { loadingText: d, loadingIcon: g, loadingIconPosition: i });
+      }(a === f || a === e) && c.setState(a), b.push(c);
+    }), 1 === b.length ? b[0] : b;
+  };
+}(mui, window, document);
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
+module.exports = __webpack_amd_options__;
+
+/* WEBPACK VAR INJECTION */}.call(exports, {}))
+
+/***/ }),
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15859,23 +28531,36 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "content" }, [
         _c(
-          "ul",
-          { staticClass: "box" },
-          _vm._l(_vm.textArray, function(text) {
-            return _c("li", { staticClass: "list" }, [
-              _c("dl", [
-                _c("dd", { staticClass: "dl-title" }, [
-                  _vm._v(_vm._s(text.title))
-                ]),
-                _vm._v(" "),
-                _c("dt", { staticClass: "dl-cont" }, [
-                  _vm._v(_vm._s(text.text.replace(/(\<)br\s?\/>/gi, "")))
-                ]),
-                _vm._v(" "),
-                _c("dd", { staticClass: "dl-time" }, [_vm._v(_vm._s(text.ct))])
-              ])
+          "div",
+          {
+            staticClass: "mui-content mui-scroll-wrapper",
+            attrs: { id: "refreshContainer" }
+          },
+          [
+            _c("div", { staticClass: "mui-scroll" }, [
+              _c(
+                "ul",
+                { staticClass: "box" },
+                _vm._l(_vm.textArray, function(text) {
+                  return _c("li", { staticClass: "list" }, [
+                    _c("dl", [
+                      _c("dd", { staticClass: "dl-title" }, [
+                        _vm._v(_vm._s(text.title))
+                      ]),
+                      _vm._v(" "),
+                      _c("dt", { staticClass: "dl-cont" }, [
+                        _vm._v(_vm._s(text.text.replace(/(\<)br\s*\/*>/gi, "")))
+                      ]),
+                      _vm._v(" "),
+                      _c("dd", { staticClass: "dl-time" }, [
+                        _vm._v(_vm._s(text.ct))
+                      ])
+                    ])
+                  ])
+                })
+              )
             ])
-          })
+          ]
         )
       ]),
       _vm._v(" "),
@@ -15895,13 +28580,13 @@ if (false) {
 }
 
 /***/ }),
-/* 32 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_album_vue__ = __webpack_require__(9);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_1f62ac5c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_album_vue__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_1f62ac5c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_album_vue__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
 var disposed = false
 /* script */
@@ -15949,7 +28634,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 33 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15999,13 +28684,13 @@ if (false) {
 }
 
 /***/ }),
-/* 34 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_tools_vue__ = __webpack_require__(10);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_6c9f4184_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_tools_vue__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_6c9f4184_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_tools_vue__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
 var disposed = false
 /* script */
@@ -16053,7 +28738,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 35 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16087,13 +28772,13 @@ if (false) {
 }
 
 /***/ }),
-/* 36 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_personal_vue__ = __webpack_require__(11);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_343f88ad_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_personal_vue__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_343f88ad_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_personal_vue__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
 var disposed = false
 /* script */
@@ -16141,7 +28826,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 37 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16190,7 +28875,7 @@ var staticRenderFns = [
       _c("span", { staticClass: "icon" }, [
         _c("img", {
           attrs: {
-            src: __webpack_require__(38),
+            src: __webpack_require__(49),
             alt: "头像"
           }
         })
@@ -16226,19 +28911,19 @@ if (false) {
 }
 
 /***/ }),
-/* 38 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 39 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_login_vue__ = __webpack_require__(12);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_7af60dcc_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_login_vue__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_7af60dcc_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_login_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
 var disposed = false
 /* script */
@@ -16286,7 +28971,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 40 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16305,14 +28990,16 @@ var render = function() {
         _vm._v(" "),
         _c("section", { staticClass: "section-input" }, [
           _c("ul", [
-            _c("li", [
+            _c("li", { staticClass: "username" }, [
+              _c("i", { staticClass: "icon" }),
               _c("input", {
                 staticClass: "input",
                 attrs: { type: "text", placeholder: "用户名" }
               })
             ]),
             _vm._v(" "),
-            _c("li", [
+            _c("li", { staticClass: "password" }, [
+              _c("i", { staticClass: "icon" }),
               _c("input", {
                 staticClass: "input",
                 attrs: { type: "password", placeholder: "密码" }
@@ -16341,13 +29028,13 @@ if (false) {
 }
 
 /***/ }),
-/* 41 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_script_index_0_app_vue__ = __webpack_require__(13);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_0dd91344_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_app_vue__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_14_2_1_vue_loader_lib_template_compiler_index_id_data_v_0dd91344_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_14_2_1_vue_loader_lib_selector_type_template_index_0_app_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2_1_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
 var disposed = false
 /* script */
@@ -16395,7 +29082,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 42 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

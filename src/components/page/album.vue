@@ -28,14 +28,14 @@
             footerNav
         },
         beforeCreate: function () {
-            loading.open();
+            wui.loading();
         },
         created: function () {
             console.log('相册页');
             const that = this;
             const url = 'http://route.showapi.com/819-1';
             const paramObj = {};
-            paramObj.showapi_timestamp = formatterDateTime();
+            paramObj.showapi_timestamp = wui.formatDateTime();
             paramObj.showapi_appid = '58966';
             paramObj.showapi_sign = 'f2c87a1f55c345ccbd46923e10ab344f';
             paramObj.type = '35';
@@ -52,12 +52,13 @@
                     if(result.showapi_res_error==''){
                         that.imgArray = result.showapi_res_body;
                     }
-                    loading.close();
+                    wui.loading('close');
                 },
                 error: function (XmlHttpRequest,textStatus) {
                     console.log('错误');
                     console.log(XmlHttpRequest);
                     console.log(textStatus);
+
                 }
             });
         }
