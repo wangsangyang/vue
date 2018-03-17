@@ -48,6 +48,7 @@ a{ color: #333; }
 /* 相册 */
 .page-album{ padding: 0.01rem 0 1.2rem; }
 .page-album  .p-title{  }
+.page-album .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
 .page-album .content .box{  }
 .page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.2rem;}
 .page-album .content .list dt{ overflow: hidden; }

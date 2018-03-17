@@ -1,4 +1,10 @@
 export default window.wui = {
+        getKey: function (showapi_appid='58966',showapi_sign='f2c87a1f55c345ccbd46923e10ab344f') {
+            return {
+                showapi_appid,
+                showapi_sign
+            }
+        },
         formatDateTime: function () {
             var date=new Date()
             var month=date.getMonth() + 1
@@ -38,7 +44,7 @@ export default window.wui = {
             }
             return this;
         },
-        ajaxerror: function (callback) {
+        refresh: function (callback) {
             $('#wui-ajaxerror').on('touchend click',function () {
                 callback();
             });

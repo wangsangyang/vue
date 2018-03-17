@@ -21,8 +21,8 @@
 </template>
 
 <script>
-    import '../../../static/mui/css/mui.min.css';
     import footerNav from '../public/footer-nav.vue';
+    import '../../../static/mui/css/mui.min.css';
     import mui from '../../../static/mui/js/mui.min.js';
 
     export default {
@@ -41,11 +41,11 @@
         created: function () {
             console.log('首页');
             const that = this;
-            const url = 'http://route.showapi.com/341-1';
+            const url = 'http://route.showapi.com/341-1';//笑话大全api
             const paramObj = {};
             paramObj.showapi_timestamp = wui.formatDateTime();
-            paramObj.showapi_appid = '58966';
-            paramObj.showapi_sign = 'f2c87a1f55c345ccbd46923e10ab344f';
+            paramObj.showapi_appid = wui.getKey().showapi_appid;
+            paramObj.showapi_sign = wui.getKey().showapi_sign;
             paramObj.page = 0;
             paramObj.maxResult = 20;
 
@@ -77,6 +77,8 @@
                         //console.log(result.showapi_res_body);
                         if(result.showapi_res_error==''){
                             that.textArray = that.textArray.concat(result.showapi_res_body.contentlist);
+                        }else{
+                            wui.ajaxerror('发生了未知的错误！');
                         }
                         mui('#refreshContainer').pullRefresh().endPullupToRefresh(false);
                         wui.loading('close');
