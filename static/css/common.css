@@ -40,7 +40,7 @@ a{ color: #333; }
 .page-home  .p-title{  }
 .page-home .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
 .page-home .content .box{  }
-.page-home .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.2rem; font-size: 0.32rem;  }
+.page-home .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem; font-size: 0.32rem;  }
 .page-home .content .list dt{ overflow: hidden; }
 .page-home .content .list .dl-title{ padding: 0 0 0.1rem; color: #ff9400; }
 .page-home .content .list .dl-time{ padding-top: 0.1rem; font-size: 0.24rem; color: #999; }
@@ -50,7 +50,7 @@ a{ color: #333; }
 .page-album  .p-title{  }
 .page-album .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
 .page-album .content .box{  }
-.page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.2rem;}
+.page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem;}
 .page-album .content .list dt{ overflow: hidden; }
 .page-album .content .list dd{ padding-top: 0.1rem; }
 .page-album .content .list img{ width: 100%; }
@@ -107,4 +107,7 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 .wui-loading{ position: fixed; z-index: 9; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(../images/loading.gif) no-repeat center; }
 .wui-ajaxerror{ position: absolute; top: 40%; width: 100%; text-align: center; z-index: 9; font-size: 0.24rem; }
 .wui-ajaxerror .reset{ display: inline-block; padding: 0.2rem 0.4rem; }
+
+.wui-scrollwrap{ position: absolute; top: 0; bottom: 0; overflow: hidden; width: 100%; }
+.wui-scroll{  }
 

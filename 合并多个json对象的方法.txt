@@ -1,0 +1,58 @@
+以下方法：如果key值相同，则下面的会覆盖上面的
+第1种方法：assign()方法
+var o1 = {a:1};
+var o2 = {b:1};
+var o3 = {c:1};
+var obj = Object.assign(o1,o2,o3);
+
+第2种方法：三个点方法
+var o1 = {a:1};
+var o2 = {b:1};
+var o3 = {c:1};
+var obj = {...o1,...o2,...o3};
+//或者var obj = {...o1,...o2,...o3,d:1};
+//或者var obj = {...o1,...o2,...o3,...{d:1}};
+
+
+第3种方法：jquery的extend()方法
+var o1 = {a:1};
+var o2 = {b:1};
+var o3 = {c:1};
+var obj = $.extend({},o1,o2,o3);
+
+
+
+-------------------------------------------------------------
+数组的合并
+第1种方法：concat()方法
+var a1 = [1];
+var a2 = [2];
+var a3 = [3];
+var arr = a1.concat(a2).concat(a3);
+
+第2种方法：三个点方法
+var a1 = [1];
+var a2 = [2];
+var a3 = [3];
+var arr = [...a1,...a2,...a3];
+//或者var arr = [12,...a1,...a2,...a3];
+
+
+第3种方法：apply()方法
+var a1 = [1];
+var a2 = [2];
+var a3 = [3];
+var arr = a1.push.apply(a1,a2.concat(a3));
+
+
+第4种方法：apply()方法
+var a1 = [1];
+var a2 = [2];
+var a3 = [3];
+a2.forEach(function(item,index){
+	a1.push(item); 
+});
+或者
+a2.map(function(item,index){
+	a1.push(item); 
+});

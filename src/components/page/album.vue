@@ -28,7 +28,7 @@
         name: 'album',
         data: function () {
             return {
-                imgArray: {}
+                imgArray: []
             }
         },
         components: {
@@ -38,6 +38,8 @@
             wui.loading();
         },
         created: function () {
+        },
+        mounted: function () {
             console.log('相册页');
             const that = this;
             const url = 'http://route.showapi.com/819-1';//花瓣福利api
@@ -65,6 +67,7 @@
             });
 
             function pullupRefresh() {
+                console.log('下拉刷新，相册');
                 paramObj.page += 1;
                 $.ajax({
                     type: 'post',
@@ -72,15 +75,17 @@
                     data: paramObj,
                     dataType: 'json',
                     success: function (result) {
-                        console.log(result);
-                        console.log(result.showapi_res_body);
+                        //console.log(result);
+                        //console.log(result.showapi_res_body);
                         if(result.showapi_res_error==''){
-                            //that.textArray = that.textArray.concat(result.showapi_res_body);
-                            that.imgArray = {that.imgArray,...(result.showapi_res_body)};
+                            $.each(result.showapi_res_body,function (index,item) {
+                                //console.log(index,item);
+                                that.imgArray.push(item);
+                            });
                         }else{
                             wui.ajaxerror('发生了未知的错误！');
                         }
-                        mui('#refreshContainer').pullRefresh().endPullupToRefresh(false);
+                        mui('#refreshContainer').pullRefresh().endPullupToRefresh();
                         wui.loading('close');
                     },
                     error: function (XmlHttpRequest,textStatus) {

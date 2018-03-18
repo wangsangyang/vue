@@ -45,7 +45,7 @@ export default window.wui = {
             return this;
         },
         refresh: function (callback) {
-            $('#wui-ajaxerror').on('touchend click',function () {
+            $('#wui-ajaxerror').on('click',function () {
                 callback();
             });
         }
