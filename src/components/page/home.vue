@@ -1,9 +1,13 @@
 <template>
     <div class="page page-home bgcolor">
-        <h3 class="p-title">笑话大全</h3>
+        <h3 class="p-title">笑话大全
+            <span class="s1"></span>/
+            <span class="s2"></span>/
+            <span class="s3"></span>/
+        </h3>
         <div class="content">
-            <div id="refreshContainer" class="wui-scrollwrap">
-                <div class="wui-scroll">
+            <div id="refreshContainer" class="wui-updropload">
+                <div class="wui-container">
                     <ul class="box">
                         <li class="list" v-for="text in textArray">
                             <dl>
@@ -14,6 +18,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
         <footer-nav></footer-nav>
@@ -40,6 +45,71 @@
         },
         created: function () {
 
+        },
+        mounted: function () {
+
+            var loadmore = function () {
+                var target = document.querySelector('#refreshContainer .wui-scroll');
+                var startY = 0;
+                var top = 0;
+                var moveYtimeStamp = [];
+                var moveYArray = [];
+
+                var istouch = false;
+                target.ontouchstart = function (event) {
+                    console.log(event);
+                    istouch = true;
+                    top = target.style.top?target.style.top.replace('px',''):0;
+                    top = parseFloat(top);
+                    console.log(top);
+                    $('.p-title .s1').text(top);
+                    var touch = event.touches[0];
+                    startY = touch.pageY;
+                    console.log(startY);
+                }
+                target.ontouchmove = function (event) {
+                    $('.p-title .s3').text(istouch);
+                    if(istouch){
+                        var touch = event.touches[0];
+                        var moveY = touch.pageY;
+                        moveYtimeStamp.length = 0;
+                        moveYArray.length = 0;
+                        moveYtimeStamp.push( event.timeStamp );
+                        moveYArray.push( moveY);
+                        //console.log(moveY);
+                        target.style.top = moveY - startY + top + 'px';
+                        if(moveY<startY){
+                        }
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                }
+                target.ontouchend = function (event) {
+                    console.log(event);
+                    var endY = event.changedTouches[0].pageY;
+                    var first_moveYArray = moveYArray[0];
+                    var last_moveYtimeStamp = moveYtimeStamp[moveYtimeStamp.length-1];
+
+                    console.log(event.timeStamp-last_moveYtimeStamp);
+                    console.log(endY,startY);
+                    if( (event.timeStamp-last_moveYtimeStamp)<1000&& Math.abs(endY-startY)>200 ){
+                        target.style.top = (endY - startY + top)*3 + 'px';
+                    }
+
+                    istouch = false;
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                target.ontouchcancel = function (event) {
+                    istouch = false;
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            }
+
+            //loadmore();
+
+
             console.log('首页');
             const that = this;
             const url = 'http://route.showapi.com/341-1';//笑话大全api
@@ -48,24 +118,12 @@
             paramObj.showapi_appid = wui.getKey().showapi_appid;
             paramObj.showapi_sign = wui.getKey().showapi_sign;
             paramObj.page = 0;
-            paramObj.maxResult = 20;
+            paramObj.maxResult = 10;
 
             pullupRefresh();
 
-            //上拉加载
-/*            mui.init({
-                pullRefresh: {
-                    container: '#refreshContainer',
-                    up: {
-                        height: 50,
-                        contentrefresh: "加载中...",
-                        contentnomore: '没有更多数据了!',
-                        callback: pullupRefresh
-                    }
-                }
-            });*/
-
             function pullupRefresh() {
+                //wui.loading()
                 console.log('下拉刷新，首页');
                 paramObj.page += 1;
                 //console.log(paramObj);
@@ -84,51 +142,60 @@
                             wui.ajaxerror('发生了未知的错误！');
                         }
                         //mui('#refreshContainer').pullRefresh().endPullupToRefresh();
-                        wui.loading('close');
+                        if(paramObj.page<=5){
+                            wui.updropLoad('reset');
+                        }else{
+                            wui.updropLoad('end');
+                        }
+
                     },
                     error: function (XmlHttpRequest,textStatus) {
                         console.log('错误');
                         console.log(XmlHttpRequest);
                         console.log(textStatus);
-                        wui.loading('close');
                         wui.ajaxerror().refresh(pullupRefresh);
+                    },
+                    complete: function () {
+                        wui.loading('close');
                     }
                 });
             }
-        },
-        mounted: function () {
 
-            var loadmore = function () {
-                var target = document.querySelector('#refreshContainer .wui-scroll');
-                var startY = 0;
-                var moveY = 0;
-                var translate = 0;
-                target.ontouchstart = function (event) {
-                    var transform = target.style.transform;
-                    console.log(transform);
-                    translate = transform?transform.match(/-?\d+px\)$/)[0].replace('px)',''):0;
-                    console.log(translate);
 
-                    var touch = event.touches[0];
-                    startY = touch.pageY;
-                    console.log(startY);
+            var loadmore1 = function (end) {
+                var target = $('#refreshContainer');
+                var loading = '<div class="loading"><i class="icon"></i><i class="text">加载中...</i></div>';
+                var isloading = true;
+                if(end==='end'){
+                    isloading = true;
+                    target.find('.loading').remove();
                 }
-                target.ontouchmove = function (event) {
-                    var touch = event.touches[0];
-                    moveY = touch.pageY;
-                    //console.log(moveY);
-                    if(moveY<startY){
-                        var moveDistance = moveY-startY;
-                        //target[0].css('transform','translate(0,'+distance+')');
-                        console.log(moveDistance);
-                        var distance = moveDistance+parseFloat(translate);
-                        //console.log(distance);
-                        target.style.transform = 'translate(0,'+distance+'px)';
+                target.scroll(function () {
+                    if(isloading){
+                        var target_height = parseFloat(target.outerHeight(true));
+                        var scroll_height = parseFloat(target.find('.wui-scroll').height());
+                        var scrolltop = parseFloat($(this).scrollTop());
+                        console.log(scrolltop,target_height,scroll_height);
+                        if(scrolltop+target_height>=scroll_height-50){
+                            if( target.find('.loading').length<1 ){
+                                target.append(loading);
+                            }
+                            isloading = false;
+                            pullupRefresh();
+                        }
                     }
-                }
+                });
             }
 
-            loadmore();
+            //loadmore1();
+
+            wui.updropLoad(
+                {
+                    target: '#refreshContainer',
+                    callback: pullupRefresh
+                }
+            );
+
 
         }
     }

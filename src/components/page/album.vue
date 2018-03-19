@@ -38,6 +38,7 @@
             wui.loading();
         },
         created: function () {
+
         },
         mounted: function () {
             console.log('相册页');

@@ -48,7 +48,58 @@ export default window.wui = {
             $('#wui-ajaxerror').on('click',function () {
                 callback();
             });
-        }
+            return this;
+        },
+        updropLoad: function (param) {
+            var that = this;
+            console.log(param instanceof Object);
+            var loading = '<div class="loading"><i class="icon"></i><i class="text">加载中...</i></div>';
+            var isloading = true;
+            var target = $('.wui-updropload');
+            if(param==='reset'){
+                isloading = true;
+                target.find('.loading').remove();
+            }else if(param==='end'){
+                isloading = false;
+                target.find('.loading').addClass('end').text('没有更多数据了！');
+            }else if(param instanceof Object){
+                var defaultparam = {
+                    target: '.wui-updropload',
+                    height: 50,
+                    loadingtext: "加载中...",
+                    nodata: '没有更多数据了!',
+                    callback: function () {}
+                };
+                var options = Object.assign(defaultparam,param);
+                console.log(options);
+                target = $(options.target);
+                that.target = $(options.target);
+                that.height = options.height;
+                that.loadingtext = options.loadingtext;
+                that.nodata = options.nodata;
+                that.callback = options.callback;
+            }
+
+
+                target.scroll(function () {
+                    if(isloading){
+                        var target_height = parseFloat(target.outerHeight(true));
+                        var scroll_height = parseFloat(target.find('.wui-container').height());
+                        var scrolltop = parseFloat($(this).scrollTop());
+                        //console.log(scrolltop,target_height,scroll_height);
+                        if(scrolltop+target_height>=scroll_height-50){
+                            if( target.find('.loading').length<1 ){
+                                target.append(loading);
+                            }
+                            isloading = false;
+                            //options.callback();
+                            that.callback();
+                        }
+                    }
+                });
+
+
+        },
     }
 
 

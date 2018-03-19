@@ -108,6 +108,13 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 .wui-ajaxerror{ position: absolute; top: 40%; width: 100%; text-align: center; z-index: 9; font-size: 0.24rem; }
 .wui-ajaxerror .reset{ display: inline-block; padding: 0.2rem 0.4rem; }
 
-.wui-scrollwrap{ position: absolute; top: 0; bottom: 0; overflow: hidden; width: 100%; }
-.wui-scroll{  }
+.wui-updropload{ position: absolute; top: 0; bottom: 0; overflow: auto; width: 100%; }
+.wui-updropload .wui-container{ position: relative; }
+.wui-updropload .loading{ height: 0.9rem; line-height: 0.9rem; text-align: center; }
+.wui-updropload .loading .text{ display: inline-block; font-size: 0.24rem; }
+.wui-updropload .loading .icon{ display: inline-block; width: 0.28rem; height: 0.28rem; background-position: center; background-repeat: no-repeat; background-size: 0.28rem auto;  background-image: url(../images/loading.gif); vertical-align: top; margin: 0.29rem 0.1rem 0 0; }
+
+.wui-updropload .loading.end .text{  }
+.wui-updropload .loading.end .icon{ display: none }
+
 
