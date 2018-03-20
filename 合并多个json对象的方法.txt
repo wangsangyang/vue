@@ -45,7 +45,7 @@ var a3 = [3];
 var arr = a1.push.apply(a1,a2.concat(a3));
 
 
-第4种方法：apply()方法
+第4种方法：forEach()、map()循环
 var a1 = [1];
 var a2 = [2];
 var a3 = [3];
