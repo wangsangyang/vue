@@ -79,24 +79,25 @@ export default window.wui = {
                 that.nodata = options.nodata;
                 that.callback = options.callback;
             }
-
-
-                target.scroll(function () {
-                    if(isloading){
-                        var target_height = parseFloat(target.outerHeight(true));
-                        var scroll_height = parseFloat(target.find('.wui-container').height());
-                        var scrolltop = parseFloat($(this).scrollTop());
-                        //console.log(scrolltop,target_height,scroll_height);
-                        if(scrolltop+target_height>=scroll_height-50){
-                            if( target.find('.loading').length<1 ){
-                                target.append(loading);
-                            }
-                            isloading = false;
-                            //options.callback();
-                            that.callback();
+            console.log(that.scrolltop);
+            that.target.scrollTop(that.scrolltop);
+            target.scroll(function () {
+                var target_height = target.outerHeight();
+                var scroll_height = target.find('.wui-container').height();
+                var scrolltop = $(this).scrollTop();
+                console.log(scrolltop,target_height,scroll_height);
+                if(isloading){
+                    that.scrolltop = scrolltop;
+                    if(scrolltop+target_height>=scroll_height-50){
+                        if( target.find('.loading').length<1 ){
+                            target.append(loading);
                         }
+                        isloading = false;
+                        //options.callback();
+                        that.callback();
                     }
-                });
+                }
+            });
 
 
         },

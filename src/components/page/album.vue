@@ -1,6 +1,16 @@
 <template>
     <div class="page page-album bgcolor">
-        <h3 class="p-title">花瓣福利</h3>
+        <div class="top-toolbar">
+            <ul class="box">
+                <li class="menu"><router-link to="">大胸妹</router-link></li>
+                <li class="menu"><router-link to="">小清新</router-link></li>
+                <li class="menu"><router-link to="">文艺范</router-link></li>
+                <li class="menu"><router-link to="">性感妹</router-link></li>
+                <li class="menu"><router-link to="">大长腿</router-link></li>
+                <li class="menu"><router-link to="">黑丝袜</router-link></li>
+                <li class="menu"><router-link to="">小翘臀</router-link></li>
+            </ul>
+        </div>
         <div class="content">
             <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
                 <div class="mui-scroll">

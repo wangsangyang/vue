@@ -38,7 +38,7 @@ a{ color: #333; }
 /* 首页 */
 .page-home{ padding: 0.01rem 0 1.2rem; }
 .page-home  .p-title{  }
-.page-home .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
+.page-home .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; }
 .page-home .content .box{  }
 .page-home .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem; font-size: 0.32rem;  }
 .page-home .content .list dt{ overflow: hidden; }
@@ -48,12 +48,16 @@ a{ color: #333; }
 /* 相册 */
 .page-album{ padding: 0.01rem 0 1.2rem; }
 .page-album  .p-title{  }
-.page-album .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
+.page-album .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; }
 .page-album .content .box{  }
 .page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem;}
 .page-album .content .list dt{ overflow: hidden; }
 .page-album .content .list dd{ padding-top: 0.1rem; }
 .page-album .content .list img{ width: 100%; }
+
+.top-toolbar{ width: 100%; height: 0.8rem; background-color: #fff; overflow: auto; border-bottom: solid 0.021rem #efeff4; }
+.top-toolbar .box{ width: 5000px; }
+.top-toolbar .menu{ float: left; line-height: 0.8rem; padding: 0 0.2rem; font-size: 0.28rem; }
 
 /* 列表ui */
 .ui-view-cell{ margin-bottom: 0.2rem; font-size: 0.28rem; background-color: #fff; }
@@ -116,5 +120,8 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 
 .wui-updropload .loading.end .text{  }
 .wui-updropload .loading.end .icon{ display: none }
+
+
+
 
 

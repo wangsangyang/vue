@@ -6,7 +6,7 @@
             <span class="s3"></span>/
         </h3>
         <div class="content">
-            <div id="refreshContainer" class="wui-updropload">
+            <div id="refresh" class="wui-updropload">
                 <div class="wui-container">
                     <ul class="box">
                         <li class="list" v-for="text in textArray">
@@ -48,67 +48,6 @@
         },
         mounted: function () {
 
-            var loadmore = function () {
-                var target = document.querySelector('#refreshContainer .wui-scroll');
-                var startY = 0;
-                var top = 0;
-                var moveYtimeStamp = [];
-                var moveYArray = [];
-
-                var istouch = false;
-                target.ontouchstart = function (event) {
-                    console.log(event);
-                    istouch = true;
-                    top = target.style.top?target.style.top.replace('px',''):0;
-                    top = parseFloat(top);
-                    console.log(top);
-                    $('.p-title .s1').text(top);
-                    var touch = event.touches[0];
-                    startY = touch.pageY;
-                    console.log(startY);
-                }
-                target.ontouchmove = function (event) {
-                    $('.p-title .s3').text(istouch);
-                    if(istouch){
-                        var touch = event.touches[0];
-                        var moveY = touch.pageY;
-                        moveYtimeStamp.length = 0;
-                        moveYArray.length = 0;
-                        moveYtimeStamp.push( event.timeStamp );
-                        moveYArray.push( moveY);
-                        //console.log(moveY);
-                        target.style.top = moveY - startY + top + 'px';
-                        if(moveY<startY){
-                        }
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                }
-                target.ontouchend = function (event) {
-                    console.log(event);
-                    var endY = event.changedTouches[0].pageY;
-                    var first_moveYArray = moveYArray[0];
-                    var last_moveYtimeStamp = moveYtimeStamp[moveYtimeStamp.length-1];
-
-                    console.log(event.timeStamp-last_moveYtimeStamp);
-                    console.log(endY,startY);
-                    if( (event.timeStamp-last_moveYtimeStamp)<1000&& Math.abs(endY-startY)>200 ){
-                        target.style.top = (endY - startY + top)*3 + 'px';
-                    }
-
-                    istouch = false;
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                target.ontouchcancel = function (event) {
-                    istouch = false;
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-            }
-
-            //loadmore();
-
 
             console.log('首页');
             const that = this;
@@ -141,7 +80,6 @@
                         }else{
                             wui.ajaxerror('发生了未知的错误！');
                         }
-                        //mui('#refreshContainer').pullRefresh().endPullupToRefresh();
                         if(paramObj.page<=5){
                             wui.updropLoad('reset');
                         }else{
@@ -159,39 +97,12 @@
                         wui.loading('close');
                     }
                 });
+                
             }
-
-
-            var loadmore1 = function (end) {
-                var target = $('#refreshContainer');
-                var loading = '<div class="loading"><i class="icon"></i><i class="text">加载中...</i></div>';
-                var isloading = true;
-                if(end==='end'){
-                    isloading = true;
-                    target.find('.loading').remove();
-                }
-                target.scroll(function () {
-                    if(isloading){
-                        var target_height = parseFloat(target.outerHeight(true));
-                        var scroll_height = parseFloat(target.find('.wui-scroll').height());
-                        var scrolltop = parseFloat($(this).scrollTop());
-                        console.log(scrolltop,target_height,scroll_height);
-                        if(scrolltop+target_height>=scroll_height-50){
-                            if( target.find('.loading').length<1 ){
-                                target.append(loading);
-                            }
-                            isloading = false;
-                            pullupRefresh();
-                        }
-                    }
-                });
-            }
-
-            //loadmore1();
 
             wui.updropLoad(
                 {
-                    target: '#refreshContainer',
+                    target: '#refresh',
                     callback: pullupRefresh
                 }
             );
