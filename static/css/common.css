@@ -55,9 +55,9 @@ a{ color: #333; }
 .page-album .content .list dd{ padding-top: 0.1rem; }
 .page-album .content .list img{ width: 100%; }
 
-.top-toolbar{ width: 100%; height: 0.8rem; background-color: #fff; overflow: auto; border-bottom: solid 0.021rem #efeff4; }
+.top-toolbar{ width: 100%; height: 1rem; background-color: #fff; overflow: auto; border-bottom: solid 0.021rem #efeff4; }
 .top-toolbar .box{ width: 5000px; }
-.top-toolbar .menu{ float: left; line-height: 0.8rem; padding: 0 0.2rem; font-size: 0.28rem; }
+.top-toolbar .menu{ float: left; line-height: 1rem; padding: 0 0.2rem; font-size: 0.28rem; }
 
 /* 列表ui */
 .ui-view-cell{ margin-bottom: 0.2rem; font-size: 0.28rem; background-color: #fff; }

@@ -15,10 +15,13 @@ const routes = [
     },
     {
         path: '/home',
+        meta:{title: '首页'},
         component: home,
     },
     {
         path: '/album',
+        name: 'album',
+        meta:{title: '相册'},
         component: album,
     },
     {

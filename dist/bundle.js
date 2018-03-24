@@ -14222,6 +14222,8 @@ var mui = function (a, b) {
     },
     created: function () {},
     mounted: function () {
+        console.log(this.$route);
+
         console.log('相册页');
         const that = this;
         const url = 'http://route.showapi.com/819-1'; //花瓣福利api
@@ -25490,9 +25492,12 @@ const routes = [{
     redirect: '/home'
 }, {
     path: '/home',
+    meta: { title: '首页' },
     component: __WEBPACK_IMPORTED_MODULE_2__components_page_home_vue__["a" /* default */]
 }, {
     path: '/album',
+    name: 'album',
+    meta: { title: '相册' },
     component: __WEBPACK_IMPORTED_MODULE_3__components_page_album_vue__["a" /* default */]
 }, {
     path: '/tools',
@@ -28535,7 +28540,7 @@ var render = function() {
         _c(
           "li",
           [
-            _c("router-link", { attrs: { to: "/album" } }, [
+            _c("router-link", { attrs: { to: { name: "album" } } }, [
               _c("span", { staticClass: "icon icon-album" }),
               _vm._v(" "),
               _c("span", { staticClass: "text" }, [_vm._v("相册")])
@@ -28782,49 +28787,83 @@ var render = function() {
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("大胸妹")])],
+            [
+              _c(
+                "router-link",
+                { attrs: { to: { path: "/album", query: { type: 34 } } } },
+                [_vm._v("大胸妹")]
+              )
+            ],
             1
           ),
           _vm._v(" "),
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("小清新")])],
+            [
+              _c(
+                "router-link",
+                {
+                  attrs: { to: { name: "album", query: { type: 35, id: 2 } } }
+                },
+                [_vm._v("小清新")]
+              )
+            ],
             1
           ),
           _vm._v(" "),
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("文艺范")])],
+            [
+              _c("router-link", { attrs: { to: "/album/36" } }, [
+                _vm._v("文艺范")
+              ])
+            ],
             1
           ),
           _vm._v(" "),
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("性感妹")])],
+            [
+              _c("router-link", { attrs: { to: "/album/37" } }, [
+                _vm._v("性感妹")
+              ])
+            ],
             1
           ),
           _vm._v(" "),
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("大长腿")])],
+            [
+              _c("router-link", { attrs: { to: "/album/38" } }, [
+                _vm._v("大长腿")
+              ])
+            ],
             1
           ),
           _vm._v(" "),
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("黑丝袜")])],
+            [
+              _c("router-link", { attrs: { to: "/album/39" } }, [
+                _vm._v("黑丝袜")
+              ])
+            ],
             1
           ),
           _vm._v(" "),
           _c(
             "li",
             { staticClass: "menu" },
-            [_c("router-link", { attrs: { to: "" } }, [_vm._v("小翘臀")])],
+            [
+              _c("router-link", { attrs: { to: "/album/40" } }, [
+                _vm._v("小翘臀")
+              ])
+            ],
             1
           )
         ])
