@@ -27,14 +27,17 @@ const routes = [
     },
     {
         path: '/tools',
+        meta:{title: '工具箱'},
         component: tools,
     },
     {
         path: '/personal',
+        meta:{title: '个人中心'},
         component: personal,
     },
     {
         path: '/login',
+        meta:{title: '登录'},
         component: login,
     },
 ];
@@ -43,11 +46,12 @@ let router = new VueRouter({
     routes,
 });
 
-/*router.beforeEach((to,from,next) => {
+router.beforeEach((to,from,next) => {
     console.log(to);
-    console.log(from);
+    //console.log(from);
+    document.title = to.meta.title;
     next();
-});*/
+});
 
 export default router;
 

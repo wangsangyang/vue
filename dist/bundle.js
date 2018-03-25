@@ -25537,12 +25537,15 @@ const routes = [{
     component: __WEBPACK_IMPORTED_MODULE_3__components_page_album_vue__["a" /* default */]
 }, {
     path: '/tools',
+    meta: { title: '工具箱' },
     component: __WEBPACK_IMPORTED_MODULE_4__components_page_tools_vue__["a" /* default */]
 }, {
     path: '/personal',
+    meta: { title: '个人中心' },
     component: __WEBPACK_IMPORTED_MODULE_5__components_page_personal_vue__["a" /* default */]
 }, {
     path: '/login',
+    meta: { title: '登录' },
     component: __WEBPACK_IMPORTED_MODULE_6__components_page_login_vue__["a" /* default */]
 }];
 
@@ -25550,11 +25553,12 @@ let router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes
 });
 
-/*router.beforeEach((to,from,next) => {
+router.beforeEach((to, from, next) => {
     console.log(to);
-    console.log(from);
+    //console.log(from);
+    document.title = to.meta.title;
     next();
-});*/
+});
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
 
