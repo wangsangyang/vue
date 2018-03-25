@@ -11911,6 +11911,7 @@ process.umask = function() { return 0; };
         footerNav: __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__["a" /* default */]
     },
     beforeCreate: function () {
+        wui.loading('close');
         wui.loading();
     },
     created: function () {},
@@ -11948,10 +11949,10 @@ process.umask = function() { return 0; };
                         wui.ajaxerror('发生了未知的错误！');
                     }
                     if (paramObj.page <= 5) {
-                        wui.updropLoad('reset');
+                        //wui.updropLoad('reset');
                     } else {
-                        wui.updropLoad('end');
-                    }
+                            //wui.updropLoad('end');
+                        }
                 },
                 error: function (XmlHttpRequest, textStatus) {
                     console.log('错误');
@@ -11965,10 +11966,18 @@ process.umask = function() { return 0; };
             });
         }
 
-        wui.updropLoad({
-            target: '#refresh',
-            callback: pullupRefresh
-        });
+        /*            wui.updropLoad(
+                        {
+                            target: '#refresh',
+                            callback: pullupRefresh
+                        }
+                    );*/
+    },
+    watch: {
+        '$route'(to, from) {
+            document.title = this.$route.meta.title;
+            wui.loading('close');
+        }
     }
 });
 
@@ -14201,7 +14210,6 @@ var mui = function (a, b) {
 //
 //
 //
-//
 
 
 
@@ -14211,75 +14219,98 @@ var mui = function (a, b) {
     name: 'album',
     data: function () {
         return {
-            imgArray: []
+            imgArray: [],
+            type: 35,
+            toolbar: 'highlight'
         };
     },
     components: {
         footerNav: __WEBPACK_IMPORTED_MODULE_0__public_footer_nav_vue__["a" /* default */]
     },
     beforeCreate: function () {
+        wui.loading('close');
         wui.loading();
     },
     created: function () {},
-    mounted: function () {
-        console.log(this.$route);
+    methods: {
+        loadMore() {
+            //console.log(this.$route);
+            console.log('相册页');
+            const that = this;
+            const url = 'http://route.showapi.com/819-1'; //花瓣福利api
+            const paramObj = {};
+            paramObj.showapi_timestamp = wui.formatDateTime();
+            paramObj.showapi_appid = wui.getKey().showapi_appid;
+            paramObj.showapi_sign = wui.getKey().showapi_sign;
+            paramObj.page = 0;
+            paramObj.rows = 20;
 
-        console.log('相册页');
-        const that = this;
-        const url = 'http://route.showapi.com/819-1'; //花瓣福利api
-        const paramObj = {};
-        paramObj.showapi_timestamp = wui.formatDateTime();
-        paramObj.showapi_appid = wui.getKey().showapi_appid;
-        paramObj.showapi_sign = wui.getKey().showapi_sign;
-        paramObj.type = '35';
-        paramObj.page = 1;
-        paramObj.rows = 20;
+            pullupRefresh();
 
-        pullupRefresh();
-
-        //上拉加载
-        __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default.a.init({
-            pullRefresh: {
-                container: '#refreshContainer',
-                up: {
-                    height: 50,
-                    contentrefresh: "加载中...",
-                    contentnomore: '没有更多数据了!',
-                    callback: pullupRefresh
-                }
-            }
-        });
-
-        function pullupRefresh() {
-            console.log('下拉刷新，相册');
-            paramObj.page += 1;
-            $.ajax({
-                type: 'post',
-                url: url,
-                data: paramObj,
-                dataType: 'json',
-                success: function (result) {
-                    //console.log(result);
-                    //console.log(result.showapi_res_body);
-                    if (result.showapi_res_error == '') {
-                        $.each(result.showapi_res_body, function (index, item) {
-                            //console.log(index,item);
-                            that.imgArray.push(item);
-                        });
-                    } else {
-                        wui.ajaxerror('发生了未知的错误！');
+            //上拉加载
+            __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default.a.init({
+                pullRefresh: {
+                    container: '#refreshContainer',
+                    up: {
+                        height: 50,
+                        contentrefresh: "加载中...",
+                        contentnomore: '没有更多数据了!',
+                        callback: pullupRefresh
                     }
-                    __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default()('#refreshContainer').pullRefresh().endPullupToRefresh();
-                    wui.loading('close');
-                },
-                error: function (XmlHttpRequest, textStatus) {
-                    console.log('错误');
-                    console.log(XmlHttpRequest);
-                    console.log(textStatus);
-                    wui.loading('close');
-                    wui.ajaxerror().refresh(pullupRefresh);
                 }
             });
+
+            function pullupRefresh() {
+                console.log(that.type);
+                paramObj.type = that.type;
+                paramObj.page += 1;
+                $.ajax({
+                    type: 'post',
+                    url: url,
+                    data: paramObj,
+                    dataType: 'json',
+                    success: function (result) {
+                        //console.log(result);
+                        //console.log(result.showapi_res_body);
+                        if (result.showapi_res_error == '') {
+                            $.each(result.showapi_res_body, function (index, item) {
+                                //console.log(index,item);
+                                that.imgArray.push(item);
+                            });
+                        } else {
+                            wui.ajaxerror('发生了未知的错误！');
+                        }
+                        __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default()('#refreshContainer').pullRefresh().endPullupToRefresh();
+                        wui.loading('close');
+                    },
+                    error: function (XmlHttpRequest, textStatus) {
+                        console.log('错误');
+                        console.log(XmlHttpRequest);
+                        console.log(textStatus);
+                        wui.loading('close');
+                        wui.ajaxerror().refresh(pullupRefresh);
+                    }
+                });
+            }
+        }
+    },
+    mounted: function () {
+        console.log(this.type);
+        this.type = this.$route.query.type;
+        //console.log();
+        this.loadMore(this.type);
+    },
+    watch: {
+        '$route'(to, from) {
+            console.log(this.$route);
+            __WEBPACK_IMPORTED_MODULE_2__static_mui_js_mui_min_js___default()('#refreshContainer').pullRefresh().scrollTo(0, 0, 100);
+            wui.loading();
+            console.log(to);
+            //console.log(from);
+            this.type = to.query.type;
+            console.log(this.type);
+            this.imgArray = [];
+            this.loadMore(to.query.type);
         }
     }
 
@@ -25130,9 +25161,12 @@ return jQuery;
     },
     loading: function (status) {
         if (status === 'close') {
-            $('#wui-loading').remove();
+            $('.wui-loading').remove();
+        } else if (status === 'full') {
+            var $loading = '<div class="wui-loading full"></div>';
+            $('body').append($loading);
         } else {
-            var $loading = '<div class="wui-loading" id="wui-loading"></div>';
+            var $loading = '<div class="wui-loading"></div>';
             $('body').append($loading);
         }
         return this;
@@ -25152,56 +25186,57 @@ return jQuery;
             callback();
         });
         return this;
-    },
-    updropLoad: function (param) {
-        var that = this;
-        console.log(param instanceof Object);
-        var loading = '<div class="loading"><i class="icon"></i><i class="text">加载中...</i></div>';
-        var isloading = true;
-        var target = $('.wui-updropload');
-        if (param === 'reset') {
-            isloading = true;
-            target.find('.loading').remove();
-        } else if (param === 'end') {
-            isloading = false;
-            target.find('.loading').addClass('end').text('没有更多数据了！');
-        } else if (param instanceof Object) {
-            var defaultparam = {
-                target: '.wui-updropload',
-                height: 50,
-                loadingtext: "加载中...",
-                nodata: '没有更多数据了!',
-                callback: function () {}
-            };
-            var options = Object.assign(defaultparam, param);
-            console.log(options);
-            target = $(options.target);
-            that.target = $(options.target);
-            that.height = options.height;
-            that.loadingtext = options.loadingtext;
-            that.nodata = options.nodata;
-            that.callback = options.callback;
-        }
-        console.log(that.scrolltop);
-        that.target.scrollTop(that.scrolltop);
-        target.scroll(function () {
-            var target_height = target.outerHeight();
-            var scroll_height = target.find('.wui-container').height();
-            var scrolltop = $(this).scrollTop();
-            console.log(scrolltop, target_height, scroll_height);
-            if (isloading) {
-                that.scrolltop = scrolltop;
-                if (scrolltop + target_height >= scroll_height - 50) {
-                    if (target.find('.loading').length < 1) {
-                        target.append(loading);
-                    }
-                    isloading = false;
-                    //options.callback();
-                    that.callback();
-                }
-            }
-        });
     }
+    /*        updropLoad: function (param) {
+                var that = this;
+                console.log(param instanceof Object);
+                var loading = '<div class="loading"><i class="icon"></i><i class="text">加载中...</i></div>';
+                var isloading = true;
+                var target = $('.wui-updropload');
+                if(param==='reset'){
+                    isloading = true;
+                    target.find('.loading').remove();
+                }else if(param==='end'){
+                    isloading = false;
+                    target.find('.loading').addClass('end').text('没有更多数据了！');
+                }else if(param instanceof Object){
+                    var defaultparam = {
+                        target: '.wui-updropload',
+                        height: 50,
+                        loadingtext: "加载中...",
+                        nodata: '没有更多数据了!',
+                        callback: function () {}
+                    };
+                    var options = Object.assign(defaultparam,param);
+                    console.log(options);
+                    target = $(options.target);
+                    that.target = $(options.target);
+                    that.height = options.height;
+                    that.loadingtext = options.loadingtext;
+                    that.nodata = options.nodata;
+                    that.callback = options.callback;
+                }
+                console.log(that.scrolltop);
+                that.target.scrollTop(that.scrolltop);
+                target.scroll(function () {
+                    var target_height = target.outerHeight();
+                    var scroll_height = target.find('.wui-container').height();
+                    var scrolltop = $(this).scrollTop();
+                    console.log(scrolltop,target_height,scroll_height);
+                    if(isloading){
+                        that.scrolltop = scrolltop;
+                        if(scrolltop+target_height>=scroll_height-50){
+                            if( target.find('.loading').length<1 ){
+                                target.append(loading);
+                            }
+                            isloading = false;
+                            //options.callback();
+                            that.callback();
+                        }
+                    }
+                });
+    
+            },*/
 });
 
 /***/ }),
@@ -25498,6 +25533,7 @@ const routes = [{
     path: '/album',
     name: 'album',
     meta: { title: '相册' },
+    linkActiveClass: 'mui-active',
     component: __WEBPACK_IMPORTED_MODULE_3__components_page_album_vue__["a" /* default */]
 }, {
     path: '/tools',
@@ -25513,6 +25549,12 @@ const routes = [{
 let router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes
 });
+
+/*router.beforeEach((to,from,next) => {
+    console.log(to);
+    console.log(from);
+    next();
+});*/
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
 
@@ -28540,11 +28582,20 @@ var render = function() {
         _c(
           "li",
           [
-            _c("router-link", { attrs: { to: { name: "album" } } }, [
-              _c("span", { staticClass: "icon icon-album" }),
-              _vm._v(" "),
-              _c("span", { staticClass: "text" }, [_vm._v("相册")])
-            ])
+            _c(
+              "router-link",
+              {
+                attrs: {
+                  to: { name: "album", query: { type: 35 } },
+                  title: "小清新"
+                }
+              },
+              [
+                _c("span", { staticClass: "icon icon-album" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "text" }, [_vm._v("相册")])
+              ]
+            )
           ],
           1
         ),
@@ -28790,7 +28841,10 @@ var render = function() {
             [
               _c(
                 "router-link",
-                { attrs: { to: { path: "/album", query: { type: 34 } } } },
+                {
+                  class: { highlight: _vm.$route.query.type == 34 },
+                  attrs: { to: { name: "album", query: { type: 34 } } }
+                },
                 [_vm._v("大胸妹")]
               )
             ],
@@ -28804,9 +28858,10 @@ var render = function() {
               _c(
                 "router-link",
                 {
-                  attrs: { to: { name: "album", query: { type: 35, id: 2 } } }
+                  class: { highlight: _vm.$route.query.type == 36 },
+                  attrs: { to: { name: "album", query: { type: 36 } } }
                 },
-                [_vm._v("小清新")]
+                [_vm._v("文艺范")]
               )
             ],
             1
@@ -28816,9 +28871,14 @@ var render = function() {
             "li",
             { staticClass: "menu" },
             [
-              _c("router-link", { attrs: { to: "/album/36" } }, [
-                _vm._v("文艺范")
-              ])
+              _c(
+                "router-link",
+                {
+                  class: { highlight: _vm.$route.query.type == 37 },
+                  attrs: { to: { name: "album", query: { type: 37 } } }
+                },
+                [_vm._v("性感妹")]
+              )
             ],
             1
           ),
@@ -28827,9 +28887,14 @@ var render = function() {
             "li",
             { staticClass: "menu" },
             [
-              _c("router-link", { attrs: { to: "/album/37" } }, [
-                _vm._v("性感妹")
-              ])
+              _c(
+                "router-link",
+                {
+                  class: { highlight: _vm.$route.query.type == 38 },
+                  attrs: { to: { path: "/album", query: { type: 38 } } }
+                },
+                [_vm._v("大长腿")]
+              )
             ],
             1
           ),
@@ -28838,9 +28903,14 @@ var render = function() {
             "li",
             { staticClass: "menu" },
             [
-              _c("router-link", { attrs: { to: "/album/38" } }, [
-                _vm._v("大长腿")
-              ])
+              _c(
+                "router-link",
+                {
+                  class: { highlight: _vm.$route.query.type == 39 },
+                  attrs: { to: { path: "/album", query: { type: 39 } } }
+                },
+                [_vm._v("黑丝袜")]
+              )
             ],
             1
           ),
@@ -28849,20 +28919,14 @@ var render = function() {
             "li",
             { staticClass: "menu" },
             [
-              _c("router-link", { attrs: { to: "/album/39" } }, [
-                _vm._v("黑丝袜")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            { staticClass: "menu" },
-            [
-              _c("router-link", { attrs: { to: "/album/40" } }, [
-                _vm._v("小翘臀")
-              ])
+              _c(
+                "router-link",
+                {
+                  class: { highlight: _vm.$route.query.type == 40 },
+                  attrs: { to: { path: "/album", query: { type: 40 } } }
+                },
+                [_vm._v("小翘臀")]
+              )
             ],
             1
           )

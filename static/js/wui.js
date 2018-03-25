@@ -27,9 +27,12 @@ export default window.wui = {
         },
         loading: function(status){
             if(status==='close'){
-                $('#wui-loading').remove();
+                $('.wui-loading').remove();
+            }else if(status==='full'){
+                var $loading = '<div class="wui-loading full"></div>';
+                $('body').append($loading);
             }else{
-                var $loading = '<div class="wui-loading" id="wui-loading"></div>';
+                var $loading = '<div class="wui-loading"></div>';
                 $('body').append($loading);
             }
             return this;
@@ -50,7 +53,7 @@ export default window.wui = {
             });
             return this;
         },
-        updropLoad: function (param) {
+/*        updropLoad: function (param) {
             var that = this;
             console.log(param instanceof Object);
             var loading = '<div class="loading"><i class="icon"></i><i class="text">加载中...</i></div>';
@@ -99,8 +102,7 @@ export default window.wui = {
                 }
             });
 
-
-        },
+        },*/
     }
 
 

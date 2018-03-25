@@ -22,6 +22,7 @@ const routes = [
         path: '/album',
         name: 'album',
         meta:{title: '相册'},
+        linkActiveClass: 'mui-active',
         component: album,
     },
     {
@@ -39,8 +40,14 @@ const routes = [
 ];
 
 let router = new VueRouter({
-    routes
+    routes,
 });
+
+/*router.beforeEach((to,from,next) => {
+    console.log(to);
+    console.log(from);
+    next();
+});*/
 
 export default router;
 

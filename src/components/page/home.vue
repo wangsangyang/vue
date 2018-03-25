@@ -41,13 +41,13 @@
             footerNav
         },
         beforeCreate: function () {
+            wui.loading('close');
             wui.loading();
         },
         created: function () {
 
         },
         mounted: function () {
-
 
             console.log('首页');
             const that = this;
@@ -81,9 +81,9 @@
                             wui.ajaxerror('发生了未知的错误！');
                         }
                         if(paramObj.page<=5){
-                            wui.updropLoad('reset');
+                            //wui.updropLoad('reset');
                         }else{
-                            wui.updropLoad('end');
+                            //wui.updropLoad('end');
                         }
 
                     },
@@ -100,14 +100,20 @@
                 
             }
 
-            wui.updropLoad(
+/*            wui.updropLoad(
                 {
                     target: '#refresh',
                     callback: pullupRefresh
                 }
-            );
+            );*/
 
 
+        },
+        watch: {
+            '$route' (to, from) {
+                document.title = this.$route.meta.title;
+                wui.loading('close');
+            }
         }
     }
 </script>

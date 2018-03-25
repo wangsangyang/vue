@@ -8,7 +8,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'album' }">
+                <router-link :to="{ name: 'album', query:{type:35} }" title="小清新">
                     <span class="icon icon-album"></span>
                     <span class="text">相册</span>
                 </router-link>

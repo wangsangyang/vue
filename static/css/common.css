@@ -51,6 +51,7 @@ a{ color: #333; }
 .page-album .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; }
 .page-album .content .box{  }
 .page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem;}
+.page-album .content .list:nth-child(1){ margin-top: 0.2rem;}
 .page-album .content .list dt{ overflow: hidden; }
 .page-album .content .list dd{ padding-top: 0.1rem; }
 .page-album .content .list img{ width: 100%; }
@@ -58,6 +59,7 @@ a{ color: #333; }
 .top-toolbar{ width: 100%; height: 1rem; background-color: #fff; overflow: auto; border-bottom: solid 0.021rem #efeff4; }
 .top-toolbar .box{ width: 5000px; }
 .top-toolbar .menu{ float: left; line-height: 1rem; padding: 0 0.2rem; font-size: 0.28rem; }
+.top-toolbar .highlight{ color: #ff9400; }
 
 /* 列表ui */
 .ui-view-cell{ margin-bottom: 0.2rem; font-size: 0.28rem; background-color: #fff; }
@@ -108,7 +110,8 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 .page-login .btns-group{ margin-top: 1.5rem; }
 
 
-.wui-loading{ position: fixed; z-index: 9; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(../images/loading.gif) no-repeat center; }
+.wui-loading{ position: absolute; z-index: 9; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 1.2rem; height: 1.2rem; background-color: rgba(0,0,0,1); border-radius: 0.08rem; background-position: center; background-repeat: no-repeat; background-size: 0.7rem auto; background-image: url(../images/loading.gif); }
+.wui-loading.full{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #fff; background-image: url(../images/loading1.gif); }
 .wui-ajaxerror{ position: absolute; top: 40%; width: 100%; text-align: center; z-index: 9; font-size: 0.24rem; }
 .wui-ajaxerror .reset{ display: inline-block; padding: 0.2rem 0.4rem; }
 
