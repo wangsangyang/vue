@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import footerNav from '../public/footer-nav.vue';
+    import footerNav from './public/footer-nav.vue';
 
     export default {
         name: 'tools',

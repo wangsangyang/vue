@@ -3,6 +3,7 @@
         <div class="top-toolbar">
             <ul class="box">
                 <li class="menu"><router-link :to="{ name: 'album', query: {type:34} }" :class="{highlight:$route.query.type==34}">大胸妹</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:35} }" :class="{highlight:$route.query.type==35}">小清新</router-link></li>
                 <li class="menu"><router-link :to="{ name: 'album', query: {type:36} }" :class="{highlight:$route.query.type==36}">文艺范</router-link></li>
                 <li class="menu"><router-link :to="{ name: 'album', query: {type:37} }" :class="{highlight:$route.query.type==37}">性感妹</router-link></li>
                 <li class="menu"><router-link :to="{ path: '/album', query: {type:38} }" :class="{highlight:$route.query.type==38}">大长腿</router-link></li>
@@ -29,9 +30,9 @@
 </template>
 
 <script>
-    import footerNav from '../public/footer-nav.vue';
-    import '../../../static/mui/css/mui.min.css';
-    import mui from '../../../static/mui/js/mui.min.js';
+    import footerNav from './public/footer-nav.vue';
+    import 'muicss';
+    import mui from 'mui';
 
     export default {
         name: 'album',

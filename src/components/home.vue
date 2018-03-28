@@ -1,0 +1,112 @@
+<template>
+    <div class="page page-home bgcolor">
+        <div class="top-toolbar">
+            <ul class="box">
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:34} }" :class="{highlight:$route.query.type==34}">大胸妹</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:35} }" :class="{highlight:$route.query.type==35}">小清新</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:36} }" :class="{highlight:$route.query.type==36}">文艺范</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:37} }" :class="{highlight:$route.query.type==37}">性感妹</router-link></li>
+                <li class="menu"><router-link :to="{ path: '/album', query: {type:38} }" :class="{highlight:$route.query.type==38}">大长腿</router-link></li>
+                <li class="menu"><router-link :to="{ path: '/album', query: {type:39} }" :class="{highlight:$route.query.type==39}">黑丝袜</router-link></li>
+                <li class="menu"><router-link :to="{ path: '/album', query: {type:40} }" :class="{highlight:$route.query.type==40}">小翘臀</router-link></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="refresh" class="wui-updropload">
+                <div class="wui-container">
+                    <ul class="box">
+                        <li class="list" v-for="text in textArray">
+                            <dl>
+                                <dd class="dl-title">{{text.title}}</dd>
+                                <dt class="dl-cont">{{ text.text.replace(/(\<)br\s*\/*>/gi,'') }}</dt>
+                                <dd class="dl-time">{{text.ct}}</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <footer-nav></footer-nav>
+    </div>
+</template>
+
+<script>
+    import footerNav from './public/footer-nav.vue';
+    import 'muicss';
+    import mui from 'mui';
+
+    export default {
+        name: 'home',
+        data: function () {
+            return {
+                textArray: []
+            }
+        },
+        components: {
+            footerNav
+        },
+        beforeCreate: function () {
+            wui.loading('close');
+            wui.loading();
+        },
+        created: function () {
+
+        },
+        mounted: function () {
+
+            console.log('首页');
+            const that = this;
+            const url = 'http://route.showapi.com/738-2';//新闻热搜榜
+            const paramObj = {};
+            paramObj.showapi_timestamp = wui.formatDateTime();
+            paramObj.showapi_appid = wui.getKey().showapi_appid;
+            paramObj.showapi_sign = wui.getKey().showapi_sign;
+            paramObj.n = 20;
+
+            pullupRefresh();
+
+            function pullupRefresh() {
+                //console.log(paramObj);
+                $.ajax({
+                    type: 'post',
+                    url: url,
+                    data: paramObj,
+                    dataType: 'json',
+                    success: function (result) {
+                        console.log(result);
+                        //console.log(result.showapi_res_body);
+                        if(result.showapi_res_error==''){
+                            //that.textArray = that.textArray.concat(result.showapi_res_body.contentlist);
+                            that.textArray = that.textArray.concat(result.showapi_res_body.contentlist);
+                        }else{
+                            wui.ajaxerror('发生了未知的错误！');
+                        }
+                        if(paramObj.page<=5){
+                            //wui.updropLoad('reset');
+                        }else{
+                            //wui.updropLoad('end');
+                        }
+
+                    },
+                    error: function (XmlHttpRequest,textStatus) {
+                        console.log('错误');
+                        console.log(XmlHttpRequest);
+                        console.log(textStatus);
+                        wui.ajaxerror().refresh(pullupRefresh);
+                    },
+                    complete: function () {
+                        wui.loading('close');
+                    }
+                });
+                
+            }
+
+        },
+        watch: {
+            '$route' (to, from) {
+                wui.loading('close');
+            }
+        }
+    }
+</script>

@@ -59,8 +59,9 @@ module.exports = {
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js',
-            //mui: '../static/mui/js/mui.min.js',
-            wui: '../static/js/wui.js',
+            muicss: __dirname+'/static/mui/css/mui.min.css',
+            mui: __dirname+'/static/mui/js/mui.min.js',
+            wui: __dirname+'/static/js/wui.js',
         },
     },
 /*    plugins: [

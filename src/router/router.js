@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import home from '../components/page/home.vue';
-import album from '../components/page/album.vue';
-import tools from '../components/page/tools.vue';
-import personal from '../components/page/personal.vue';
-import login from '../components/page/login.vue';
+import home from '../components/home.vue';
+import album from '../components/album.vue';
+import tools from '../components/tools.vue';
+import personal from '../components/personal.vue';
+import login from '../components/login.vue';
+import news from '../components/news.vue';
+import newsdetail from '../components/news/detail.vue';
 
 Vue.use(VueRouter);
 
@@ -17,6 +19,19 @@ const routes = [
         path: '/home',
         meta:{title: '首页'},
         component: home,
+    },
+    {
+        path: '/news',
+        meta:{title: '新闻'},
+        component: news,
+        children: [
+            {
+                path: 'newsdetail',
+                name: 'newsdetail',
+                component: newsdetail,
+                meta:{title: '新闻详情'}
+            }
+        ]
     },
     {
         path: '/album',

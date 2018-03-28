@@ -11,7 +11,7 @@ import wui from 'wui'; //引用config里面的wui名称
 
 import Vue from 'vue';
 import router from '../src/router/router.js';
-import app from '../src/components/page/app.vue';
+import app from '../src/components/app.vue';
 
 new Vue({
     el: '#app',

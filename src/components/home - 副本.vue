@@ -1,10 +1,16 @@
 <template>
     <div class="page page-home bgcolor">
-        <h3 class="p-title">笑话大全
-            <span class="s1"></span>/
-            <span class="s2"></span>/
-            <span class="s3"></span>/
-        </h3>
+        <div class="top-toolbar">
+            <ul class="box">
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:34} }" :class="{highlight:$route.query.type==34}">大胸妹</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:35} }" :class="{highlight:$route.query.type==35}">小清新</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:36} }" :class="{highlight:$route.query.type==36}">文艺范</router-link></li>
+                <li class="menu"><router-link :to="{ name: 'album', query: {type:37} }" :class="{highlight:$route.query.type==37}">性感妹</router-link></li>
+                <li class="menu"><router-link :to="{ path: '/album', query: {type:38} }" :class="{highlight:$route.query.type==38}">大长腿</router-link></li>
+                <li class="menu"><router-link :to="{ path: '/album', query: {type:39} }" :class="{highlight:$route.query.type==39}">黑丝袜</router-link></li>
+                <li class="menu"><router-link :to="{ path: '/album', query: {type:40} }" :class="{highlight:$route.query.type==40}">小翘臀</router-link></li>
+            </ul>
+        </div>
         <div class="content">
             <div id="refresh" class="wui-updropload">
                 <div class="wui-container">
@@ -111,7 +117,6 @@
         },
         watch: {
             '$route' (to, from) {
-                document.title = this.$route.meta.title;
                 wui.loading('close');
             }
         }
