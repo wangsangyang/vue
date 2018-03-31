@@ -238,6 +238,7 @@ var Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_14_2
 )
 Component.options.__file = "src\\components\\public\\footer-nav.vue"
 
+
 /* hot reload */
 if (false) {(function () {
   var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
