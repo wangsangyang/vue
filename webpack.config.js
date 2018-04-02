@@ -62,6 +62,7 @@ module.exports = {
             muicss: __dirname+'/static/mui/css/mui.min.css',
             mui: __dirname+'/static/mui/js/mui.min.js',
             wui: __dirname+'/static/js/wui.js',
+            md5: __dirname+'/static/js/md5.min.js',
         },
     },
 /*    plugins: [

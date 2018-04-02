@@ -1,8 +1,8 @@
 export default window.wui = {
-        getKey: function (showapi_appid='58966',showapi_sign='f2c87a1f55c345ccbd46923e10ab344f') {
+        getKey: function (access_key='CjPEeIhTiQ98cjZ6',secret_key='ca1395a95bcb45bc9b70f925f09ed9e7') {
             return {
-                showapi_appid,
-                showapi_sign
+                access_key,
+                secret_key
             }
         },
         formatDateTime: function () {
@@ -24,6 +24,9 @@ export default window.wui = {
                 + (date.getSeconds() < 10 ? "0" + date.getSeconds() : date
                     .getSeconds());
             return datetime;
+        },
+        timestamp: function () {
+            return new Date().getTime();
         },
         loading: function(status){
             if(status==='close'){
