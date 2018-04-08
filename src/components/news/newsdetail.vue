@@ -19,7 +19,7 @@
         components: {
         },
         beforeCreate: function () {
-            wui.loading();
+            //wui.loading();
         },
         created: function () {
         },
@@ -27,6 +27,13 @@
             //console.log(this.$route);
             //this.url = this.$route.query.url;
             wui.loading('close');
+        },
+        beforeRouteEnter (to, from, next) {
+            console.log('新闻详情组件进入时');
+            setTimeout(function () {
+                wui.loading('close');
+            },500);
+            next();
         },
 /*        watch: {
             '$route' (to, from) {

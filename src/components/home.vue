@@ -182,8 +182,22 @@
                 wui.loading();
                 console.log(to);
                 this.category = to.query.category;
-                this.loadmore();
+                if(/\/home/.test(to.path)){
+                    this.loadmore();
+                }
             }
-        }
+        },
+        beforeRouteEnter (to, from, next) {
+            console.log('进入组件时');
+            next();
+        },
+        beforeRouteUpdate (to, from, next) {
+            console.log('组件被复用时');
+            next();
+        },
+        beforeRouteLeave (to, from, next) {
+            console.log('离开组件时');
+            next();
+        },
     }
 </script>
