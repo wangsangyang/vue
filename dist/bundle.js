@@ -18546,6 +18546,7 @@ process.umask = function() { return 0; };
 //
 //
 //
+//
 
 
 
@@ -18629,6 +18630,7 @@ __WEBPACK_IMPORTED_MODULE_4_moment___default.a.locale('zh-cn');
                         //console.log(result.data);
                         if (result.success) {
                             if (direction == 'up') {
+                                //如果是上拉加载
                                 that.newsArray = that.newsArray.concat(result.data.news);
                             } else {
                                 that.newsArray = result.data.news;
@@ -30937,8 +30939,6 @@ if(false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mui__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mui__);
 //
 //
 //
@@ -30949,7 +30949,6 @@ if(false) {
 //
 //
 //
-
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     name: 'newsdetail',
@@ -30965,14 +30964,14 @@ if(false) {
     created: function () {},
     mounted: function () {
         //console.log(this.$route);
-        this.url = this.$route.query.url;
+        //this.url = this.$route.query.url;
         wui.loading('close');
-    },
-    watch: {
-        '$route'(to, from) {
-            this.url = this.$route.query.url;
-        }
     }
+    /*        watch: {
+                '$route' (to, from) {
+                    this.url = this.$route.query.url;
+                }
+            }*/
 });
 
 /***/ }),
@@ -30980,12 +30979,15 @@ if(false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mui__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mui__);
 //
 //
 //
 //
 //
 //
+
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     created: function () {}
@@ -45821,11 +45823,7 @@ var render = function() {
                         "router-link",
                         {
                           attrs: {
-                            to: {
-                              path: "newsdetail",
-                              query: { url: news.url },
-                              append: true
-                            }
+                            to: { path: "newsdetail", query: { url: news.url } }
                           }
                         },
                         [
@@ -46715,7 +46713,7 @@ var render = function() {
       _c("div", { staticClass: "content" }, [
         _c("iframe", {
           staticStyle: { width: "100%", height: "100%" },
-          attrs: { src: _vm.url, id: "iframe", frameborder: "no" }
+          attrs: { src: _vm.$route.query.url, id: "iframe", frameborder: "no" }
         })
       ])
     ])

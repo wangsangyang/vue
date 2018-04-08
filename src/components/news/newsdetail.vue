@@ -2,7 +2,7 @@
     <transition name="linkpage">
         <div class="page page-newsdetail">
             <div class="content">
-                <iframe v-bind:src="url" id="iframe" style="width: 100%;height: 100%;" frameborder="no"></iframe>
+                <iframe v-bind:src="$route.query.url" id="iframe" style="width: 100%;height: 100%;" frameborder="no"></iframe>
             </div>
         </div>
     </transition>
@@ -25,13 +25,13 @@
         },
         mounted: function () {
             //console.log(this.$route);
-            this.url = this.$route.query.url;
+            //this.url = this.$route.query.url;
             wui.loading('close');
         },
-        watch: {
+/*        watch: {
             '$route' (to, from) {
                 this.url = this.$route.query.url;
             }
-        }
+        }*/
     }
 </script>

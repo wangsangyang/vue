@@ -19,7 +19,8 @@
                     <ul class="newsbox">
 
                         <li class="list" v-for="news in newsArray">
-                            <router-link :to="{path: 'newsdetail',query:{url: news.url},append:true}">
+                            <!--<router-link :to="{path: 'newsdetail',query:{url: news.url}}">-->
+                            <router-link :to="{path: 'newsdetail',query:{url: news.url}}">
                                 <!-- 有0张图片或者3张图片的时候 -->
                                 <dl v-if="news.thumbnail_img.length>=3||news.thumbnail_img.length<=0">
                                     <dd class="dl-header">
@@ -143,7 +144,7 @@
                             //console.log(result);
                             //console.log(result.data);
                             if(result.success){
-                                if(direction=='up'){
+                                if(direction=='up'){//如果是上拉加载
                                     that.newsArray = that.newsArray.concat(result.data.news);
                                 }else{
                                     that.newsArray = result.data.news;
