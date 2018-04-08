@@ -89,7 +89,6 @@
             }
         },
         beforeCreate: function () {
-            wui.loading('close');
             wui.loading();
         },
         created: function () {
@@ -179,7 +178,7 @@
         },
         watch: {
             '$route' (to, from) {
-                
+                wui.loading();
                 console.log(to);
                 this.category = to.query.category;
                 if(/\/home/.test(to.path)){
@@ -188,14 +187,17 @@
             }
         },
         beforeRouteEnter (to, from, next) {
+            //wui.loading();
             console.log('进入组件时');
             next();
         },
         beforeRouteUpdate (to, from, next) {
+            //wui.loading();
             console.log('组件被复用时');
             next();
         },
         beforeRouteLeave (to, from, next) {
+            //wui.loading('close');
             console.log('离开组件时');
             next();
         },

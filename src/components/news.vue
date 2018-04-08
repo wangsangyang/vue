@@ -46,5 +46,10 @@
         },
         mounted: function () {
         },
+        watch: {
+            '$route' (to, from) {
+                wui.loading('close');
+            }
+        },
     }
 </script>
