@@ -74,8 +74,13 @@ let router = new VueRouter({
 router.beforeEach((to,from,next) => {
     //console.log(to);
     //console.log(from);
+    console.log(1);
     document.title = to.meta.title;
     next();
+});
+router.afterEach((to, from, next) => {
+    console.log(2);
+    wui.loading('close');
 });
 
 export default router;

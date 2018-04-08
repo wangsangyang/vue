@@ -179,7 +179,7 @@
         },
         watch: {
             '$route' (to, from) {
-                wui.loading();
+                
                 console.log(to);
                 this.category = to.query.category;
                 if(/\/home/.test(to.path)){

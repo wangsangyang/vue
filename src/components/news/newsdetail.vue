@@ -30,9 +30,9 @@
         },
         beforeRouteEnter (to, from, next) {
             console.log('新闻详情组件进入时');
-            setTimeout(function () {
+/*            setTimeout(function () {
                 wui.loading('close');
-            },500);
+            },500);*/
             next();
         },
 /*        watch: {

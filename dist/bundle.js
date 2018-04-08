@@ -16565,7 +16565,7 @@ __WEBPACK_IMPORTED_MODULE_4_moment___default.a.locale('zh-cn');
     },
     watch: {
         '$route'(to, from) {
-            wui.loading();
+            //wui.loading();
             console.log(to);
             this.category = to.query.category;
             if (/\/home/.test(to.path)) {
@@ -30983,10 +30983,9 @@ var mui = function (a, b) {
     },
     beforeRouteEnter(to, from, next) {
         console.log('新闻详情组件进入时');
-        setTimeout(function () {
-            wui.loading('close');
-        }, 500);
-
+        /*            setTimeout(function () {
+                        wui.loading('close');
+                    },500);*/
         next();
     }
 });
@@ -42128,8 +42127,13 @@ let router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 router.beforeEach((to, from, next) => {
     //console.log(to);
     //console.log(from);
+    console.log(1);
     document.title = to.meta.title;
     next();
+});
+router.afterEach((to, from, next) => {
+    console.log(2);
+    wui.loading('close');
 });
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
