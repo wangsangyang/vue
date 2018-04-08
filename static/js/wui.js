@@ -1,5 +1,5 @@
 export default window.wui = {
-        getKey: function (access_key='CjPEeIhTiQ98cjZ6',secret_key='ca1395a95bcb45bc9b70f925f09ed9e7') {
+        apiKey: function (access_key='CjPEeIhTiQ98cjZ6',secret_key='ca1395a95bcb45bc9b70f925f09ed9e7') {
             return {
                 access_key,
                 secret_key

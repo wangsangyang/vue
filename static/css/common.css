@@ -4,7 +4,7 @@ a{ color: #333; }
 .clearfix{ *zoom: 1; }
 .clearfix:after{ content: ""; display: block; clear: both; height: 0; visibility: hidden; }
 #entry{ width: 100%; height: 100%; }
-.page{ width: 100%; min-height: 100%; font-size: 0.28rem; }
+.page{ width: 100%; height: 100%; font-size: 0.28rem; overflow: auto; }
 .bgcolor{ background-color: #efeff4; }
 
 /*.page-album{ padding: 0 0 1.2rem; }
@@ -27,54 +27,64 @@ a{ color: #333; }
 .footer-nav .nav .text{ font-size: 0.24rem; margin-top: -0.05rem; }
 .footer-nav .nav .router-link-active{ color: #ff9400; }
 .footer-nav .nav .icon-home{ background-image: url(../images/icon-home.png); }
+.footer-nav .nav .icon-news{ background-image: url(../images/icon-news.png); }
 .footer-nav .nav .icon-album{ background-image: url(../images/icon-album.png); }
 .footer-nav .nav .icon-personal{ background-image: url(../images/icon-personal.png); }
 .footer-nav .nav .icon-tools{ background-image: url(../images/icon-tools.png); }
 .footer-nav .nav .router-link-active .icon-home{ background-image: url(../images/icon-home-active.png); }
+.footer-nav .nav .router-link-active .icon-news{ background-image: url(../images/icon-news-active.png); }
 .footer-nav .nav .router-link-active .icon-album{ background-image: url(../images/icon-album-active.png); }
 .footer-nav .nav .router-link-active .icon-personal{ background-image: url(../images/icon-personal-active.png); }
 .footer-nav .nav .router-link-active .icon-tools{ background-image: url(../images/icon-tools-active.png); }
 
-.top-toolbar{ width: 100%; height: 1rem; line-height: 1rem; background-color: #fff; overflow: auto; border-bottom: solid 0.015rem #eee; }
+.top-toolbar{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; overflow: auto; border-bottom: solid 0.015rem #eee; }
 .top-toolbar .box{ width: 5000px; }
-.top-toolbar .menu{ float: left; line-height: 1rem; padding: 0 0.2rem; font-size: 0.30rem; }
+.top-toolbar .menu{ float: left; padding: 0 0.2rem; font-size: 0.30rem; }
 .top-toolbar .menu:nth-child(1){ padding-left: 0.4rem; }
 .top-toolbar .menu:nth-last-child(1){ padding-right: 0.4rem; }
 .top-toolbar .highlight{ color: #ff9400; }
 
 /* 首页 */
 .page-home{ padding: 0.01rem 0 1.2rem; }
-.page-home  .p-title{  }
-.page-home .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
-.page-home .content .box{  }
-.page-home .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem; font-size: 0.32rem;  }
-.page-home .content .list dt{ overflow: hidden; }
-.page-home .content .list .dl-title{ padding: 0 0 0.1rem; color: #ff9400; }
-.page-home .content .list .dl-time{ padding-top: 0.1rem; font-size: 0.24rem; color: #999; }
+.page-home .p-title{  }
+.page-home .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; }
+.page-home .newsbox{  }
+.page-home .newsbox .list{ padding: 0 0.2rem; background-color: #fff; }
+.page-home .newsbox .list dl{ padding: 0.25rem 0; border-top: solid 0.015rem #eee; }
+.page-home .newsbox .list:nth-child(1) dl{ border: 0; }
+.page-home .newsbox .list .dl-header{ padding: 0 0 0.1rem; margin-top: -0.05rem; }
+.page-home .newsbox .list .dl-header .main{ font-size: 0.34rem; color: #000; }
+.page-home .newsbox .list .dl-imgs{ display: flex; padding: 0.05rem 0 0.16rem; }
+.page-home .newsbox .list .dl-imgs .img{ flex: 1; height: 1.4rem; padding-left: 0.1rem; }
+.page-home .newsbox .list .dl-imgs .img:nth-child(1){ padding-left: 0; }
+.page-home .newsbox .list .dl-imgs .img img{ width: 100%; height: 100%; }
+.page-home .newsbox .list .dl-footer{ font-size: 0.22rem; color: #999; }
+.page-home .newsbox .list .dl-footer span{ margin-right: 0.1rem; }
+.page-home .newsbox .list .dl-footer .category{ color: #666; }
+.page-home .newsbox .list .dl-col-2{ display: flex; }
+.page-home .newsbox .list .dl-col-2 .dl-header{ flex: 1; padding: 0 0.1rem 0 0; }
+.page-home .newsbox .list .dl-col-2 .dl-header .dl-footer{ padding-top: 0.16rem; }
+.page-home .newsbox .list .dl-col-2 .dl-imgs{ width: 2rem; height: 1.4rem; padding: 0; }
+.page-home .newsbox .list .dl-col-2 .dl-imgs .img{ padding: 0; }
 
 /* 新闻页 */
 .page-news{ padding: 0.01rem 0 1.2rem; }
-.page-news  .p-title{  }
-.page-news .content{ width: 100%; position: absolute; top: 1rem; bottom: 1rem; }
-.page-news .newsbox{  }
-.page-news .newsbox .list{ padding: 0 0.2rem; background-color: #fff; }
-.page-news .newsbox .list dl{ padding: 0.25rem 0; border-top: solid 0.015rem #eee; }
-.page-news .newsbox .list:nth-child(1) dl{ border: 0; }
-.page-news .newsbox .list .dl-header{ padding: 0 0 0.1rem; margin-top: -0.05rem; }
-.page-news .newsbox .list .dl-header .main{ font-size: 0.34rem; color: #000; }
-.page-news .newsbox .list .dl-imgs{ display: flex; padding: 0.05rem 0 0.16rem; }
-.page-news .newsbox .list .dl-imgs .img{ flex: 1; height: 1.4rem; padding-left: 0.1rem; }
-.page-news .newsbox .list .dl-imgs .img:nth-child(1){ padding-left: 0; }
-.page-news .newsbox .list .dl-imgs .img img{ width: 100%; height: 100%; }
-.page-news .newsbox .list .dl-footer{ font-size: 0.22rem; color: #999; }
-.page-news .newsbox .list .dl-footer span{ margin-right: 0.1rem; }
-.page-news .newsbox .list .dl-footer .category{ color: #666; }
+.page-news .p-title{  }
+.page-news .content{ width: 100%; position: absolute; top: 0rem; bottom: 1rem; background-color: #fff; }
+.page-news .box{ display: flex; flex-wrap: wrap; text-align: center; padding: 1rem 0.5rem 0; }
+.page-news .box .menu{ width: 50%; border-right: solid 0.018rem #ddd; border-bottom: solid 0.018rem #ddd; }
+.page-news .box .menu:nth-child(1), .page-news .box .menu:nth-child(2){ border-top: solid 0.018rem #ddd; }
+.page-news .box .menu:nth-child(2n+1){ border-left: solid 0.018rem #ddd; }
+.page-news .box .menu .text{ display: block; margin-bottom: 0.5rem; }
+.page-news .box .menu .icon{ display: inline-block; width: 1.2rem; height: 1.2rem; margin: 0.5rem 0 0.1rem; background-position: center; background-repeat: no-repeat; background-size: 100% auto; }
+.page-news .box .menu .icon-news-shishi{ background-image: url(../images/icon-news-shishi.png); }
+.page-news .box .menu .icon-news-jingxuan{ background-image: url(../images/icon-news-jingxuan.png); }
+.page-news .box .menu .icon-news-hot{ background-image: url(../images/icon-news-hot.png); }
+.page-news .box .menu .icon-news-search{ background-image: url(../images/icon-search.png); }
 
-.page-news .newsbox .list .dl-col-2{ display: flex; }
-.page-news .newsbox .list .dl-col-2 .dl-header{ flex: 1; padding: 0 0.1rem 0 0; }
-.page-news .newsbox .list .dl-col-2 .dl-header .dl-footer{ padding-top: 0.16rem; }
-.page-news .newsbox .list .dl-col-2 .dl-imgs{ width: 2rem; height: 1.4rem; padding: 0; }
-.page-news .newsbox .list .dl-col-2 .dl-imgs .img{ padding: 0; }
+/* 新闻详情页 */
+.page-newsdetail{ }
+.page-newsdetail .content{ height: 100%; }
 
 
 /* 相册 */
@@ -138,7 +148,7 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 .page-login .btns-group{ margin-top: 1.5rem; }
 
 
-.wui-loading{ position: absolute; z-index: 9; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 1.2rem; height: 1.2rem; background-color: rgba(0,0,0,1); border-radius: 0.08rem; background-position: center; background-repeat: no-repeat; background-size: 0.7rem auto; background-image: url(../images/loading.gif); }
+.wui-loading{ position: absolute; z-index: 9; left: 50%; top: 35%; transform: translate(-50%,0); width: 1rem; height: 1rem; background-color: rgba(255,255,255,1); border-radius: 50%; border: solid 1px #eee; background-position: center; background-repeat: no-repeat; background-size: 0.7rem auto; background-image: url(../images/loading.gif); }
 .wui-loading.full{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #fff; background-image: url(../images/loading1.gif); }
 .wui-ajaxerror{ position: absolute; top: 40%; width: 100%; text-align: center; z-index: 9; font-size: 0.24rem; }
 .wui-ajaxerror .reset{ display: inline-block; padding: 0.2rem 0.4rem; }
@@ -151,6 +161,9 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 
 .wui-updropload .loading.end .text{  }
 .wui-updropload .loading.end .icon{ display: none }
+
+
+html .mui-spinner{ width: 20px; height: 20px; }
 
 
 

@@ -9,20 +9,20 @@
             </li>
             <li>
                 <router-link to="/news">
-                    <span class="icon icon-home"></span>
+                    <span class="icon icon-news"></span>
                     <span class="text">新闻</span>
-                </router-link>
-            </li>
-            <li>
-                <router-link :to="{ name: 'album', query:{type:35} }" title="小清新">
-                    <span class="icon icon-album"></span>
-                    <span class="text">相册</span>
                 </router-link>
             </li>
             <li>
                 <router-link to="/tools">
                     <span class="icon icon-tools"></span>
                     <span class="text">工具</span>
+                </router-link>
+            </li>
+            <li>
+                <router-link :to="{ name: 'album', query:{type:35} }" title="小清新">
+                    <span class="icon icon-album"></span>
+                    <span class="text">相册</span>
                 </router-link>
             </li>
             <li>

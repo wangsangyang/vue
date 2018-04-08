@@ -6,7 +6,7 @@ import tools from '../components/tools.vue';
 import personal from '../components/personal.vue';
 import login from '../components/login.vue';
 import news from '../components/news.vue';
-import newsdetail from '../components/news/detail.vue';
+import newsdetail from '../components/news/newsdetail.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +23,16 @@ const routes = [
     {
         path: '/news',
         meta:{title: '新闻'},
+        component: news
+    },
+    {
+        path: '/newsdetail',
+        meta:{title: '新闻详情'},
+        component: newsdetail
+    },
+/*    {
+        path: '/news',
+        meta:{title: '新闻'},
         component: news,
         children: [
             {
@@ -32,7 +42,7 @@ const routes = [
                 meta:{title: '新闻详情'}
             }
         ]
-    },
+    },*/
     {
         path: '/album',
         name: 'album',
@@ -62,7 +72,7 @@ let router = new VueRouter({
 });
 
 router.beforeEach((to,from,next) => {
-    console.log(to);
+    //console.log(to);
     //console.log(from);
     document.title = to.meta.title;
     next();

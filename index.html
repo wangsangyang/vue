@@ -15,51 +15,31 @@
 <div id="app"></div>
 
 
-
-<link type="text/css" rel="stylesheet" href="static/css/common.css?v=0.1">
+<link type="text/css" rel="stylesheet" href="static/css/common.css?v=0.2">
 <script src="dist/bundle.js"></script>
-<script src="static/js/md5.min.js"></script>
+<!--<script src="static/js/md5.min.js"></script>-->
+<script src="static/mui/js/mui.min.js"></script>
+<!--<script src="static/js/locale/moment.min.js"></script>
+<script src="static/js/locale/zh-cn.js"></script>-->
 <!--<script src="../static/js/wui.js"></script>-->
 
     <!--<script src="../static/js/vue2.5.13.js"></script>-->
 <script>
-
-    console.log( md5('111111') );
-
-/*    var imgs = new Vue({
-        el: '#imgBox',
-        data: {
-            imgArray:[]
-        }
+    $(function () {
+        mui('body').on('tap', 'a', function () {
+            if(!/javascript/i.test(this.href)&&this.href){
+                window.location.href = this.href;
+            }
+        });
     });
 
-    $.ajax({
-        type: 'post',
-        url: 'http://route.showapi.com/1208-2',
-        data: param,
-        data: {
-            "showapi_timestamp": formatterDateTime(),
-            "showapi_appid": '58966',
-            "showapi_sign": 'f2c87a1f55c345ccbd46923e10ab344f',
-            "type":"2",
-            "page":"1",
-            "rows":"20"
-        },
+    //console.log( md5('111111') );
 
-        dataType: 'json',
-        success: function (result) {
-            console.log(result);
-                imgs.imgArray = result.results;
-            setTimeout(function () {
-                loading.close();
-            },1000);
-        },
-        error: function (a,b) {
-            console.log('错误');
-            console.log(a);
-            console.log(b);
-        }
-    });*/
+/*
+    console.log( moment("1522080000000", "x").fromNow() );
+    console.log( moment('1522080000000','x').format('YYYY年MM月DD HH:MM:SS'));
+*/
+
 </script>
 </body>
 </html>
