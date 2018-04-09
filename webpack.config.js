@@ -1,4 +1,5 @@
 const uglify = require('uglifyjs-webpack-plugin'); //js代码压缩、混淆插件
+const webpack = require('webpack')
 module.exports = {
     entry: './src/entry.js',
     output: {
@@ -25,7 +26,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2)\w*/,
+                test: /\.(otf|eot|svg|ttf|woff|woff2)\w*/,
                 loader: 'url-loader?limit=1000000'
             },
             {
@@ -66,18 +67,17 @@ module.exports = {
             mui: __dirname+'/static/mui/js/mui.min.js',
             wui: __dirname+'/static/js/wui.js',
             md5: __dirname+'/static/js/md5.min.js',
+            fontawesome: __dirname+'/static/font-awesome-4.7.0/css/font-awesome.min.css',
         },
     },
-    plugins:[
+    plugins: [
         //代码压缩
-        //new uglify()
-    ]
-/*    plugins: [
+        //new uglify(),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             'window.$': 'jquery',
             'window.jQuery': 'jquery'
         }),
-    ]*/
+    ]
 }

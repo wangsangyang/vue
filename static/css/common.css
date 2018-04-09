@@ -4,7 +4,7 @@ a{ color: #333; }
 .clearfix{ *zoom: 1; }
 .clearfix:after{ content: ""; display: block; clear: both; height: 0; visibility: hidden; }
 #entry{ width: 100%; height: 100%; }
-.page{ width: 100%; height: 100%; font-size: 0.28rem; overflow: auto; }
+.page{ width: 100%; height: 100%; font-size: 0.28rem; overflow: auto; background-color: #fff; }
 .bgcolor{ background-color: #efeff4; }
 
 /*.page-album{ padding: 0 0 1.2rem; }
@@ -37,6 +37,7 @@ a{ color: #333; }
 .footer-nav .nav .router-link-active .icon-personal{ background-image: url(../images/icon-personal-active.png); }
 .footer-nav .nav .router-link-active .icon-tools{ background-image: url(../images/icon-tools-active.png); }
 
+/* 头部导航栏 */
 .top-toolbar{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; overflow: auto; border-bottom: solid 0.015rem #eee; }
 .top-toolbar .box{ width: 5000px; }
 .top-toolbar .menu{ float: left; padding: 0 0.2rem; font-size: 0.30rem; }
@@ -44,11 +45,18 @@ a{ color: #333; }
 .top-toolbar .menu:nth-last-child(1){ padding-right: 0.4rem; }
 .top-toolbar .highlight{ color: #ff9400; }
 
+/* 头部导航栏 */
+.header-toolbar{ width: 100%; height: 1rem; line-height: 1rem; background-color: #fff; border-bottom: solid 0.015rem #eee; }
+.header-toolbar .box{ display: flex; }
+.header-toolbar .left{ width: 1rem; text-align: center; }
+.header-toolbar .left.back{ }
+.header-toolbar .left.back .fa{ font-size: 0.65rem; margin: 0.15rem 0 0 0; color: #333; text-stroke: 1px #fff; -webkit-text-stroke: 1px #fff; }
+.header-toolbar .right{ width: 1rem; }
+.header-toolbar .main{ flex: 1; text-align: center; font-size: 0.36rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #000; }
+
 /* 首页 */
 .page-home{ padding: 0.01rem 0 1.2rem; }
-.page-home .p-title{  }
 .page-home .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; }
-.page-home .newsbox{  }
 .page-home .newsbox .list{ padding: 0 0.2rem; background-color: #fff; }
 .page-home .newsbox .list dl{ padding: 0.25rem 0; border-top: solid 0.015rem #eee; }
 .page-home .newsbox .list:nth-child(1) dl{ border: 0; }
@@ -69,7 +77,6 @@ a{ color: #333; }
 
 /* 新闻页 */
 .page-news{ padding: 0.01rem 0 1.2rem; }
-.page-news .p-title{  }
 .page-news .content{ width: 100%; position: absolute; top: 0rem; bottom: 1rem; background-color: #fff; }
 .page-news .box{ display: flex; flex-wrap: wrap; text-align: center; padding: 1rem 0.5rem 0; }
 .page-news .box .menu{ width: 50%; border-right: solid 0.018rem #ddd; border-bottom: solid 0.018rem #ddd; }
@@ -85,6 +92,27 @@ a{ color: #333; }
 /* 新闻详情页 */
 .page-newsdetail{ }
 .page-newsdetail .content{ height: 100%; }
+
+/* 新闻分类页 */
+.page-newsindex{ padding: 0.01rem 0 1.2rem; }
+.page-newsindex .content{ width: 100%; position: absolute; top: 1.8rem; bottom: 0; }
+.page-newsindex .newsbox .list{ padding: 0 0.2rem; background-color: #fff; }
+.page-newsindex .newsbox .list dl{ padding: 0.25rem 0; border-top: solid 0.015rem #eee; }
+.page-newsindex .newsbox .list:nth-child(1) dl{ border: 0; }
+.page-newsindex .newsbox .list .dl-header{ padding: 0 0 0.1rem; margin-top: -0.05rem; }
+.page-newsindex .newsbox .list .dl-header .main{ font-size: 0.34rem; color: #000; }
+.page-newsindex .newsbox .list .dl-imgs{ display: flex; padding: 0.05rem 0 0.16rem; }
+.page-newsindex .newsbox .list .dl-imgs .img{ flex: 1; height: 1.4rem; padding-left: 0.1rem; }
+.page-newsindex .newsbox .list .dl-imgs .img:nth-child(1){ padding-left: 0; }
+.page-newsindex .newsbox .list .dl-imgs .img img{ width: 100%; height: 100%; }
+.page-newsindex .newsbox .list .dl-footer{ font-size: 0.22rem; color: #999; }
+.page-newsindex .newsbox .list .dl-footer span{ margin-right: 0.1rem; }
+.page-newsindex .newsbox .list .dl-footer .category{ color: #666; }
+.page-newsindex .newsbox .list .dl-col-2{ display: flex; }
+.page-newsindex .newsbox .list .dl-col-2 .dl-header{ flex: 1; padding: 0 0.1rem 0 0; }
+.page-newsindex .newsbox .list .dl-col-2 .dl-header .dl-footer{ padding-top: 0.16rem; }
+.page-newsindex .newsbox .list .dl-col-2 .dl-imgs{ width: 2rem; height: 1.4rem; padding: 0; }
+.page-newsindex .newsbox .list .dl-col-2 .dl-imgs .img{ padding: 0; }
 
 
 /* 相册 */

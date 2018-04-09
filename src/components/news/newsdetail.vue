@@ -1,6 +1,13 @@
 <template>
     <transition name="linkpage">
         <div class="page page-newsdetail">
+            <header class="header-toolbar">
+                <ul class="box">
+                    <li class="left back" @click="backPrepage"><i class="fa fa-angle-left"></i></li>
+                    <li class="main"></li>
+                    <li class="right"></li>
+                </ul>
+            </header>
             <div class="content">
                 <iframe v-bind:src="$route.query.url" id="iframe" style="width: 100%;height: 100%;" frameborder="no"></iframe>
             </div>
@@ -9,36 +16,33 @@
 </template>
 
 <script>
+    import fontawesome from 'fontawesome';
     export default {
         name: 'newsdetail',
         data: function () {
             return {
-                url: ''
+                url: '',
+                show: true
             };
         },
         components: {
         },
         beforeCreate: function () {
-            //wui.loading();
-        },
-        created: function () {
+            //console.log('beforeCreate');
+            wui.loading();
         },
         mounted: function () {
             //console.log(this.$route);
             //this.url = this.$route.query.url;
-            wui.loading('close');
-        },
-        beforeRouteEnter (to, from, next) {
-            console.log('新闻详情组件进入时');
-/*            setTimeout(function () {
+            //console.log('mounted');
+            setTimeout(function () {
                 wui.loading('close');
-            },500);*/
-            next();
+            },500);
         },
-/*        watch: {
-            '$route' (to, from) {
-                this.url = this.$route.query.url;
+        methods:{
+            backPrepage: function () {
+                this.$router.back(-1);
             }
-        }*/
+        }
     }
 </script>

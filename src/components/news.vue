@@ -3,13 +3,13 @@
         <div class="content">
             <ul class="box">
                 <li class="menu">
-                    <router-link :to="{ path: 'home' }">
+                    <router-link :to="{ path: 'newsindex',query:{title:'实时新闻',categoryUrl:'http://api.xinwen.cn/news/all'} }">
                         <i class="icon icon-news-shishi"></i>
                         <span class="text">实时新闻</span>
                     </router-link>
                 </li>
                 <li class="menu">
-                    <router-link :to="{ path: 'home' }">
+                    <router-link :to="{ path: 'newsindex',query:{title:'新闻精选',categoryUrl:'http://api.xinwen.cn/news/selection'} }">
                         <i class="icon icon-news-jingxuan"></i>
                         <span class="text">新闻精选</span>
                     </router-link>

@@ -1,16 +1,23 @@
 <template>
-    <div class="page page-home bgcolor">
+    <div class="page page-newsindex bgcolor">
+        <header class="header-toolbar">
+            <ul class="box">
+                <li class="left back" @click="backPrepage"><i class="fa fa-angle-left"></i></li>
+                <li class="main">{{title}}</li>
+                <li class="right"></li>
+            </ul>
+        </header>
         <div class="top-toolbar">
             <ul class="box">
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Sport'} }" :class="{highlight:$route.query.category=='Sport'}">体育</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Military'} }" :class="{highlight:$route.query.category=='Military'}">军事</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Finance'} }" :class="{highlight:$route.query.category=='Finance'}">财经</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Politics'} }" :class="{highlight:$route.query.category=='Politics'}">时政</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'World'} }" :class="{highlight:$route.query.category=='World'}">国际</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Society'} }" :class="{highlight:$route.query.category=='Society'}">社会</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Living'} }" :class="{highlight:$route.query.category=='Living'}">生活</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Sport'} }" :class="{highlight:$route.query.category=='Sport'}">体育</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Military'} }" :class="{highlight:$route.query.category=='Military'}">军事</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Finance'} }" :class="{highlight:$route.query.category=='Finance'}">财经</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Politics'} }" :class="{highlight:$route.query.category=='Politics'}">时政</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'World'} }" :class="{highlight:$route.query.category=='World'}">国际</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Society'} }" :class="{highlight:$route.query.category=='Society'}">社会</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Living'} }" :class="{highlight:$route.query.category=='Living'}">生活</router-link></li>
             </ul>
         </div>
         <div class="content">
@@ -57,12 +64,10 @@
 
             </div>
         </div>
-        <footer-nav></footer-nav>
     </div>
 </template>
 
 <script>
-    import footerNav from './public/footer-nav.vue';
     import 'muicss';
     import mui from 'mui';
     import md5 from 'md5';
@@ -70,15 +75,17 @@
     moment.locale('zh-cn');
 
     export default {
-        name: 'home',
+        name: 'newsindex',
         data: function () {
             return {
                 newsArray: [],
-                category: ''
+                category: '',
+                title: '',
+                categoryUrl: ''
             }
         },
         components: {
-            footerNav
+
         },
         filters:{
             fromNow: function (el) {
@@ -94,18 +101,22 @@
         created: function () {
         },
         mounted: function () {
-            //console.log('首页');
+            this.title = this.$route.query.title;
             this.category = this.$route.query.category;
+            this.categoryUrl = this.$route.query.categoryUrl;
             //console.log(this.category);
             this.loadmore();
         },
         methods: {
+            backPrepage: function () {
+                this.$router.back(-1);
+            },
             loadmore: function () {
                 const that = this;
                 const url = 'http://60.205.217.133/news/news';//API接口
                 let paramObj = {};
-                paramObj.url = 'http://api.xinwen.cn/news/hot';//热门新闻
-                paramObj.size = 200;
+                paramObj.url = this.categoryUrl;
+                paramObj.size = 20;
                 paramObj.access_key = wui.apiKey().access_key;
                 let last_id = '';
                 initLoad();
@@ -122,7 +133,7 @@
                         }
                     }
                 });
-                
+
                 function pullupRefresh() {
                     initLoad('up');
                 }
@@ -176,16 +187,16 @@
             }
         },
         watch: {
-/*            '$route' (to, from) {
-                console.log(to.query.category,this.category);
-                this.category = to.query.category;
-                if(/\/home/.test(to.path)){
+            '$route' (to, from) {
+                if(to.query.title){
+                    this.title = to.query.title;
+                    this.categoryUrl = to.query.categoryUrl;
                     this.loadmore();
                 }
-            },*/
+            },
         },
         beforeRouteEnter (to, from, next) {
-            console.log('进入组件时');
+            //console.log('进入组件时');
             next();
         },
         beforeRouteUpdate (to, from, next) {

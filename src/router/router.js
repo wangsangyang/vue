@@ -7,6 +7,7 @@ import personal from '../components/personal.vue';
 import login from '../components/login.vue';
 import news from '../components/news.vue';
 import newsdetail from '../components/news/newsdetail.vue';
+import newsindex from '../components/news/index.vue';
 
 Vue.use(VueRouter);
 
@@ -17,18 +18,27 @@ const routes = [
     },
     {
         path: '/home',
+        name: 'home',
         meta:{title: '首页'},
         component: home,
     },
     {
         path: '/news',
+        name: 'news',
         meta:{title: '新闻'},
         component: news
     },
     {
         path: '/newsdetail',
+        name: 'newsdetail',
         meta:{title: '新闻详情'},
         component: newsdetail
+    },
+    {
+        path: '/newsindex',
+        name: 'newsindex',
+        meta:{title: '新闻列表'},
+        component: newsindex
     },
 /*    {
         path: '/news',
@@ -74,13 +84,9 @@ let router = new VueRouter({
 router.beforeEach((to,from,next) => {
     //console.log(to);
     //console.log(from);
-    console.log(1);
+    //console.log(1);
     document.title = to.meta.title;
     next();
-});
-router.afterEach((to, from, next) => {
-    console.log(2);
-    wui.loading('close');
 });
 
 export default router;

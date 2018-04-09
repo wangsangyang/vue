@@ -33,10 +33,20 @@ export default window.wui = {
                 $('.wui-loading').remove();
             }else if(status==='full'){
                 var $loading = '<div class="wui-loading full"></div>';
-                $('body').append($loading);
+                var ispage = $('.page').length;
+                if(ispage>0){
+                    $('.page').append($loading);
+                }else{
+                    $('body').append($loading);
+                }
             }else{
                 var $loading = '<div class="wui-loading"></div>';
-                $('body').append($loading);
+                var ispage = $('.page').length;
+                if(ispage>0){
+                    $('.page').append($loading);
+                }else{
+                    $('body').append($loading);
+                }
             }
             return this;
         },
