@@ -12,6 +12,10 @@ import Vue from 'vue';
 import router from '../src/router/router.js';
 import app from '../src/components/app.vue';
 
+import Mintui  from 'mint-ui';
+import 'mint-ui/lib/style.css';
+Vue.use(Mintui);
+
 new Vue({
     el: '#app',
     router,

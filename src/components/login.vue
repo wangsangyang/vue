@@ -9,29 +9,48 @@
 
                 <section class="section-input">
                     <ul>
-                        <li class="username"><i class="icon"></i><input class="input" type="text" placeholder="用户名"></li>
-                        <li class="password"><i class="icon"></i><input class="input" type="password" placeholder="密码"></li>
+                        <li class="username"><i class="icon"></i><input class="input" type="text" placeholder="用户名" autocomplete="off" v-model="username"></li>
+                        <li class="password"><i class="icon"></i><input class="input" type="password" placeholder="密码" autocomplete="off" v-model="password"></li>
                     </ul>
-                    <article class="btns-group"><a class="btn" href="#">登 录</a></article>
+                    <article class="btns-group"><span class="btn" @click="login">登 录</span></article>
                 </section>
 
             </div>
         </div>
     </transition>
+
 </template>
 
-<script>
 
+<script>
+    import {Toast} from 'mint-ui';
     export default {
         name: 'login',
         data: function () {
-            return {};
+            return {
+                username: '',
+                password: '',
+                show: false,
+                msg: '',
+            };
         },
         beforeCreate: function () {
         },
         created: function () {
 
-
+        },
+        mounted: function () {
+            wui.loading('close');
+        },
+        methods: {
+            login: function () {
+                if(this.username.length<1){
+                    Toast("请输入用户名");
+                }
+                if(this.password.length<1){
+                    Toast("请输入密码");
+                }
+            }
         }
     }
 
