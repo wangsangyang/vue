@@ -30,9 +30,7 @@
             return {
                 username: '',
                 password: '',
-                show: false,
-                msg: '',
-            };
+            }
         },
         beforeCreate: function () {
         },
@@ -44,12 +42,16 @@
         },
         methods: {
             login: function () {
+                const that = this;
                 if(this.username.length<1){
                     Toast("请输入用户名");
+                    return false;
                 }
                 if(this.password.length<1){
                     Toast("请输入密码");
+                    return false;
                 }
+                this.$router.push( {name:'personal', params:{username:this.username, userId:123456789 } });
             }
         }
     }

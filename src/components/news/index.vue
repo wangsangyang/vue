@@ -9,15 +9,15 @@
         </header>
         <div class="top-toolbar">
             <ul class="box">
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Sport'} }" :class="{highlight:$route.query.category=='Sport'}">体育</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Military'} }" :class="{highlight:$route.query.category=='Military'}">军事</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Finance'} }" :class="{highlight:$route.query.category=='Finance'}">财经</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Politics'} }" :class="{highlight:$route.query.category=='Politics'}">时政</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'World'} }" :class="{highlight:$route.query.category=='World'}">国际</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Society'} }" :class="{highlight:$route.query.category=='Society'}">社会</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Living'} }" :class="{highlight:$route.query.category=='Living'}">生活</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Tech'}, replace:true }" :class="{highlight:$route.query.category=='Tech'}" replace>科技</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Entertainment'}, replace:true }" :class="{highlight:$route.query.category=='Entertainment'}" replace>娱乐</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Sport'}, replace:true }" :class="{highlight:$route.query.category=='Sport'}" replace>体育</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Military'}, replace:true }" :class="{highlight:$route.query.category=='Military'}" replace>军事</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Finance'}, replace:true }" :class="{highlight:$route.query.category=='Finance'}" replace>财经</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Politics'}, replace:true }" :class="{highlight:$route.query.category=='Politics'}" replace>时政</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'World'}, replace:true }" :class="{highlight:$route.query.category=='World'}" replace>国际</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Society'}, replace:true }" :class="{highlight:$route.query.category=='Society'}" replace>社会</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'newsindex', query: {category:'Living'}, replace:true }" :class="{highlight:$route.query.category=='Living'}" replace>生活</router-link></li>
             </ul>
         </div>
         <div class="content">

@@ -160,7 +160,9 @@ html input::-webkit-input-placeholder{ color: #ccc; }
 .section-personal .portrait .icon:after{ content: ""; display: inline-block; clear: both; width: 0; height: 100%; margin-right: -0.01rem; vertical-align: middle; }
 .section-personal .portrait .icon img{ display: inline-block; max-width: 68%; max-height: 68%; vertical-align: middle; }
 .section-personal .link-login{ flex: 1; padding-left: 0.2rem; line-height: 1rem; }
-.section-personal .link-login a{ display: inline-block; color: #f08b2f; }
+.section-personal .link-login a{ display: block; color: #f08b2f; }
+.section-personal .username{ flex: 1; padding-left: 0.2rem; line-height: 1rem; }
+.section-personal .username a{ color: #f08b2f; }
 
 /* 登录 */
 .page-login{  }

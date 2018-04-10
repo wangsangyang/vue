@@ -5,9 +5,10 @@
             <section class="section-personal">
                 <dl>
                     <dt class="portrait"><span class="icon"><img src="../../static/images/icon-portrait.png" alt="头像"/></span></dt>
-                    <dd class="link-login">
+                    <dd class="link-login" v-if="!islogin">
                         <router-link to="/login">点击登录</router-link>
                     </dd>
+                    <dd class="username" v-if="islogin">{{username}}</dd>
                 </dl>
             </section>
 
@@ -34,7 +35,10 @@
     export default {
         name: 'personal',
         data: function () {
-            return {};
+            return {
+                islogin: false,
+                username: ''
+            }
         },
         components: {
             footerNav
@@ -42,9 +46,18 @@
         beforeCreate: function () {
         },
         created: function () {
-            console.log('个人中心');
-
-
-        }
+        },
+        mounted: function () {
+            console.log(123);
+        },
+        watch: {
+            '$route' (to, from) {
+                console.log(to);
+                if(to.params.username){
+                    this.username = to.params.username;
+                    this.islogin = true;
+                }
+            },
+        },
     }
 </script>

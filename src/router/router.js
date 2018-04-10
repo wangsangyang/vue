@@ -67,6 +67,7 @@ const routes = [
     },
     {
         path: '/personal',
+        name: 'personal',
         meta:{title: '个人中心'},
         component: personal,
     },
@@ -78,6 +79,7 @@ const routes = [
 ];
 
 let router = new VueRouter({
+    //mode: 'history',
     routes,
 });
 
@@ -89,5 +91,6 @@ router.beforeEach((to,from,next) => {
     next();
 });
 
+//需要注意的是，export default routers 必须写在文件底部，而且后面还需要接一空行，否则无法通过 ESlint 语法验证
 export default router;
 
