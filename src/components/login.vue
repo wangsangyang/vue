@@ -51,6 +51,7 @@
                     Toast("请输入密码");
                     return false;
                 }
+                console.log(this.$route);
                 this.$router.push( {name:'personal', params:{username:this.username, userId:123456789 } });
             }
         }
