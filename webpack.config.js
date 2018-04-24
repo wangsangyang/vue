@@ -1,5 +1,5 @@
 const uglify = require('uglifyjs-webpack-plugin'); //js代码压缩、混淆插件
-const webpack = require('webpack')
+const webpack = require('webpack');
 module.exports = {
     entry: './src/entry.js',
     output: {
