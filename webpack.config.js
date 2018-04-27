@@ -6,6 +6,7 @@ module.exports = {
         path: __dirname+'/dist',
         filename: 'bundle.js'
     },
+    //mode: 'development',//或者 mode: 'production'
     module: {
         rules: [
             {

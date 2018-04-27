@@ -1,5 +1,14 @@
 {
   "presets": ["latest", "stage-0", "stage-1", "stage-2"],
-
-  "plugins": ["transform-runtime"]
+  "plugins": ["transform-runtime"],
+  /*
+    *MUI不支持在严格模式下使用，在严格模式下，浏览器报出如下错误：
+    *Uncaught TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them
+    *因此排除mui相关的js，
+  */
+  "ignore": [
+    "./static/mui/js/mui.min.js",
+    "./static/mui/js/mui.picker.js",
+    "./static/mui/js/mui.poppicker.js"
+    ]
 }

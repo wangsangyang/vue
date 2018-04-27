@@ -2,8 +2,8 @@
     <div class="page page-home bgcolor">
         <div class="top-toolbar">
             <ul class="box">
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技1</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐1</router-link></li>
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Sport'} }" :class="{highlight:$route.query.category=='Sport'}">体育</router-link></li>
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Military'} }" :class="{highlight:$route.query.category=='Military'}">军事</router-link></li>
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Finance'} }" :class="{highlight:$route.query.category=='Finance'}">财经</router-link></li>
@@ -63,8 +63,8 @@
 
 <script>
     import footerNav from './public/footer-nav.vue';
-    import 'muicss';
-    import mui from 'mui';
+    //import 'muicss';
+    //import mui from 'mui';
     import md5 from 'md5';
     import moment from 'moment';
     moment.locale('zh-cn');
@@ -111,7 +111,7 @@
                 initLoad();
 
                 //上拉加载
-                mui.init({
+/*                mui.init({
                     pullRefresh: {
                         container: '#muiRefresh',
                         up: {
@@ -121,7 +121,7 @@
                             callback: pullupRefresh
                         }
                     }
-                });
+                });*/
                 
                 function pullupRefresh() {
                     initLoad('up');
@@ -146,7 +146,7 @@
                                     that.newsArray = that.newsArray.concat(result.data.news);
                                 }else{
                                     that.newsArray = result.data.news;
-                                    mui('#muiRefresh').pullRefresh().scrollTo(0, 0, 0);//mui下拉刷新滚动条回到顶部
+                                    //mui('#muiRefresh').pullRefresh().scrollTo(0, 0, 0);//mui下拉刷新滚动条回到顶部
                                 }
                                 last_id = result.data.last_id;
                                 console.log(last_id);
@@ -158,7 +158,7 @@
                             }else{
                                 //wui.updropLoad('end');
                             }
-                            mui('#muiRefresh').pullRefresh().endPullupToRefresh(false);
+                            //mui('#muiRefresh').pullRefresh().endPullupToRefresh(false);
 
                         },
                         error: function (XmlHttpRequest,textStatus) {

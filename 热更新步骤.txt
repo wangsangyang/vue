@@ -1,0 +1,17 @@
+webpack3.0以上安装热更新，步骤：
+1、全局、本地安装webpack-cli
+	cnpm install webpack-cli -g（注意：package.json里面不要有注释，不然会导致json解析错误）
+	cnpm install webpack-cli --save-dev
+2、安装本地webpack-cli
+	cnpm install webpack-cli -D（注意：package.json里面不要有注释，不然会导致json解析错误）
+3、全局、本地安装webpack-dev-server
+	cnpm install webpack-dev-server -g
+	cnpm install webpack-dev-server --save-dev
+4、安装vue-hot-reload-api
+	cnpm install vue-hot-reload-api --save-dev
+5、在package.json文件的scripts里面加上
+    "dev": "webpack --watch",
+    "dev-server": "webpack-dev-server --hot --inline"
+
+6、启动热更新npm run dev
+

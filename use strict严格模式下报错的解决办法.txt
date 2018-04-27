@@ -1,0 +1,9 @@
+严格模式报错
+部分人使用时出现以下报错：
+Uncaught TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them...
+这个问题是因为项目中的使用的babel默认添加了use strict造成，可参考 https://segmentfault.com/q/1010000007415253
+我采用的是链接中答案的第三种方式：添加了babel-plugin-transform-remove-strict-mode，并在.babelrc里添加下列代码
+
+{
+  "plugins": ["transform-remove-strict-mode"]
+}
