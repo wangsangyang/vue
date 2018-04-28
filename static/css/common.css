@@ -7,16 +7,6 @@ a{ color: #333; }
 .page{ width: 100%; height: 100%; font-size: 0.28rem; overflow: auto; background-color: #fff; }
 .bgcolor{ background-color: #efeff4; }
 
-/*.page-album{ padding: 0 0 1.2rem; }
-.page-album  .p-title{ background-color: #fff3e3; padding: 0.1rem 0.2rem; margin-bottom: 0.1rem; }
-.page-album .content .box{ display: flex; flex-wrap: wrap; }
-.page-album .content .list{ width: 50%; padding: 0.15rem 0.1rem; }
-.page-album .content .list:nth-child(2n){ padding-right: 0.2rem; }
-.page-album .content .list:nth-child(2n+1){ padding-left: 0.2rem; }
-.page-album .content .list dt{ height: 2rem; overflow: hidden; }
-.page-album .content .list dd{ height: 0.4rem; padding-top: 0.08rem; }
-.page-album .content .list img{ width: 100%; min-height: 100%; }*/
-
 /* 底部导航 */
 .footer-nav{ position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f4f4f4; z-index: 99; }
 .footer-nav .nav{ display: flex; }
@@ -116,15 +106,23 @@ a{ color: #333; }
 
 
 /* 相册 */
-.page-album{ padding: 0.01rem 0 1.2rem; }
-.page-album  .p-title{  }
-.page-album .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; }
-.page-album .content .box{  }
-.page-album .content .list{ padding: 0.2rem; background-color: #fff; margin-top: 0.3rem;}
-.page-album .content .list:nth-child(1){ margin-top: 0.2rem;}
+.page-album{ padding: 0 0 1.2rem; }
+.page-album .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; padding: 0.01rem 0.16rem 0.2rem; overflow: auto; }
+.page-album .content .item{  }
+.page-album .content .list{ margin-top: 0.2rem; }
 .page-album .content .list dt{ overflow: hidden; }
-.page-album .content .list dd{ padding-top: 0.1rem; }
-.page-album .content .list img{ width: 100%; }
+.page-album .content .list dt img{ width: 100%; }
+.page-album .content .list dd{ background-color: #fff; padding: 0.05rem 0.1rem 0.1rem; }
+
+
+/*.page-album{ padding: 0.01rem 0 1.2rem; }
+.page-album .content{ width: 100%; position: absolute; top: 0.8rem; bottom: 1rem; padding: 0.1rem 0; overflow: auto; }
+.page-album .content .item{ display: flex; flex-wrap: wrap; }
+.page-album .content .list{ padding: 0.1rem 0.1rem; width: 50%; }
+.page-album .content .list:nth-child(2n){ padding-right: 0.2rem; }
+.page-album .content .list:nth-child(2n+1){ padding-left: 0.2rem; }
+.page-album .content .list dt{ height: 2rem; overflow: hidden; }
+.page-album .content .list dt img{ width: 100%; min-height: 100%; }*/
 
 
 /* 列表ui */

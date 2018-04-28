@@ -10,7 +10,6 @@ import $ from 'jquery';
 /*import wui from '../static/js/wui.js';*/
 import wui from 'wui';
 
-
 import Vue from 'vue';
 import router from '../src/router/router.js';
 import app from '../src/components/app.vue';

@@ -2,8 +2,8 @@
     <div class="page page-home bgcolor">
         <div class="top-toolbar">
             <ul class="box">
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技1</router-link></li>
-                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐1</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Tech'} }" :class="{highlight:$route.query.category=='Tech'}">科技</router-link></li>
+                <li class="menu"><router-link :to="{ path: 'home', query: {category:'Entertainment'} }" :class="{highlight:$route.query.category=='Entertainment'}">娱乐</router-link></li>
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Sport'} }" :class="{highlight:$route.query.category=='Sport'}">体育</router-link></li>
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Military'} }" :class="{highlight:$route.query.category=='Military'}">军事</router-link></li>
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Finance'} }" :class="{highlight:$route.query.category=='Finance'}">财经</router-link></li>
@@ -102,9 +102,9 @@
         methods: {
             loadmore: function () {
                 const that = this;
-                const url = 'http://60.205.217.133/news/news';//API接口
+                const url = 'http://140.143.10.199/api/news';//API接口
                 let paramObj = {};
-                paramObj.url = 'http://api.xinwen.cn/news/hot';//热门新闻
+                paramObj.url = 'https://api.xinwen.cn/news/hot';//热门新闻
                 paramObj.size = 200;
                 paramObj.access_key = wui.apiKey().access_key;
                 let last_id = '';
@@ -130,6 +130,7 @@
                 function initLoad(direction) {
                     paramObj.timestamp = wui.timestamp();
                     paramObj.signature = md5(wui.apiKey().secret_key + wui.timestamp() + wui.apiKey().access_key);
+                    console.log(paramObj.signature);
                     paramObj.category = that.category;
                     paramObj.last_id = last_id;
                     console.log(paramObj);

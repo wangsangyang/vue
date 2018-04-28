@@ -1,10 +1,12 @@
 const uglify = require('uglifyjs-webpack-plugin'); //js代码压缩、混淆插件
 const webpack = require('webpack');
+console.log( __dirname );
 module.exports = {
     entry: './src/entry.js',
     output: {
         path: __dirname+'/dist',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        //publicPath: 'dist/'
     },
     //mode: 'development',//或者 mode: 'production'
     module: {
@@ -21,7 +23,7 @@ module.exports = {
                         options: {
                             limit: 10000,//小于10k的都打包成base64
                             name: 'images/[name]_[hash:8].[ext]',//大于于10k的都生成images文件夹下面的hash名字的图片
-                            publicPath: '../dist'//打包后html的图片路径错误，通过单独设置publicPath解决这个问题
+                            publicPath: 'dist/'//打包后html的图片路径错误，通过单独设置publicPath解决这个问题
                         }
                     }
                 ]
@@ -64,8 +66,8 @@ module.exports = {
             //jquery: 'jquery/dist/jquery.js',
             vue: 'vue/dist/vue.js',
             moment: 'moment/moment.js',
-            muicss: __dirname+'/static/mui/css/mui.min.css',
-            mui: __dirname+'/static/mui/js/mui.min.js',
+            //muicss: __dirname+'/static/mui/css/mui.min.css',
+            //mui: __dirname+'/static/mui/js/mui.min.js',
             wui: __dirname+'/static/js/wui.js',
             md5: __dirname+'/static/js/md5.min.js',
             fontawesome: __dirname+'/static/font-awesome-4.7.0/css/font-awesome.min.css',

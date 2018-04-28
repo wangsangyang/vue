@@ -63,8 +63,8 @@
 
 <script>
     import footerNav from './public/footer-nav.vue';
-    import 'muicss';
-    import mui from 'mui';
+    //import 'muicss';
+    //import mui from 'mui';
     import md5 from 'md5';
     import moment from 'moment';
     moment.locale('zh-cn');

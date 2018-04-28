@@ -7,7 +7,7 @@ export default window.wui = {
         },
         formatDateTime: function () {
             var date=new Date()
-            var month=date.getMonth() + 1
+            var month=date.getMonth() + 1;
             var datetime = date.getFullYear()
                 + ""// "年"
                 + (month >= 10 ? month : "0"+ month)
@@ -33,20 +33,10 @@ export default window.wui = {
                 $('.wui-loading').remove();
             }else if(status==='full'){
                 var $loading = '<div class="wui-loading full"></div>';
-                var ispage = $('.page').length;
-                if(ispage>0){
-                    $('.page').append($loading);
-                }else{
-                    $('body').append($loading);
-                }
+                $('body').append($loading);
             }else{
                 var $loading = '<div class="wui-loading"></div>';
-                var ispage = $('.page').length;
-                if(ispage>0){
-                    $('.page').append($loading);
-                }else{
-                    $('body').append($loading);
-                }
+                $('body').append($loading);
             }
             return this;
         },
