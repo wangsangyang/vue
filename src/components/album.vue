@@ -11,7 +11,8 @@
             <div id="" class="">
                 <div class="">
                     <ul class="item">
-<!--                        <li class="list">
+                    <!--
+                        <li class="list">
                             <dl>
                                 <dt><img src="../../static/images/1.png"></dt>
                             </dl>
@@ -20,7 +21,8 @@
                             <dl>
                                 <dt><img src="../../static/images/1.png"></dt>
                             </dl>
-                        </li>-->
+                        </li>
+                        -->
 
                         <li class="list" v-for="img in imagesArray">
                             <dl>
