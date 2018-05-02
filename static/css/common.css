@@ -4,7 +4,7 @@ a{ color: #333; }
 .clearfix{ *zoom: 1; }
 .clearfix:after{ content: ""; display: block; clear: both; height: 0; visibility: hidden; }
 #entry{ width: 100%; height: 100%; }
-.page{ width: 100%; height: 100%; font-size: 0.28rem; overflow: auto; background-color: #fff; }
+.page{ width: 100%; height: 100%; font-size: 0.28rem; background-color: #fff; }
 .bgcolor{ background-color: #efeff4; }
 
 /* 底部导航 */
@@ -28,7 +28,7 @@ a{ color: #333; }
 .footer-nav .nav .router-link-active .icon-tools{ background-image: url(../images/icon-tools-active.png); }
 
 /* 头部导航栏 */
-.top-toolbar{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; overflow: auto; border-bottom: solid 0.015rem #eee; }
+.top-toolbar{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; overflow-x: auto; overflow-y: hidden; border-bottom: solid 0.015rem #eee; }
 .top-toolbar .box{ width: 5000px; }
 .top-toolbar .menu{ float: left; padding: 0 0.2rem; font-size: 0.30rem; }
 .top-toolbar .menu:nth-child(1){ padding-left: 0.4rem; }

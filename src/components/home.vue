@@ -103,6 +103,7 @@
             loadmore: function () {
                 const that = this;
                 const url = 'http://140.143.10.199/api/news';//API接口
+                //const url = 'http://wsy.web.com/api/news';//API接口
                 let paramObj = {};
                 paramObj.url = 'https://api.xinwen.cn/news/hot';//热门新闻
                 paramObj.size = 200;
@@ -130,7 +131,7 @@
                 function initLoad(direction) {
                     paramObj.timestamp = wui.timestamp();
                     paramObj.signature = md5(wui.apiKey().secret_key + wui.timestamp() + wui.apiKey().access_key);
-                    console.log(paramObj.signature);
+
                     paramObj.category = that.category;
                     paramObj.last_id = last_id;
                     console.log(paramObj);
@@ -186,7 +187,7 @@
             },*/
         },
         beforeRouteEnter (to, from, next) {
-            console.log('进入组件时');
+            //console.log('进入组件时');
             next();
         },
         beforeRouteUpdate (to, from, next) {

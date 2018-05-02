@@ -7,7 +7,7 @@
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Sport'} }" :class="{highlight:$route.query.category=='Sport'}">体育</router-link></li>
             </ul>
         </div>
-        <div class="content">
+        <div class="content scrollBehavior">
             <div id="" class="">
                 <div class="">
                     <ul class="item">
@@ -75,11 +75,14 @@
             this.category = this.$route.query.category;
             //console.log(this.category);
             this.loadmore();
+
+
         },
         methods: {
             loadmore: function () {
                 const that = this;
-                const url = 'http://140.143.10.199/api/images';//API接口
+                //const url = 'http://140.143.10.199/api/images';//API接口
+                const url = 'http://wsy.web.com/api/images';//API接口
                 let paramObj = {};
                 //paramObj.url = 'http://image.baidu.com/data/imgs?col=美女&tag=小清新&sort=0&pn=0&rn=20&p=channel&from=1';
                 paramObj.url = 'http://image.baidu.com/data/imgs?col=美女&tag=校花&sort=0&pn=0&rn=20&p=channel&from=1';
@@ -157,16 +160,23 @@
             }
         },
         watch: {
-            /*            '$route' (to, from) {
-                            console.log(to.query.category,this.category);
-                            this.category = to.query.category;
-                            if(/\/home/.test(to.path)){
-                                this.loadmore();
-                            }
-                        },*/
+            '$route' (to, from) {
+                /*
+                console.log(to.query.category,this.category);
+                this.category = to.query.category;
+                if(/\/home/.test(to.path)){
+                    this.loadmore();
+                }
+                */
+
+                //var scrollTop = sessionStorage.getItem('album-scrollTop')||0;
+                //console.log(scrollTop);
+                //document.querySelector('.content').scrollTop = scrollTop;
+                //$('.content').scrollTop(scrollTop);
+            },
         },
         beforeRouteEnter (to, from, next) {
-            console.log('进入组件时');
+            //console.log('进入组件时');
             next();
         },
         beforeRouteUpdate (to, from, next) {
@@ -179,6 +189,7 @@
         },
         beforeRouteLeave (to, from, next) {
             //console.log('离开组件时');
+            wui.getScrollBehavior(from);
             next();
         },
     }

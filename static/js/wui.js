@@ -56,6 +56,23 @@ export default window.wui = {
             });
             return this;
         },
+        getScrollBehavior(from, selector='.scrollBehavior'){
+            var $scrollBehavior = document.querySelector(selector);
+            if($scrollBehavior){
+                var sessionKey = `${from.name}-scrolltop`;
+                var scrollTop = $scrollBehavior.scrollTop;
+                sessionStorage.setItem(sessionKey,scrollTop);
+            }
+        },
+        setScrollBehavior(to, selector='.scrollBehavior'){
+            var $scrollBehavior = document.querySelector(selector);
+            //console.log($scrollBehavior);
+            if($scrollBehavior){
+                var sessionKey = `${to.name}-scrolltop`;
+                var scrollTop = sessionStorage.getItem(sessionKey)||0;
+                $scrollBehavior.scrollTop = scrollTop;
+            }
+        },
 /*        updropLoad: function (param) {
             var that = this;
             console.log(param instanceof Object);

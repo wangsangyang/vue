@@ -80,28 +80,37 @@ const routes = [
 
 let router = new VueRouter({
     routes,
-    mode: 'history',
+    //mode: 'history',
     hashbang: false,
     history: true,
     root: '/',
     saveScrollPosition: true,
     transitionOnLoad: true,
     scrollBehavior (to, from, savedPosition) {
-        console.log(savedPosition);
+        //console.log(to);
+        //console.log(savedPosition);
+        wui.setScrollBehavior(to);
+
         if (savedPosition) {
             return savedPosition
         } else {
             //return { x: 0, y: 0 }
         }
-    }
+    },
 });
 
 router.beforeEach((to,from,next) => {
+    //beforeEach方法会在任意路由跳转前执行，next一定要记着执行，不然路由不能跳转
     //console.log(to);
     //console.log(from);
     //console.log(1);
     document.title = to.meta.title;
     next();
+
+});
+
+router.afterEach((to, from) => {
+    //会在任意路由跳转后执行
 });
 
 //需要注意的是，export default routers 必须写在文件底部，而且后面还需要接一空行，否则无法通过 ESlint 语法验证
