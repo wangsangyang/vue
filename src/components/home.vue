@@ -13,7 +13,7 @@
                 <li class="menu"><router-link :to="{ path: 'home', query: {category:'Living'} }" :class="{highlight:$route.query.category=='Living'}">生活</router-link></li>
             </ul>
         </div>
-        <div class="content">
+        <div class="content scrollBehavior">
             <div id="muiRefresh" class="mui-content mui-scroll-wrapper">
                 <div class="mui-scroll">
                     <ul class="newsbox">
@@ -134,7 +134,7 @@
 
                     paramObj.category = that.category;
                     paramObj.last_id = last_id;
-                    console.log(paramObj);
+                    //console.log(paramObj);
                     $.ajax({
                         type: 'post',
                         url: url,
@@ -192,6 +192,12 @@
         },
         beforeRouteUpdate (to, from, next) {
             wui.loading();
+            /* 使滚动条重置到顶部 */
+            var sessionKey = `${from.name}-scrolltop`;
+            var scrollTop = 0;
+            sessionStorage.setItem(sessionKey,scrollTop);
+            document.querySelector('.scrollBehavior').scrollTop = 0;
+            console.log(456);
             //console.log(to.query.category,this.category);
             this.category = to.query.category;
             this.loadmore();
@@ -200,6 +206,7 @@
         },
         beforeRouteLeave (to, from, next) {
             //console.log('离开组件时');
+            wui.getScrollBehavior(from);
             next();
         },
     }

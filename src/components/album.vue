@@ -81,14 +81,13 @@
         methods: {
             loadmore: function () {
                 const that = this;
-                //const url = 'http://140.143.10.199/api/images';//API接口
-                const url = 'http://wsy.web.com/api/images';//API接口
+                const url = 'http://140.143.10.199/api/images';//API接口
+                //const url = 'http://wsy.web.com/api/images';//API接口
                 let paramObj = {};
                 //paramObj.url = 'http://image.baidu.com/data/imgs?col=美女&tag=小清新&sort=0&pn=0&rn=20&p=channel&from=1';
                 paramObj.url = 'http://image.baidu.com/data/imgs?col=美女&tag=校花&sort=0&pn=0&rn=20&p=channel&from=1';
 
                 paramObj.size = 200;
-                paramObj.access_key = wui.apiKey().access_key;
                 let last_id = '';
                 initLoad();
 
@@ -110,9 +109,7 @@
                 }
 
                 function initLoad(direction) {
-                    paramObj.timestamp = wui.timestamp();
                     paramObj.category = that.category;
-                    paramObj.last_id = last_id;
                     console.log(paramObj);
                     $.ajax({
                         type: 'post',
@@ -191,6 +188,6 @@
             //console.log('离开组件时');
             wui.getScrollBehavior(from);
             next();
-        },
+        }
     }
 </script>

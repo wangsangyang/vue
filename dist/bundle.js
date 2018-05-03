@@ -16908,7 +16908,7 @@ exports.default = {
 
                 paramObj.category = that.category;
                 paramObj.last_id = last_id;
-                console.log(paramObj);
+                //console.log(paramObj);
                 $.ajax({
                     type: 'post',
                     url: url,
@@ -16965,6 +16965,12 @@ exports.default = {
     },
     beforeRouteUpdate: function beforeRouteUpdate(to, from, next) {
         wui.loading();
+        /* 使滚动条重置到顶部 */
+        var sessionKey = from.name + '-scrolltop';
+        var scrollTop = 0;
+        sessionStorage.setItem(sessionKey, scrollTop);
+        document.querySelector('.scrollBehavior').scrollTop = 0;
+        console.log(456);
         //console.log(to.query.category,this.category);
         this.category = to.query.category;
         this.loadmore();
@@ -16973,6 +16979,7 @@ exports.default = {
     },
     beforeRouteLeave: function beforeRouteLeave(to, from, next) {
         //console.log('离开组件时');
+        wui.getScrollBehavior(from);
         next();
     }
 };
@@ -16983,7 +16990,7 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -17025,10 +17032,38 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-    name: 'footerNav'
+    name: 'footerNav',
+    data: function data() {
+        return {};
+    },
+
+    methods: {
+        isRefresh: function isRefresh(event) {
+            console.log(event);
+            console.log(event.target);
+            var count = $(event.target).attr('data-count');
+            console.log(count);
+        }
+    }
 };
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
 /* 38 */
@@ -29336,14 +29371,13 @@ exports.default = {
     methods: {
         loadmore: function loadmore() {
             var that = this;
-            //const url = 'http://140.143.10.199/api/images';//API接口
-            var url = 'http://wsy.web.com/api/images'; //API接口
+            var url = 'http://140.143.10.199/api/images'; //API接口
+            //const url = 'http://wsy.web.com/api/images';//API接口
             var paramObj = {};
             //paramObj.url = 'http://image.baidu.com/data/imgs?col=美女&tag=小清新&sort=0&pn=0&rn=20&p=channel&from=1';
             paramObj.url = 'http://image.baidu.com/data/imgs?col=美女&tag=校花&sort=0&pn=0&rn=20&p=channel&from=1';
 
             paramObj.size = 200;
-            paramObj.access_key = wui.apiKey().access_key;
             var last_id = '';
             initLoad();
 
@@ -29365,9 +29399,7 @@ exports.default = {
             }
 
             function initLoad(direction) {
-                paramObj.timestamp = wui.timestamp();
                 paramObj.category = that.category;
-                paramObj.last_id = last_id;
                 console.log(paramObj);
                 $.ajax({
                     type: 'post',
@@ -39914,7 +39946,7 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 //
 //
@@ -39922,10 +39954,21 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-exports.default = {
-    created: function created() {}
-};
+exports.default = {};
 
 /***/ }),
 /* 181 */
@@ -50950,22 +50993,22 @@ var routes = [{
 }, {
     path: '/home',
     name: 'home',
-    meta: { title: '首页' },
+    meta: { title: '首页', keepAlive: true },
     component: _home2.default
 }, {
     path: '/news',
     name: 'news',
-    meta: { title: '新闻' },
+    meta: { title: '新闻', keepAlive: true },
     component: _news2.default
 }, {
     path: '/newsdetail',
     name: 'newsdetail',
-    meta: { title: '新闻详情' },
+    meta: { title: '新闻详情', keepAlive: true },
     component: _newsdetail2.default
 }, {
     path: '/newsindex',
     name: 'newsindex',
-    meta: { title: '新闻列表' },
+    meta: { title: '新闻列表', keepAlive: true },
     component: _index2.default
 },
 /*    {
@@ -50984,26 +51027,30 @@ var routes = [{
 {
     path: '/album',
     name: 'album',
-    meta: { title: '相册' },
+    meta: { title: '相册', keepAlive: true },
     linkActiveClass: 'mui-active',
     component: _album2.default
 }, {
     path: '/tools',
-    meta: { title: '工具箱' },
+    name: 'tools',
+    meta: { title: '工具箱', keepAlive: true },
     component: _tools2.default
 }, {
     path: '/personal',
     name: 'personal',
-    meta: { title: '个人中心' },
+    meta: { title: '个人中心', keepAlive: true },
     component: _personal2.default
 }, {
     path: '/login',
-    meta: { title: '登录' },
+    name: 'login',
+    meta: { title: '登录', keepAlive: true },
     component: _login2.default
 }];
 
 var router = new _vueRouter2.default({
     routes: routes,
+    linkActiveClass: 'active',
+    linkExactActiveClass: '',
     //mode: 'history',
     hashbang: false,
     history: true,
@@ -51014,7 +51061,7 @@ var router = new _vueRouter2.default({
         //console.log(to);
         //console.log(savedPosition);
         wui.setScrollBehavior(to);
-
+        console.log(123);
         if (savedPosition) {
             return savedPosition;
         } else {
@@ -53763,7 +53810,7 @@ exports = module.exports = __webpack_require__(10)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/*    .footer-nav{ position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f4f4f4; z-index: 99; }\r\n    .footer-nav .nav{ display: flex; }\r\n    .footer-nav .nav li{ flex: 1; }\r\n    .footer-nav .nav a{ display: block; height: 1rem; color: #333; text-align: center; }\r\n    .footer-nav .nav span{ display: block; }\r\n    .footer-nav .nav .icon{ display: inline-block; width: 0.5rem; height: 0.5rem; background-position: center; background-repeat: no-repeat; background-size: 100% auto; margin-top: 0.1rem; }\r\n    .footer-nav .nav .text{ font-size: 0.24rem; margin-top: -0.05rem; }\r\n    .footer-nav .nav .router-link-active{ color: #ff9400; }\r\n    .footer-nav .nav .icon-home{ background-image: url(../../../static/images/icon-home.png); }\r\n    .footer-nav .nav .icon-album{ background-image: url(../../../static/images/icon-album.png); }\r\n    .footer-nav .nav .router-link-active .icon-home{ background-image: url(../../../static/images/icon-home-active.png); }\r\n    .footer-nav .nav .router-link-active .icon-album{ background-image: url(../../../static/images/icon-album-active.png); }*/\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*    .footer-nav{ position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f4f4f4; z-index: 99; }\n    .footer-nav .nav{ display: flex; }\n    .footer-nav .nav li{ flex: 1; }\n    .footer-nav .nav a{ display: block; height: 1rem; color: #333; text-align: center; }\n    .footer-nav .nav span{ display: block; }\n    .footer-nav .nav .icon{ display: inline-block; width: 0.5rem; height: 0.5rem; background-position: center; background-repeat: no-repeat; background-size: 100% auto; margin-top: 0.1rem; }\n    .footer-nav .nav .text{ font-size: 0.24rem; margin-top: -0.05rem; }\n    .footer-nav .nav .router-link-active{ color: #ff9400; }\n    .footer-nav .nav .icon-home{ background-image: url(../../../static/images/icon-home.png); }\n    .footer-nav .nav .icon-album{ background-image: url(../../../static/images/icon-album.png); }\n    .footer-nav .nav .router-link-active .icon-home{ background-image: url(../../../static/images/icon-home-active.png); }\n    .footer-nav .nav .router-link-active .icon-album{ background-image: url(../../../static/images/icon-album-active.png); }*/\n", ""]);
 
 // exports
 
@@ -54053,6 +54100,14 @@ var render = function() {
       _c("ul", { staticClass: "nav" }, [
         _c(
           "li",
+          {
+            attrs: { "data-count": "0" },
+            on: {
+              click: function($event) {
+                _vm.isRefresh($event)
+              }
+            }
+          },
           [
             _c("router-link", { attrs: { to: "/home" } }, [
               _c("span", { staticClass: "icon icon-home" }),
@@ -54066,7 +54121,7 @@ var render = function() {
         _c(
           "li",
           [
-            _c("router-link", { attrs: { to: "/news" } }, [
+            _c("router-link", { attrs: { to: "/news", "data-count": "0" } }, [
               _c("span", { staticClass: "icon icon-news" }),
               _vm._v(" "),
               _c("span", { staticClass: "text" }, [_vm._v("新闻")])
@@ -54078,7 +54133,7 @@ var render = function() {
         _c(
           "li",
           [
-            _c("router-link", { attrs: { to: "/tools" } }, [
+            _c("router-link", { attrs: { to: "/tools", "data-count": "0" } }, [
               _c("span", { staticClass: "icon icon-tools" }),
               _vm._v(" "),
               _c("span", { staticClass: "text" }, [_vm._v("工具")])
@@ -54095,7 +54150,8 @@ var render = function() {
               {
                 attrs: {
                   to: { name: "album", query: { type: 35 } },
-                  title: "小清新"
+                  title: "小清新",
+                  "data-count": "0"
                 }
               },
               [
@@ -55370,7 +55426,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "content" }, [
+      _c("div", { staticClass: "content scrollBehavior" }, [
         _c(
           "div",
           {
@@ -67980,7 +68036,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("keep-alive", [_c("router-view")], 1)
+  return _c(
+    "keep-alive",
+    {
+      attrs: { include: "home,news,newsdetail,newsindex,tools,personal,login" }
+    },
+    [_c("router-view")],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

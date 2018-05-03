@@ -19,25 +19,25 @@ const routes = [
     {
         path: '/home',
         name: 'home',
-        meta:{title: '首页'},
+        meta:{title: '首页',keepAlive:true},
         component: home,
     },
     {
         path: '/news',
         name: 'news',
-        meta:{title: '新闻'},
+        meta:{title: '新闻',keepAlive:true},
         component: news
     },
     {
         path: '/newsdetail',
         name: 'newsdetail',
-        meta:{title: '新闻详情'},
+        meta:{title: '新闻详情',keepAlive:true},
         component: newsdetail
     },
     {
         path: '/newsindex',
         name: 'newsindex',
-        meta:{title: '新闻列表'},
+        meta:{title: '新闻列表',keepAlive:true},
         component: newsindex
     },
 /*    {
@@ -56,30 +56,34 @@ const routes = [
     {
         path: '/album',
         name: 'album',
-        meta:{title: '相册'},
+        meta:{title: '相册',keepAlive:true},
         linkActiveClass: 'mui-active',
         component: album,
     },
     {
         path: '/tools',
-        meta:{title: '工具箱'},
+        name: 'tools',
+        meta:{title: '工具箱',keepAlive:true},
         component: tools,
     },
     {
         path: '/personal',
         name: 'personal',
-        meta:{title: '个人中心'},
+        meta:{title: '个人中心',keepAlive:true},
         component: personal,
     },
     {
         path: '/login',
-        meta:{title: '登录'},
+        name: 'login',
+        meta:{title: '登录',keepAlive:true},
         component: login,
     },
 ];
 
 let router = new VueRouter({
     routes,
+    linkActiveClass: 'active',
+    linkExactActiveClass: '',
     //mode: 'history',
     hashbang: false,
     history: true,
@@ -90,7 +94,7 @@ let router = new VueRouter({
         //console.log(to);
         //console.log(savedPosition);
         wui.setScrollBehavior(to);
-
+console.log(123);
         if (savedPosition) {
             return savedPosition
         } else {
